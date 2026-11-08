@@ -56,6 +56,62 @@
     "def": "to lower someone to a less senior position as a penalty",
     "tr": "tenzil etmek, rütbesini düşürmek",
     "ex": "The supervisor was demoted after failing to maintain safety standards on site."
+   },
+   {
+    "word": "vocation",
+    "pos": "noun",
+    "def": "a strong feeling of suitability for a particular career or occupation",
+    "tr": "mesleki çağrı, tutku duyulan meslek",
+    "ex": "She discovered her true vocation in teaching young children."
+   },
+   {
+    "word": "appraisal",
+    "pos": "noun",
+    "def": "an official evaluation of an employee's performance over a period",
+    "tr": "performans değerlendirmesi",
+    "ex": "Annual performance appraisals help workers set clear professional goals."
+   },
+   {
+    "word": "endeavor",
+    "pos": "noun",
+    "def": "an effort or attempt to achieve a goal",
+    "tr": "çaba, girişim",
+    "ex": "Starting a new business venture is a challenging professional endeavor."
+   },
+   {
+    "word": "attrition",
+    "pos": "noun",
+    "def": "the gradual reduction of a workforce as employees leave and are not replaced",
+    "tr": "personel eksilmesi",
+    "ex": "High rates of employee attrition can harm corporate stability."
+   },
+   {
+    "word": "versatile",
+    "pos": "adjective",
+    "def": "able to adapt to many different functions or activities",
+    "tr": "çok yönlü",
+    "ex": "Modern companies value versatile staff who can handle varied tasks."
+   },
+   {
+    "word": "trajectory",
+    "pos": "noun",
+    "def": "the course of development or progress over time",
+    "tr": "kariyer çizgisi, gelişme seyri",
+    "ex": "Mentorship can significantly accelerate a young professional's career trajectory."
+   },
+   {
+    "word": "stipend",
+    "pos": "noun",
+    "def": "a fixed regular payment made to an intern or trainee",
+    "tr": "ödenek, burs",
+    "ex": "The research interns receive a monthly stipend to cover living expenses."
+   },
+   {
+    "word": "predecessor",
+    "pos": "noun",
+    "def": "a person who held a job or position before the current holder",
+    "tr": "selef, öncel",
+    "ex": "The new manager modernised the office procedures established by her predecessor."
    }
   ],
   "readings": [
@@ -119,7 +175,9 @@
   ],
   "dict": [
    "Employees who acquire specialized skills are more likely to achieve long term career advancement.",
-   "Flexible working hours can significantly improve job satisfaction and overall employee productivity in modern organizations."
+   "Flexible working hours can significantly improve job satisfaction and overall employee productivity in modern organizations.",
+   "Many companies offer online training courses to help employees develop new professional skills.",
+   "Clear communication between managers and staff creates a positive environment for career growth."
   ]
  },
  "de": {
@@ -179,6 +237,62 @@
     "forms": "die Vorstellungsgespräche",
     "tr": "iş görüşmesi",
     "ex": "Das Vorstellungsgespräch war sehr erfolgreich."
+   },
+   {
+    "art": "der",
+    "word": "Betrieb",
+    "forms": "die Betriebe",
+    "tr": "işletme",
+    "ex": "Unser Betrieb sucht neue Mitarbeiter."
+   },
+   {
+    "art": "der",
+    "word": "Vertrag",
+    "forms": "die Verträge",
+    "tr": "sözleşme",
+    "ex": "Er unterschreibt heute den Vertrag."
+   },
+   {
+    "art": "die",
+    "word": "Pause",
+    "forms": "die Pausen",
+    "tr": "mola",
+    "ex": "Wir nehmen um zwölf Uhr eine Pause."
+   },
+   {
+    "art": "die",
+    "word": "Erfahrung",
+    "forms": "die Erfahrungen",
+    "tr": "deneyim",
+    "ex": "Sie hat viel Erfahrung in dieser Branche."
+   },
+   {
+    "art": "",
+    "word": "unterschreiben",
+    "forms": "er/sie unterschreibt, unterschrieb, hat unterschrieben",
+    "tr": "imzalamak",
+    "ex": "Bitte unterschreiben Sie das Formular."
+   },
+   {
+    "art": "",
+    "word": "suchen",
+    "forms": "er/sie sucht, suchte, hat gesucht",
+    "tr": "aramak",
+    "ex": "Der Betrieb sucht eine neue Kraft."
+   },
+   {
+    "art": "",
+    "word": "pünktlich",
+    "forms": "",
+    "tr": "zamanında",
+    "ex": "Herr Müller ist stets pünktlich."
+   },
+   {
+    "art": "",
+    "word": "organisieren",
+    "forms": "er/sie organisiert, organisierte, hat organisiert",
+    "tr": "organize etmek",
+    "ex": "Sie organisiert das Treffen für das Team."
    }
   ],
   "readings": [
@@ -227,7 +341,9 @@
   ],
   "dict": [
    "Der Ingenieur sendet heute seinen aktuellen Lebenslauf an die neue Firma.",
-   "Ein gutes Vorstellungsgespräch bringt oft eine sehr interessante Stelle."
+   "Ein gutes Vorstellungsgespräch bringt oft eine sehr interessante Stelle.",
+   "Der neue Mitarbeiter unterschreibt den Vertrag vor dem Treffen.",
+   "Nach vier Stunden intensiver Betreuung nimmt die Assistentin eine Pause."
   ]
  },
  "updated": "2026-11-08"
