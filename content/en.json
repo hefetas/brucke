@@ -571,6 +571,565 @@
      "explain_tr": "“our reluctance to set boundaries” = sınır koyma isteksizliği."
     }
    ]
+  },
+  {
+   "slug": "en-directions",
+   "title": "Asking for Directions",
+   "kind": "dialogue",
+   "cefr_level": "A1",
+   "topics": [
+    "seyahat",
+    "günlük hayat"
+   ],
+   "duration_sec": 40,
+   "transcript": [
+    {
+     "speaker": "Tourist",
+     "text": "Excuse me. Where is the station?",
+     "tr": "Affedersiniz. Gar nerede?"
+    },
+    {
+     "speaker": "Local",
+     "text": "Go straight on. Then turn left at the bank.",
+     "tr": "Düz gidin. Sonra bankadan sola dönün."
+    },
+    {
+     "speaker": "Tourist",
+     "text": "Is it far?",
+     "tr": "Uzak mı?"
+    },
+    {
+     "speaker": "Local",
+     "text": "No, it is five minutes on foot.",
+     "tr": "Hayır, yürüyerek beş dakika."
+    },
+    {
+     "speaker": "Tourist",
+     "text": "Thank you very much.",
+     "tr": "Çok teşekkür ederim."
+    },
+    {
+     "speaker": "Local",
+     "text": "You are welcome. Have a nice day!",
+     "tr": "Rica ederim. İyi günler!"
+    }
+   ],
+   "glossary": [
+    {
+     "lemma": "station",
+     "pos": "noun",
+     "meaning_tr": "gar, istasyon",
+     "example": "The station is near here.",
+     "example_tr": "İstasyon buraya yakın."
+    },
+    {
+     "lemma": "straight",
+     "pos": "adv",
+     "meaning_tr": "düz",
+     "example": "Go straight to the end of the road.",
+     "example_tr": "Yolun sonuna kadar düz git."
+    },
+    {
+     "lemma": "turn",
+     "pos": "verb",
+     "meaning_tr": "dönmek",
+     "example": "Turn right at the corner.",
+     "example_tr": "Köşeden sağa dön."
+    },
+    {
+     "lemma": "far",
+     "pos": "adj",
+     "meaning_tr": "uzak",
+     "example": "The park is not far.",
+     "example_tr": "Park uzak değil."
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Where does the tourist want to go?",
+     "options": [
+      "To the station",
+      "To the bank",
+      "To a hotel"
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": "Where must he turn left?",
+     "options": [
+      "At the station",
+      "At the bank",
+      "At the park"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "How long does it take on foot?",
+     "options": [
+      "Two minutes",
+      "Five minutes",
+      "Fifteen minutes"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-hotel-booking",
+   "title": "Booking a Hotel Room",
+   "kind": "dialogue",
+   "cefr_level": "A2",
+   "topics": [
+    "seyahat"
+   ],
+   "duration_sec": 60,
+   "transcript": [
+    {
+     "speaker": "Receptionist",
+     "text": "Good afternoon, Sunrise Hotel. How can I help you?",
+     "tr": "İyi günler, Sunrise Otel. Size nasıl yardımcı olabilirim?"
+    },
+    {
+     "speaker": "Guest",
+     "text": "Hello. I would like to book a double room for three nights, please.",
+     "tr": "Merhaba. Üç gece için bir çift kişilik oda ayırtmak istiyorum."
+    },
+    {
+     "speaker": "Receptionist",
+     "text": "Certainly. When are you arriving?",
+     "tr": "Tabii. Ne zaman geliyorsunuz?"
+    },
+    {
+     "speaker": "Guest",
+     "text": "On the twelfth of June. We will leave on the fifteenth.",
+     "tr": "Haziranın on ikisinde. On beşinde ayrılacağız."
+    },
+    {
+     "speaker": "Receptionist",
+     "text": "We have a room with a sea view. It is ninety euros a night, with breakfast.",
+     "tr": "Deniz manzaralı bir odamız var. Kahvaltı dahil geceliği doksan avro."
+    },
+    {
+     "speaker": "Guest",
+     "text": "That sounds good. Can I pay by card?",
+     "tr": "Güzel. Kartla ödeyebilir miyim?"
+    },
+    {
+     "speaker": "Receptionist",
+     "text": "Yes, of course. I just need your name and phone number.",
+     "tr": "Evet, tabii. Sadece adınızı ve telefon numaranızı almam gerekiyor."
+    }
+   ],
+   "glossary": [
+    {
+     "lemma": "book",
+     "pos": "verb",
+     "meaning_tr": "rezervasyon yapmak",
+     "example": "I want to book a table for two.",
+     "example_tr": "İki kişilik bir masa ayırtmak istiyorum."
+    },
+    {
+     "lemma": "double room",
+     "pos": "noun",
+     "meaning_tr": "çift kişilik oda",
+     "example": "We need a double room.",
+     "example_tr": "Çift kişilik bir odaya ihtiyacımız var."
+    },
+    {
+     "lemma": "night",
+     "pos": "noun",
+     "meaning_tr": "gece",
+     "example": "We stayed there for two nights.",
+     "example_tr": "Orada iki gece kaldık.",
+     "forms": [
+      "nights"
+     ]
+    },
+    {
+     "lemma": "breakfast",
+     "pos": "noun",
+     "meaning_tr": "kahvaltı",
+     "example": "Breakfast is at eight.",
+     "example_tr": "Kahvaltı sekizde."
+    },
+    {
+     "lemma": "sea view",
+     "pos": "noun",
+     "meaning_tr": "deniz manzarası",
+     "example": "The room has a lovely sea view.",
+     "example_tr": "Odanın harika bir deniz manzarası var."
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "How long will the guest stay?",
+     "options": [
+      "Two nights",
+      "Three nights",
+      "Five nights"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What is included in the price?",
+     "options": [
+      "Dinner",
+      "Breakfast",
+      "A taxi"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "How much is the room per night?",
+     "options": [
+      "Eighty euros",
+      "Ninety euros",
+      "One hundred euros"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-bike-scheme",
+   "title": "New City Bikes",
+   "kind": "news",
+   "cefr_level": "B1",
+   "topics": [
+    "günlük hayat",
+    "seyahat"
+   ],
+   "duration_sec": 75,
+   "transcript": [
+    {
+     "speaker": "Presenter",
+     "text": "The city council has launched a new bike-sharing scheme this week. Residents can now borrow a bike from more than fifty stations across the centre.",
+     "tr": "Belediye bu hafta yeni bir bisiklet paylaşım sistemi başlattı. Sakinler artık merkezdeki elliden fazla istasyondan bisiklet ödünç alabiliyor."
+    },
+    {
+     "speaker": "Presenter",
+     "text": "The first thirty minutes of every journey are free, and after that, the price is one euro per hour.",
+     "tr": "Her yolculuğun ilk otuz dakikası ücretsiz, sonrasında saat başına bir avro."
+    },
+    {
+     "speaker": "Presenter",
+     "text": "The mayor said the aim is to reduce traffic and improve air quality in the city.",
+     "tr": "Belediye başkanı amacın şehirde trafiği azaltmak ve hava kalitesini iyileştirmek olduğunu söyledi."
+    },
+    {
+     "speaker": "Presenter",
+     "text": "However, some shop owners are worried that fewer cars in the centre could mean fewer customers.",
+     "tr": "Ancak bazı dükkân sahipleri merkezde daha az araç olmasının daha az müşteri anlamına gelebileceğinden endişeli."
+    },
+    {
+     "speaker": "Presenter",
+     "text": "The council will review the scheme after six months.",
+     "tr": "Belediye sistemi altı ay sonra gözden geçirecek."
+    }
+   ],
+   "glossary": [
+    {
+     "lemma": "scheme",
+     "pos": "noun",
+     "meaning_tr": "proje, sistem",
+     "example": "The government introduced a new scheme.",
+     "example_tr": "Hükümet yeni bir sistem getirdi."
+    },
+    {
+     "lemma": "resident",
+     "pos": "noun",
+     "meaning_tr": "sakin",
+     "example": "Residents can park here for free.",
+     "example_tr": "Sakinler burada ücretsiz park edebilir.",
+     "forms": [
+      "residents"
+     ]
+    },
+    {
+     "lemma": "borrow",
+     "pos": "verb",
+     "meaning_tr": "ödünç almak",
+     "example": "Can I borrow your pen?",
+     "example_tr": "Kalemini ödünç alabilir miyim?"
+    },
+    {
+     "lemma": "air quality",
+     "pos": "noun",
+     "meaning_tr": "hava kalitesi",
+     "example": "Air quality is better in spring.",
+     "example_tr": "Hava kalitesi ilkbaharda daha iyi."
+    },
+    {
+     "lemma": "review",
+     "pos": "verb",
+     "meaning_tr": "gözden geçirmek",
+     "example": "We will review the results next month.",
+     "example_tr": "Sonuçları gelecek ay gözden geçireceğiz."
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "How long is each journey free?",
+     "options": [
+      "Fifteen minutes",
+      "Thirty minutes",
+      "One hour"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What is the main aim of the scheme?",
+     "options": [
+      "To earn money",
+      "To reduce traffic and improve air quality",
+      "To help tourists"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "Who is worried about the scheme?",
+     "options": [
+      "Some shop owners",
+      "The mayor",
+      "Bus drivers"
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": "When will the council review the scheme?",
+     "options": [
+      "After one month",
+      "After six months",
+      "After a year"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-sleep-learning",
+   "title": "Sleep and Learning",
+   "kind": "podcast",
+   "cefr_level": "B2",
+   "topics": [
+    "kültür",
+    "günlük hayat"
+   ],
+   "duration_sec": 90,
+   "transcript": [
+    {
+     "speaker": "Host",
+     "text": "Many students believe that staying up all night before an exam is the best strategy. Research suggests otherwise.",
+     "tr": "Birçok öğrenci sınavdan önce bütün gece uyanık kalmanın en iyi strateji olduğuna inanır. Araştırmalar aksini gösteriyor."
+    },
+    {
+     "speaker": "Host",
+     "text": "During deep sleep, the brain replays what we have learned and transfers it from short-term to long-term memory.",
+     "tr": "Derin uykuda beyin öğrendiklerimizi yeniden oynatır ve kısa süreli bellekten uzun süreli belleğe aktarır."
+    },
+    {
+     "speaker": "Host",
+     "text": "In one study, two groups memorised the same list of words. The group that slept afterwards remembered around forty per cent more the next day.",
+     "tr": "Bir çalışmada iki grup aynı kelime listesini ezberledi. Sonrasında uyuyan grup ertesi gün yaklaşık yüzde kırk daha fazlasını hatırladı."
+    },
+    {
+     "speaker": "Host",
+     "text": "This does not mean that studying is pointless. It means that rest is part of the learning process, not an alternative to it.",
+     "tr": "Bu, çalışmanın anlamsız olduğu anlamına gelmez. Dinlenmenin öğrenme sürecinin bir parçası olduğu, onun alternatifi olmadığı anlamına gelir."
+    },
+    {
+     "speaker": "Host",
+     "text": "So the advice is simple: study in focused blocks, and protect your sleep.",
+     "tr": "Yani tavsiye basit: odaklanmış bloklar hâlinde çalışın ve uykunuzu koruyun."
+    }
+   ],
+   "glossary": [
+    {
+     "lemma": "strategy",
+     "pos": "noun",
+     "meaning_tr": "strateji",
+     "example": "Our strategy is to save money first.",
+     "example_tr": "Stratejimiz önce para biriktirmek."
+    },
+    {
+     "lemma": "transfer",
+     "pos": "verb",
+     "meaning_tr": "aktarmak",
+     "example": "The data is transferred overnight.",
+     "example_tr": "Veriler gece boyunca aktarılıyor.",
+     "forms": [
+      "transfers",
+      "transferred"
+     ]
+    },
+    {
+     "lemma": "memorise",
+     "pos": "verb",
+     "meaning_tr": "ezberlemek",
+     "example": "I need to memorise these dates.",
+     "example_tr": "Bu tarihleri ezberlemem gerekiyor.",
+     "forms": [
+      "memorised"
+     ]
+    },
+    {
+     "lemma": "pointless",
+     "pos": "adj",
+     "meaning_tr": "anlamsız, boş",
+     "example": "It is pointless to argue.",
+     "example_tr": "Tartışmak anlamsız."
+    },
+    {
+     "lemma": "focused",
+     "pos": "adj",
+     "meaning_tr": "odaklanmış",
+     "example": "She is a very focused student.",
+     "example_tr": "O çok odaklı bir öğrenci."
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "What happens during deep sleep?",
+     "options": [
+      "The brain stops working",
+      "The brain moves learning into long-term memory",
+      "The brain forgets new words"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What did the group that slept do better?",
+     "options": [
+      "They finished faster",
+      "They remembered more words the next day",
+      "They studied longer"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What is the speaker's main message?",
+     "options": [
+      "Studying is pointless",
+      "Rest is part of learning",
+      "Students should never study at night"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-climate-adaptation",
+   "title": "Adapting to a Warmer World",
+   "kind": "podcast",
+   "cefr_level": "C1",
+   "topics": [
+    "kültür",
+    "teknoloji"
+   ],
+   "duration_sec": 105,
+   "transcript": [
+    {
+     "speaker": "Host",
+     "text": "For decades, the climate debate has centred on mitigation, that is, cutting emissions to slow warming. But a growing number of experts argue that adaptation deserves equal attention.",
+     "tr": "On yıllardır iklim tartışması azaltıma, yani ısınmayı yavaşlatmak için emisyonları kesmeye odaklandı. Ancak giderek artan sayıda uzman uyum çalışmalarının da eşit ilgiyi hak ettiğini savunuyor."
+    },
+    {
+     "speaker": "Host",
+     "text": "Adaptation covers everything from redesigning drainage systems to planting heat-resistant crops. The difficulty is that its benefits are local and often invisible until a disaster is averted.",
+     "tr": "Uyum, drenaj sistemlerini yeniden tasarlamaktan ısıya dayanıklı ürünler ekmeye kadar her şeyi kapsar. Zorluk, faydalarının yerel olması ve bir felaket önlenene kadar çoğu zaman görünmez kalmasıdır."
+    },
+    {
+     "speaker": "Host",
+     "text": "Critics fear that investing in adaptation could undermine the political will to cut emissions. Proponents counter that the two are complementary: a society that feels protected is more likely to act, not less.",
+     "tr": "Eleştirmenler uyuma yatırım yapmanın emisyonları azaltma yönündeki siyasi iradeyi zayıflatabileceğinden korkuyor. Savunucular ise ikisinin birbirini tamamladığını söylüyor: kendini korunmuş hisseden bir toplum harekete geçmeye daha yatkındır."
+    },
+    {
+     "speaker": "Host",
+     "text": "Whichever view prevails, one thing seems inevitable: the cost of doing nothing will be far higher than the cost of preparing.",
+     "tr": "Hangi görüş ağır basarsa bassın, bir şey kaçınılmaz görünüyor: hiçbir şey yapmamanın maliyeti hazırlanmanın maliyetinden çok daha yüksek olacak."
+    }
+   ],
+   "glossary": [
+    {
+     "lemma": "mitigation",
+     "pos": "noun",
+     "meaning_tr": "azaltım, hafifletme",
+     "example": "Mitigation focuses on reducing emissions.",
+     "example_tr": "Azaltım, emisyonları düşürmeye odaklanır."
+    },
+    {
+     "lemma": "emission",
+     "pos": "noun",
+     "meaning_tr": "emisyon, salınım",
+     "example": "Emissions fell by ten per cent.",
+     "example_tr": "Emisyonlar yüzde on düştü.",
+     "forms": [
+      "emissions"
+     ]
+    },
+    {
+     "lemma": "adaptation",
+     "pos": "noun",
+     "meaning_tr": "uyum",
+     "example": "Adaptation requires long-term planning.",
+     "example_tr": "Uyum uzun vadeli planlama gerektirir."
+    },
+    {
+     "lemma": "averted",
+     "pos": "verb",
+     "meaning_tr": "önlenmiş",
+     "example": "The crisis was averted at the last minute.",
+     "example_tr": "Kriz son dakikada önlendi.",
+     "forms": [
+      "avert"
+     ]
+    },
+    {
+     "lemma": "complementary",
+     "pos": "adj",
+     "meaning_tr": "birbirini tamamlayan",
+     "example": "The two approaches are complementary.",
+     "example_tr": "İki yaklaşım birbirini tamamlıyor."
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "What have experts traditionally focused on?",
+     "options": [
+      "Adaptation",
+      "Mitigation",
+      "Population growth"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What is a difficulty of adaptation?",
+     "options": [
+      "It is too expensive",
+      "Its benefits are local and often invisible",
+      "It does not work"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What do proponents of adaptation argue?",
+     "options": [
+      "It replaces cutting emissions",
+      "It is complementary to cutting emissions",
+      "It is politically impossible"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What conclusion does the host draw?",
+     "options": [
+      "Doing nothing is cheaper",
+      "Preparing costs less than inaction",
+      "Only emissions matter"
+     ],
+     "answer": 1
+    }
+   ]
   }
  ],
  "reading": [
@@ -1020,6 +1579,393 @@
      "answer": 1
     }
    ]
+  },
+  {
+   "slug": "en-my-family",
+   "title": "My Family",
+   "kind": "article",
+   "cefr_level": "A1",
+   "topics": [
+    "günlük hayat"
+   ],
+   "body": "My name is Sara. I am ten years old. I live in a small house with my mother, my father and my brother. My mother is a teacher. My father works in a shop. My brother is six. He likes football. We have a cat. Its name is Mimi. I love my family very much.",
+   "glossary": [
+    {
+     "lemma": "mother",
+     "pos": "noun",
+     "meaning_tr": "anne",
+     "example": "My mother cooks very well.",
+     "example_tr": "Annem çok güzel yemek yapar."
+    },
+    {
+     "lemma": "father",
+     "pos": "noun",
+     "meaning_tr": "baba",
+     "example": "My father is at work.",
+     "example_tr": "Babam işte."
+    },
+    {
+     "lemma": "brother",
+     "pos": "noun",
+     "meaning_tr": "erkek kardeş",
+     "example": "I have one brother.",
+     "example_tr": "Bir erkek kardeşim var."
+    },
+    {
+     "lemma": "cat",
+     "pos": "noun",
+     "meaning_tr": "kedi",
+     "example": "The cat is sleeping.",
+     "example_tr": "Kedi uyuyor."
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "How old is Sara?",
+     "options": [
+      "Six",
+      "Ten",
+      "Twelve"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What does Sara's mother do?",
+     "options": [
+      "She is a teacher",
+      "She works in a shop",
+      "She is a doctor"
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": "What is the cat's name?",
+     "options": [
+      "Mimi",
+      "Sara",
+      "Tom"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "slug": "en-new-hobby",
+   "title": "A New Hobby",
+   "kind": "article",
+   "cefr_level": "A2",
+   "topics": [
+    "günlük hayat"
+   ],
+   "body": "Last winter, I decided to try a new hobby. My friend Julia plays the guitar, so I asked her to teach me. At first, it was very difficult. My fingers hurt, and the songs sounded terrible. But I practised for twenty minutes every evening, and after two months I could play three simple songs.\n\nNow I play for my family on Sundays. My little sister sings, and my parents clap. I am not a great guitarist yet, but I enjoy it more than anything else. Next month, I am going to join a small music class at the community centre.",
+   "glossary": [
+    {
+     "lemma": "hobby",
+     "pos": "noun",
+     "meaning_tr": "hobi",
+     "example": "Reading is my favourite hobby.",
+     "example_tr": "Okumak en sevdiğim hobi."
+    },
+    {
+     "lemma": "practise",
+     "pos": "verb",
+     "meaning_tr": "pratik yapmak, çalışmak",
+     "example": "You must practise every day.",
+     "example_tr": "Her gün pratik yapmalısın.",
+     "forms": [
+      "practised"
+     ]
+    },
+    {
+     "lemma": "simple",
+     "pos": "adj",
+     "meaning_tr": "basit",
+     "example": "This is a simple recipe.",
+     "example_tr": "Bu basit bir tarif."
+    },
+    {
+     "lemma": "clap",
+     "pos": "verb",
+     "meaning_tr": "alkışlamak",
+     "example": "The audience clapped loudly.",
+     "example_tr": "Seyirci yüksek sesle alkışladı."
+    },
+    {
+     "lemma": "community centre",
+     "pos": "noun",
+     "meaning_tr": "mahalle merkezi",
+     "example": "The class is at the community centre.",
+     "example_tr": "Ders mahalle merkezinde."
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Who taught the writer to play the guitar?",
+     "options": [
+      "Her sister",
+      "Julia",
+      "A music teacher"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "How long did the writer practise each evening?",
+     "options": [
+      "Ten minutes",
+      "Twenty minutes",
+      "One hour"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What is the writer going to do next month?",
+     "options": [
+      "Buy a new guitar",
+      "Join a music class",
+      "Move to a new city"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-remote-work",
+   "title": "Working from Home: Pros and Cons",
+   "kind": "article",
+   "cefr_level": "B1",
+   "topics": [
+    "iş"
+   ],
+   "body": "Since the pandemic, millions of people have started working from home, and many of them do not want to go back to the office full time. The advantages are clear. Employees save time and money because they do not have to commute, and many say they can concentrate better in a quiet environment. Companies, too, can save money on office space.\n\nHowever, working from home is not perfect. Some people feel isolated and miss the conversations they used to have with colleagues. Others find it hard to separate work from private life, so they end up working longer hours than before. Managers also worry that it is more difficult to train new employees online.\n\nMany firms are now trying a compromise: two or three days in the office and the rest at home. Most workers seem to prefer this balance, although it depends on the job and the person.",
+   "glossary": [
+    {
+     "lemma": "commute",
+     "pos": "verb",
+     "meaning_tr": "işe gidip gelmek",
+     "example": "I commute by train every day.",
+     "example_tr": "Her gün trenle işe gidip geliyorum."
+    },
+    {
+     "lemma": "concentrate",
+     "pos": "verb",
+     "meaning_tr": "odaklanmak",
+     "example": "I cannot concentrate with this noise.",
+     "example_tr": "Bu gürültüyle odaklanamıyorum."
+    },
+    {
+     "lemma": "isolated",
+     "pos": "adj",
+     "meaning_tr": "yalnız, izole",
+     "example": "She felt isolated in the new city.",
+     "example_tr": "Yeni şehirde kendini yalnız hissetti."
+    },
+    {
+     "lemma": "compromise",
+     "pos": "noun",
+     "meaning_tr": "orta yol, uzlaşma",
+     "example": "We reached a compromise.",
+     "example_tr": "Bir orta yol bulduk."
+    },
+    {
+     "lemma": "employee",
+     "pos": "noun",
+     "meaning_tr": "çalışan",
+     "example": "The company has fifty employees.",
+     "example_tr": "Şirketin elli çalışanı var.",
+     "forms": [
+      "employees"
+     ]
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "What is one advantage for employees?",
+     "options": [
+      "They earn more money",
+      "They save commuting time and money",
+      "They have more meetings"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What problem do some people have at home?",
+     "options": [
+      "The internet is too slow",
+      "They work longer hours",
+      "They sleep too much"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What compromise do many firms try?",
+     "options": [
+      "Only working from home",
+      "Two or three days in the office",
+      "Shorter working weeks"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-streaming-era",
+   "title": "The Rise of Streaming",
+   "kind": "article",
+   "cefr_level": "B2",
+   "topics": [
+    "teknoloji",
+    "kültür"
+   ],
+   "body": "Little more than a decade ago, most households watched television at a fixed time, and renting a film meant a trip to the video shop. Today, streaming services offer thousands of titles at the touch of a button, and viewers no longer wait a week for the next episode. Whole series are released at once, which has changed not only how we watch but also how stories are written.\n\nCritics point out that this abundance has a downside. Faced with endless choice, many viewers spend more time browsing than watching. Moreover, because platforms rely on subscriptions, they compete fiercely for attention, and some producers feel pressure to deliver an exciting opening rather than a carefully developed plot.\n\nStreaming has also altered the economics of the industry. While it has opened doors for international productions that would once have been ignored, it has made it harder for smaller studios to earn a fair share of the profits. Whether the model is sustainable remains an open question.",
+   "glossary": [
+    {
+     "lemma": "abundance",
+     "pos": "noun",
+     "meaning_tr": "bolluk",
+     "example": "There is an abundance of food.",
+     "example_tr": "Bol miktarda yiyecek var."
+    },
+    {
+     "lemma": "downside",
+     "pos": "noun",
+     "meaning_tr": "olumsuz yan, dezavantaj",
+     "example": "The downside is the high price.",
+     "example_tr": "Olumsuz yanı yüksek fiyat."
+    },
+    {
+     "lemma": "subscription",
+     "pos": "noun",
+     "meaning_tr": "abonelik",
+     "example": "I cancelled my subscription.",
+     "example_tr": "Aboneliğimi iptal ettim.",
+     "forms": [
+      "subscriptions"
+     ]
+    },
+    {
+     "lemma": "fiercely",
+     "pos": "adv",
+     "meaning_tr": "şiddetle, sert biçimde",
+     "example": "The two teams competed fiercely.",
+     "example_tr": "İki takım sert biçimde yarıştı."
+    },
+    {
+     "lemma": "sustainable",
+     "pos": "adj",
+     "meaning_tr": "sürdürülebilir",
+     "example": "We need a sustainable solution.",
+     "example_tr": "Sürdürülebilir bir çözüme ihtiyacımız var."
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "How has streaming changed the way series are released?",
+     "options": [
+      "One episode a month",
+      "Whole series at once",
+      "Only at weekends"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What downside do critics mention?",
+     "options": [
+      "Too few titles",
+      "Viewers spend a lot of time browsing",
+      "Prices are too low"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "Why can smaller studios struggle?",
+     "options": [
+      "They produce too much",
+      "It is harder to earn a fair share of profits",
+      "They refuse to use streaming"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-choice-paradox",
+   "title": "The Paradox of Choice",
+   "kind": "article",
+   "cefr_level": "C1",
+   "topics": [
+    "kültür",
+    "iş"
+   ],
+   "body": "Conventional economic wisdom holds that more choice is always better: the more options we have, the greater the likelihood that we will find something perfectly suited to our needs. Yet a series of psychological studies has complicated this assumption. In one well-known experiment, shoppers who were offered a modest selection of jams were considerably more likely to buy one than those confronted with a bewildering array of twenty-four.\n\nThe explanation lies partly in the burden of decision-making. When alternatives proliferate, each rejected option becomes a potential source of regret, and the chooser is left with an unsettling sense that a better outcome was within reach. Paradoxically, the person who has chosen from the largest menu may end up the least satisfied.\n\nThis does not imply that choice is inherently harmful. Rather, it suggests that satisfaction depends on how we choose. People who set clear criteria in advance, and who are content with a result that is good enough, tend to report greater well-being than those who relentlessly pursue the optimal.",
+   "glossary": [
+    {
+     "lemma": "assumption",
+     "pos": "noun",
+     "meaning_tr": "varsayım",
+     "example": "The theory rests on a false assumption.",
+     "example_tr": "Teori yanlış bir varsayıma dayanıyor."
+    },
+    {
+     "lemma": "bewildering",
+     "pos": "adj",
+     "meaning_tr": "şaşırtıcı, kafa karıştırıcı",
+     "example": "The menu offered a bewildering choice.",
+     "example_tr": "Menü kafa karıştırıcı bir seçenek sunuyordu."
+    },
+    {
+     "lemma": "proliferate",
+     "pos": "verb",
+     "meaning_tr": "çoğalmak",
+     "example": "Mobile apps have proliferated.",
+     "example_tr": "Mobil uygulamalar çoğaldı.",
+     "forms": [
+      "proliferate"
+     ]
+    },
+    {
+     "lemma": "unsettling",
+     "pos": "adj",
+     "meaning_tr": "huzursuz edici",
+     "example": "It was an unsettling silence.",
+     "example_tr": "Huzursuz edici bir sessizlikti."
+    },
+    {
+     "lemma": "relentlessly",
+     "pos": "adv",
+     "meaning_tr": "amansızca, durmaksızın",
+     "example": "He worked relentlessly on the project.",
+     "example_tr": "Proje üzerinde durmaksızın çalıştı."
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "What did the jam experiment show?",
+     "options": [
+      "Shoppers prefer larger selections",
+      "Shoppers with fewer choices bought more",
+      "Price decided everything"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "Why might people with the most options be less satisfied?",
+     "options": [
+      "They always choose cheaply",
+      "Rejected options become sources of regret",
+      "They dislike shopping"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What helps satisfaction according to the text?",
+     "options": [
+      "Setting clear criteria and accepting good enough",
+      "Always seeking the optimal",
+      "Avoiding all choices"
+     ],
+     "answer": 0
+    }
+   ]
   }
  ],
  "speaking": [
@@ -1143,6 +2089,76 @@
    "topics": [
     "günlük hayat"
    ]
+  },
+  {
+   "slug": "en-speak-weekend",
+   "cefr_level": "A2",
+   "kind": "describe",
+   "title_tr": "Geçen hafta sonun",
+   "prompt_tr": "Geçen hafta sonunu anlat: nereye gittin, ne yaptın, kiminle birlikteydin?",
+   "model_text": "Last weekend I visited my grandparents in the countryside. We had lunch together, and then we walked by the river. In the evening, I watched a film with my cousin. It was a relaxing weekend.",
+   "target_phrases": [
+    "last weekend",
+    "we had",
+    "in the evening"
+   ],
+   "max_seconds": 45,
+   "topics": [
+    "günlük hayat"
+   ]
+  },
+  {
+   "slug": "en-speak-complaint",
+   "cefr_level": "B1",
+   "kind": "roleplay",
+   "title_tr": "Restoranda şikâyet",
+   "prompt_tr": "Restoranda yemeğin soğuk geldi. Garsona kibarca şikâyet et ve çözüm iste.",
+   "model_text": "Excuse me, I am afraid there is a problem with my meal. The soup is cold, and I ordered it more than half an hour ago. Could you please take it back and bring me a hot one? Thank you very much.",
+   "target_phrases": [
+    "I am afraid",
+    "could you please",
+    "there is a problem"
+   ],
+   "max_seconds": 50,
+   "topics": [
+    "yemek",
+    "günlük hayat"
+   ]
+  },
+  {
+   "slug": "en-speak-uniforms",
+   "cefr_level": "B2",
+   "kind": "answer",
+   "title_tr": "Okulda üniforma",
+   "prompt_tr": "Okullarda üniforma zorunlu olmalı mı? Fikrini iki gerekçeyle savun.",
+   "model_text": "In my opinion, school uniforms should not be compulsory. On the one hand, they can reduce pressure about clothes. On the other hand, they limit self-expression, and families may struggle to pay for them. I would therefore suggest a simple dress code instead.",
+   "target_phrases": [
+    "in my opinion",
+    "on the one hand",
+    "on the other hand"
+   ],
+   "max_seconds": 70,
+   "topics": [
+    "kültür"
+   ]
+  },
+  {
+   "slug": "en-speak-opening",
+   "cefr_level": "C1",
+   "kind": "describe",
+   "title_tr": "Sunuş açılışı",
+   "prompt_tr": "Bir sunumu etkileyici biçimde aç: konuyu tanıt, neden önemli olduğunu söyle ve yapıyı özetle.",
+   "model_text": "Good morning, everyone. Today I would like to talk about a challenge that affects all of us: how we manage our attention in a digital world. I will begin by outlining the problem, then examine three possible solutions, and finally suggest what each of us can do tomorrow.",
+   "target_phrases": [
+    "I would like to talk about",
+    "I will begin by",
+    "finally"
+   ],
+   "max_seconds": 75,
+   "topics": [
+    "iş",
+    "teknoloji"
+   ]
   }
  ],
  "writing": [
@@ -1256,6 +2272,80 @@
    "sample_answer": "It could be argued that social media has both strengthened and weakened democratic debate. To a certain extent, it has given ordinary citizens a platform that was once reserved for journalists and politicians, allowing marginalised voices to be heard. By contrast, algorithms tend to reward outrage rather than nuance, which encourages polarisation and the spread of misinformation. Furthermore, people increasingly consume news that confirms what they already believe, so genuine disagreement becomes rare. The solution, therefore, is probably not to abandon these platforms but to demand greater transparency from the companies that run them and better media literacy from their users.",
    "topics": [
     "teknoloji"
+   ]
+  },
+  {
+   "slug": "en-write-postcard",
+   "cefr_level": "A2",
+   "kind": "email",
+   "title_tr": "Tatilden mesaj",
+   "prompt_tr": "Arkadaşına tatilinden kısa bir mesaj yaz: neredesin, hava nasıl, ne yapıyorsun?",
+   "target_phrases": [
+    "I am in",
+    "the weather is",
+    "see you soon"
+   ],
+   "min_words": 26,
+   "max_words": 79,
+   "sample_answer": "Hi Ana! I am in Antalya with my family. The weather is hot and sunny. In the morning we swim in the sea, and in the afternoon we walk around the old town. The food is delicious! I miss you. See you soon, Elif",
+   "topics": [
+    "seyahat"
+   ]
+  },
+  {
+   "slug": "en-write-complaint-email",
+   "cefr_level": "B1",
+   "kind": "email",
+   "title_tr": "Şikâyet e-postası",
+   "prompt_tr": "Online aldığın bir ürün bozuk geldi. Mağazaya şikâyet e-postası yaz ve çözüm iste.",
+   "target_phrases": [
+    "I am writing to",
+    "unfortunately",
+    "I would appreciate"
+   ],
+   "min_words": 34,
+   "max_words": 103,
+   "sample_answer": "Dear Sir or Madam, I am writing to complain about a pair of headphones that I bought from your website last week. Unfortunately, the left speaker does not work. I contacted your customer service twice, but nobody replied. I would appreciate it if you could send me a replacement or refund my money. Yours faithfully, Can Yilmaz",
+   "topics": [
+    "iş",
+    "günlük hayat"
+   ]
+  },
+  {
+   "slug": "en-write-remote-learning",
+   "cefr_level": "B2",
+   "kind": "short_paragraph",
+   "title_tr": "Uzaktan eğitim",
+   "prompt_tr": "Uzaktan eğitimin avantaj ve dezavantajlarını tartışan dengeli bir paragraf yaz.",
+   "target_phrases": [
+    "on the one hand",
+    "however",
+    "in conclusion"
+   ],
+   "min_words": 44,
+   "max_words": 131,
+   "sample_answer": "Remote learning has transformed education, but it is not a perfect solution. On the one hand, it offers flexibility, and students who live far from a university can still attend classes. However, many learners find it hard to stay motivated without face-to-face contact, and those without a good internet connection are at a clear disadvantage. In conclusion, remote learning works best as a complement to classroom teaching, not a complete replacement for it.",
+   "topics": [
+    "kültür",
+    "teknoloji"
+   ]
+  },
+  {
+   "slug": "en-write-survey-summary",
+   "cefr_level": "C1",
+   "kind": "short_paragraph",
+   "title_tr": "Anket özeti",
+   "prompt_tr": "Bir ankette çalışanların %70’i esnek çalışma saatlerini tercih ediyor, %20’si ofis düzenini istiyor, %10’u kararsız. Bulguları nesnel bir paragrafta özetle.",
+   "target_phrases": [
+    "the survey reveals",
+    "by contrast",
+    "it follows that"
+   ],
+   "min_words": 40,
+   "max_words": 121,
+   "sample_answer": "The survey reveals a clear preference for flexibility: seventy per cent of employees favour flexible working hours, whereas only twenty per cent would rather keep a fixed office routine. A further ten per cent remain undecided. By contrast with earlier studies, the proportion of undecided respondents is notably small. It follows that management should seriously consider introducing flexible arrangements, while ensuring that team communication does not suffer.",
+   "topics": [
+    "iş"
    ]
   }
  ],
@@ -3327,6 +4417,1743 @@
    "example_tr": "Bundan kim sorumlu?",
    "cefr_level": "B1",
    "frequency_rank": 30
+  },
+  {
+   "lemma": "house",
+   "pos": "noun",
+   "meaning_tr": "ev",
+   "example": "We live in a small house.",
+   "example_tr": "Küçük bir evde yaşıyoruz.",
+   "cefr_level": "A1",
+   "frequency_rank": 31
+  },
+  {
+   "lemma": "car",
+   "pos": "noun",
+   "meaning_tr": "araba",
+   "example": "My father has a red car.",
+   "example_tr": "Babamın kırmızı bir arabası var.",
+   "cefr_level": "A1",
+   "frequency_rank": 32
+  },
+  {
+   "lemma": "book",
+   "pos": "noun",
+   "meaning_tr": "kitap",
+   "example": "This book is very interesting.",
+   "example_tr": "Bu kitap çok ilginç.",
+   "cefr_level": "A1",
+   "frequency_rank": 33
+  },
+  {
+   "lemma": "school",
+   "pos": "noun",
+   "meaning_tr": "okul",
+   "example": "The children go to school by bus.",
+   "example_tr": "Çocuklar okula otobüsle gider.",
+   "cefr_level": "A1",
+   "frequency_rank": 34
+  },
+  {
+   "lemma": "food",
+   "pos": "noun",
+   "meaning_tr": "yiyecek",
+   "example": "I like Turkish food.",
+   "example_tr": "Türk yemeklerini severim.",
+   "cefr_level": "A1",
+   "frequency_rank": 35
+  },
+  {
+   "lemma": "time",
+   "pos": "noun",
+   "meaning_tr": "zaman, saat",
+   "example": "What time is it?",
+   "example_tr": "Saat kaç?",
+   "cefr_level": "A1",
+   "frequency_rank": 36
+  },
+  {
+   "lemma": "day",
+   "pos": "noun",
+   "meaning_tr": "gün",
+   "example": "Today is a beautiful day.",
+   "example_tr": "Bugün güzel bir gün.",
+   "cefr_level": "A1",
+   "frequency_rank": 37
+  },
+  {
+   "lemma": "name",
+   "pos": "noun",
+   "meaning_tr": "isim, ad",
+   "example": "My name is Ali.",
+   "example_tr": "Adım Ali.",
+   "cefr_level": "A1",
+   "frequency_rank": 38
+  },
+  {
+   "lemma": "man",
+   "pos": "noun",
+   "meaning_tr": "adam, erkek",
+   "example": "The man is at the door.",
+   "example_tr": "Adam kapıda.",
+   "cefr_level": "A1",
+   "frequency_rank": 39
+  },
+  {
+   "lemma": "woman",
+   "pos": "noun",
+   "meaning_tr": "kadın",
+   "example": "That woman is my teacher.",
+   "example_tr": "O kadın benim öğretmenim.",
+   "cefr_level": "A1",
+   "frequency_rank": 40
+  },
+  {
+   "lemma": "child",
+   "pos": "noun",
+   "meaning_tr": "çocuk",
+   "example": "The child is playing in the garden.",
+   "example_tr": "Çocuk bahçede oynuyor.",
+   "cefr_level": "A1",
+   "frequency_rank": 41
+  },
+  {
+   "lemma": "city",
+   "pos": "noun",
+   "meaning_tr": "şehir",
+   "example": "Istanbul is a big city.",
+   "example_tr": "İstanbul büyük bir şehir.",
+   "cefr_level": "A1",
+   "frequency_rank": 42
+  },
+  {
+   "lemma": "money",
+   "pos": "noun",
+   "meaning_tr": "para",
+   "example": "I don't have much money.",
+   "example_tr": "Çok param yok.",
+   "cefr_level": "A1",
+   "frequency_rank": 43
+  },
+  {
+   "lemma": "phone",
+   "pos": "noun",
+   "meaning_tr": "telefon",
+   "example": "My phone is on the table.",
+   "example_tr": "Telefonum masanın üstünde.",
+   "cefr_level": "A1",
+   "frequency_rank": 44
+  },
+  {
+   "lemma": "room",
+   "pos": "noun",
+   "meaning_tr": "oda",
+   "example": "Her room is very clean.",
+   "example_tr": "Odası çok temiz.",
+   "cefr_level": "A1",
+   "frequency_rank": 45
+  },
+  {
+   "lemma": "go",
+   "pos": "verb",
+   "meaning_tr": "gitmek",
+   "example": "We go to work at eight.",
+   "example_tr": "Sekizde işe gideriz.",
+   "cefr_level": "A1",
+   "frequency_rank": 46
+  },
+  {
+   "lemma": "come",
+   "pos": "verb",
+   "meaning_tr": "gelmek",
+   "example": "Please come here.",
+   "example_tr": "Lütfen buraya gel.",
+   "cefr_level": "A1",
+   "frequency_rank": 47
+  },
+  {
+   "lemma": "have",
+   "pos": "verb",
+   "meaning_tr": "sahip olmak",
+   "example": "I have two brothers.",
+   "example_tr": "İki erkek kardeşim var.",
+   "cefr_level": "A1",
+   "frequency_rank": 48
+  },
+  {
+   "lemma": "like",
+   "pos": "verb",
+   "meaning_tr": "sevmek, hoşlanmak",
+   "example": "I like football.",
+   "example_tr": "Futbolu severim.",
+   "cefr_level": "A1",
+   "frequency_rank": 49
+  },
+  {
+   "lemma": "want",
+   "pos": "verb",
+   "meaning_tr": "istemek",
+   "example": "I want a glass of water.",
+   "example_tr": "Bir bardak su istiyorum.",
+   "cefr_level": "A1",
+   "frequency_rank": 50
+  },
+  {
+   "lemma": "live",
+   "pos": "verb",
+   "meaning_tr": "yaşamak, oturmak",
+   "example": "They live in Bursa.",
+   "example_tr": "Onlar Bursa'da yaşıyor.",
+   "cefr_level": "A1",
+   "frequency_rank": 51
+  },
+  {
+   "lemma": "see",
+   "pos": "verb",
+   "meaning_tr": "görmek",
+   "example": "I can see the sea.",
+   "example_tr": "Denizi görebiliyorum.",
+   "cefr_level": "A1",
+   "frequency_rank": 52
+  },
+  {
+   "lemma": "buy",
+   "pos": "verb",
+   "meaning_tr": "satın almak",
+   "example": "She buys bread every day.",
+   "example_tr": "O her gün ekmek alır.",
+   "cefr_level": "A1",
+   "frequency_rank": 53
+  },
+  {
+   "lemma": "speak",
+   "pos": "verb",
+   "meaning_tr": "konuşmak",
+   "example": "Do you speak English?",
+   "example_tr": "İngilizce konuşuyor musun?",
+   "cefr_level": "A1",
+   "frequency_rank": 54
+  },
+  {
+   "lemma": "read",
+   "pos": "verb",
+   "meaning_tr": "okumak",
+   "example": "I read the news in the morning.",
+   "example_tr": "Sabahları haberleri okurum.",
+   "cefr_level": "A1",
+   "frequency_rank": 55
+  },
+  {
+   "lemma": "write",
+   "pos": "verb",
+   "meaning_tr": "yazmak",
+   "example": "Please write your name here.",
+   "example_tr": "Lütfen adını buraya yaz.",
+   "cefr_level": "A1",
+   "frequency_rank": 56
+  },
+  {
+   "lemma": "drink",
+   "pos": "verb",
+   "meaning_tr": "içmek",
+   "example": "He drinks tea after dinner.",
+   "example_tr": "Akşam yemeğinden sonra çay içer.",
+   "cefr_level": "A1",
+   "frequency_rank": 57
+  },
+  {
+   "lemma": "open",
+   "pos": "verb",
+   "meaning_tr": "açmak",
+   "example": "Open the window, please.",
+   "example_tr": "Pencereyi açar mısın lütfen?",
+   "cefr_level": "A1",
+   "frequency_rank": 58
+  },
+  {
+   "lemma": "good",
+   "pos": "adj",
+   "meaning_tr": "iyi",
+   "example": "This is a good idea.",
+   "example_tr": "Bu iyi bir fikir.",
+   "cefr_level": "A1",
+   "frequency_rank": 59
+  },
+  {
+   "lemma": "new",
+   "pos": "adj",
+   "meaning_tr": "yeni",
+   "example": "I have a new bag.",
+   "example_tr": "Yeni bir çantam var.",
+   "cefr_level": "A1",
+   "frequency_rank": 60
+  },
+  {
+   "lemma": "small",
+   "pos": "adj",
+   "meaning_tr": "küçük",
+   "example": "The kitchen is small.",
+   "example_tr": "Mutfak küçük.",
+   "cefr_level": "A1",
+   "frequency_rank": 61
+  },
+  {
+   "lemma": "old",
+   "pos": "adj",
+   "meaning_tr": "yaşlı, eski",
+   "example": "My grandfather is old.",
+   "example_tr": "Dedem yaşlı.",
+   "cefr_level": "A1",
+   "frequency_rank": 62
+  },
+  {
+   "lemma": "hot",
+   "pos": "adj",
+   "meaning_tr": "sıcak",
+   "example": "The soup is very hot.",
+   "example_tr": "Çorba çok sıcak.",
+   "cefr_level": "A1",
+   "frequency_rank": 63
+  },
+  {
+   "lemma": "cold",
+   "pos": "adj",
+   "meaning_tr": "soğuk",
+   "example": "It is cold in winter.",
+   "example_tr": "Kışın hava soğuktur.",
+   "cefr_level": "A1",
+   "frequency_rank": 64
+  },
+  {
+   "lemma": "easy",
+   "pos": "adj",
+   "meaning_tr": "kolay",
+   "example": "The test was easy.",
+   "example_tr": "Sınav kolaydı.",
+   "cefr_level": "A1",
+   "frequency_rank": 65
+  },
+  {
+   "lemma": "difficult",
+   "pos": "adj",
+   "meaning_tr": "zor",
+   "example": "German is difficult for me.",
+   "example_tr": "Almanca benim için zor.",
+   "cefr_level": "A1",
+   "frequency_rank": 66
+  },
+  {
+   "lemma": "here",
+   "pos": "adv",
+   "meaning_tr": "burada",
+   "example": "I am here.",
+   "example_tr": "Buradayım.",
+   "cefr_level": "A1",
+   "frequency_rank": 67
+  },
+  {
+   "lemma": "now",
+   "pos": "adv",
+   "meaning_tr": "şimdi",
+   "example": "I am busy now.",
+   "example_tr": "Şu an meşgulüm.",
+   "cefr_level": "A1",
+   "frequency_rank": 68
+  },
+  {
+   "lemma": "very",
+   "pos": "adv",
+   "meaning_tr": "çok",
+   "example": "The park is very beautiful.",
+   "example_tr": "Park çok güzel.",
+   "cefr_level": "A1",
+   "frequency_rank": 69
+  },
+  {
+   "lemma": "neighbour",
+   "pos": "noun",
+   "meaning_tr": "komşu",
+   "example": "Our neighbour is very friendly.",
+   "example_tr": "Komşumuz çok cana yakın.",
+   "cefr_level": "A2",
+   "frequency_rank": 70
+  },
+  {
+   "lemma": "kitchen",
+   "pos": "noun",
+   "meaning_tr": "mutfak",
+   "example": "She is cooking in the kitchen.",
+   "example_tr": "O mutfakta yemek yapıyor.",
+   "cefr_level": "A2",
+   "frequency_rank": 71
+  },
+  {
+   "lemma": "holiday",
+   "pos": "noun",
+   "meaning_tr": "tatil",
+   "example": "We had a great holiday in Antalya.",
+   "example_tr": "Antalya'da harika bir tatil geçirdik.",
+   "cefr_level": "A2",
+   "frequency_rank": 72
+  },
+  {
+   "lemma": "hospital",
+   "pos": "noun",
+   "meaning_tr": "hastane",
+   "example": "He works in a hospital.",
+   "example_tr": "O bir hastanede çalışıyor.",
+   "cefr_level": "A2",
+   "frequency_rank": 73
+  },
+  {
+   "lemma": "shop",
+   "pos": "noun",
+   "meaning_tr": "dükkân, mağaza",
+   "example": "The shop closes at nine.",
+   "example_tr": "Dükkân dokuzda kapanır.",
+   "cefr_level": "A2",
+   "frequency_rank": 74
+  },
+  {
+   "lemma": "journey",
+   "pos": "noun",
+   "meaning_tr": "yolculuk",
+   "example": "The journey took three hours.",
+   "example_tr": "Yolculuk üç saat sürdü.",
+   "cefr_level": "A2",
+   "frequency_rank": 75
+  },
+  {
+   "lemma": "message",
+   "pos": "noun",
+   "meaning_tr": "mesaj",
+   "example": "I sent you a message.",
+   "example_tr": "Sana bir mesaj gönderdim.",
+   "cefr_level": "A2",
+   "frequency_rank": 76
+  },
+  {
+   "lemma": "problem",
+   "pos": "noun",
+   "meaning_tr": "sorun",
+   "example": "We have a small problem.",
+   "example_tr": "Küçük bir sorunumuz var.",
+   "cefr_level": "A2",
+   "frequency_rank": 77
+  },
+  {
+   "lemma": "price",
+   "pos": "noun",
+   "meaning_tr": "fiyat",
+   "example": "The price is too high.",
+   "example_tr": "Fiyat çok yüksek.",
+   "cefr_level": "A2",
+   "frequency_rank": 78
+  },
+  {
+   "lemma": "order",
+   "pos": "verb",
+   "meaning_tr": "sipariş etmek",
+   "example": "I'd like to order a pizza.",
+   "example_tr": "Bir pizza sipariş etmek istiyorum.",
+   "cefr_level": "A2",
+   "frequency_rank": 79
+  },
+  {
+   "lemma": "carry",
+   "pos": "verb",
+   "meaning_tr": "taşımak",
+   "example": "Can you carry this box?",
+   "example_tr": "Bu kutuyu taşıyabilir misin?",
+   "cefr_level": "A2",
+   "frequency_rank": 80
+  },
+  {
+   "lemma": "choose",
+   "pos": "verb",
+   "meaning_tr": "seçmek",
+   "example": "It is hard to choose a colour.",
+   "example_tr": "Bir renk seçmek zor.",
+   "cefr_level": "A2",
+   "frequency_rank": 81
+  },
+  {
+   "lemma": "forget",
+   "pos": "verb",
+   "meaning_tr": "unutmak",
+   "example": "Don't forget your keys.",
+   "example_tr": "Anahtarlarını unutma.",
+   "cefr_level": "A2",
+   "frequency_rank": 82
+  },
+  {
+   "lemma": "remember",
+   "pos": "verb",
+   "meaning_tr": "hatırlamak",
+   "example": "I can't remember his name.",
+   "example_tr": "Adını hatırlayamıyorum.",
+   "cefr_level": "A2",
+   "frequency_rank": 83
+  },
+  {
+   "lemma": "wait",
+   "pos": "verb",
+   "meaning_tr": "beklemek",
+   "example": "We are waiting for the bus.",
+   "example_tr": "Otobüsü bekliyoruz.",
+   "cefr_level": "A2",
+   "frequency_rank": 84
+  },
+  {
+   "lemma": "worry",
+   "pos": "verb",
+   "meaning_tr": "endişelenmek",
+   "example": "Don't worry, it's fine.",
+   "example_tr": "Endişelenme, sorun yok.",
+   "cefr_level": "A2",
+   "frequency_rank": 85
+  },
+  {
+   "lemma": "visit",
+   "pos": "verb",
+   "meaning_tr": "ziyaret etmek",
+   "example": "We visit my grandmother on Sundays.",
+   "example_tr": "Pazar günleri babaannemi ziyaret ederiz.",
+   "cefr_level": "A2",
+   "frequency_rank": 86
+  },
+  {
+   "lemma": "learn",
+   "pos": "verb",
+   "meaning_tr": "öğrenmek",
+   "example": "She is learning to drive.",
+   "example_tr": "O araba kullanmayı öğreniyor.",
+   "cefr_level": "A2",
+   "frequency_rank": 87
+  },
+  {
+   "lemma": "teach",
+   "pos": "verb",
+   "meaning_tr": "öğretmek",
+   "example": "He teaches maths at a school.",
+   "example_tr": "O bir okulda matematik öğretiyor.",
+   "cefr_level": "A2",
+   "frequency_rank": 88
+  },
+  {
+   "lemma": "wear",
+   "pos": "verb",
+   "meaning_tr": "giymek",
+   "example": "She wears a blue coat.",
+   "example_tr": "O mavi bir palto giyiyor.",
+   "cefr_level": "A2",
+   "frequency_rank": 89
+  },
+  {
+   "lemma": "pay",
+   "pos": "verb",
+   "meaning_tr": "ödemek",
+   "example": "Can I pay by card?",
+   "example_tr": "Kartla ödeyebilir miyim?",
+   "cefr_level": "A2",
+   "frequency_rank": 90
+  },
+  {
+   "lemma": "cook",
+   "pos": "verb",
+   "meaning_tr": "yemek pişirmek",
+   "example": "I cook dinner for my family.",
+   "example_tr": "Ailem için akşam yemeği pişiririm.",
+   "cefr_level": "A2",
+   "frequency_rank": 91
+  },
+  {
+   "lemma": "tired",
+   "pos": "adj",
+   "meaning_tr": "yorgun",
+   "example": "I am very tired today.",
+   "example_tr": "Bugün çok yorgunum.",
+   "cefr_level": "A2",
+   "frequency_rank": 92
+  },
+  {
+   "lemma": "busy",
+   "pos": "adj",
+   "meaning_tr": "meşgul",
+   "example": "The doctor is busy now.",
+   "example_tr": "Doktor şu an meşgul.",
+   "cefr_level": "A2",
+   "frequency_rank": 93
+  },
+  {
+   "lemma": "free",
+   "pos": "adj",
+   "meaning_tr": "boş, ücretsiz",
+   "example": "Are you free on Friday?",
+   "example_tr": "Cuma günü boş musun?",
+   "cefr_level": "A2",
+   "frequency_rank": 94
+  },
+  {
+   "lemma": "ready",
+   "pos": "adj",
+   "meaning_tr": "hazır",
+   "example": "Dinner is ready.",
+   "example_tr": "Akşam yemeği hazır.",
+   "cefr_level": "A2",
+   "frequency_rank": 95
+  },
+  {
+   "lemma": "dangerous",
+   "pos": "adj",
+   "meaning_tr": "tehlikeli",
+   "example": "The road is dangerous at night.",
+   "example_tr": "Yol geceleri tehlikelidir.",
+   "cefr_level": "A2",
+   "frequency_rank": 96
+  },
+  {
+   "lemma": "famous",
+   "pos": "adj",
+   "meaning_tr": "ünlü",
+   "example": "This singer is very famous.",
+   "example_tr": "Bu şarkıcı çok ünlü.",
+   "cefr_level": "A2",
+   "frequency_rank": 97
+  },
+  {
+   "lemma": "quiet",
+   "pos": "adj",
+   "meaning_tr": "sessiz",
+   "example": "The library is quiet.",
+   "example_tr": "Kütüphane sessiz.",
+   "cefr_level": "A2",
+   "frequency_rank": 98
+  },
+  {
+   "lemma": "sometimes",
+   "pos": "adv",
+   "meaning_tr": "bazen",
+   "example": "I sometimes walk to work.",
+   "example_tr": "Bazen işe yürüyerek giderim.",
+   "cefr_level": "A2",
+   "frequency_rank": 99
+  },
+  {
+   "lemma": "usually",
+   "pos": "adv",
+   "meaning_tr": "genellikle",
+   "example": "I usually get up at seven.",
+   "example_tr": "Genellikle yedide kalkarım.",
+   "cefr_level": "A2",
+   "frequency_rank": 100
+  },
+  {
+   "lemma": "never",
+   "pos": "adv",
+   "meaning_tr": "asla, hiçbir zaman",
+   "example": "He never eats meat.",
+   "example_tr": "O hiç et yemez.",
+   "cefr_level": "A2",
+   "frequency_rank": 101
+  },
+  {
+   "lemma": "early",
+   "pos": "adv",
+   "meaning_tr": "erken",
+   "example": "We arrived early.",
+   "example_tr": "Erken geldik.",
+   "cefr_level": "A2",
+   "frequency_rank": 102
+  },
+  {
+   "lemma": "late",
+   "pos": "adv",
+   "meaning_tr": "geç",
+   "example": "Sorry, I'm late.",
+   "example_tr": "Üzgünüm, geç kaldım.",
+   "cefr_level": "A2",
+   "frequency_rank": 103
+  },
+  {
+   "lemma": "together",
+   "pos": "adv",
+   "meaning_tr": "birlikte",
+   "example": "We study together.",
+   "example_tr": "Birlikte çalışıyoruz.",
+   "cefr_level": "A2",
+   "frequency_rank": 104
+  },
+  {
+   "lemma": "about",
+   "pos": "prep",
+   "meaning_tr": "hakkında",
+   "example": "We talked about the film.",
+   "example_tr": "Film hakkında konuştuk.",
+   "cefr_level": "A2",
+   "frequency_rank": 105
+  },
+  {
+   "lemma": "between",
+   "pos": "prep",
+   "meaning_tr": "arasında",
+   "example": "The bank is between the school and the park.",
+   "example_tr": "Banka okulla park arasında.",
+   "cefr_level": "A2",
+   "frequency_rank": 106
+  },
+  {
+   "lemma": "because",
+   "pos": "conj",
+   "meaning_tr": "çünkü",
+   "example": "I stayed home because I was ill.",
+   "example_tr": "Hasta olduğum için evde kaldım.",
+   "cefr_level": "A2",
+   "frequency_rank": 107
+  },
+  {
+   "lemma": "advice",
+   "pos": "noun",
+   "meaning_tr": "tavsiye",
+   "example": "She gave me some useful advice.",
+   "example_tr": "Bana bazı yararlı tavsiyeler verdi.",
+   "cefr_level": "B1",
+   "frequency_rank": 108
+  },
+  {
+   "lemma": "article",
+   "pos": "noun",
+   "meaning_tr": "makale",
+   "example": "I read an interesting article online.",
+   "example_tr": "İnternette ilginç bir makale okudum.",
+   "cefr_level": "B1",
+   "frequency_rank": 109
+  },
+  {
+   "lemma": "attitude",
+   "pos": "noun",
+   "meaning_tr": "tutum, davranış",
+   "example": "His attitude to work is positive.",
+   "example_tr": "İşe karşı tutumu olumlu.",
+   "cefr_level": "B1",
+   "frequency_rank": 110
+  },
+  {
+   "lemma": "behaviour",
+   "pos": "noun",
+   "meaning_tr": "davranış",
+   "example": "The teacher praised the children's behaviour.",
+   "example_tr": "Öğretmen çocukların davranışlarını övdü.",
+   "cefr_level": "B1",
+   "frequency_rank": 111
+  },
+  {
+   "lemma": "career",
+   "pos": "noun",
+   "meaning_tr": "kariyer",
+   "example": "She wants a career in medicine.",
+   "example_tr": "O tıp alanında kariyer yapmak istiyor.",
+   "cefr_level": "B1",
+   "frequency_rank": 112
+  },
+  {
+   "lemma": "challenge",
+   "pos": "noun",
+   "meaning_tr": "zorluk, meydan okuma",
+   "example": "Learning a language is a big challenge.",
+   "example_tr": "Dil öğrenmek büyük bir zorluk.",
+   "cefr_level": "B1",
+   "frequency_rank": 113
+  },
+  {
+   "lemma": "community",
+   "pos": "noun",
+   "meaning_tr": "topluluk",
+   "example": "The community built a new playground.",
+   "example_tr": "Topluluk yeni bir oyun parkı yaptı.",
+   "cefr_level": "B1",
+   "frequency_rank": 114
+  },
+  {
+   "lemma": "confidence",
+   "pos": "noun",
+   "meaning_tr": "özgüven",
+   "example": "Speaking practice builds confidence.",
+   "example_tr": "Konuşma pratiği özgüven kazandırır.",
+   "cefr_level": "B1",
+   "frequency_rank": 115
+  },
+  {
+   "lemma": "deadline",
+   "pos": "noun",
+   "meaning_tr": "son teslim tarihi",
+   "example": "The deadline is next Friday.",
+   "example_tr": "Son teslim tarihi gelecek Cuma.",
+   "cefr_level": "B1",
+   "frequency_rank": 116
+  },
+  {
+   "lemma": "decision",
+   "pos": "noun",
+   "meaning_tr": "karar",
+   "example": "It was a difficult decision.",
+   "example_tr": "Zor bir karardı.",
+   "cefr_level": "B1",
+   "frequency_rank": 117
+  },
+  {
+   "lemma": "effort",
+   "pos": "noun",
+   "meaning_tr": "çaba",
+   "example": "He made a great effort to learn.",
+   "example_tr": "Öğrenmek için büyük çaba gösterdi.",
+   "cefr_level": "B1",
+   "frequency_rank": 118
+  },
+  {
+   "lemma": "income",
+   "pos": "noun",
+   "meaning_tr": "gelir",
+   "example": "Their income is quite low.",
+   "example_tr": "Gelirleri oldukça düşük.",
+   "cefr_level": "B1",
+   "frequency_rank": 119
+  },
+  {
+   "lemma": "knowledge",
+   "pos": "noun",
+   "meaning_tr": "bilgi",
+   "example": "Her knowledge of history is impressive.",
+   "example_tr": "Tarih bilgisi etkileyici.",
+   "cefr_level": "B1",
+   "frequency_rank": 120
+  },
+  {
+   "lemma": "neighbourhood",
+   "pos": "noun",
+   "meaning_tr": "mahalle",
+   "example": "It is a quiet neighbourhood.",
+   "example_tr": "Sakin bir mahalle.",
+   "cefr_level": "B1",
+   "frequency_rank": 121
+  },
+  {
+   "lemma": "nowadays",
+   "pos": "adv",
+   "meaning_tr": "bugünlerde",
+   "example": "Nowadays most people use smartphones.",
+   "example_tr": "Bugünlerde çoğu insan akıllı telefon kullanıyor.",
+   "cefr_level": "B1",
+   "frequency_rank": 122
+  },
+  {
+   "lemma": "pressure",
+   "pos": "noun",
+   "meaning_tr": "baskı",
+   "example": "There is a lot of pressure at work.",
+   "example_tr": "İşte çok baskı var.",
+   "cefr_level": "B1",
+   "frequency_rank": 123
+  },
+  {
+   "lemma": "research",
+   "pos": "noun",
+   "meaning_tr": "araştırma",
+   "example": "The research shows clear results.",
+   "example_tr": "Araştırma net sonuçlar gösteriyor.",
+   "cefr_level": "B1",
+   "frequency_rank": 124
+  },
+  {
+   "lemma": "salary",
+   "pos": "noun",
+   "meaning_tr": "maaş",
+   "example": "He got a higher salary.",
+   "example_tr": "Maaşına zam aldı.",
+   "cefr_level": "B1",
+   "frequency_rank": 125
+  },
+  {
+   "lemma": "society",
+   "pos": "noun",
+   "meaning_tr": "toplum",
+   "example": "Society is changing quickly.",
+   "example_tr": "Toplum hızla değişiyor.",
+   "cefr_level": "B1",
+   "frequency_rank": 126
+  },
+  {
+   "lemma": "skill",
+   "pos": "noun",
+   "meaning_tr": "beceri",
+   "example": "Writing is an important skill.",
+   "example_tr": "Yazmak önemli bir beceridir.",
+   "cefr_level": "B1",
+   "frequency_rank": 127
+  },
+  {
+   "lemma": "apply",
+   "pos": "verb",
+   "meaning_tr": "başvurmak",
+   "example": "I want to apply for this job.",
+   "example_tr": "Bu işe başvurmak istiyorum.",
+   "cefr_level": "B1",
+   "frequency_rank": 128
+  },
+  {
+   "lemma": "arrange",
+   "pos": "verb",
+   "meaning_tr": "ayarlamak, düzenlemek",
+   "example": "Can you arrange a meeting for Monday?",
+   "example_tr": "Pazartesi için bir toplantı ayarlayabilir misin?",
+   "cefr_level": "B1",
+   "frequency_rank": 129
+  },
+  {
+   "lemma": "complain",
+   "pos": "verb",
+   "meaning_tr": "şikâyet etmek",
+   "example": "They complained about the noise.",
+   "example_tr": "Gürültüden şikâyet ettiler.",
+   "cefr_level": "B1",
+   "frequency_rank": 130
+  },
+  {
+   "lemma": "depend",
+   "pos": "verb",
+   "meaning_tr": "bağlı olmak",
+   "example": "It depends on the weather.",
+   "example_tr": "Hava durumuna bağlı.",
+   "cefr_level": "B1",
+   "frequency_rank": 131
+  },
+  {
+   "lemma": "describe",
+   "pos": "verb",
+   "meaning_tr": "tarif etmek, betimlemek",
+   "example": "Can you describe the man?",
+   "example_tr": "Adamı tarif edebilir misin?",
+   "cefr_level": "B1",
+   "frequency_rank": 132
+  },
+  {
+   "lemma": "develop",
+   "pos": "verb",
+   "meaning_tr": "geliştirmek, gelişmek",
+   "example": "The company develops new software.",
+   "example_tr": "Şirket yeni yazılımlar geliştiriyor.",
+   "cefr_level": "B1",
+   "frequency_rank": 133
+  },
+  {
+   "lemma": "discuss",
+   "pos": "verb",
+   "meaning_tr": "tartışmak, görüşmek",
+   "example": "We discussed the plan for an hour.",
+   "example_tr": "Planı bir saat boyunca görüştük.",
+   "cefr_level": "B1",
+   "frequency_rank": 134
+  },
+  {
+   "lemma": "earn",
+   "pos": "verb",
+   "meaning_tr": "kazanmak (para)",
+   "example": "She earns good money as a nurse.",
+   "example_tr": "Hemşire olarak iyi para kazanıyor.",
+   "cefr_level": "B1",
+   "frequency_rank": 135
+  },
+  {
+   "lemma": "encourage",
+   "pos": "verb",
+   "meaning_tr": "cesaretlendirmek",
+   "example": "My teacher encouraged me to continue.",
+   "example_tr": "Öğretmenim devam etmem için beni cesaretlendirdi.",
+   "cefr_level": "B1",
+   "frequency_rank": 136
+  },
+  {
+   "lemma": "manage to",
+   "pos": "verb",
+   "meaning_tr": "başarmak",
+   "example": "I managed to finish on time.",
+   "example_tr": "Zamanında bitirmeyi başardım.",
+   "cefr_level": "B1",
+   "frequency_rank": 137
+  },
+  {
+   "lemma": "notice",
+   "pos": "verb",
+   "meaning_tr": "fark etmek",
+   "example": "I didn't notice the mistake.",
+   "example_tr": "Hatayı fark etmedim.",
+   "cefr_level": "B1",
+   "frequency_rank": 138
+  },
+  {
+   "lemma": "prefer",
+   "pos": "verb",
+   "meaning_tr": "tercih etmek",
+   "example": "I prefer tea to coffee.",
+   "example_tr": "Çayı kahveye tercih ederim.",
+   "cefr_level": "B1",
+   "frequency_rank": 139
+  },
+  {
+   "lemma": "realise",
+   "pos": "verb",
+   "meaning_tr": "fark etmek, anlamak",
+   "example": "I realised I had no money.",
+   "example_tr": "Param olmadığını fark ettim.",
+   "cefr_level": "B1",
+   "frequency_rank": 140
+  },
+  {
+   "lemma": "reduce",
+   "pos": "verb",
+   "meaning_tr": "azaltmak",
+   "example": "We must reduce the cost.",
+   "example_tr": "Maliyeti azaltmalıyız.",
+   "cefr_level": "B1",
+   "frequency_rank": 141
+  },
+  {
+   "lemma": "solve",
+   "pos": "verb",
+   "meaning_tr": "çözmek",
+   "example": "She solved the problem quickly.",
+   "example_tr": "Sorunu hızlıca çözdü.",
+   "cefr_level": "B1",
+   "frequency_rank": 142
+  },
+  {
+   "lemma": "support",
+   "pos": "verb",
+   "meaning_tr": "desteklemek",
+   "example": "My family supports my decision.",
+   "example_tr": "Ailem kararımı destekliyor.",
+   "cefr_level": "B1",
+   "frequency_rank": 143
+  },
+  {
+   "lemma": "afraid",
+   "pos": "adj",
+   "meaning_tr": "korkmuş",
+   "example": "I am afraid of dogs.",
+   "example_tr": "Köpeklerden korkarım.",
+   "cefr_level": "B1",
+   "frequency_rank": 144
+  },
+  {
+   "lemma": "embarrassed",
+   "pos": "adj",
+   "meaning_tr": "utanmış",
+   "example": "He felt embarrassed after the mistake.",
+   "example_tr": "Hatadan sonra utandı.",
+   "cefr_level": "B1",
+   "frequency_rank": 145
+  },
+  {
+   "lemma": "available",
+   "pos": "adj",
+   "meaning_tr": "müsait, mevcut",
+   "example": "Is this seat available?",
+   "example_tr": "Bu koltuk boş mu?",
+   "cefr_level": "B1",
+   "frequency_rank": 146
+  },
+  {
+   "lemma": "polite",
+   "pos": "adj",
+   "meaning_tr": "kibar",
+   "example": "The waiter was very polite.",
+   "example_tr": "Garson çok kibardı.",
+   "cefr_level": "B1",
+   "frequency_rank": 147
+  },
+  {
+   "lemma": "assumption",
+   "pos": "noun",
+   "meaning_tr": "varsayım",
+   "example": "The plan rests on a wrong assumption.",
+   "example_tr": "Plan yanlış bir varsayıma dayanıyor.",
+   "cefr_level": "B2",
+   "frequency_rank": 148
+  },
+  {
+   "lemma": "awareness",
+   "pos": "noun",
+   "meaning_tr": "farkındalık",
+   "example": "The campaign raised awareness of recycling.",
+   "example_tr": "Kampanya geri dönüşüm farkındalığını artırdı.",
+   "cefr_level": "B2",
+   "frequency_rank": 149
+  },
+  {
+   "lemma": "benefit",
+   "pos": "noun",
+   "meaning_tr": "fayda, yarar",
+   "example": "Exercise has many health benefits.",
+   "example_tr": "Egzersizin birçok sağlık faydası var.",
+   "cefr_level": "B2",
+   "frequency_rank": 150
+  },
+  {
+   "lemma": "concern",
+   "pos": "noun",
+   "meaning_tr": "endişe, kaygı",
+   "example": "There is growing concern about prices.",
+   "example_tr": "Fiyatlar konusunda artan bir endişe var.",
+   "cefr_level": "B2",
+   "frequency_rank": 151
+  },
+  {
+   "lemma": "consequence",
+   "pos": "noun",
+   "meaning_tr": "sonuç, netice",
+   "example": "Every decision has consequences.",
+   "example_tr": "Her kararın sonuçları vardır.",
+   "cefr_level": "B2",
+   "frequency_rank": 152
+  },
+  {
+   "lemma": "contribution",
+   "pos": "noun",
+   "meaning_tr": "katkı",
+   "example": "Her contribution to the project was vital.",
+   "example_tr": "Projeye katkısı hayati önemdeydi.",
+   "cefr_level": "B2",
+   "frequency_rank": 153
+  },
+  {
+   "lemma": "debate",
+   "pos": "noun",
+   "meaning_tr": "tartışma, münazara",
+   "example": "There is a heated debate about the new law.",
+   "example_tr": "Yeni yasa hakkında hararetli bir tartışma var.",
+   "cefr_level": "B2",
+   "frequency_rank": 154
+  },
+  {
+   "lemma": "distinction",
+   "pos": "noun",
+   "meaning_tr": "ayrım",
+   "example": "We must make a distinction between fact and opinion.",
+   "example_tr": "Gerçek ile görüş arasında ayrım yapmalıyız.",
+   "cefr_level": "B2",
+   "frequency_rank": 155
+  },
+  {
+   "lemma": "evidence",
+   "pos": "noun",
+   "meaning_tr": "kanıt",
+   "example": "There is no evidence for this claim.",
+   "example_tr": "Bu iddiayı destekleyen kanıt yok.",
+   "cefr_level": "B2",
+   "frequency_rank": 156
+  },
+  {
+   "lemma": "factor",
+   "pos": "noun",
+   "meaning_tr": "etken, faktör",
+   "example": "Price is an important factor.",
+   "example_tr": "Fiyat önemli bir etkendir.",
+   "cefr_level": "B2",
+   "frequency_rank": 157
+  },
+  {
+   "lemma": "impact",
+   "pos": "noun",
+   "meaning_tr": "etki",
+   "example": "Social media has a big impact on teenagers.",
+   "example_tr": "Sosyal medyanın gençler üzerinde büyük etkisi var.",
+   "cefr_level": "B2",
+   "frequency_rank": 158
+  },
+  {
+   "lemma": "priority",
+   "pos": "noun",
+   "meaning_tr": "öncelik",
+   "example": "Safety is our first priority.",
+   "example_tr": "Güvenlik birinci önceliğimiz.",
+   "cefr_level": "B2",
+   "frequency_rank": 159
+  },
+  {
+   "lemma": "reputation",
+   "pos": "noun",
+   "meaning_tr": "itibar",
+   "example": "The firm has an excellent reputation.",
+   "example_tr": "Şirketin mükemmel bir itibarı var.",
+   "cefr_level": "B2",
+   "frequency_rank": 160
+  },
+  {
+   "lemma": "shortage",
+   "pos": "noun",
+   "meaning_tr": "kıtlık, eksiklik",
+   "example": "There is a shortage of nurses.",
+   "example_tr": "Hemşire sıkıntısı var.",
+   "cefr_level": "B2",
+   "frequency_rank": 161
+  },
+  {
+   "lemma": "trend",
+   "pos": "noun",
+   "meaning_tr": "eğilim",
+   "example": "There is a trend towards remote work.",
+   "example_tr": "Uzaktan çalışmaya doğru bir eğilim var.",
+   "cefr_level": "B2",
+   "frequency_rank": 162
+  },
+  {
+   "lemma": "analyse",
+   "pos": "verb",
+   "meaning_tr": "analiz etmek",
+   "example": "We need to analyse the data first.",
+   "example_tr": "Önce verileri analiz etmeliyiz.",
+   "cefr_level": "B2",
+   "frequency_rank": 163
+  },
+  {
+   "lemma": "assume",
+   "pos": "verb",
+   "meaning_tr": "varsaymak",
+   "example": "I assumed you had already left.",
+   "example_tr": "Çoktan gittiğini varsaydım.",
+   "cefr_level": "B2",
+   "frequency_rank": 164
+  },
+  {
+   "lemma": "bring up",
+   "pos": "verb",
+   "meaning_tr": "gündeme getirmek",
+   "example": "She brought up the subject at the meeting.",
+   "example_tr": "Konuyu toplantıda gündeme getirdi.",
+   "cefr_level": "B2",
+   "frequency_rank": 165
+  },
+  {
+   "lemma": "cope with",
+   "pos": "verb",
+   "meaning_tr": "başa çıkmak",
+   "example": "How do you cope with so much stress?",
+   "example_tr": "Bu kadar stresle nasıl başa çıkıyorsun?",
+   "cefr_level": "B2",
+   "frequency_rank": 166
+  },
+  {
+   "lemma": "criticise",
+   "pos": "verb",
+   "meaning_tr": "eleştirmek",
+   "example": "It is easy to criticise others.",
+   "example_tr": "Başkalarını eleştirmek kolaydır.",
+   "cefr_level": "B2",
+   "frequency_rank": 167
+  },
+  {
+   "lemma": "deal with",
+   "pos": "verb",
+   "meaning_tr": "ilgilenmek, halletmek",
+   "example": "I'll deal with the complaint.",
+   "example_tr": "Şikâyetle ben ilgilenirim.",
+   "cefr_level": "B2",
+   "frequency_rank": 168
+  },
+  {
+   "lemma": "emphasise",
+   "pos": "verb",
+   "meaning_tr": "vurgulamak",
+   "example": "The speaker emphasised the importance of sleep.",
+   "example_tr": "Konuşmacı uykunun önemini vurguladı.",
+   "cefr_level": "B2",
+   "frequency_rank": 169
+  },
+  {
+   "lemma": "estimate",
+   "pos": "verb",
+   "meaning_tr": "tahmin etmek",
+   "example": "They estimate the cost at ten thousand euros.",
+   "example_tr": "Maliyetin on bin avro olduğunu tahmin ediyorlar.",
+   "cefr_level": "B2",
+   "frequency_rank": 170
+  },
+  {
+   "lemma": "indicate",
+   "pos": "verb",
+   "meaning_tr": "göstermek, işaret etmek",
+   "example": "The results indicate a clear improvement.",
+   "example_tr": "Sonuçlar net bir iyileşme gösteriyor.",
+   "cefr_level": "B2",
+   "frequency_rank": 171
+  },
+  {
+   "lemma": "insist",
+   "pos": "verb",
+   "meaning_tr": "ısrar etmek",
+   "example": "He insisted on paying for dinner.",
+   "example_tr": "Akşam yemeğini ödemekte ısrar etti.",
+   "cefr_level": "B2",
+   "frequency_rank": 172
+  },
+  {
+   "lemma": "maintain",
+   "pos": "verb",
+   "meaning_tr": "sürdürmek, korumak",
+   "example": "It is hard to maintain a healthy routine.",
+   "example_tr": "Sağlıklı bir rutini sürdürmek zordur.",
+   "cefr_level": "B2",
+   "frequency_rank": 173
+  },
+  {
+   "lemma": "overcome",
+   "pos": "verb",
+   "meaning_tr": "üstesinden gelmek",
+   "example": "She overcame her fear of flying.",
+   "example_tr": "Uçma korkusunun üstesinden geldi.",
+   "cefr_level": "B2",
+   "frequency_rank": 174
+  },
+  {
+   "lemma": "promote",
+   "pos": "verb",
+   "meaning_tr": "teşvik etmek, tanıtmak",
+   "example": "The campaign promotes healthy eating.",
+   "example_tr": "Kampanya sağlıklı beslenmeyi teşvik ediyor.",
+   "cefr_level": "B2",
+   "frequency_rank": 175
+  },
+  {
+   "lemma": "reject",
+   "pos": "verb",
+   "meaning_tr": "reddetmek",
+   "example": "They rejected my application.",
+   "example_tr": "Başvurumu reddettiler.",
+   "cefr_level": "B2",
+   "frequency_rank": 176
+  },
+  {
+   "lemma": "tackle",
+   "pos": "verb",
+   "meaning_tr": "ele almak, üstesinden gelmek",
+   "example": "The government must tackle unemployment.",
+   "example_tr": "Hükümet işsizlikle mücadele etmeli.",
+   "cefr_level": "B2",
+   "frequency_rank": 177
+  },
+  {
+   "lemma": "valid",
+   "pos": "adj",
+   "meaning_tr": "geçerli",
+   "example": "Your passport is no longer valid.",
+   "example_tr": "Pasaportunun süresi artık geçerli değil.",
+   "cefr_level": "B2",
+   "frequency_rank": 178
+  },
+  {
+   "lemma": "obvious",
+   "pos": "adj",
+   "meaning_tr": "aşikâr, bariz",
+   "example": "The answer is quite obvious.",
+   "example_tr": "Cevap oldukça bariz.",
+   "cefr_level": "B2",
+   "frequency_rank": 179
+  },
+  {
+   "lemma": "reluctant",
+   "pos": "adj",
+   "meaning_tr": "isteksiz",
+   "example": "He was reluctant to speak.",
+   "example_tr": "Konuşmaya isteksizdi.",
+   "cefr_level": "B2",
+   "frequency_rank": 180
+  },
+  {
+   "lemma": "sufficient",
+   "pos": "adj",
+   "meaning_tr": "yeterli",
+   "example": "We don't have sufficient time.",
+   "example_tr": "Yeterli zamanımız yok.",
+   "cefr_level": "B2",
+   "frequency_rank": 181
+  },
+  {
+   "lemma": "widespread",
+   "pos": "adj",
+   "meaning_tr": "yaygın",
+   "example": "Flu is widespread in winter.",
+   "example_tr": "Grip kışın yaygındır.",
+   "cefr_level": "B2",
+   "frequency_rank": 182
+  },
+  {
+   "lemma": "significant",
+   "pos": "adj",
+   "meaning_tr": "önemli, kayda değer",
+   "example": "There was a significant increase in sales.",
+   "example_tr": "Satışlarda kayda değer bir artış oldu.",
+   "cefr_level": "B2",
+   "frequency_rank": 183
+  },
+  {
+   "lemma": "nevertheless",
+   "pos": "adv",
+   "meaning_tr": "yine de",
+   "example": "It was raining; nevertheless, we went out.",
+   "example_tr": "Yağmur yağıyordu; yine de dışarı çıktık.",
+   "cefr_level": "B2",
+   "frequency_rank": 184
+  },
+  {
+   "lemma": "whereas",
+   "pos": "conj",
+   "meaning_tr": "oysa, -ken (karşıtlık)",
+   "example": "He likes tea, whereas she prefers coffee.",
+   "example_tr": "O çayı sever, oysa o kahveyi tercih eder.",
+   "cefr_level": "B2",
+   "frequency_rank": 185
+  },
+  {
+   "lemma": "ambiguity",
+   "pos": "noun",
+   "meaning_tr": "belirsizlik, çift anlamlılık",
+   "example": "The contract's ambiguity led to a dispute.",
+   "example_tr": "Sözleşmedeki belirsizlik bir anlaşmazlığa yol açtı.",
+   "cefr_level": "C1",
+   "frequency_rank": 186
+  },
+  {
+   "lemma": "bias",
+   "pos": "noun",
+   "meaning_tr": "önyargı, yanlılık",
+   "example": "The study was criticised for its bias.",
+   "example_tr": "Çalışma yanlılığı nedeniyle eleştirildi.",
+   "cefr_level": "C1",
+   "frequency_rank": 187
+  },
+  {
+   "lemma": "constraint",
+   "pos": "noun",
+   "meaning_tr": "kısıt, sınırlama",
+   "example": "Budget constraints limited our options.",
+   "example_tr": "Bütçe kısıtları seçeneklerimizi sınırladı.",
+   "cefr_level": "C1",
+   "frequency_rank": 188
+  },
+  {
+   "lemma": "discrepancy",
+   "pos": "noun",
+   "meaning_tr": "tutarsızlık, uyuşmazlık",
+   "example": "There is a discrepancy between the two reports.",
+   "example_tr": "İki rapor arasında bir tutarsızlık var.",
+   "cefr_level": "C1",
+   "frequency_rank": 189
+  },
+  {
+   "lemma": "implication",
+   "pos": "noun",
+   "meaning_tr": "sonuç, çıkarım",
+   "example": "The implications of the decision are serious.",
+   "example_tr": "Kararın sonuçları ciddi.",
+   "cefr_level": "C1",
+   "frequency_rank": 190
+  },
+  {
+   "lemma": "initiative",
+   "pos": "noun",
+   "meaning_tr": "girişim, inisiyatif",
+   "example": "She took the initiative and called the client.",
+   "example_tr": "İnisiyatif alıp müşteriyi aradı.",
+   "cefr_level": "C1",
+   "frequency_rank": 191
+  },
+  {
+   "lemma": "mindset",
+   "pos": "noun",
+   "meaning_tr": "zihniyet",
+   "example": "A growth mindset helps you learn faster.",
+   "example_tr": "Gelişim odaklı bir zihniyet daha hızlı öğrenmene yardım eder.",
+   "cefr_level": "C1",
+   "frequency_rank": 192
+  },
+  {
+   "lemma": "norm",
+   "pos": "noun",
+   "meaning_tr": "norm, kural",
+   "example": "Working from home has become the norm.",
+   "example_tr": "Evden çalışmak norm hâline geldi.",
+   "cefr_level": "C1",
+   "frequency_rank": 193
+  },
+  {
+   "lemma": "oversight",
+   "pos": "noun",
+   "meaning_tr": "gözden kaçma, denetim",
+   "example": "The error was due to an oversight.",
+   "example_tr": "Hata bir gözden kaçmadan kaynaklandı.",
+   "cefr_level": "C1",
+   "frequency_rank": 194
+  },
+  {
+   "lemma": "perception",
+   "pos": "noun",
+   "meaning_tr": "algı",
+   "example": "Public perception of the brand has changed.",
+   "example_tr": "Markanın kamuoyundaki algısı değişti.",
+   "cefr_level": "C1",
+   "frequency_rank": 195
+  },
+  {
+   "lemma": "pitfall",
+   "pos": "noun",
+   "meaning_tr": "tuzak, tehlike",
+   "example": "One common pitfall is overconfidence.",
+   "example_tr": "Yaygın tuzaklardan biri aşırı özgüvendir.",
+   "cefr_level": "C1",
+   "frequency_rank": 196
+  },
+  {
+   "lemma": "scrutiny",
+   "pos": "noun",
+   "meaning_tr": "sıkı inceleme",
+   "example": "The proposal came under close scrutiny.",
+   "example_tr": "Öneri sıkı bir incelemeye alındı.",
+   "cefr_level": "C1",
+   "frequency_rank": 197
+  },
+  {
+   "lemma": "threshold",
+   "pos": "noun",
+   "meaning_tr": "eşik",
+   "example": "We have reached the threshold of profitability.",
+   "example_tr": "Kârlılık eşiğine ulaştık.",
+   "cefr_level": "C1",
+   "frequency_rank": 198
+  },
+  {
+   "lemma": "trade-off",
+   "pos": "noun",
+   "meaning_tr": "ödünleşim, takas",
+   "example": "There is always a trade-off between speed and quality.",
+   "example_tr": "Hız ile kalite arasında her zaman bir ödünleşim vardır.",
+   "cefr_level": "C1",
+   "frequency_rank": 199
+  },
+  {
+   "lemma": "undermine",
+   "pos": "verb",
+   "meaning_tr": "zayıflatmak, baltalamak",
+   "example": "Constant criticism can undermine confidence.",
+   "example_tr": "Sürekli eleştiri özgüveni zayıflatabilir.",
+   "cefr_level": "C1",
+   "frequency_rank": 200
+  },
+  {
+   "lemma": "advocate",
+   "pos": "verb",
+   "meaning_tr": "savunmak, desteklemek",
+   "example": "She advocates stricter environmental laws.",
+   "example_tr": "O daha katı çevre yasalarını savunuyor.",
+   "cefr_level": "C1",
+   "frequency_rank": 201
+  },
+  {
+   "lemma": "alleviate",
+   "pos": "verb",
+   "meaning_tr": "hafifletmek",
+   "example": "The medicine alleviates the pain.",
+   "example_tr": "İlaç ağrıyı hafifletir.",
+   "cefr_level": "C1",
+   "frequency_rank": 202
+  },
+  {
+   "lemma": "allocate",
+   "pos": "verb",
+   "meaning_tr": "tahsis etmek",
+   "example": "We allocated more money to training.",
+   "example_tr": "Eğitime daha fazla para ayırdık.",
+   "cefr_level": "C1",
+   "frequency_rank": 203
+  },
+  {
+   "lemma": "clarify",
+   "pos": "verb",
+   "meaning_tr": "açıklığa kavuşturmak",
+   "example": "Could you clarify what you mean?",
+   "example_tr": "Ne demek istediğini açıklayabilir misin?",
+   "cefr_level": "C1",
+   "frequency_rank": 204
+  },
+  {
+   "lemma": "comply",
+   "pos": "verb",
+   "meaning_tr": "uymak",
+   "example": "All staff must comply with the rules.",
+   "example_tr": "Tüm personel kurallara uymak zorunda.",
+   "cefr_level": "C1",
+   "frequency_rank": 205
+  },
+  {
+   "lemma": "curb",
+   "pos": "verb",
+   "meaning_tr": "kısıtlamak, dizginlemek",
+   "example": "The city wants to curb air pollution.",
+   "example_tr": "Şehir hava kirliliğini dizginlemek istiyor.",
+   "cefr_level": "C1",
+   "frequency_rank": 206
+  },
+  {
+   "lemma": "enhance",
+   "pos": "verb",
+   "meaning_tr": "artırmak, geliştirmek",
+   "example": "Good lighting enhances the atmosphere.",
+   "example_tr": "İyi aydınlatma atmosferi güzelleştirir.",
+   "cefr_level": "C1",
+   "frequency_rank": 207
+  },
+  {
+   "lemma": "foster",
+   "pos": "verb",
+   "meaning_tr": "beslemek, teşvik etmek",
+   "example": "Teachers should foster curiosity.",
+   "example_tr": "Öğretmenler merakı beslemelidir.",
+   "cefr_level": "C1",
+   "frequency_rank": 208
+  },
+  {
+   "lemma": "hinder",
+   "pos": "verb",
+   "meaning_tr": "engellemek",
+   "example": "Poor weather hindered the rescue.",
+   "example_tr": "Kötü hava kurtarma çalışmasını engelledi.",
+   "cefr_level": "C1",
+   "frequency_rank": 209
+  },
+  {
+   "lemma": "imply",
+   "pos": "verb",
+   "meaning_tr": "ima etmek, anlamına gelmek",
+   "example": "Are you implying that I made a mistake?",
+   "example_tr": "Hata yaptığımı mı ima ediyorsun?",
+   "cefr_level": "C1",
+   "frequency_rank": 210
+  },
+  {
+   "lemma": "mitigate",
+   "pos": "verb",
+   "meaning_tr": "hafifletmek, azaltmak",
+   "example": "Trees help mitigate the effects of heat.",
+   "example_tr": "Ağaçlar sıcağın etkilerini azaltmaya yardım eder.",
+   "cefr_level": "C1",
+   "frequency_rank": 211
+  },
+  {
+   "lemma": "scrutinise",
+   "pos": "verb",
+   "meaning_tr": "dikkatle incelemek",
+   "example": "Auditors scrutinise every transaction.",
+   "example_tr": "Denetçiler her işlemi dikkatle inceler.",
+   "cefr_level": "C1",
+   "frequency_rank": 212
+  },
+  {
+   "lemma": "streamline",
+   "pos": "verb",
+   "meaning_tr": "kolaylaştırmak, sadeleştirmek",
+   "example": "We want to streamline the application process.",
+   "example_tr": "Başvuru sürecini sadeleştirmek istiyoruz.",
+   "cefr_level": "C1",
+   "frequency_rank": 213
+  },
+  {
+   "lemma": "sustain",
+   "pos": "verb",
+   "meaning_tr": "sürdürmek",
+   "example": "It is hard to sustain such growth.",
+   "example_tr": "Böyle bir büyümeyi sürdürmek zor.",
+   "cefr_level": "C1",
+   "frequency_rank": 214
+  },
+  {
+   "lemma": "ubiquitous",
+   "pos": "adj",
+   "meaning_tr": "her yerde bulunan",
+   "example": "Smartphones are now ubiquitous.",
+   "example_tr": "Akıllı telefonlar artık her yerde.",
+   "cefr_level": "C1",
+   "frequency_rank": 215
+  },
+  {
+   "lemma": "inevitable",
+   "pos": "adj",
+   "meaning_tr": "kaçınılmaz",
+   "example": "Change is inevitable.",
+   "example_tr": "Değişim kaçınılmazdır.",
+   "cefr_level": "C1",
+   "frequency_rank": 216
+  },
+  {
+   "lemma": "meticulous",
+   "pos": "adj",
+   "meaning_tr": "titiz",
+   "example": "She is meticulous about details.",
+   "example_tr": "Ayrıntılar konusunda titizdir.",
+   "cefr_level": "C1",
+   "frequency_rank": 217
+  },
+  {
+   "lemma": "profound",
+   "pos": "adj",
+   "meaning_tr": "derin, köklü",
+   "example": "The book had a profound influence on me.",
+   "example_tr": "Kitabın üzerimde derin bir etkisi oldu.",
+   "cefr_level": "C1",
+   "frequency_rank": 218
+  },
+  {
+   "lemma": "plausible",
+   "pos": "adj",
+   "meaning_tr": "makul, inandırıcı",
+   "example": "That is a plausible explanation.",
+   "example_tr": "Bu makul bir açıklama.",
+   "cefr_level": "C1",
+   "frequency_rank": 219
+  },
+  {
+   "lemma": "tangible",
+   "pos": "adj",
+   "meaning_tr": "somut, elle tutulur",
+   "example": "We need tangible results.",
+   "example_tr": "Somut sonuçlara ihtiyacımız var.",
+   "cefr_level": "C1",
+   "frequency_rank": 220
+  },
+  {
+   "lemma": "subtle",
+   "pos": "adj",
+   "meaning_tr": "ince, incelikli",
+   "example": "There is a subtle difference in meaning.",
+   "example_tr": "Anlamda ince bir fark var.",
+   "cefr_level": "C1",
+   "frequency_rank": 221
+  },
+  {
+   "lemma": "notwithstanding",
+   "pos": "prep",
+   "meaning_tr": "-e rağmen",
+   "example": "Notwithstanding the delay, the event was a success.",
+   "example_tr": "Gecikmeye rağmen etkinlik başarılı oldu.",
+   "cefr_level": "C1",
+   "frequency_rank": 222
+  },
+  {
+   "lemma": "hence",
+   "pos": "adv",
+   "meaning_tr": "bu nedenle",
+   "example": "Costs rose; hence the higher prices.",
+   "example_tr": "Maliyetler arttı; dolayısıyla fiyatlar yükseldi.",
+   "cefr_level": "C1",
+   "frequency_rank": 223
   }
  ]
 }
