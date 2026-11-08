@@ -33,6 +33,19 @@ export default function LoginPage() {
     router.refresh();
   }
 
+  async function google() {
+    setBusy(true);
+    setMsg(null);
+    const { error } = await supabaseBrowser().auth.signInWithOAuth({
+      provider: 'google',
+      options: { redirectTo: `${window.location.origin}/auth/callback` },
+    });
+    if (error) {
+      setBusy(false);
+      setMsg({ kind: 'bad', text: error.message });
+    }
+  }
+
   return (
     <div style={{ maxWidth: 380, margin: '10vh auto 0' }}>
       <h1>Dil<span style={{ color: 'var(--accent)' }}>Yolu</span></h1>
@@ -56,6 +69,11 @@ export default function LoginPage() {
               Kayıt ol
             </button>
           )}
+        </div>
+        <div className="row" style={{ marginTop: 12 }}>
+          <button className="btn" disabled={busy} type="button" onClick={() => void google()}>
+            Google ile giriş yap
+          </button>
         </div>
       </form>
     </div>

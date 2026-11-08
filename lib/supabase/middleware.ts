@@ -1,7 +1,7 @@
 import { createServerClient } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
 
-const PUBLIC_PATHS = ['/login', '/manifest.webmanifest', '/sw.js', '/offline.html', '/icons'];
+const PUBLIC_PATHS = ['/login', '/auth/callback', '/manifest.webmanifest', '/sw.js', '/offline.html', '/icons'];
 const isPublic = (path: string) => PUBLIC_PATHS.some((p) => path === p || path.startsWith(p + '/'));
 
 /** Oturumu yeniler; giriş yapmamış kullanıcıyı /login'e yönlendirir. */
