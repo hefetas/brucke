@@ -1,0 +1,213 @@
+{
+ "languages": [
+  {
+   "code": "tr",
+   "name_native": "Türkçe",
+   "name_tr": "Türkçe",
+   "tts_locale": "tr-TR",
+   "stt_locale": "tr-TR",
+   "is_enabled": true,
+   "is_target": false
+  },
+  {
+   "code": "en",
+   "name_native": "English",
+   "name_tr": "İngilizce",
+   "tts_locale": "en-GB",
+   "stt_locale": "en-GB",
+   "is_enabled": true,
+   "is_target": true
+  },
+  {
+   "code": "de",
+   "name_native": "Deutsch",
+   "name_tr": "Almanca",
+   "tts_locale": "de-DE",
+   "stt_locale": "de-DE",
+   "is_enabled": true,
+   "is_target": true
+  }
+ ],
+ "achievements": [
+  {
+   "code": "first_lesson",
+   "title_tr": "İlk adım",
+   "description_tr": "İlk dersini tamamla.",
+   "category": "milestone",
+   "criteria": {
+    "type": "lessons_completed",
+    "value": 1
+   },
+   "xp_reward": 20,
+   "icon": "🎯"
+  },
+  {
+   "code": "lessons_10",
+   "title_tr": "On ders",
+   "description_tr": "10 ders tamamla.",
+   "category": "milestone",
+   "criteria": {
+    "type": "lessons_completed",
+    "value": 10
+   },
+   "xp_reward": 50,
+   "icon": "📚"
+  },
+  {
+   "code": "lessons_50",
+   "title_tr": "Elli ders",
+   "description_tr": "50 ders tamamla.",
+   "category": "milestone",
+   "criteria": {
+    "type": "lessons_completed",
+    "value": 50
+   },
+   "xp_reward": 150,
+   "icon": "🏛️"
+  },
+  {
+   "code": "streak_3",
+   "title_tr": "Isınıyorsun",
+   "description_tr": "3 gün üst üste çalış.",
+   "category": "consistency",
+   "criteria": {
+    "type": "streak_days",
+    "value": 3
+   },
+   "xp_reward": 20,
+   "icon": "🔥"
+  },
+  {
+   "code": "streak_7",
+   "title_tr": "Bir hafta",
+   "description_tr": "7 gün üst üste çalış.",
+   "category": "consistency",
+   "criteria": {
+    "type": "streak_days",
+    "value": 7
+   },
+   "xp_reward": 50,
+   "icon": "🗓️"
+  },
+  {
+   "code": "streak_30",
+   "title_tr": "Bir ay",
+   "description_tr": "30 gün üst üste çalış.",
+   "category": "consistency",
+   "criteria": {
+    "type": "streak_days",
+    "value": 30
+   },
+   "xp_reward": 200,
+   "icon": "🏆"
+  },
+  {
+   "code": "cards_100",
+   "title_tr": "100 tekrar",
+   "description_tr": "100 kart tekrarı yap.",
+   "category": "vocab",
+   "criteria": {
+    "type": "cards_reviewed",
+    "value": 100
+   },
+   "xp_reward": 30,
+   "icon": "🔁"
+  },
+  {
+   "code": "cards_1000",
+   "title_tr": "1000 tekrar",
+   "description_tr": "1000 kart tekrarı yap.",
+   "category": "vocab",
+   "criteria": {
+    "type": "cards_reviewed",
+    "value": 1000
+   },
+   "xp_reward": 150,
+   "icon": "💪"
+  },
+  {
+   "code": "words_50",
+   "title_tr": "50 kelime",
+   "description_tr": "Kartlarına 50 kelime ekle.",
+   "category": "vocab",
+   "criteria": {
+    "type": "vocab_cards",
+    "value": 50
+   },
+   "xp_reward": 30,
+   "icon": "🌱"
+  },
+  {
+   "code": "words_200",
+   "title_tr": "200 kelime",
+   "description_tr": "Kartlarına 200 kelime ekle.",
+   "category": "vocab",
+   "criteria": {
+    "type": "vocab_cards",
+    "value": 200
+   },
+   "xp_reward": 100,
+   "icon": "🌳"
+  },
+  {
+   "code": "mature_20",
+   "title_tr": "Kalıcı hafıza",
+   "description_tr": "20 kartı 21 günden uzun aralığa taşı.",
+   "category": "vocab",
+   "criteria": {
+    "type": "mature_cards",
+    "value": 20
+   },
+   "xp_reward": 80,
+   "icon": "🧠"
+  },
+  {
+   "code": "first_speaking",
+   "title_tr": "İlk konuşma",
+   "description_tr": "İlk konuşma görevini tamamla.",
+   "category": "speaking",
+   "criteria": {
+    "type": "speaking_tasks",
+    "value": 1
+   },
+   "xp_reward": 20,
+   "icon": "🎙️"
+  },
+  {
+   "code": "speaking_10",
+   "title_tr": "Konuşkan",
+   "description_tr": "10 konuşma görevi tamamla.",
+   "category": "speaking",
+   "criteria": {
+    "type": "speaking_tasks",
+    "value": 10
+   },
+   "xp_reward": 80,
+   "icon": "🗣️"
+  },
+  {
+   "code": "first_writing",
+   "title_tr": "İlk yazı",
+   "description_tr": "İlk yazma görevini tamamla.",
+   "category": "writing",
+   "criteria": {
+    "type": "writing_tasks",
+    "value": 1
+   },
+   "xp_reward": 20,
+   "icon": "✍️"
+  },
+  {
+   "code": "writing_10",
+   "title_tr": "Kalem sende",
+   "description_tr": "10 yazma görevi tamamla.",
+   "category": "writing",
+   "criteria": {
+    "type": "writing_tasks",
+    "value": 10
+   },
+   "xp_reward": 80,
+   "icon": "📝"
+  }
+ ]
+}

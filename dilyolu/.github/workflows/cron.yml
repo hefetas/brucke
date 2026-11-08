@@ -1,0 +1,30 @@
+name: Zamanlanmış görevler
+
+# Vercel ücretsiz katmanı saatlik cron'a izin vermediği için GitHub Actions çağırır.
+# Depo > Settings > Secrets and variables > Actions altında şunları tanımla:
+#   APP_URL      örn. https://dilyolu.vercel.app (sonunda / olmadan)
+#   CRON_SECRET  .env'deki CRON_SECRET ile aynı değer
+on:
+  schedule:
+    - cron: '7 * * * *'   # her saat: hatırlatmalar
+    - cron: '23 3 * * *'  # her gün 03:23 UTC: bakım ve haftalık özet
+  workflow_dispatch:
+
+jobs:
+  reminders:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '7 * * * *'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hatırlatmaları çalıştır
+        run: |
+          curl --fail-with-body -sS -X POST "${{ secrets.APP_URL }}/api/cron/reminders" \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}"
+
+  maintenance:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '23 3 * * *'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bakımı çalıştır
+        run: |
+          curl --fail-with-body -sS -X POST "${{ secrets.APP_URL }}/api/cron/maintenance" \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}"
