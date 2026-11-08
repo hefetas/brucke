@@ -1,0 +1,108 @@
+{
+  "name": "Goethe",
+  "tagline": "Goethe-Zertifikat hazırlığı: seviyeni seç, dört modülü (Lesen, Hören, Schreiben, Sprechen) %60 üstüne çıkar.",
+  "levels": {
+    "A1": { "text": "Lesen ≈25 dk · Hören ≈20 dk · Schreiben ≈20 dk · Sprechen ≈15 dk (çiftli). Geçme: toplam %60; yazılı bölümde ≥45/75, sözlüde ≥15/25." },
+    "A2": { "text": "Lesen ≈30 dk · Hören ≈30 dk · Schreiben ≈30 dk · Sprechen ≈15 dk (çiftli). Geçme: toplam %60; yazılı bölümde ≥45/75, sözlüde ≥15/25." },
+    "B1": { "text": "Lesen ≈65 dk · Hören ≈40 dk · Schreiben ≈60 dk · Sprechen ≈15 dk (çiftli). Her modül 100 puan; her birinden ≥60 gerekir." },
+    "B2": { "text": "Lesen ≈65 dk · Hören ≈40 dk · Schreiben ≈75 dk · Sprechen ≈15 dk (hazırlık dahil değil). Her modül 100 puan; her birinden ≥60 gerekir." },
+    "C1": { "text": "Lesen ≈70 dk · Hören ≈40 dk · Schreiben ≈80 dk · Sprechen ≈15 dk. Her modül 100 puan; her birinden ≥60 gerekir." }
+  },
+  "formatNote": "Süreler ve puanlama genel bilgidir ve zamanla değişebilir; kayıt öncesi goethe.de üzerinden seviyenin güncel sınav formatını kontrol et. Buradaki görevler resmi sınav metinleri değil, aynı beceriyi çalıştıran özgün alıştırmalardır. Yazma ve konuşma notu öz değerlendirmedir.",
+  "essayTypes": {
+    "nachricht": {
+      "name": "Kısa mesaj (A1)",
+      "outline": ["Hitap (Lieber Tom,)", "Üç noktayı sırayla cevapla (Wann? Wo? Was?)", "Kapanış (Bis bald! / Viele Grüße)"],
+      "phrases": ["Ich lade dich zu meinem Geburtstag ein.", "Die Feier ist am Samstag um 18 Uhr.", "Wir essen, tanzen und hören Musik.", "Kommst du? Schreib mir bitte!"]
+    },
+    "email_informell": {
+      "name": "Samimi e-posta (du-Form)",
+      "outline": ["Hitap + kısa giriş (Danke für deine Nachricht / Wie geht's?)", "Her maddeyi ayrı cümlede cevapla", "Kapanış: öneri/soru + Gruß"],
+      "phrases": ["Vielen Dank für deine E-Mail.", "Ich freue mich, dass …", "Am Samstag habe ich leider keine Zeit, aber …", "Soll ich … mitbringen?", "Liebe Grüße / Bis bald"]
+    },
+    "email_formell": {
+      "name": "Resmi e-posta (Sie-Form)",
+      "outline": ["Sehr geehrte Frau …, / Sehr geehrte Damen und Herren,", "Anlass nennen (Ich schreibe Ihnen, weil …)", "Maddeleri sırayla ve nazik biçimde ele al", "Kapanış: Bitte/Frist + Mit freundlichen Grüßen"],
+      "phrases": ["Ich schreibe Ihnen, weil …", "Leider muss ich Ihnen mitteilen, dass …", "Ich würde mich freuen, wenn Sie …", "Bitte antworten Sie mir bis zum …", "Mit freundlichen Grüßen"]
+    },
+    "forum": {
+      "name": "Forumsbeitrag (görüş)",
+      "outline": ["Giriş: konuya referans + net görüş", "Gerekçe 1 + örnek", "Gerekçe 2 / karşı argüman", "Fazit veya öneri"],
+      "phrases": ["Meiner Meinung nach …", "Ich bin der Ansicht, dass …", "Einerseits …, andererseits …", "Ein weiterer Punkt ist …", "Zusammenfassend lässt sich sagen, dass …"]
+    },
+    "leserbrief": {
+      "name": "Okur mektubu (C1)",
+      "outline": ["Bezug auf den Artikel (Mit großem Interesse habe ich … gelesen)", "These des Artikels bewerten (teilweise zustimmen/widersprechen)", "Eigene Argumente mit Belegen/Beispielen", "Differenziertes Fazit"],
+      "phrases": ["Der Autor behauptet, dass …, dem kann ich nur bedingt zustimmen.", "Dagegen spricht, dass …", "Nicht zu unterschätzen ist …", "Letztlich kommt es darauf an, ob …", "Abschließend möchte ich betonen, dass …"]
+    },
+    "stellungnahme": {
+      "name": "Stellungnahme (C1)",
+      "outline": ["Ausgangslage kurz zusammenfassen", "Chancen mit Beispielen", "Risiken und mögliche Gegenmaßnahmen", "Begründete Empfehlung"],
+      "phrases": ["Zunächst ist festzuhalten, dass …", "Hinzu kommt, dass …", "Dem steht gegenüber, dass …", "Aus diesen Gründen empfehle ich …", "Unter der Voraussetzung, dass …"]
+    }
+  },
+  "strategies": {
+    "tf": "Richtig/Falsch: cümleyi metindeki karşılığıyla eşle. Sayılar, 'immer/nie/alle' gibi mutlaklaştırıcılar ve olumsuzlama (nicht, kein) sık tuzaktır.",
+    "mcq": "Önce soruyu oku, sonra metinde ilgili yeri bul. Çeldiriciler metinden kelime alır ama farklı bir şey söyler; anlam eşleşmesine bak.",
+    "fill": "Yanıt metinden/duyduğundan alınır; yazımı kontrol et.",
+    "match": "Eşleştirmede önce seçeneklerin anahtar sözcüklerini bul.",
+    "listening": "Metin çoğunlukla iki kez çalınır. İlk dinlemede genel anlam ve cevap yeri, ikincisinde kontrol. Soruları dinlemeden ÖNCE oku. Kaçırdığın soruda takılma.",
+    "reading": "Önce sorulara bak, sonra metni tara (Überfliegen). Cevabı metinde bulamıyorsan tahmin etme; ilgili cümleyi işaretle. Zaman: A1–A2'de metin başına ~8 dk, B1+'ta ~12 dk.",
+    "writing": "Her maddeyi (Leitpunkt) cevapla: görev yerine getirilmezse puan kaybedersin. Hitap ve kapanış şarttır. Kelime hedefinin altında kalma; kopya kalıp yerine kendi cümlelerini kur. Yazdıktan sonra fiil sonda (yan cümle) ve fiil çekimi kontrolü yap.",
+    "speaking": "Konuşmada susmak yerine kalıplarla süre kazan ('Das ist eine interessante Frage …'). Tek kelimeyle cevap verme; neden + örnek ekle. Partnerle yapılan görevlerde dinle, tepki ver, soru sor (etkileşim puanı)."
+  },
+  "rubrics": {
+    "writing": [
+      { "key": "task", "name": "Aufgabenerfüllung (Görev)", "options": [
+        { "value": 100, "text": "Tüm maddeleri eksiksiz ve uygun biçimde (hitap, kapanış, ton) ele aldım." },
+        { "value": 75, "text": "Maddelerin çoğunu ele aldım; küçük eksikler var." },
+        { "value": 50, "text": "Bazı maddeleri atladım ya da yüzeysel bıraktım." },
+        { "value": 25, "text": "Görevin büyük kısmını karşılamadım." }
+      ] },
+      { "key": "coherence", "name": "Kohärenz (Tutarlılık)", "options": [
+        { "value": 100, "text": "Mantıklı sıra, doğal bağlaçlar; metin akıcı okunuyor." },
+        { "value": 75, "text": "Genel olarak tutarlı; birkaç bağlaç eksik/yanlış." },
+        { "value": 50, "text": "Cümleler birbirine zayıf bağlı; bağlaçlar çok az." },
+        { "value": 25, "text": "Fikirler dağınık; sıra belirsiz." }
+      ] },
+      { "key": "wortschatz", "name": "Wortschatz (Sözcük)", "options": [
+        { "value": 100, "text": "Konuya uygun, çeşitli ve doğru sözcükler." },
+        { "value": 75, "text": "Yeterli sözcük; arada tekrar/küçük hatalar." },
+        { "value": 50, "text": "Sınırlı sözcük; sık tekrar ve hatalar." },
+        { "value": 25, "text": "Çok sınırlı; anlam bozuluyor." }
+      ] },
+      { "key": "strukturen", "name": "Strukturen (Dilbilgisi)", "options": [
+        { "value": 100, "text": "Çeşitli yapılar (yan cümle, Konjunktiv, Passiv) çoğunlukla doğru." },
+        { "value": 75, "text": "Basit ve birkaç karmaşık yapı; küçük hatalar." },
+        { "value": 50, "text": "Çoğunlukla basit cümleler; belirgin hatalar (fiil yeri, artikel, çekim)." },
+        { "value": 25, "text": "Sık hatalar anlamı zorlaştırıyor." }
+      ] }
+    ],
+    "speaking": [
+      { "key": "task", "name": "Aufgabenerfüllung & Interaktion", "options": [
+        { "value": 100, "text": "Tüm maddeleri ele aldım; partnere/prüfere uygun tepki verdim, soru sordum." },
+        { "value": 75, "text": "Çoğu maddeyi ele aldım; etkileşim yeterli." },
+        { "value": 50, "text": "Bazı maddeler eksik; tepki vermekte zorlandım." },
+        { "value": 25, "text": "Görevi büyük ölçüde karşılayamadım." }
+      ] },
+      { "key": "wortschatz", "name": "Wortschatz (Sözcük)", "options": [
+        { "value": 100, "text": "Geniş ve uygun sözcükler; kelime bulamayınca açıklayabildim." },
+        { "value": 75, "text": "Yeterli; ara sıra kelime arayışı." },
+        { "value": 50, "text": "Sınırlı; sık takıldım." },
+        { "value": 25, "text": "Çok sınırlı." }
+      ] },
+      { "key": "strukturen", "name": "Strukturen (Dilbilgisi)", "options": [
+        { "value": 100, "text": "Çeşitli yapılar, çoğu doğru." },
+        { "value": 75, "text": "Basit yapılar doğru, karmaşıklarda küçük hatalar." },
+        { "value": 50, "text": "Belirgin hatalar ama anlaşılır." },
+        { "value": 25, "text": "Hatalar anlaşılmayı zorlaştırıyor." }
+      ] },
+      { "key": "aussprache", "name": "Aussprache (Telaffuz)", "options": [
+        { "value": 100, "text": "Net ve doğal; vurgu/tonlama uygun." },
+        { "value": 75, "text": "Genel olarak anlaşılır; bazı seslerde hata." },
+        { "value": 50, "text": "Anlaşılması için çaba gerekiyor." },
+        { "value": 25, "text": "Çoğu zaman anlaşılmıyor." }
+      ] }
+    ]
+  }
+}

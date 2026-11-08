@@ -5,13 +5,15 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useApp } from './AppProvider';
 import { setActiveLanguage } from '@/lib/db';
 
-const LINKS = [
-  { href: '/dashboard', label: 'Panel' },
-  { href: '/journey', label: 'Yol haritası' },
+// Üst gezinme tam dört sekmedir; sonuncusu çalışılan dile göre IELTS ya da Goethe olur.
+const EXAM_TAB: Record<string, string> = { en: 'IELTS', de: 'Goethe' };
+
+const MORE = [
   { href: '/lesson/today', label: 'Bugünkü ders' },
-  { href: '/review', label: 'Tekrar' },
   { href: '/library', label: 'Kütüphane' },
+  { href: '/cards', label: 'Kartlarım' },
   { href: '/progress', label: 'İlerleme' },
+  { href: '/notifications', label: 'Bildirimler' },
   { href: '/profile', label: 'Profil' },
   { href: '/settings', label: 'Ayarlar' },
 ];
@@ -21,6 +23,15 @@ export function Nav() {
   const router = useRouter();
   const { app, db, refresh } = useApp();
   if (path === '/login') return null;
+
+  const lang = app?.active?.language_code ?? '';
+  const links = [
+    { href: '/dashboard', label: 'Panel' },
+    { href: '/journey', label: 'Yol haritası' },
+    { href: '/review', label: 'Tekrar' },
+    { href: '/exam', label: EXAM_TAB[lang] ?? 'Sınav' },
+  ];
+  const moreActive = MORE.some((m) => path === m.href || path.startsWith(`${m.href}/`));
 
   const targets = app?.userLangs.filter((u) => u.role === 'target') ?? [];
   const nameOf = (code: string) => app?.languages.find((l) => l.code === code)?.name_tr ?? code;
@@ -38,12 +49,22 @@ export function Nav() {
         <Link href="/dashboard" className="brand">
           Dil<span>Yolu</span>
         </Link>
-        {LINKS.map((l) => (
+        {links.map((l) => (
           <Link key={l.href} href={l.href} className="link" aria-current={path === l.href || path.startsWith(`${l.href}/`) ? 'page' : undefined}>
             {l.label}
           </Link>
         ))}
         <span className="spacer" />
+        <details className="more">
+          <summary className={`link${moreActive ? ' on' : ''}`} aria-label="Diğer sayfalar">⋯ Menü</summary>
+          <div className="more-pop">
+            {MORE.map((m) => (
+              <Link key={m.href} href={m.href} aria-current={path === m.href || path.startsWith(`${m.href}/`) ? 'page' : undefined} onClick={(e) => (e.currentTarget.closest('details') as HTMLDetailsElement | null)?.removeAttribute('open')}>
+                {m.label}
+              </Link>
+            ))}
+          </div>
+        </details>
         {targets.length > 1 && (
           <select
             aria-label="Çalışılan dil"

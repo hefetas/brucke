@@ -1,0 +1,103 @@
+[
+  {
+    "id": "ielts-listen-s1-pool",
+    "title": "Section 1 · Joining a swimming club",
+    "difficulty": "Band 5.5",
+    "minutes": 6,
+    "script": [
+      { "speaker": "Receptionist", "text": "Good morning, Riverside Sports Centre. How can I help you?" },
+      { "speaker": "Caller", "text": "Hi, I'd like to join the swimming club for adults, please." },
+      { "speaker": "Receptionist", "text": "Certainly. Can I take your name?" },
+      { "speaker": "Caller", "text": "It's Daniel Marsh. That's M-A-R-S-H." },
+      { "speaker": "Receptionist", "text": "Thank you, Mr Marsh. And a contact number?" },
+      { "speaker": "Caller", "text": "07700 900 413." },
+      { "speaker": "Receptionist", "text": "Lovely. We run adult sessions on Tuesday and Thursday evenings at seven, and also on Saturday mornings at nine." },
+      { "speaker": "Caller", "text": "Saturday would suit me best. Is there a beginners' group?" },
+      { "speaker": "Receptionist", "text": "Yes, but it's on Sundays at ten. The Saturday session is for improvers." },
+      { "speaker": "Caller", "text": "I can swim a little, so I'll try Saturday then." },
+      { "speaker": "Receptionist", "text": "Membership is forty-five pounds a month, or four hundred and ten pounds if you pay for the whole year." },
+      { "speaker": "Caller", "text": "I'll start with the monthly option. Do I need to bring anything?" },
+      { "speaker": "Receptionist", "text": "Just a towel and a swimming cap. Locker keys cost a pound, which you get back." },
+      { "speaker": "Caller", "text": "Great. And where do I park?" },
+      { "speaker": "Receptionist", "text": "There's a car park behind the library, opposite the main entrance. It's free for members." }
+    ],
+    "questions": [
+      { "t": "fill", "q": "Surname: ______ (ONE WORD)", "answer": ["marsh"], "why": "Harf harf söylenir: M-A-R-S-H." },
+      { "t": "fill", "q": "Contact number: ______ (digits)", "answer": ["07700 900 413", "07700900413", "07700 900413"], "why": "Sayıları rakam rakam yaz; boşluk farkı sorun değil." },
+      { "t": "fill", "q": "Session chosen: ______ morning (ONE WORD)", "answer": ["saturday"], "why": "'Saturday would suit me best … I'll try Saturday then'." },
+      { "t": "fill", "q": "Monthly fee: £ ______", "answer": ["45", "£45", "forty-five", "forty five"], "why": "'forty-five pounds a month'. Yıllık ücret (410) çeldirici." },
+      { "t": "fill", "q": "Bring a towel and a swimming ______ (ONE WORD)", "answer": ["cap"], "why": "'a towel and a swimming cap'." },
+      { "t": "mcq", "q": "Which group meets on Sundays?", "options": ["Improvers", "Advanced swimmers", "Beginners", "Families"], "answer": 2, "why": "'beginners' group … on Sundays at ten'." },
+      { "t": "mcq", "q": "Where is the car park?", "options": ["Next to the pool", "Behind the library", "In front of the station", "Under the sports hall"], "answer": 1, "why": "'a car park behind the library'." }
+    ]
+  },
+  {
+    "id": "ielts-listen-s2-walk",
+    "title": "Section 2 · Harbour heritage walk",
+    "difficulty": "Band 6",
+    "minutes": 7,
+    "script": [
+      { "speaker": "Guide", "text": "Welcome to the Harbour Heritage Walk. Before we start, a few practical points. The walk lasts about ninety minutes, and we'll finish at the old customs house, where there is a café." },
+      { "speaker": "Guide", "text": "The first stop is the lighthouse, built in 1857, which is the oldest building on this part of the coast. Please don't climb the stairs, as they are closed for repairs until next spring." },
+      { "speaker": "Guide", "text": "After that we'll walk along the fish market, which operates every morning except Monday. If you'd like to buy something, I recommend the smoked salmon, which is a local speciality." },
+      { "speaker": "Guide", "text": "Then we reach the maritime museum. It's free on the first Sunday of each month, but today there is a small entrance fee of six pounds. Photography is allowed everywhere except in the model ship gallery." },
+      { "speaker": "Guide", "text": "Finally, a safety note: the path by the harbour wall can be slippery when it's wet, so please wear suitable shoes." }
+    ],
+    "questions": [
+      { "t": "mcq", "q": "How long does the walk last?", "options": ["60 minutes", "120 minutes", "90 minutes"], "answer": 2, "why": "'about ninety minutes'." },
+      { "t": "fill", "q": "The lighthouse was built in ______ (YEAR)", "answer": ["1857"], "why": "'built in 1857'." },
+      { "t": "mcq", "q": "Why can't visitors climb the lighthouse stairs?", "options": ["They are too dangerous in strong wind.", "They are open to staff only.", "They are closed for repairs."], "answer": 2, "why": "'closed for repairs until next spring'." },
+      { "t": "mcq", "q": "On which day is the fish market closed?", "options": ["Sunday", "Monday", "Tuesday"], "answer": 1, "why": "'every morning except Monday'." },
+      { "t": "fill", "q": "Museum entrance fee today: £ ______", "answer": ["6", "£6", "six"], "why": "'a small entrance fee of six pounds'. 'Free on the first Sunday' çeldirici." },
+      { "t": "mcq", "q": "Where is photography not allowed?", "options": ["The model ship gallery", "The museum entrance", "The fish market"], "answer": 0, "why": "'except in the model ship gallery'." }
+    ]
+  },
+  {
+    "id": "ielts-listen-s3-project",
+    "title": "Section 3 · Students and a tutor",
+    "difficulty": "Band 6.5",
+    "minutes": 8,
+    "script": [
+      { "speaker": "Tutor", "text": "So, Maya, Tom, how's your project on renewable energy going?" },
+      { "speaker": "Maya", "text": "We've decided to focus on wind power, but Tom thinks we should include solar too." },
+      { "speaker": "Tom", "text": "I just think a comparison would be more interesting. Wind farms are cheaper to run, but solar panels can be installed on any roof." },
+      { "speaker": "Tutor", "text": "That's a fair point, but remember the word limit is three thousand words. Covering both might make the report rather superficial." },
+      { "speaker": "Maya", "text": "That's what worries me. What if we look at wind in depth and just mention solar in the conclusion?" },
+      { "speaker": "Tutor", "text": "That could work. What about your sources?" },
+      { "speaker": "Tom", "text": "We found a government report from 2019, but it's rather old." },
+      { "speaker": "Tutor", "text": "Then look for something more recent. The university library has a database with industry statistics up to last year. And do interview someone if you can; it'll strengthen your methodology section." },
+      { "speaker": "Maya", "text": "We could email the engineer who gave the guest lecture." },
+      { "speaker": "Tutor", "text": "Excellent idea. When is your draft due?" },
+      { "speaker": "Tom", "text": "Friday the fourteenth." },
+      { "speaker": "Tutor", "text": "Send it to me by Wednesday so I can give you feedback first." }
+    ],
+    "questions": [
+      { "t": "mcq", "q": "What does Tom want to include in the project?", "options": ["Nuclear power", "Solar power as well as wind", "Hydroelectric power", "Only solar power"], "answer": 1, "why": "'Tom thinks we should include solar too'." },
+      { "t": "mcq", "q": "What is the tutor's concern about covering both?", "options": ["It would be too expensive.", "There would not be enough sources.", "The report might be superficial.", "It would be too long for the deadline."], "answer": 2, "why": "'might make the report rather superficial'." },
+      { "t": "mcq", "q": "What is the problem with the government report?", "options": ["It is biased.", "It is too old.", "It is too technical.", "It is not available."], "answer": 1, "why": "'a government report from 2019, but it's rather old'." },
+      { "t": "mcq", "q": "Who will the students email?", "options": ["The librarian", "A wind farm manager", "The engineer from the guest lecture", "Their tutor"], "answer": 2, "why": "'email the engineer who gave the guest lecture'." },
+      { "t": "fill", "q": "The word limit is ______ words. (NUMBER)", "answer": ["3000", "3,000", "three thousand"], "why": "'three thousand words'." },
+      { "t": "fill", "q": "They should send the draft to the tutor by ______ (ONE WORD)", "answer": ["wednesday"], "why": "Teslim tarihi Cuma (14'ü), ama tutor'a 'by Wednesday' göndermeleri isteniyor." }
+    ]
+  },
+  {
+    "id": "ielts-listen-s4-octopus",
+    "title": "Section 4 · Octopus intelligence (lecture)",
+    "difficulty": "Band 7",
+    "minutes": 8,
+    "script": [
+      { "speaker": "Lecturer", "text": "Today I'd like to talk about octopus intelligence. Octopuses have around five hundred million neurons, roughly the same number as a dog, but unlike mammals, about two-thirds of these neurons are located in their arms rather than in the central brain. This means each arm can, to some extent, make its own decisions." },
+      { "speaker": "Lecturer", "text": "Researchers first became interested in octopus behaviour in laboratories, where animals learned to open jars to reach food. Later field studies showed that octopuses use tools in the wild: some carry coconut shells and assemble them as portable shelters." },
+      { "speaker": "Lecturer", "text": "Another remarkable ability is camouflage. Octopuses change both colour and skin texture within a fraction of a second, even though scientists believe they are colour-blind. One theory is that their skin contains light-sensitive proteins." },
+      { "speaker": "Lecturer", "text": "However, octopuses live only one to two years, which limits what they can learn from others, since most never meet their parents. This short life span is one reason why scientists consider their intelligence so puzzling." }
+    ],
+    "questions": [
+      { "t": "fill", "q": "Octopuses have about ______ million neurons. (NUMBER)", "answer": ["500", "five hundred"], "why": "'around five hundred million neurons'." },
+      { "t": "fill", "q": "About two-thirds of the neurons are in their ______ (ONE WORD)", "answer": ["arms"], "why": "'located in their arms rather than in the central brain'." },
+      { "t": "fill", "q": "In laboratories, octopuses learned to open ______ to reach food. (ONE WORD)", "answer": ["jars"], "why": "'learned to open jars to reach food'." },
+      { "t": "fill", "q": "In the wild, some carry coconut ______ and use them as shelters. (ONE WORD)", "answer": ["shells"], "why": "'carry coconut shells'." },
+      { "t": "fill", "q": "Scientists believe octopuses are ______ (ONE WORD)", "answer": ["colour-blind", "colour blind", "color-blind", "color blind", "colourblind", "colorblind"], "why": "'even though scientists believe they are colour-blind'." },
+      { "t": "mcq", "q": "Why does the lecturer find octopus intelligence puzzling?", "options": ["They have very small brains.", "They live a short time and rarely learn from parents.", "They cannot be studied in laboratories.", "They avoid other animals."], "answer": 1, "why": "Son bölüm: kısa ömür + ebeveynle tanışmama." }
+    ]
+  }
+]

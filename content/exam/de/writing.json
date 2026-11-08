@@ -1,0 +1,47 @@
+[
+  {
+    "id": "goethe-schreiben-a1-einladung", "level": "A1", "task": "schreiben", "kind": "nachricht", "title": "Schreiben A1 · Einladung", "minWords": 30, "minutes": 10,
+    "prompt": "Sie möchten Ihren Freund Tom zu Ihrem Geburtstag einladen. Schreiben Sie ihm eine Nachricht (ca. 30 Wörter).",
+    "points": ["Wann ist die Feier?", "Wo ist die Feier?", "Was machen Sie zusammen?"]
+  },
+  {
+    "id": "goethe-schreiben-a2-urlaub", "level": "A2", "task": "schreiben", "kind": "email_informell", "title": "Schreiben A2 · E-Mail aus dem Urlaub", "minWords": 40, "minutes": 15,
+    "prompt": "Sie sind im Urlaub. Schreiben Sie eine E-Mail an Ihre Freundin Julia (ca. 40 Wörter).",
+    "points": ["Wo sind Sie und wie ist das Wetter?", "Was machen Sie jeden Tag?", "Laden Sie Julia für nächstes Jahr ein."]
+  },
+  {
+    "id": "goethe-schreiben-a2-kurs", "level": "A2", "task": "schreiben", "kind": "email_formell", "title": "Schreiben A2 · Entschuldigung an die Kursleiterin", "minWords": 40, "minutes": 15,
+    "prompt": "Sie können morgen nicht zum Deutschkurs kommen. Schreiben Sie eine E-Mail an Ihre Lehrerin Frau Berger (ca. 40 Wörter).",
+    "points": ["Warum können Sie nicht kommen?", "Fragen Sie nach den Hausaufgaben.", "Wann kommen Sie wieder?"]
+  },
+  {
+    "id": "goethe-schreiben-b1-umzug", "level": "B1", "task": "schreiben", "kind": "email_informell", "title": "Schreiben B1 · E-Mail an einen Freund (Umzug)", "minWords": 80, "minutes": 20, "wantParagraphs": 2,
+    "prompt": "Ein Freund hat Ihnen geschrieben, dass er bald in eine andere Stadt umzieht und Ihre Hilfe braucht. Schreiben Sie ihm eine E-Mail (ca. 80 Wörter).",
+    "points": ["Reagieren Sie auf die Nachricht.", "Erklären Sie, wann Sie helfen können.", "Schlagen Sie vor, was Sie mitbringen oder organisieren."]
+  },
+  {
+    "id": "goethe-schreiben-b1-forum", "level": "B1", "task": "schreiben", "kind": "forum", "title": "Schreiben B1 · Forumsbeitrag (Handys in der Schule)", "minWords": 80, "minutes": 20, "wantParagraphs": 2,
+    "prompt": "In einem Internetforum diskutieren Leser das Thema 'Handys in der Schule'. Schreiben Sie Ihre Meinung dazu (ca. 80 Wörter).",
+    "points": ["Nennen Sie Ihre Meinung.", "Begründen Sie sie mit mindestens einem Argument.", "Geben Sie ein Beispiel aus Ihrer Erfahrung."]
+  },
+  {
+    "id": "goethe-schreiben-b2-hausaufgaben", "level": "B2", "task": "schreiben", "kind": "forum", "title": "Schreiben B2 · Forumsbeitrag (Hausaufgaben)", "minWords": 150, "minutes": 30, "wantParagraphs": 3,
+    "prompt": "In einem Online-Forum wird diskutiert: 'Sollten Hausaufgaben abgeschafft werden?' Schreiben Sie einen Beitrag (ca. 150 Wörter).",
+    "points": ["Nehmen Sie klar Stellung.", "Nennen Sie Argumente für und gegen Ihre Position.", "Schließen Sie mit einem Vorschlag oder Fazit."]
+  },
+  {
+    "id": "goethe-schreiben-b2-beschwerde", "level": "B2", "task": "schreiben", "kind": "email_formell", "title": "Schreiben B2 · Beschwerde (Sprachreise)", "minWords": 150, "minutes": 30, "wantParagraphs": 3,
+    "prompt": "Sie haben eine Sprachreise gebucht, die nicht wie versprochen war (Unterkunft, Kursniveau, Freizeitprogramm). Schreiben Sie eine formelle Beschwerde an den Veranstalter (ca. 150 Wörter).",
+    "points": ["Beschreiben Sie die Probleme konkret.", "Sagen Sie, was Sie erwartet hatten.", "Fordern Sie eine Lösung und setzen Sie eine Frist."]
+  },
+  {
+    "id": "goethe-schreiben-c1-leserbrief", "level": "C1", "task": "schreiben", "kind": "leserbrief", "title": "Schreiben C1 · Leserbrief (Soziale Medien)", "minWords": 200, "minutes": 40, "wantParagraphs": 4,
+    "prompt": "In einer Zeitung erschien ein Artikel mit der These, soziale Medien schadeten der Gesprächskultur. Schreiben Sie einen Leserbrief (ca. 200 Wörter), in dem Sie Stellung nehmen.",
+    "points": ["Beziehen Sie sich auf die These des Artikels.", "Wägen Sie Argumente ab und belegen Sie sie mit Beispielen.", "Formulieren Sie ein differenziertes Fazit."]
+  },
+  {
+    "id": "goethe-schreiben-c1-stellungnahme", "level": "C1", "task": "schreiben", "kind": "stellungnahme", "title": "Schreiben C1 · Stellungnahme (Vier-Tage-Woche)", "minWords": 200, "minutes": 40, "wantParagraphs": 4,
+    "prompt": "Ihre Firma erwägt die Einführung einer Vier-Tage-Woche. Schreiben Sie eine schriftliche Stellungnahme (ca. 200 Wörter) an die Geschäftsleitung.",
+    "points": ["Fassen Sie die Ausgangslage kurz zusammen.", "Erörtern Sie Chancen und Risiken.", "Geben Sie eine begründete Empfehlung."]
+  }
+]

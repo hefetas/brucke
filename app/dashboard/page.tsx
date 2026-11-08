@@ -7,7 +7,11 @@ import { addDays, countDue, levelsOf, localDate, type Db } from '@/lib/db';
 import { currentStreak, loadProgressBySkill } from '@/lib/lesson';
 import { weakGrammarOf } from '@/lib/planner';
 import { loadJourney } from '@/lib/journey-data';
-import { KIND_ICON, stepHref } from '@/lib/journey';
+import { KIND_ICON, MASTERY_SCORE, stepHref } from '@/lib/journey';
+import { isWeakCard, weakJourneySteps } from '@/lib/review';
+import { EXAM_SECTIONS, GOETHE_PASS_PCT, SECTION_LABEL, estimatedOverall, goethePassState, nextStep, summarize } from '@/lib/exam';
+import { getExamContent, itemRefs } from '@/lib/exam-content';
+import { loadAttempts, loadSettings } from '@/lib/exam-data';
 import { CEFR_LEVELS, SKILLS, SKILL_LABEL_TR, cefrIndex, evaluateLevel, overallLevel, weakSkills, xpLevel } from '@/lib/levels';
 import type { LessonRow } from '@/lib/types';
 
@@ -26,6 +30,9 @@ interface Data {
   words: number;
   weakTopics: { slug: string; title: string; score: number }[];
   journey: { range: string; percent: number; title: string; href: string } | null;
+  weakWords: number;
+  weakSteps: number;
+  exam: { name: string; line: string; ok: boolean | null; bars: { label: string; pct: number; text: string }[]; nextTitle: string | null; nextHref: string | null } | null;
 }
 
 function Dashboard({ app, db }: { app: ReadyApp; db: Db }) {
@@ -69,10 +76,48 @@ function Dashboard({ app, db }: { app: ReadyApp; db: Db }) {
           nx.type === 'step'
             ? { range, percent: journey.state.percent, title: `${KIND_ICON[nx.step.kind]} ${nx.step.title}`, href: stepHref(nx.step) }
             : nx.type === 'review'
-              ? { range, percent: journey.state.percent, title: `🔁 ${nx.due} kart tekrar bekliyor`, href: '/review' }
+              ? { range, percent: journey.state.percent, title: `🔁 ${nx.due} kart tekrar bekliyor`, href: '/review/cards' }
               : { range, percent: journey.state.percent, title: nx.type === 'finished' ? '🎉 Yolculuğu tamamladın' : 'Sıradaki seviye hazırlanıyor', href: '/journey' };
       }
+      const wc = await db.from('user_cards').select('lapses, wrong_count, correct_count').eq('user_id', app.userId).eq('language_code', lang).is('deleted_at', null).or('lapses.gt.0,wrong_count.gt.0').limit(500);
+      const weakWords = ((wc.data ?? []) as { lapses: number; wrong_count: number; correct_count: number }[]).filter(isWeakCard).length;
+      const weakSteps = journey ? weakJourneySteps(journey.steps.filter((st) => st.kind !== 'grammar'), journey.scores, MASTERY_SCORE, 99).length : 0;
+
+      let examCard: Data['exam'] = null;
+      const ec = getExamContent(lang);
+      if (ec) {
+        const [es, ea] = await Promise.all([loadSettings(db, app.userId, lang).catch(() => null), loadAttempts(db, app.userId, lang).catch(() => [])]);
+        const glevel = ec.exam === 'goethe' ? (es?.goethe_level ?? 'B1') : null;
+        const target = es?.target_band ?? 7;
+        const sum = summarize(ec.exam, ea, glevel);
+        const scoped = ec.exam === 'goethe' ? ea.filter((a) => a.level === glevel) : ea;
+        const nx = nextStep(ec.exam, sum, itemRefs(ec, glevel), scoped, ec.exam === 'ielts' ? target : null);
+        const bars = EXAM_SECTIONS.map((sec) => {
+          const x = sum[sec];
+          return {
+            label: SECTION_LABEL[ec.exam][sec],
+            pct: ec.exam === 'ielts' ? ((x.band ?? 0) / 9) * 100 : (x.pct ?? 0),
+            text: x.attempts === 0 ? '—' : ec.exam === 'ielts' ? `${x.band}` : `%${Math.round(x.pct ?? 0)}`,
+          };
+        });
+        let line: string;
+        let ok: boolean | null = null;
+        if (ec.exam === 'ielts') {
+          const ov = estimatedOverall(sum);
+          line = ov === null ? `Hedef band ${target.toFixed(1)} · tahmin için her beceriden bir deneme çöz` : `Tahmini band ${ov} · hedef ${target.toFixed(1)}`;
+          ok = ov === null ? null : ov >= target;
+        } else {
+          const gp = goethePassState(sum);
+          line = gp.untried.length ? `${glevel} · her modülde ≥ %${GOETHE_PASS_PCT} gerekir · ${gp.untried.length} modül denenmedi` : gp.failing.length ? `${glevel} · eşiğin altında: ${gp.failing.map((x) => SECTION_LABEL.goethe[x]).join(', ')}` : `${glevel} · dört modülde de eşiğin üstündesin`;
+          ok = gp.untried.length ? null : gp.failing.length === 0;
+        }
+        examCard = { name: ec.meta.name, line, ok, bars, nextTitle: nx?.item?.title ?? null, nextHref: nx?.item ? `/exam/${nx.section}/${nx.item.id}` : null };
+      }
+
       setD({
+        weakWords,
+        weakSteps,
+        exam: examCard,
         due,
         streak,
         lesson: (lesson.data as LessonRow | null) ?? null,
@@ -150,18 +195,40 @@ function Dashboard({ app, db }: { app: ReadyApp; db: Db }) {
         </div>
       </div>
 
-      {d.weakTopics.length > 0 && (
+      <div className="grid two">
         <div className="card">
-          <h3>Zorlandığın konu</h3>
-          <p className="muted" style={{ margin: '0 0 8px' }}>Son alıştırmada düşük puan aldığın konular. Ders planında da öne alınır.</p>
-          {d.weakTopics.map((t) => (
-            <div className="row between" key={t.slug} style={{ marginBottom: 6 }}>
+          <div className="row between">
+            <h2 style={{ margin: 0 }}>Tekrar</h2>
+            <Link className="btn small" href="/review">Aç</Link>
+          </div>
+          <p className="muted" style={{ margin: '6px 0 0' }}>
+            {d.due} bekleyen kart · {d.weakWords} zorlanılan kelime · {d.weakTopics.length} dilbilgisi konusu · {d.weakSteps} yol haritası adımı
+          </p>
+          {d.weakTopics.slice(0, 2).map((t) => (
+            <div className="row between" key={t.slug} style={{ marginTop: 6 }}>
               <span>{t.title} <span className="muted">· %{t.score}</span></span>
-              <Link className="btn small" href={`/grammar/${t.slug}?lc=${lang}`}>Tekrar çalış</Link>
+              <Link className="btn small" href={`/grammar/${t.slug}?lc=${lang}`}>Çalış</Link>
             </div>
           ))}
         </div>
-      )}
+        {d.exam && (
+          <div className="card">
+            <div className="row between">
+              <h2 style={{ margin: 0 }}>{d.exam.name}</h2>
+              <Link className="btn small" href="/exam">Aç</Link>
+            </div>
+            <p className={d.exam.ok === null ? 'muted' : d.exam.ok ? 'ok' : 'close'} style={{ margin: '6px 0' }}>{d.exam.line}</p>
+            {d.exam.bars.map((b) => (
+              <div className="skillrow" key={b.label} style={{ gridTemplateColumns: '80px 1fr 40px', margin: '0.25rem 0' }}>
+                <span>{b.label}</span>
+                <div className="bar"><i style={{ width: `${b.pct}%` }} /></div>
+                <b>{b.text}</b>
+              </div>
+            ))}
+            {d.exam.nextHref && <p style={{ margin: '8px 0 0' }}>Sıradaki: <Link href={d.exam.nextHref}>{d.exam.nextTitle}</Link></p>}
+          </div>
+        )}
+      </div>
 
       <div className="grid three">
         <div className="card">
@@ -171,7 +238,7 @@ function Dashboard({ app, db }: { app: ReadyApp; db: Db }) {
         <div className="card">
           <p className="stat">{d.due}</p>
           <p className="muted" style={{ margin: '0 0 8px' }}>bekleyen kart</p>
-          {d.due > 0 && <Link className="btn small" href="/review">Tekrar et</Link>}
+          {d.due > 0 && <Link className="btn small" href="/review/cards">Tekrar et</Link>}
         </div>
         <div className="card">
           <p className="stat">Sv. {xp.level}</p>

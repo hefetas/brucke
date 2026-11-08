@@ -1,0 +1,66 @@
+[
+  {
+    "id": "ielts-read-bees",
+    "title": "The Return of the Urban Bee",
+    "difficulty": "Band 6",
+    "minutes": 10,
+    "text": "Over the past decade, rooftop beehives have become a common sight in cities such as London, Paris and New York. Supporters claim that urban beekeeping helps to protect pollinators, whose numbers have fallen sharply in the countryside because of intensive farming and pesticide use. Cities, they argue, offer a surprisingly rich environment: parks, gardens and street trees provide flowers from early spring until late autumn, and urban areas are generally warmer than the surrounding land.\n\nHowever, some ecologists are less enthusiastic. A study carried out in Paris found that the density of honeybee hives had risen so quickly that the bees were competing with wild pollinators, such as bumblebees and solitary bees, for a limited supply of nectar. Honeybees are managed livestock, the researchers point out, and adding more of them does not help wild species that are in genuine decline.\n\nBeekeepers respond that their hobby has other benefits. Hive owners often become more interested in the environment, plant bee-friendly flowers and educate their neighbours. Honey from city hives has also been found to contain fewer agricultural chemicals than honey from some rural areas, although it can include traces of urban pollution.\n\nThe debate has led several city councils to introduce guidelines. Some now ask beekeepers to register their hives, while others recommend that residents plant native flowers rather than keep bees. Experts agree on one point: the best way to support insects in cities is to create more green space.",
+    "questions": [
+      { "t": "tfng", "q": "Pollinator numbers have fallen in rural areas.", "answer": 0, "why": "'numbers have fallen sharply in the countryside' → countryside = rural areas. True." },
+      { "t": "tfng", "q": "Cities are usually colder than the surrounding land.", "answer": 1, "why": "Metin tersini söylüyor: 'urban areas are generally warmer'. Bu yüzden False." },
+      { "t": "tfng", "q": "The Paris study showed that wild bees are dying because of diseases spread by honeybees.", "answer": 2, "why": "Çalışma yalnızca nektar için rekabeti anlatıyor; hastalıktan söz edilmiyor. Not Given." },
+      { "t": "mcq", "q": "What do the researchers in Paris point out about honeybees?", "options": ["They produce less honey in cities.", "They are managed animals, so more hives do not help declining wild species.", "They are more endangered than bumblebees.", "They avoid urban parks."], "answer": 1, "why": "'Honeybees are managed livestock … adding more of them does not help wild species' cümlesinin özeti." },
+      { "t": "mcq", "q": "What does the writer say about honey from city hives?", "options": ["It is completely free of pollution.", "It may contain traces of urban pollution but fewer farm chemicals than some rural honey.", "It tastes better than rural honey.", "It is cheaper to produce."], "answer": 1, "why": "'fewer agricultural chemicals … although it can include traces of urban pollution'. Her iki yarıyı da kapsayan seçenek doğru." },
+      { "t": "fill", "q": "Some city councils ask beekeepers to ______ their hives. (ONE WORD)", "answer": ["register"], "why": "'ask beekeepers to register their hives'." },
+      { "t": "fill", "q": "Experts agree that the best way to support insects in cities is to create more ______. (TWO WORDS)", "answer": ["green space", "greenspace"], "why": "Son cümle: 'create more green space'." }
+    ]
+  },
+  {
+    "id": "ielts-read-sleep",
+    "title": "Teenagers and Sleep",
+    "difficulty": "Band 6",
+    "minutes": 10,
+    "text": "During adolescence, the body's internal clock shifts. Scientists have found that teenagers produce the sleep hormone melatonin about two hours later in the evening than children or adults do, which makes it hard for them to fall asleep before eleven o'clock. Yet most schools begin early in the morning, so many teenagers receive far less than the eight to ten hours of sleep recommended for their age.\n\nThe consequences are well documented. Sleep-deprived students find it harder to concentrate, and they are more likely to feel anxious or low in mood. Some studies also link tiredness to a higher number of road accidents among young drivers.\n\nIn the early 2000s, a few school districts in the United States experimented with later start times. In one district in Minnesota, the day began at 8.30 instead of 7.25. Researchers reported that attendance improved and that students were less likely to fall asleep in class. Test results, however, rose only slightly, and some parents complained that later finishing times disrupted sports practice and part-time jobs.\n\nCritics argue that changing the school timetable is expensive, because bus routes have to be reorganised. Supporters reply that the long-term health benefits outweigh the costs. A growing number of sleep experts suggest a combined approach: later starts, together with advice on limiting screen use in the evening, since the blue light from phones can delay melatonin production still further.",
+    "questions": [
+      { "t": "tfng", "q": "Teenagers produce melatonin earlier in the evening than adults do.", "answer": 1, "why": "'about two hours later' → daha geç, daha erken değil. False." },
+      { "t": "tfng", "q": "Sleep-deprived students are more likely to feel anxious.", "answer": 0, "why": "'more likely to feel anxious or low in mood'. True." },
+      { "t": "tfng", "q": "The later start time in the Minnesota district led to a large improvement in test results.", "answer": 1, "why": "'rose only slightly' ile çelişir. False." },
+      { "t": "tfng", "q": "Most teachers support later school start times.", "answer": 2, "why": "Öğretmenlerin görüşü hiç verilmiyor (veliler ve eleştirmenler var). Not Given." },
+      { "t": "mcq", "q": "Why do many teenagers get too little sleep?", "options": ["They go to bed too early.", "Their body clock makes them sleepy later, but school starts early.", "They need less sleep than children.", "They dislike going to school."], "answer": 1, "why": "Birinci paragrafın ana fikri: geç melatonin + erken okul." },
+      { "t": "fill", "q": "Critics say changing the timetable is expensive because ______ must be reorganised. (TWO WORDS)", "answer": ["bus routes"], "why": "'because bus routes have to be reorganised'." },
+      { "t": "fill", "q": "Experts also advise limiting ______ in the evening. (TWO WORDS)", "answer": ["screen use"], "why": "'advice on limiting screen use in the evening'." }
+    ]
+  },
+  {
+    "id": "ielts-read-fashion",
+    "title": "The Hidden Cost of Fast Fashion",
+    "difficulty": "Band 6.5",
+    "minutes": 10,
+    "text": "Clothing production has roughly doubled since 2000, and the average consumer now buys about sixty per cent more garments than fifteen years ago while keeping each item for only half as long. This pattern, known as fast fashion, depends on cheap materials, low wages and rapid production cycles that allow shops to introduce new designs every few weeks.\n\nThe environmental impact is considerable. Growing cotton requires large quantities of water: one cotton T-shirt can take around 2,700 litres, roughly what a person drinks in two and a half years. Synthetic fibres such as polyester are made from oil, and each wash releases thousands of microscopic plastic fibres into waterways. In addition, only a small proportion of discarded clothing is recycled into new garments; most is burned or buried.\n\nSome companies have responded by offering take-back schemes or lines made from recycled materials. Critics, though, describe such initiatives as 'greenwashing' if the companies continue to sell ever greater volumes. Sociologist Dr Lena Hart argues that real change will depend less on shopping habits than on regulation, such as laws requiring producers to pay for the disposal of the clothes they sell.\n\nMeanwhile, second-hand markets are expanding. Online resale platforms, once seen as a niche, are expected to grow faster than the conventional clothing industry over the next decade, particularly among younger shoppers.",
+    "questions": [
+      { "t": "mcq", "q": "What does fast fashion depend on?", "options": ["Expensive materials and slow production", "Recycled materials and local workers", "Cheap materials, low wages and rapid production cycles", "Long-lasting garments and small collections"], "answer": 2, "why": "İlk paragrafın son cümlesi birebir bunu sayıyor." },
+      { "t": "tfng", "q": "Consumers now keep each garment for about half as long as before.", "answer": 0, "why": "'keeping each item for only half as long'. True." },
+      { "t": "tfng", "q": "Most discarded clothing is recycled into new garments.", "answer": 1, "why": "'only a small proportion … is recycled; most is burned or buried'. False." },
+      { "t": "tfng", "q": "Polyester is cheaper to produce than cotton.", "answer": 2, "why": "Polyester'in oil'den yapıldığı söyleniyor ama maliyet karşılaştırması yok. Not Given." },
+      { "t": "mcq", "q": "Dr Lena Hart believes that real change will mainly come from", "options": ["changes in individual shopping habits.", "regulation that makes producers pay for disposal.", "companies' take-back schemes.", "the growth of second-hand markets."], "answer": 1, "why": "'less on shopping habits than on regulation, such as laws requiring producers to pay'." },
+      { "t": "fill", "q": "Critics call some company initiatives '______' if sales volumes keep rising. (ONE WORD)", "answer": ["greenwashing"], "why": "'describe such initiatives as greenwashing'." },
+      { "t": "fill", "q": "Online resale platforms are expected to grow faster than the conventional ______ industry. (ONE WORD)", "answer": ["clothing"], "why": "'faster than the conventional clothing industry'." }
+    ]
+  },
+  {
+    "id": "ielts-read-forgetting",
+    "title": "Why Do We Forget?",
+    "difficulty": "Band 7",
+    "minutes": 12,
+    "text": "For more than a century, psychologists have tried to explain why memories fade. The German scientist Hermann Ebbinghaus, who tested himself on lists of meaningless syllables in the 1880s, discovered what he called the forgetting curve: most of what we learn is lost within the first hours or days, after which the rate of loss slows considerably. His findings have been replicated many times, although recent studies show that meaningful material, such as a story or a diagram, is forgotten far more slowly than nonsense syllables.\n\nTwo main explanations compete. The first, decay theory, suggests that memory traces simply weaken over time if they are not used. The second, interference theory, proposes that memories are not lost but become harder to retrieve because similar information gets in the way: learning a new telephone number, for example, can make an old one difficult to recall. Experiments tend to support interference more strongly, yet decay cannot be ruled out entirely, particularly for short-term memory.\n\nPractical consequences follow. Educational researchers recommend 'spaced repetition', reviewing material at gradually increasing intervals, because each successful retrieval seems to make a memory more durable. By contrast, cramming the night before an examination produces impressive short-term results but little lasting knowledge. Some researchers go further, arguing that a certain amount of forgetting is useful: it clears away irrelevant details and allows the brain to concentrate on information that is likely to matter in future.",
+    "questions": [
+      { "t": "tfng", "q": "Ebbinghaus used meaningful stories in his original experiments.", "answer": 1, "why": "'lists of meaningless syllables'. False." },
+      { "t": "tfng", "q": "Recent research suggests that meaningful material is forgotten more slowly than nonsense syllables.", "answer": 0, "why": "Birinci paragrafın son cümlesi. True." },
+      { "t": "tfng", "q": "Interference theory has been proved to be completely correct.", "answer": 1, "why": "Deneyler interference'ı 'daha güçlü destekliyor' ama decay 'tamamen dışlanamaz'. 'Completely correct' ile çelişir. False." },
+      { "t": "tfng", "q": "Spaced repetition was invented by Ebbinghaus.", "answer": 2, "why": "Yöntemin mucidi hakkında bilgi yok. Not Given." },
+      { "t": "mcq", "q": "What does the writer say about cramming?", "options": ["It produces lasting knowledge.", "It gives good short-term results but little lasting knowledge.", "It is recommended by educational researchers.", "It damages memory permanently."], "answer": 1, "why": "'impressive short-term results but little lasting knowledge'." },
+      { "t": "mcq", "q": "Some researchers believe that forgetting", "options": ["is a sign of poor teaching.", "only affects short-term memory.", "can be useful because it removes irrelevant details.", "can be completely avoided with practice."], "answer": 2, "why": "Son cümle: 'clears away irrelevant details'." },
+      { "t": "fill", "q": "Reviewing material at gradually increasing intervals is called '______'. (TWO WORDS)", "answer": ["spaced repetition"], "why": "'spaced repetition, reviewing material at gradually increasing intervals'." }
+    ]
+  }
+]

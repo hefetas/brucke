@@ -1,0 +1,70 @@
+[
+  {
+    "id": "goethe-sprechen-a1-vorstellung", "level": "A1", "title": "Sprechen A1 · Sich vorstellen",
+    "steps": [
+      { "kind": "cue", "text": "Stellen Sie sich vor.", "points": ["Name", "Land", "Wohnort", "Sprachen", "Hobby"], "prep": 20, "seconds": 45 },
+      { "kind": "q", "text": "Fragen Sie Ihren Partner: Wie heißen Sie? Woher kommen Sie? Was ist Ihr Beruf?", "seconds": 30 },
+      { "kind": "q", "text": "Antworten Sie: Was machen Sie am Wochenende?", "seconds": 25 }
+    ]
+  },
+  {
+    "id": "goethe-sprechen-a2-alltag", "level": "A2", "title": "Sprechen A2 · Über sich sprechen",
+    "steps": [
+      { "kind": "cue", "text": "Erzählen Sie über Ihren Alltag.", "points": ["Wie sieht ein normaler Tag aus?", "Wo wohnen Sie?", "Was machen Sie gern in der Freizeit?"], "prep": 30, "seconds": 60 },
+      { "kind": "q", "text": "Fragen Sie: Wann stehen Sie normalerweise auf?", "seconds": 25 },
+      { "kind": "q", "text": "Was essen Sie am liebsten? Warum?", "seconds": 30 }
+    ]
+  },
+  {
+    "id": "goethe-sprechen-a2-planen", "level": "A2", "title": "Sprechen A2 · Gemeinsam etwas planen",
+    "steps": [
+      { "kind": "cue", "text": "Sie möchten mit einem Freund am Wochenende einen Ausflug machen. Planen Sie gemeinsam.", "points": ["Wohin?", "Wann treffen Sie sich?", "Was nehmen Sie mit?", "Wie fahren Sie?"], "prep": 30, "seconds": 90 },
+      { "kind": "q", "text": "Ihr Partner hat einen anderen Vorschlag. Reagieren Sie höflich und einigen Sie sich.", "seconds": 40 }
+    ]
+  },
+  {
+    "id": "goethe-sprechen-b1-praesentation", "level": "B1", "title": "Sprechen B1 · Präsentation: Fernsehen",
+    "steps": [
+      { "kind": "cue", "text": "Halten Sie eine kurze Präsentation zum Thema 'Fernsehen'.", "points": ["Einleitung und Thema", "Ihre eigene Erfahrung", "Die Situation in Ihrem Heimatland", "Vor- und Nachteile", "Abschluss und Dank"], "prep": 90, "seconds": 150 },
+      { "kind": "q", "text": "Fragen aus dem Publikum: Wie lange sehen Sie pro Tag fern? Was war Ihre letzte Lieblingssendung?", "seconds": 40 },
+      { "kind": "q", "text": "Fragen aus dem Publikum: Sollten Kinder weniger fernsehen? Warum?", "seconds": 40 }
+    ]
+  },
+  {
+    "id": "goethe-sprechen-b1-grillfest", "level": "B1", "title": "Sprechen B1 · Gemeinsam planen: Grillfest",
+    "steps": [
+      { "kind": "cue", "text": "Sie und Ihre Kollegen wollen ein Grillfest organisieren. Besprechen Sie die Planung.", "points": ["Ort und Termin", "Einladung und Gäste", "Essen und Getränke", "Aufgabenverteilung"], "prep": 60, "seconds": 180 },
+      { "kind": "q", "text": "Ein Kollege möchte lieber im Restaurant feiern. Überzeugen Sie ihn oder machen Sie einen Kompromiss.", "seconds": 50 }
+    ]
+  },
+  {
+    "id": "goethe-sprechen-b2-praesentation", "level": "B2", "title": "Sprechen B2 · Präsentation: Soziale Netzwerke",
+    "steps": [
+      { "kind": "cue", "text": "Halten Sie einen Vortrag zum Thema 'Soziale Netzwerke: Fluch oder Segen?'", "points": ["Persönlicher Bezug zum Thema", "Situation in Ihrem Land", "Vor- und Nachteile", "Ihre Meinung", "Fazit"], "prep": 180, "seconds": 180 },
+      { "kind": "q", "text": "Rückfrage des Prüfers: Welche Rolle sollten Eltern bei der Nutzung durch Kinder spielen?", "seconds": 60 },
+      { "kind": "q", "text": "Rückfrage: Sollte es Altersgrenzen für soziale Netzwerke geben?", "seconds": 60 }
+    ]
+  },
+  {
+    "id": "goethe-sprechen-b2-diskussion", "level": "B2", "title": "Sprechen B2 · Diskussion: Homeoffice",
+    "steps": [
+      { "kind": "cue", "text": "Diskutieren Sie das Thema: 'Sollten Firmen Homeoffice für alle Beschäftigten anbieten?'", "points": ["Eigene Position nennen", "Argumente begründen", "Auf Gegenargumente eingehen", "Gemeinsames Fazit"], "prep": 60, "seconds": 180 },
+      { "kind": "q", "text": "Ihr Gesprächspartner sagt: 'Ohne persönlichen Kontakt leidet die Teamarbeit.' Reagieren Sie darauf.", "seconds": 60 }
+    ]
+  },
+  {
+    "id": "goethe-sprechen-c1-vortrag", "level": "C1", "title": "Sprechen C1 · Vortrag: Künstliche Intelligenz",
+    "steps": [
+      { "kind": "cue", "text": "Halten Sie einen strukturierten Vortrag zum Thema 'Künstliche Intelligenz in der Arbeitswelt'.", "points": ["Einstieg mit einem Beispiel", "Chancen", "Risiken", "Gesellschaftliche Folgen", "Eigene Einschätzung und Ausblick"], "prep": 180, "seconds": 240 },
+      { "kind": "q", "text": "Rückfrage: Welche Berufe werden Ihrer Ansicht nach am stärksten betroffen sein, und warum?", "seconds": 60 },
+      { "kind": "q", "text": "Rückfrage: Inwiefern ist eine staatliche Regulierung sinnvoll?", "seconds": 60 }
+    ]
+  },
+  {
+    "id": "goethe-sprechen-c1-diskussion", "level": "C1", "title": "Sprechen C1 · Stellungnahme und Diskussion: Stadt oder Land",
+    "steps": [
+      { "kind": "cue", "text": "Nehmen Sie Stellung zu der Aussage: 'Die Zukunft des Wohnens liegt auf dem Land, nicht in der Stadt.'", "points": ["These klar benennen", "Argumentation abwägen", "Beispiele anführen", "Zusammenfassendes Urteil"], "prep": 120, "seconds": 150 },
+      { "kind": "q", "text": "Der Prüfer widerspricht: 'Auf dem Land fehlt die Infrastruktur.' Gehen Sie differenziert darauf ein.", "seconds": 75 }
+    ]
+  }
+]

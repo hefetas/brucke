@@ -1,0 +1,73 @@
+[
+  {
+    "id": "goethe-lesen-a1-einladung", "level": "A1", "title": "Lesen A1 · Einladung", "minutes": 8,
+    "text": "Liebe Anna,\n\nich habe am Samstag Geburtstag und möchte ein kleines Fest machen. Die Party beginnt um 18 Uhr bei mir zu Hause, Bahnhofstraße 12. Wir essen zusammen und hören Musik. Bitte bring nichts mit, ich koche selbst Nudeln und Salat. Kannst du kommen? Schreib mir bis Donnerstag.\n\nLiebe Grüße\nMia",
+    "questions": [
+      { "t": "tf", "q": "Die Party ist am Sonntag.", "answer": 1, "why": "Im Text: 'am Samstag Geburtstag'. Also falsch." },
+      { "t": "tf", "q": "Mia kocht selbst.", "answer": 0, "why": "'ich koche selbst Nudeln und Salat' → richtig." },
+      { "t": "mcq", "q": "Was soll Anna tun?", "options": ["Essen mitbringen", "Bis Donnerstag antworten", "Um 20 Uhr kommen"], "answer": 1, "why": "'Schreib mir bis Donnerstag.' Mitbringen soll sie nichts." },
+      { "t": "mcq", "q": "Wo ist die Party?", "options": ["Bei Mia zu Hause", "In einem Restaurant", "Im Park"], "answer": 0, "why": "'bei mir zu Hause, Bahnhofstraße 12'." }
+    ]
+  },
+  {
+    "id": "goethe-lesen-a2-kurse", "level": "A2", "title": "Lesen A2 · Kursangebot", "minutes": 10,
+    "text": "Der Stadtteilverein bietet ab September neue Kurse an: Yoga (montags, 18 Uhr), Tanzen für Anfänger (mittwochs, 19.30 Uhr) und einen Kochkurs für Kinder (samstags, 10 Uhr). Die Anmeldung ist online oder im Büro in der Lindenstraße möglich. Mitglieder zahlen 20 Euro pro Monat, Nichtmitglieder 30 Euro. Wer sich bis zum 15. August anmeldet, bekommt den ersten Monat gratis. Für den Kochkurs sind nur noch drei Plätze frei.",
+    "questions": [
+      { "t": "tf", "q": "Der Yogakurs findet am Montag statt.", "answer": 0, "why": "'Yoga (montags, 18 Uhr)'." },
+      { "t": "tf", "q": "Nichtmitglieder zahlen 20 Euro im Monat.", "answer": 1, "why": "Mitglieder zahlen 20 Euro, Nichtmitglieder 30 Euro." },
+      { "t": "mcq", "q": "Wer sich bis zum 15. August anmeldet,", "options": ["bekommt einen Rabatt auf den Kochkurs.", "zahlt den ersten Monat nicht.", "zahlt weniger als Mitglieder."], "answer": 1, "why": "'bekommt den ersten Monat gratis'." },
+      { "t": "mcq", "q": "Was stimmt für den Kochkurs?", "options": ["Er ist für Erwachsene.", "Es gibt nur noch wenige freie Plätze.", "Er findet mittwochs statt."], "answer": 1, "why": "'nur noch drei Plätze frei'; der Kurs ist für Kinder und samstags." }
+    ]
+  },
+  {
+    "id": "goethe-lesen-b1-fahrrad", "level": "B1", "title": "Lesen B1 · Mit dem Rad zur Arbeit", "minutes": 12,
+    "text": "Immer mehr Menschen in deutschen Städten steigen aufs Fahrrad um. Laut einer aktuellen Umfrage fährt fast jeder Dritte mindestens einmal pro Woche mit dem Rad zur Arbeit. Als Gründe nennen die Befragten vor allem Zeitersparnis, weil man im Stau nicht stehen muss, und den Wunsch, etwas für die Gesundheit zu tun. Viele Städte reagieren und bauen zusätzliche Radwege. In Kopenhagen, das als Vorbild gilt, werden bereits mehr als die Hälfte aller Wege zur Arbeit oder Schule mit dem Rad zurückgelegt.\n\nAllerdings kritisieren Radfahrer, dass es in Deutschland oft zu wenige sichere Abstellplätze gibt. Außerdem seien Radwege häufig zu schmal oder würden von parkenden Autos blockiert. Verkehrsexperten fordern deshalb, dass mehr Geld in die Infrastruktur investiert wird. Autofahrerverbände warnen dagegen, dass weniger Parkplätze das Leben in der Innenstadt erschweren könnten.",
+    "questions": [
+      { "t": "tf", "q": "Fast jeder Dritte fährt mindestens einmal pro Woche mit dem Rad zur Arbeit.", "answer": 0, "why": "Erster Absatz, zweiter Satz." },
+      { "t": "tf", "q": "In Kopenhagen fährt weniger als die Hälfte der Menschen mit dem Rad zur Arbeit oder Schule.", "answer": 1, "why": "Im Text: 'mehr als die Hälfte'. Also falsch." },
+      { "t": "mcq", "q": "Was kritisieren Radfahrer?", "options": ["Es gibt zu viele Radwege.", "Es gibt zu wenige sichere Abstellplätze.", "Fahrräder sind zu teuer."], "answer": 1, "why": "'zu wenige sichere Abstellplätze'." },
+      { "t": "mcq", "q": "Wovor warnen Autofahrerverbände?", "options": ["Vor mehr Staus", "Vor weniger Parkplätzen, die die Innenstadt erschweren", "Vor höheren Benzinpreisen"], "answer": 1, "why": "Letzter Satz des Textes." }
+    ]
+  },
+  {
+    "id": "goethe-lesen-b1-homeoffice", "level": "B1", "title": "Lesen B1 · Homeoffice", "minutes": 12,
+    "text": "Seit der Pandemie arbeiten viele Beschäftigte zumindest einen Teil der Woche von zu Hause aus. Für Lena Fischer, Grafikerin aus Leipzig, hat das viele Vorteile: Sie spart täglich eineinhalb Stunden Fahrzeit und kann ihre Arbeit flexibler einteilen. Trotzdem vermisst sie den Kontakt zu ihren Kollegen. „Manchmal habe ich das Gefühl, den ganzen Tag mit niemandem zu sprechen“, sagt sie.\n\nAußerdem fällt es ihr schwer, abends abzuschalten, weil Arbeitsplatz und Wohnzimmer im selben Raum liegen. Deshalb hat sie sich eine feste Regel gesetzt: Nach 18 Uhr bleibt der Laptop zu. Ihr Arbeitgeber bietet inzwischen ein Modell an, bei dem die Mitarbeiter zwei Tage im Büro und drei Tage zu Hause arbeiten. Lena findet diese Mischung ideal.",
+    "questions": [
+      { "t": "tf", "q": "Lena spart jeden Tag anderthalb Stunden Fahrzeit.", "answer": 0, "why": "'eineinhalb Stunden Fahrzeit'." },
+      { "t": "tf", "q": "Lena fühlt sich im Homeoffice nie einsam.", "answer": 1, "why": "Sie vermisst den Kontakt zu Kollegen." },
+      { "t": "mcq", "q": "Warum kann Lena abends schlecht abschalten?", "options": ["Sie hat kleine Kinder.", "Arbeitsplatz und Wohnzimmer sind im selben Raum.", "Ihr Chef ruft oft an."], "answer": 1, "why": "Zweiter Absatz, erster Satz." },
+      { "t": "mcq", "q": "Welches Modell bietet der Arbeitgeber an?", "options": ["Fünf Tage zu Hause", "Zwei Tage im Büro, drei Tage zu Hause", "Fünf Tage im Büro"], "answer": 1, "why": "'zwei Tage im Büro und drei Tage zu Hause'." }
+    ]
+  },
+  {
+    "id": "goethe-lesen-b2-lernen", "level": "B2", "title": "Lesen B2 · Lebenslanges Lernen", "minutes": 14,
+    "text": "Wer heute einen Beruf erlernt, kann nicht mehr davon ausgehen, dass sein Wissen bis zur Rente reicht. Technologische Entwicklungen verändern Arbeitsprozesse so schnell, dass Weiterbildung für viele Beschäftigte zur Daueraufgabe geworden ist. Arbeitgeber unterstützen dies zwar zunehmend, doch nach einer Studie des Instituts für Arbeitsmarktforschung nehmen vor allem Hochqualifizierte entsprechende Angebote wahr, während Geringqualifizierte seltener davon profitieren. Als Hauptgründe nennen diese fehlende Zeit, familiäre Verpflichtungen und die Sorge, nach Jahren ohne Lernerfahrung zu scheitern.\n\nExperten plädieren deshalb für kürzere, flexibel zu absolvierende Kurse, die sich leichter in den Alltag integrieren lassen. Auch digitale Lernplattformen können helfen, sofern die Teilnehmer Unterstützung beim Einstieg erhalten. Kritiker warnen allerdings davor, die Verantwortung allein auf die Beschäftigten abzuwälzen: Ohne verlässliche Freistellung und finanzielle Förderung bleibe lebenslanges Lernen für viele ein leeres Versprechen.",
+    "questions": [
+      { "t": "tf", "q": "Laut der Studie nutzen vor allem Hochqualifizierte Weiterbildungsangebote.", "answer": 0, "why": "'vor allem Hochqualifizierte … wahr'." },
+      { "t": "tf", "q": "Geringqualifizierte nennen als Hauptgrund die hohen Kosten.", "answer": 1, "why": "Genannt werden Zeit, Familie und die Sorge zu scheitern, nicht die Kosten." },
+      { "t": "mcq", "q": "Was schlagen Experten vor?", "options": ["Längere Kurse mit festen Zeiten", "Kürzere, flexible Kurse", "Eine Pflicht zur Weiterbildung"], "answer": 1, "why": "'kürzere, flexibel zu absolvierende Kurse'." },
+      { "t": "mcq", "q": "Was kritisieren die Kritiker?", "options": ["Digitale Plattformen seien zu teuer.", "Die Verantwortung werde allein auf die Beschäftigten abgewälzt.", "Arbeitgeber böten keine Kurse an."], "answer": 1, "why": "Vorletzter Satz: 'Verantwortung allein auf die Beschäftigten abzuwälzen'." }
+    ]
+  },
+  {
+    "id": "goethe-lesen-b2-mehrweg", "level": "B2", "title": "Lesen B2 · Mehrweg statt Einweg", "minutes": 14,
+    "text": "Der Plastikmüll in unseren Städten wächst, und ein großer Teil davon stammt von Kaffeebechern und Essensverpackungen zum Mitnehmen. Seit diesem Jahr müssen größere Restaurants deshalb auch Mehrwegbehälter anbieten. Das klingt vernünftig, doch in der Praxis zeigt sich: Nur wenige Kunden greifen tatsächlich zu den Alternativen. Der Grund liegt weniger im Preis als in der Bequemlichkeit, denn Mehrwegbecher muss man zurückbringen.\n\nWer glaubt, ein Appell an die Vernunft genüge, unterschätzt die Macht der Gewohnheit. Wirksamer wäre eine Abgabe auf Einwegverpackungen, wie sie in Tübingen bereits eingeführt wurde. Dort ist der Verbrauch deutlich gesunken. Natürlich belastet eine solche Abgabe kleine Betriebe, doch gerade deshalb sollte die Politik klare Regeln schaffen, statt auf freiwillige Lösungen zu hoffen.",
+    "questions": [
+      { "t": "tf", "q": "Größere Restaurants müssen seit diesem Jahr Mehrwegbehälter anbieten.", "answer": 0, "why": "Erster Absatz, zweiter Satz." },
+      { "t": "tf", "q": "Die meisten Kunden nutzen die Mehrwegalternativen.", "answer": 1, "why": "'Nur wenige Kunden greifen tatsächlich zu den Alternativen'." },
+      { "t": "mcq", "q": "Warum nutzen so wenige Kunden Mehrwegbecher?", "options": ["Sie sind zu teuer.", "Man muss sie zurückbringen, das ist unbequem.", "Ihre Qualität ist schlecht."], "answer": 1, "why": "'weniger im Preis als in der Bequemlichkeit'." },
+      { "t": "mcq", "q": "Welche Position vertritt der Autor?", "options": ["Freiwillige Lösungen genügen.", "Eine verbindliche Abgabe wäre wirksamer.", "Einwegverpackungen sollten sofort verboten werden."], "answer": 1, "why": "'Wirksamer wäre eine Abgabe … klare Regeln statt freiwilliger Lösungen'." }
+    ]
+  },
+  {
+    "id": "goethe-lesen-c1-aufmerksamkeit", "level": "C1", "title": "Lesen C1 · Aufmerksamkeitsökonomie", "minutes": 16,
+    "text": "Die Aufmerksamkeit der Nutzer ist zur wichtigsten Währung der digitalen Wirtschaft geworden. Plattformen konkurrieren nicht in erster Linie um Geld, sondern um Zeit: Je länger Menschen auf einer Seite verweilen, desto mehr Werbung lässt sich verkaufen. Um dies zu erreichen, setzen die Betreiber auf Mechanismen, die psychologische Schwächen gezielt ausnutzen, etwa endlos scrollbare Feeds oder Benachrichtigungen, die in unregelmäßigen Abständen eintreffen. Die Verhaltensforschung spricht in diesem Zusammenhang von variablen Belohnungen, die erwiesenermaßen besonders schwer zu ignorieren sind.\n\nBefürworter solcher Konzepte verweisen darauf, dass Nutzer jederzeit die Wahl hätten, ein Angebot zu verlassen. Kritiker halten dem entgegen, dass von echter Entscheidungsfreiheit kaum die Rede sein könne, wenn das Design systematisch darauf angelegt sei, rationale Überlegungen zu umgehen. Ein zunehmend diskutierter Ansatz besteht darin, Plattformen zu verpflichten, Voreinstellungen zugunsten der Nutzer zu wählen, etwa durch abschaltbare Empfehlungsalgorithmen. Ob derartige Regulierung tatsächlich greift, hängt letztlich davon ab, ob sie auch durchgesetzt werden kann.",
+    "questions": [
+      { "t": "tf", "q": "Plattformen konkurrieren in erster Linie um Geld.", "answer": 1, "why": "'nicht in erster Linie um Geld, sondern um Zeit'." },
+      { "t": "tf", "q": "Kritiker meinen, die Nutzer hätten echte Entscheidungsfreiheit.", "answer": 1, "why": "Kritiker bezweifeln gerade die 'echte Entscheidungsfreiheit'." },
+      { "t": "mcq", "q": "Was versteht der Text unter 'variablen Belohnungen'?", "options": ["Belohnungen, die unregelmäßig eintreffen und schwer zu ignorieren sind", "Preisnachlässe für treue Kunden", "Bezahlte Zusatzinhalte"], "answer": 0, "why": "Sie werden mit Benachrichtigungen 'in unregelmäßigen Abständen' verbunden." },
+      { "t": "mcq", "q": "Welcher Regulierungsansatz wird diskutiert?", "options": ["Ein generelles Werbeverbot", "Nutzerfreundliche Voreinstellungen, z. B. abschaltbare Empfehlungsalgorithmen", "Eine Steuer auf Nutzungszeit"], "answer": 1, "why": "Vorletzter Satz." },
+      { "t": "mcq", "q": "Wovon hängt die Wirkung der Regulierung laut Text ab?", "options": ["Davon, ob sie durchgesetzt werden kann", "Davon, ob die Nutzer sie akzeptieren", "Davon, wie schnell sie eingeführt wird"], "answer": 0, "why": "Letzter Satz." }
+    ]
+  }
+]

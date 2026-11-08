@@ -1,0 +1,178 @@
+{
+  "name": "IELTS",
+  "tagline": "Hedef: en yüksek band. Dört beceriyi ölç, en zayıfı kapat, soru tiplerini ustalaş.",
+  "format": [
+    { "section": "listening", "text": "30 dk, 4 bölüm, 40 soru; ses yalnızca bir kez çalınır. Yanıtlar dinlerken yazılır." },
+    { "section": "reading", "text": "60 dk, 3 metin, 40 soru; yanıt aktarma süresi yoktur. Metin başına ≈20 dk ayır." },
+    { "section": "writing", "text": "60 dk: Task 1 (≥150 kelime, ≈20 dk) + Task 2 (≥250 kelime, ≈40 dk). Task 2 puanın yaklaşık iki katı ağırlığa sahiptir." },
+    { "section": "speaking", "text": "11–14 dk yüz yüze görüşme: Part 1 (tanışma soruları), Part 2 (1 dk hazırlık + 1–2 dk konuşma), Part 3 (soyut tartışma)." }
+  ],
+  "formatNote": "Bu özet genel sınav yapısını anlatır; kayıt ve güncel kurallar için resmi kaynaklar (ielts.org, British Council) esas alınmalıdır. Band tahminleri Academic modülü için yaygın dönüşüm tablolarına dayanır ve gerçek sınavda ±0,5 sapabilir.",
+  "essayTypes": {
+    "opinion": {
+      "name": "Görüş (agree/disagree)",
+      "outline": ["Giriş: soruyu kendi cümlenle yeniden yaz + net görüşün (thesis)", "Gövde 1: ana gerekçe + açıklama + örnek", "Gövde 2: ikinci gerekçe veya karşı görüşe kısa cevap + örnek", "Sonuç: görüşünü farklı sözcüklerle tekrar et (yeni fikir ekleme)"],
+      "phrases": ["I strongly believe that…", "To a large extent, I agree that…", "This is largely because…", "A case in point is…", "Admittedly, … Nevertheless, …"]
+    },
+    "discussion": {
+      "name": "İki görüşü tartış + kendi görüşün",
+      "outline": ["Giriş: konuyu tanıt, iki görüşü belirt, kendi görüşünü söyle", "Gövde 1: birinci görüş + neden mantıklı", "Gövde 2: ikinci görüş + neden mantıklı", "Gövde 3 (kısa) veya sonuç: kendi görüşün ve gerekçen"],
+      "phrases": ["Some argue that…, whereas others maintain that…", "Proponents of this view point out that…", "On the other hand, …", "In my opinion, the latter view is more convincing because…"]
+    },
+    "problem": {
+      "name": "Problem – çözüm",
+      "outline": ["Giriş: sorunu tanıt ve iki bölümü (problemler/çözümler) duyur", "Gövde 1: 2 problem, her biri açıklama + sonuç", "Gövde 2: 2 çözüm, her biri nasıl işleyeceği ile", "Sonuç: kısa özet ve genel yargı"],
+      "phrases": ["One of the most serious consequences is…", "This, in turn, leads to…", "Governments could tackle this by…", "A more effective measure would be to…"]
+    },
+    "advantage": {
+      "name": "Avantaj / dezavantaj (outweigh)",
+      "outline": ["Giriş: konuyu tanıt + hangisinin ağır bastığını söyle", "Gövde 1: avantajlar (2) + örnek", "Gövde 2: dezavantajlar (2) + örnek", "Sonuç: tartıyı net biçimde belirt"],
+      "phrases": ["The main advantage of … is that…", "A further benefit is…", "On the downside, …", "On balance, the benefits outweigh the drawbacks."]
+    },
+    "twopart": {
+      "name": "İki parçalı soru",
+      "outline": ["Giriş: konuyu tanıt, iki soruya cevap vereceğini belirt", "Gövde 1: birinci sorunun cevabı (nedenler) + örnek", "Gövde 2: ikinci sorunun cevabı (değerlendirme) + örnek", "Sonuç: iki cevabı birleştir"],
+      "phrases": ["There are several reasons for this trend.", "The primary reason is…", "While this has some benefits, it also…", "Overall, I would argue that this is a largely positive/negative development."]
+    },
+    "data": {
+      "name": "Task 1 · Veri betimleme",
+      "outline": ["Giriş (1–2 cümle): grafiği/tabloyu kendi cümlenle paraphrase et", "Overview (2–3 cümle): en belirgin eğilimler/karşılaştırmalar — rakamsız", "Detay 1: ilgili rakamlarla ilk grup", "Detay 2: ikinci grup ve karşılaştırma"],
+      "phrases": ["The table illustrates…", "Overall, … was the highest while … was the lowest.", "… rose sharply from X% to Y%.", "In contrast, … remained stable at …", "… accounted for the largest proportion."]
+    },
+    "process": {
+      "name": "Task 1 · Süreç",
+      "outline": ["Giriş: süreci paraphrase et", "Overview: kaç aşama var, başlangıç ve bitiş", "Aşamaları sırayla anlat (pasif çatı + sıralama sözcükleri)", "Son aşamayı ve çıktıyı belirt"],
+      "phrases": ["The process begins with…", "Next, / Subsequently, / Once this is done, …", "…is then pressed and dried", "Finally, the end product is…"]
+    }
+  },
+  "strategies": {
+    "tfng": "True: metin aynı bilgiyi söylüyor (farklı sözcüklerle). False: metin TERSİNİ söylüyor. Not Given: metinde bu bilgi YOK — bildiğin dünya bilgisini kullanma. 'All, only, always, never' gibi sözcüklere dikkat et.",
+    "tf": "Richtig: metin söylüyor. Falsch: metin tersini söylüyor. Cümleyi metindeki karşılığıyla kelime kelime eşle.",
+    "mcq": "Önce soruyu oku, seçenekleri metinle karşılaştır. Çeldiriciler metinden kelime alır ama anlamı bozar; birebir kelime eşleşmesine değil anlama bak.",
+    "fill": "Kelime sınırına uy (ONE WORD / TWO WORDS). Yanıt metinden aynen alınır; dilbilgisi boşluğa uymalı. Yazımı doğru yap: yazım hatası puan kaybettirir.",
+    "match": "Eşleştirmede önce seçeneklerin anahtar sözcüklerini işaretle, paragrafın ana fikriyle ara. Aynı seçenek genelde bir kez kullanılır.",
+    "listening": "Soruları dinlemeden ÖNCE oku, anahtar sözcükleri çiz. Ses bir kez çalar: kaçırdığını bırak, sonrakine geç. Sayılar, harf harf söylenen isimler ve 'düzeltme' ifadeleri (actually, sorry, I mean) çeldirici olur.",
+    "reading": "Metni baştan sona okumaya çalışma: önce sorulara bak, anahtar sözcükleri tara (skimming/scanning). Sorular genelde metinle aynı sırada ilerler (eşleştirme hariç).",
+    "writing": "Task 2'de puan dört ölçütle verilir: görev yanıtı, tutarlılık, sözcük, dilbilgisi. Plan yap (5 dk), yazmaya 30 dk, kontrol 5 dk. Memorize edilmiş kalıp paragraflardan kaçın: sınav görevlileri bunu cezalandırır.",
+    "speaking": "Cevapları 2–3 cümlede bitirme: neden + örnek ekle. Part 2'de 1 dakikayı tam kullanıp notlarını anahtar kelimelerle al. Susmak yerine 'Well, let me think…' gibi dolgu kalıpları kullan. Telaffuz için vurgu ve tonlamaya odaklan."
+  },
+  "rubrics": {
+    "writing": [
+      { "key": "task", "name": "Görev yanıtı (Task Achievement / Response)", "options": [
+        { "value": 5, "text": "Ana noktaları kısmen karşıladım; bazı bölümler eksik veya gereksiz ayrıntılı; görüşüm net değil." },
+        { "value": 6, "text": "İstenenleri ele aldım ama bazı noktalar yeterince gelişmedi; görüşüm genel olarak belli." },
+        { "value": 7, "text": "Tüm bölümleri yeterli derinlikte ele aldım; görüşüm baştan sona net; ana fikirler gerekçeli." },
+        { "value": 8, "text": "Tüm bölümler tam ve dengeli; fikirler iyi seçilmiş örneklerle gelişmiş." }
+      ] },
+      { "key": "coherence", "name": "Tutarlılık ve bağlantı (Coherence & Cohesion)", "options": [
+        { "value": 5, "text": "Fikirler sıralı ama bağlaçlar mekanik/hatalı; paragraflama tutarsız." },
+        { "value": 6, "text": "Genel olarak akıcı; bağlaçlar var ama bazen fazla ya da yetersiz; paragraf yapısı var." },
+        { "value": 7, "text": "Mantıksal ilerleme net; her paragrafta tek ana fikir; bağlaçlar çeşitli ve doğal." },
+        { "value": 8, "text": "Akış zahmetsiz; bağlantı araçları doğal; paragraflar çok iyi organize." }
+      ] },
+      { "key": "lexical", "name": "Sözcük (Lexical Resource)", "options": [
+        { "value": 5, "text": "Sınırlı sözcük, sık tekrar; yazım hataları anlamı bozabiliyor." },
+        { "value": 6, "text": "Yeterli sözcük; daha az yaygın kelimeleri deniyorum ama hatalar var." },
+        { "value": 7, "text": "Geniş ve esnek sözcük kullanımı; collocation'ları bilinçli kullanıyorum; küçük hatalar." },
+        { "value": 8, "text": "Akıcı, doğru ve doğal sözcük seçimi; hatalar nadir." }
+      ] },
+      { "key": "grammar", "name": "Dilbilgisi (Grammatical Range & Accuracy)", "options": [
+        { "value": 5, "text": "Basit cümleler ağırlıkta; karmaşık yapıda sık hata." },
+        { "value": 6, "text": "Basit ve karmaşık cümle karışımı; hatalar var ama anlam çoğunlukla net." },
+        { "value": 7, "text": "Çeşitli karmaşık yapılar; çoğu cümle hatasız; küçük hatalar." },
+        { "value": 8, "text": "Geniş yapı yelpazesi; cümlelerin büyük çoğunluğu hatasız." }
+      ] }
+    ],
+    "speaking": [
+      { "key": "fluency", "name": "Akıcılık ve tutarlılık (Fluency & Coherence)", "options": [
+        { "value": 5, "text": "Sık duraksıyorum, tekrarla uzatıyorum; bağlaçlar basit." },
+        { "value": 6, "text": "Uzun konuşabiliyorum ama ara sıra duraksama/tekrar var; bağlaçlar her zaman yerinde değil." },
+        { "value": 7, "text": "Uzun cevaplar veriyorum; duraksamam nadir ve içerik düşünmekten; bağlaçlar esnek." },
+        { "value": 8, "text": "Akıcıyım; duraksamalar çok nadir; konu gelişimi tutarlı." }
+      ] },
+      { "key": "lexical", "name": "Sözcük (Lexical Resource)", "options": [
+        { "value": 5, "text": "Tanıdık konularda yetiyorum; sözcük bulamayınca etrafından dolanıyorum." },
+        { "value": 6, "text": "Çoğu konuda yeterli; kelime bulamayınca açıklayarak ilerleyebiliyorum." },
+        { "value": 7, "text": "Esnek; deyim ve az kullanılan kelimeleri deniyorum, küçük yanlışlar var." },
+        { "value": 8, "text": "Geniş ve doğal; ince anlam farklarını ifade edebiliyorum." }
+      ] },
+      { "key": "grammar", "name": "Dilbilgisi (Grammatical Range & Accuracy)", "options": [
+        { "value": 5, "text": "Basit yapılar doğru, karmaşık yapılarda sık hata." },
+        { "value": 6, "text": "Basit ve karmaşık yapı karışımı; hatalar var ama anlaşılıyorum." },
+        { "value": 7, "text": "Çeşitli yapılar; çoğu cümle hatasız." },
+        { "value": 8, "text": "Geniş yapı yelpazesi; hatalar nadir." }
+      ] },
+      { "key": "pronunciation", "name": "Telaffuz (Pronunciation)", "options": [
+        { "value": 5, "text": "Anlaşılıyorum ama vurgu/ses bazen zorluk çıkarıyor; aksan belirgin." },
+        { "value": 6, "text": "Genel olarak anlaşılır; bazı seslerde hata; tonlama sınırlı." },
+        { "value": 7, "text": "Rahat anlaşılır; vurgu ve tonlama çoğunlukla doğal." },
+        { "value": 8, "text": "Geniş telaffuz yelpazesi; neredeyse her zaman rahat anlaşılır." }
+      ] }
+    ]
+  },
+  "vocab": [
+    { "lemma": "mitigate", "pos": "verb", "meaning_tr": "hafifletmek, azaltmak", "example": "Governments must mitigate the effects of climate change." },
+    { "lemma": "emission", "pos": "noun", "meaning_tr": "salım, emisyon", "example": "Carbon emissions have risen sharply since 1990." },
+    { "lemma": "sustainable", "pos": "adj", "meaning_tr": "sürdürülebilir", "example": "We need a more sustainable model of agriculture." },
+    { "lemma": "deforestation", "pos": "noun", "meaning_tr": "ormansızlaşma", "example": "Deforestation threatens many species." },
+    { "lemma": "renewable", "pos": "adj", "meaning_tr": "yenilenebilir", "example": "Renewable energy is becoming cheaper every year." },
+    { "lemma": "conservation", "pos": "noun", "meaning_tr": "koruma", "example": "Wildlife conservation requires international cooperation." },
+    { "lemma": "pollutant", "pos": "noun", "meaning_tr": "kirletici madde", "example": "Factories release harmful pollutants into rivers." },
+    { "lemma": "biodiversity", "pos": "noun", "meaning_tr": "biyolojik çeşitlilik", "example": "Biodiversity is essential for healthy ecosystems." },
+    { "lemma": "curriculum", "pos": "noun", "meaning_tr": "müfredat", "example": "The curriculum should include financial education." },
+    { "lemma": "literacy", "pos": "noun", "meaning_tr": "okuryazarlık", "example": "Digital literacy is now a basic skill." },
+    { "lemma": "tuition", "pos": "noun", "meaning_tr": "öğrenim ücreti", "example": "Rising tuition fees discourage low-income students." },
+    { "lemma": "vocational", "pos": "adj", "meaning_tr": "mesleki", "example": "Vocational training prepares students for specific jobs." },
+    { "lemma": "compulsory", "pos": "adj", "meaning_tr": "zorunlu", "example": "Education is compulsory until the age of sixteen." },
+    { "lemma": "academic", "pos": "adj", "meaning_tr": "akademik", "example": "Academic achievement is not the only measure of success." },
+    { "lemma": "enrol", "pos": "verb", "meaning_tr": "kaydolmak", "example": "More mature students are enrolling at university." },
+    { "lemma": "peer pressure", "pos": "noun", "meaning_tr": "akran baskısı", "example": "Peer pressure strongly influences teenage behaviour." },
+    { "lemma": "obesity", "pos": "noun", "meaning_tr": "obezite", "example": "Childhood obesity has become a major public health issue." },
+    { "lemma": "sedentary", "pos": "adj", "meaning_tr": "hareketsiz, oturarak geçen", "example": "A sedentary lifestyle increases health risks." },
+    { "lemma": "chronic", "pos": "adj", "meaning_tr": "kronik", "example": "Chronic diseases place pressure on health services." },
+    { "lemma": "preventive", "pos": "adj", "meaning_tr": "önleyici", "example": "Preventive care is cheaper than treatment." },
+    { "lemma": "life expectancy", "pos": "noun", "meaning_tr": "yaşam beklentisi", "example": "Life expectancy has increased significantly." },
+    { "lemma": "well-being", "pos": "noun", "meaning_tr": "iyi oluş, refah", "example": "Green spaces improve mental well-being." },
+    { "lemma": "diagnose", "pos": "verb", "meaning_tr": "teşhis koymak", "example": "Doctors can now diagnose the disease earlier." },
+    { "lemma": "innovation", "pos": "noun", "meaning_tr": "yenilik", "example": "Innovation drives economic growth." },
+    { "lemma": "automation", "pos": "noun", "meaning_tr": "otomasyon", "example": "Automation may replace many routine jobs." },
+    { "lemma": "obsolete", "pos": "adj", "meaning_tr": "miadını doldurmuş, geçersiz", "example": "Some skills become obsolete very quickly." },
+    { "lemma": "breakthrough", "pos": "noun", "meaning_tr": "çığır açan gelişme", "example": "The discovery was a major scientific breakthrough." },
+    { "lemma": "surveillance", "pos": "noun", "meaning_tr": "gözetim", "example": "Mass surveillance raises privacy concerns." },
+    { "lemma": "addictive", "pos": "adj", "meaning_tr": "bağımlılık yapan", "example": "Social media can be highly addictive." },
+    { "lemma": "virtual", "pos": "adj", "meaning_tr": "sanal", "example": "Virtual meetings save travel time." },
+    { "lemma": "urbanisation", "pos": "noun", "meaning_tr": "kentleşme", "example": "Rapid urbanisation puts pressure on housing." },
+    { "lemma": "congestion", "pos": "noun", "meaning_tr": "(trafik) sıkışıklığı", "example": "Traffic congestion wastes time and fuel." },
+    { "lemma": "infrastructure", "pos": "noun", "meaning_tr": "altyapı", "example": "Investment in infrastructure creates jobs." },
+    { "lemma": "affordable", "pos": "adj", "meaning_tr": "uygun fiyatlı", "example": "Affordable housing is scarce in big cities." },
+    { "lemma": "commute", "pos": "verb", "meaning_tr": "işe gidip gelmek", "example": "Many people commute over an hour each way." },
+    { "lemma": "inequality", "pos": "noun", "meaning_tr": "eşitsizlik", "example": "Income inequality has widened in recent decades." },
+    { "lemma": "deter", "pos": "verb", "meaning_tr": "caydırmak", "example": "Heavy fines may deter drivers from speeding." },
+    { "lemma": "rehabilitation", "pos": "noun", "meaning_tr": "ıslah, rehabilitasyon", "example": "Rehabilitation helps offenders return to society." },
+    { "lemma": "legislation", "pos": "noun", "meaning_tr": "mevzuat, yasalar", "example": "New legislation will protect consumers." },
+    { "lemma": "vulnerable", "pos": "adj", "meaning_tr": "savunmasız, hassas", "example": "Elderly people are particularly vulnerable." },
+    { "lemma": "stereotype", "pos": "noun", "meaning_tr": "basmakalıp yargı", "example": "Advertising often reinforces gender stereotypes." },
+    { "lemma": "globalisation", "pos": "noun", "meaning_tr": "küreselleşme", "example": "Globalisation has connected distant economies." },
+    { "lemma": "consumption", "pos": "noun", "meaning_tr": "tüketim", "example": "Energy consumption rises with population growth." },
+    { "lemma": "incentive", "pos": "noun", "meaning_tr": "teşvik", "example": "Tax incentives encourage firms to invest." },
+    { "lemma": "subsidy", "pos": "noun", "meaning_tr": "sübvansiyon", "example": "Farmers receive government subsidies." },
+    { "lemma": "outweigh", "pos": "verb", "meaning_tr": "ağır basmak", "example": "The benefits clearly outweigh the risks." },
+    { "lemma": "contribute to", "pos": "verb", "meaning_tr": "katkıda bulunmak, yol açmak", "example": "Stress contributes to many illnesses." },
+    { "lemma": "undermine", "pos": "verb", "meaning_tr": "zayıflatmak, baltalamak", "example": "Constant criticism can undermine confidence." },
+    { "lemma": "advocate", "pos": "verb", "meaning_tr": "savunmak, desteklemek", "example": "Many experts advocate a shorter working week." },
+    { "lemma": "tackle", "pos": "verb", "meaning_tr": "(sorunla) mücadele etmek", "example": "Governments must tackle unemployment." },
+    { "lemma": "alleviate", "pos": "verb", "meaning_tr": "hafifletmek", "example": "Better public transport could alleviate congestion." },
+    { "lemma": "foster", "pos": "verb", "meaning_tr": "geliştirmek, teşvik etmek", "example": "Group projects foster teamwork." },
+    { "lemma": "hinder", "pos": "verb", "meaning_tr": "engel olmak", "example": "Lack of funding hinders scientific research." },
+    { "lemma": "detrimental", "pos": "adj", "meaning_tr": "zararlı", "example": "Too much screen time is detrimental to sleep." },
+    { "lemma": "substantial", "pos": "adj", "meaning_tr": "önemli ölçüde, hatırı sayılır", "example": "There has been a substantial increase in prices." },
+    { "lemma": "controversial", "pos": "adj", "meaning_tr": "tartışmalı", "example": "The proposal remains highly controversial." },
+    { "lemma": "inevitable", "pos": "adj", "meaning_tr": "kaçınılmaz", "example": "Some job losses are inevitable." },
+    { "lemma": "rapid", "pos": "adj", "meaning_tr": "hızlı", "example": "Rapid growth can strain public services." },
+    { "lemma": "fluctuate", "pos": "verb", "meaning_tr": "dalgalanmak", "example": "Prices fluctuated throughout the year." },
+    { "lemma": "plummet", "pos": "verb", "meaning_tr": "çakılmak, birden düşmek", "example": "Sales plummeted after the scandal." },
+    { "lemma": "surge", "pos": "verb", "meaning_tr": "ani yükselmek", "example": "Demand surged in the summer months." },
+    { "lemma": "proportion", "pos": "noun", "meaning_tr": "oran, pay", "example": "A large proportion of income goes on rent." },
+    { "lemma": "predominantly", "pos": "adv", "meaning_tr": "ağırlıklı olarak", "example": "The workforce is predominantly young." }
+  ]
+}

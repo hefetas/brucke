@@ -135,7 +135,7 @@ function NextCard({ next }: { next: LoadedJourney['state']['next'] }) {
       <div className="card">
         <h2>Sıradaki seviye hazırlanıyor</h2>
         <p className="muted">{next.level} seviyesi için henüz içerik yok. Bu arada kart tekrarı yapabilir veya kütüphaneden serbest çalışabilirsin.</p>
-        <div className="row"><Link className="btn" href="/review">Kart tekrarı</Link><Link className="btn" href="/library">Kütüphane</Link></div>
+        <div className="row"><Link className="btn" href="/review/cards">Kart tekrarı</Link><Link className="btn" href="/library">Kütüphane</Link></div>
       </div>
     );
   }
@@ -145,7 +145,7 @@ function NextCard({ next }: { next: LoadedJourney['state']['next'] }) {
         <span className="tag accent">Sıradaki adım</span>
         <h2>🔁 {next.due} kart tekrar bekliyor</h2>
         <p className="muted">Birikmiş kartları önce bitirmek öğrendiklerini kalıcı yapar. Sonra yolculuğa devam edersin.</p>
-        <Link className="btn primary" href="/review">Kartları tekrar et</Link>
+        <Link className="btn primary" href="/review/cards">Kartları tekrar et</Link>
       </div>
     );
   }

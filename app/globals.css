@@ -94,6 +94,17 @@ small { font-size: 0.85rem; }
 .nav a.link:hover { background: var(--surface-2); color: var(--ink); }
 .nav a.link[aria-current='page'] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
 .spacer { flex: 1; }
+.more { position: relative; }
+.more > summary { list-style: none; cursor: pointer; color: var(--muted); padding: 0.35rem 0.6rem; border-radius: 999px; font-size: 0.92rem; }
+.more > summary::-webkit-details-marker { display: none; }
+.more > summary:hover, .more > summary.on { background: var(--surface-2); color: var(--ink); }
+.more-pop {
+  position: absolute; right: 0; top: calc(100% + 6px); min-width: 180px; z-index: 30; display: flex; flex-direction: column;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 0.35rem;
+}
+.more-pop a { color: var(--ink); text-decoration: none; padding: 0.45rem 0.7rem; border-radius: 8px; }
+.more-pop a:hover { background: var(--surface-2); }
+.more-pop a[aria-current='page'] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
 
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.2rem; box-shadow: var(--shadow); }
 .card + .card, .stack > * + * { margin-top: 0.9rem; }

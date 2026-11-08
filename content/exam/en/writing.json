@@ -1,0 +1,54 @@
+[
+  {
+    "id": "ielts-w1-internet", "task": "t1", "kind": "data", "title": "Task 1 · Internet access", "minWords": 150, "minutes": 20,
+    "prompt": "The table shows the percentage of households with internet access in four countries in 2005 and 2015. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "data": { "headers": ["Country", "2005 (%)", "2015 (%)"], "rows": [["United Kingdom", "62", "93"], ["Japan", "70", "91"], ["Brazil", "18", "58"], ["Nigeria", "6", "35"]] }
+  },
+  {
+    "id": "ielts-w1-museums", "task": "t1", "kind": "data", "title": "Task 1 · Museum visitors", "minWords": 150, "minutes": 20,
+    "prompt": "The table shows the number of visitors (in thousands) to three museums in each quarter of one year. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "data": { "headers": ["Museum", "Q1", "Q2", "Q3", "Q4"], "rows": [["Science", "40", "55", "90", "60"], ["Art", "70", "65", "60", "85"], ["History", "30", "35", "45", "40"]] }
+  },
+  {
+    "id": "ielts-w1-energy", "task": "t1", "kind": "data", "title": "Task 1 · Household energy use", "minWords": 150, "minutes": 20,
+    "prompt": "The table shows how households in one country used energy in 1990 and in 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "data": { "headers": ["Use", "1990 (%)", "2020 (%)"], "rows": [["Heating", "58", "45"], ["Lighting", "12", "8"], ["Electrical appliances", "15", "30"], ["Hot water", "15", "17"]] }
+  },
+  {
+    "id": "ielts-w1-paper", "task": "t1", "kind": "process", "title": "Task 1 · Recycling paper (process)", "minWords": 150, "minutes": 20,
+    "prompt": "The list below shows the stages in the process of recycling waste paper. Summarise the information by selecting and reporting the main features.",
+    "steps": ["Waste paper is collected from homes and offices.", "It is sorted and the plastic and metal are removed.", "The paper is mixed with water and chemicals and broken into pulp.", "The pulp is screened and cleaned to remove ink and glue.", "The clean pulp is pressed and dried into large sheets.", "The sheets are cut and rolled, then sent to factories to make new paper products."]
+  },
+  {
+    "id": "ielts-w2-practical", "task": "t2", "kind": "opinion", "title": "Task 2 · Practical skills at university", "minWords": 250, "minutes": 40, "wantParagraphs": 4,
+    "prompt": "Some people think that universities should focus on providing graduates with the practical skills needed in the workplace, rather than theoretical knowledge. To what extent do you agree or disagree?"
+  },
+  {
+    "id": "ielts-w2-school-age", "task": "t2", "kind": "discussion", "title": "Task 2 · Starting school", "minWords": 250, "minutes": 40, "wantParagraphs": 4,
+    "prompt": "Some people believe that children should start formal school at a very young age, while others think they should only begin at seven or eight. Discuss both views and give your own opinion."
+  },
+  {
+    "id": "ielts-w2-traffic", "task": "t2", "kind": "problem", "title": "Task 2 · Traffic and pollution", "minWords": 250, "minutes": 40, "wantParagraphs": 4,
+    "prompt": "In many cities, the number of cars on the road is increasing, causing traffic congestion and air pollution. What problems does this cause? What measures could governments take to reduce it?"
+  },
+  {
+    "id": "ielts-w2-remote", "task": "t2", "kind": "advantage", "title": "Task 2 · Working from home", "minWords": 250, "minutes": 40, "wantParagraphs": 4,
+    "prompt": "More and more people are choosing to work from home. Do the advantages of this development outweigh the disadvantages?"
+  },
+  {
+    "id": "ielts-w2-social", "task": "t2", "kind": "twopart", "title": "Task 2 · Social media", "minWords": 250, "minutes": 40, "wantParagraphs": 4,
+    "prompt": "Many people today spend a large amount of time on social media. Why is this? Is it a positive or a negative development?"
+  },
+  {
+    "id": "ielts-w2-crime", "task": "t2", "kind": "discussion", "title": "Task 2 · Reducing crime", "minWords": 250, "minutes": 40, "wantParagraphs": 4,
+    "prompt": "Some people say that the best way to reduce crime is to give longer prison sentences. Others believe there are better alternatives. Discuss both views and give your own opinion."
+  },
+  {
+    "id": "ielts-w2-rail", "task": "t2", "kind": "opinion", "title": "Task 2 · Railways or roads", "minWords": 250, "minutes": 40, "wantParagraphs": 4,
+    "prompt": "Governments should spend money on railways rather than roads. To what extent do you agree or disagree?"
+  },
+  {
+    "id": "ielts-w2-apps", "task": "t2", "kind": "advantage", "title": "Task 2 · Learning languages with apps", "minWords": 250, "minutes": 40, "wantParagraphs": 4,
+    "prompt": "Nowadays many people learn a foreign language through apps rather than in classes. Do the benefits of this outweigh the drawbacks?"
+  }
+]

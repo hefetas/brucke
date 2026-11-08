@@ -1,0 +1,113 @@
+[
+  {
+    "id": "goethe-hoeren-a1-bahnhof", "level": "A1", "title": "Hören A1 · Am Fahrkartenschalter", "minutes": 5,
+    "script": [
+      { "speaker": "Kunde", "text": "Guten Tag. Ich möchte eine Fahrkarte nach Hamburg, bitte." },
+      { "speaker": "Verkäuferin", "text": "Einfach oder hin und zurück?" },
+      { "speaker": "Kunde", "text": "Hin und zurück, bitte. Wann fährt der nächste Zug?" },
+      { "speaker": "Verkäuferin", "text": "Um vierzehn Uhr fünfunddreißig, auf Gleis sieben." },
+      { "speaker": "Kunde", "text": "Und was kostet das?" },
+      { "speaker": "Verkäuferin", "text": "Das macht achtundfünfzig Euro." },
+      { "speaker": "Kunde", "text": "Kann ich mit Karte bezahlen?" },
+      { "speaker": "Verkäuferin", "text": "Ja, natürlich." }
+    ],
+    "questions": [
+      { "t": "mcq", "q": "Wohin will der Kunde fahren?", "options": ["Nach Hannover", "Nach Hamburg", "Nach Heidelberg"], "answer": 1, "why": "'eine Fahrkarte nach Hamburg'." },
+      { "t": "mcq", "q": "Wann fährt der Zug?", "options": ["13.35 Uhr", "14.15 Uhr", "14.35 Uhr"], "answer": 2, "why": "'vierzehn Uhr fünfunddreißig'." },
+      { "t": "mcq", "q": "Auf welchem Gleis fährt der Zug?", "options": ["Gleis 7", "Gleis 17", "Gleis 5"], "answer": 0, "why": "'Gleis sieben'." },
+      { "t": "tf", "q": "Der Kunde kann nicht mit Karte bezahlen.", "answer": 1, "why": "Die Verkäuferin sagt: 'Ja, natürlich.'" }
+    ]
+  },
+  {
+    "id": "goethe-hoeren-a2-praxis", "level": "A2", "title": "Hören A2 · Anrufbeantworter einer Arztpraxis", "minutes": 6,
+    "script": [
+      { "speaker": "Ansage", "text": "Guten Tag, hier ist die Praxis von Doktor Weber. Unsere Sprechzeiten sind Montag bis Freitag von acht bis zwölf Uhr und Dienstag und Donnerstag zusätzlich von fünfzehn bis achtzehn Uhr. Am Mittwochnachmittag ist die Praxis geschlossen." },
+      { "speaker": "Ansage", "text": "Wenn Sie einen Termin vereinbaren möchten, rufen Sie bitte zwischen acht und zehn Uhr an. In dringenden Fällen wenden Sie sich an den ärztlichen Bereitschaftsdienst unter der Nummer 116 117. Bitte denken Sie daran, Ihre Versichertenkarte mitzubringen." }
+    ],
+    "questions": [
+      { "t": "mcq", "q": "An welchen Tagen gibt es auch nachmittags Sprechstunde?", "options": ["Montag und Mittwoch", "Dienstag und Donnerstag", "Mittwoch und Freitag"], "answer": 1, "why": "'Dienstag und Donnerstag zusätzlich von fünfzehn bis achtzehn Uhr'." },
+      { "t": "tf", "q": "Am Mittwochnachmittag ist die Praxis geöffnet.", "answer": 1, "why": "'Am Mittwochnachmittag ist die Praxis geschlossen.'" },
+      { "t": "mcq", "q": "Wann soll man für einen Termin anrufen?", "options": ["Zwischen 8 und 10 Uhr", "Zwischen 10 und 12 Uhr", "Zwischen 15 und 18 Uhr"], "answer": 0, "why": "'zwischen acht und zehn Uhr'." },
+      { "t": "mcq", "q": "Was soll man zum Termin mitbringen?", "options": ["Einen Ausweis", "Die Versichertenkarte", "Einen Brief vom Hausarzt"], "answer": 1, "why": "'Ihre Versichertenkarte mitzubringen'." },
+      { "t": "tf", "q": "In dringenden Fällen soll man die Praxis anrufen.", "answer": 1, "why": "In dringenden Fällen: ärztlicher Bereitschaftsdienst (116 117)." }
+    ]
+  },
+  {
+    "id": "goethe-hoeren-b1-durchsage", "level": "B1", "title": "Hören B1 · Bahnhofsdurchsage", "minutes": 6,
+    "script": [
+      { "speaker": "Durchsage", "text": "Achtung an Gleis 4: Der ICE 573 nach München hat voraussichtlich fünfundzwanzig Minuten Verspätung. Grund dafür ist eine Signalstörung." },
+      { "speaker": "Durchsage", "text": "Reisende nach Augsburg und München nutzen bitte alternativ den Regionalexpress auf Gleis 6, Abfahrt sechzehn Uhr zweiundvierzig. Dort können Sie Ihre Fahrkarte weiterverwenden. Fahrgäste mit Anschlusszug erhalten am Service-Schalter weitere Informationen. Wir bitten um Entschuldigung." }
+    ],
+    "questions": [
+      { "t": "mcq", "q": "Wie lange hat der ICE Verspätung?", "options": ["Etwa 15 Minuten", "Etwa 25 Minuten", "Etwa 45 Minuten"], "answer": 1, "why": "'fünfundzwanzig Minuten Verspätung'." },
+      { "t": "mcq", "q": "Was ist der Grund für die Verspätung?", "options": ["Schlechtes Wetter", "Eine Signalstörung", "Ein Unfall"], "answer": 1, "why": "'eine Signalstörung'." },
+      { "t": "mcq", "q": "Welchen Zug sollen Reisende alternativ nehmen?", "options": ["Den Regionalexpress auf Gleis 6", "Den ICE auf Gleis 4", "Einen Bus"], "answer": 0, "why": "'Regionalexpress auf Gleis 6'." },
+      { "t": "tf", "q": "Reisende müssen eine neue Fahrkarte kaufen.", "answer": 1, "why": "'Dort können Sie Ihre Fahrkarte weiterverwenden.'" },
+      { "t": "mcq", "q": "Wo bekommt man Informationen zum Anschlusszug?", "options": ["Am Service-Schalter", "Im Zug", "Im Internet"], "answer": 0, "why": "'am Service-Schalter weitere Informationen'." }
+    ]
+  },
+  {
+    "id": "goethe-hoeren-b1-urlaub", "level": "B1", "title": "Hören B1 · Urlaubsplanung", "minutes": 6,
+    "script": [
+      { "speaker": "Kollegin", "text": "Hast du schon deinen Urlaub geplant, Jonas?" },
+      { "speaker": "Jonas", "text": "Noch nicht richtig. Ich würde gern im September nach Portugal fliegen, aber die Flüge sind ziemlich teuer." },
+      { "speaker": "Kollegin", "text": "Vielleicht solltest du lieber im Oktober fahren. Da ist es dort auch noch warm, und die Preise sind niedriger." },
+      { "speaker": "Jonas", "text": "Gute Idee, aber im Oktober habe ich einen wichtigen Termin mit einem Kunden. Ich muss erst mit der Chefin sprechen." },
+      { "speaker": "Kollegin", "text": "Wir haben letztes Jahr eine Ferienwohnung in der Nähe von Porto gemietet. Sie war günstig und direkt am Strand. Ich kann dir den Link schicken." },
+      { "speaker": "Jonas", "text": "Das wäre sehr nett. Danke!" }
+    ],
+    "questions": [
+      { "t": "mcq", "q": "Wohin möchte Jonas im Urlaub fliegen?", "options": ["Nach Spanien", "Nach Portugal", "Nach Italien"], "answer": 1, "why": "'im September nach Portugal fliegen'." },
+      { "t": "tf", "q": "Die Flüge im September sind günstig.", "answer": 1, "why": "Jonas sagt: 'ziemlich teuer'." },
+      { "t": "mcq", "q": "Warum ist der Oktober für Jonas schwierig?", "options": ["Er hat einen Termin mit einem Kunden.", "Er hat dann keinen Urlaub mehr.", "Es ist dort zu kalt."], "answer": 0, "why": "'einen wichtigen Termin mit einem Kunden'." },
+      { "t": "mcq", "q": "Was bietet die Kollegin an?", "options": ["Sie bucht den Flug für ihn.", "Sie schickt ihm den Link zu einer Ferienwohnung.", "Sie spricht mit der Chefin."], "answer": 1, "why": "'Ich kann dir den Link schicken.'" }
+    ]
+  },
+  {
+    "id": "goethe-hoeren-b2-vierTageWoche", "level": "B2", "title": "Hören B2 · Radiointerview: Vier-Tage-Woche", "minutes": 8,
+    "script": [
+      { "speaker": "Moderatorin", "text": "Frau Doktor Keller, mehrere Unternehmen testen derzeit die Vier-Tage-Woche. Was bringt das?" },
+      { "speaker": "Keller", "text": "Die ersten Ergebnisse sind überraschend positiv. Die Mitarbeiter sind zufriedener, und die Zahl der Krankmeldungen ist um etwa ein Fünftel gesunken. Die Produktivität blieb dabei in den meisten Betrieben gleich." },
+      { "speaker": "Moderatorin", "text": "Funktioniert das in jeder Branche?" },
+      { "speaker": "Keller", "text": "Nein. In der Pflege oder im Einzelhandel ist es schwierig, weil dort immer jemand anwesend sein muss. Dort müsste man zusätzliches Personal einstellen, was nicht jeder Betrieb finanzieren kann." },
+      { "speaker": "Moderatorin", "text": "Was raten Sie Firmen, die es ausprobieren wollen?" },
+      { "speaker": "Keller", "text": "Zuerst ein befristetes Pilotprojekt mit klaren Zielen. Und die Beschäftigten sollten von Anfang an mitreden dürfen, sonst entsteht Misstrauen." }
+    ],
+    "questions": [
+      { "t": "mcq", "q": "Wie bewertet Frau Keller die ersten Ergebnisse?", "options": ["Überwiegend negativ", "Überraschend positiv", "Noch nicht aussagekräftig"], "answer": 1, "why": "'überraschend positiv'." },
+      { "t": "tf", "q": "Die Zahl der Krankmeldungen ist gestiegen.", "answer": 1, "why": "Sie ist 'um etwa ein Fünftel gesunken'." },
+      { "t": "mcq", "q": "Wie hat sich die Produktivität entwickelt?", "options": ["Sie ist deutlich gesunken.", "Sie blieb meist gleich.", "Sie ist stark gestiegen."], "answer": 1, "why": "'in den meisten Betrieben gleich'." },
+      { "t": "mcq", "q": "Warum ist die Vier-Tage-Woche in der Pflege schwierig?", "options": ["Die Beschäftigten wollen nicht.", "Es muss immer jemand anwesend sein.", "Die Arbeit ist zu leicht."], "answer": 1, "why": "'weil dort immer jemand anwesend sein muss'." },
+      { "t": "mcq", "q": "Was rät Frau Keller interessierten Firmen?", "options": ["Sofort für alle einzuführen", "Ein befristetes Pilotprojekt, bei dem die Beschäftigten mitreden", "Zuerst mehr Personal einzustellen"], "answer": 1, "why": "Letzte Antwort." }
+    ]
+  },
+  {
+    "id": "goethe-hoeren-b2-dachbegruenung", "level": "B2", "title": "Hören B2 · Vortrag: Dachbegrünung", "minutes": 8,
+    "script": [
+      { "speaker": "Referent", "text": "Guten Abend, meine Damen und Herren. Ich möchte heute über Dachbegrünung sprechen. In vielen Großstädten heizen sich die Innenstädte im Sommer stark auf, weil Asphalt und Beton die Wärme speichern." },
+      { "speaker": "Referent", "text": "Begrünte Dächer können die Temperatur im Gebäude um mehrere Grad senken und gleichzeitig Regenwasser zurückhalten, sodass die Kanalisation entlastet wird. Außerdem bieten sie Insekten und Vögeln einen Lebensraum." },
+      { "speaker": "Referent", "text": "Allerdings sind die Kosten höher als bei einem normalen Dach, und nicht jedes Gebäude hält das zusätzliche Gewicht aus. Einige Städte unterstützen die Maßnahme deshalb mit Zuschüssen." }
+    ],
+    "questions": [
+      { "t": "mcq", "q": "Warum heizen sich Innenstädte im Sommer auf?", "options": ["Wegen der vielen Autos", "Weil Asphalt und Beton Wärme speichern", "Weil es dort weniger Wind gibt"], "answer": 1, "why": "Erster Absatz." },
+      { "t": "mcq", "q": "Welche Vorteile haben begrünte Dächer?", "options": ["Sie senken die Temperatur und halten Regenwasser zurück.", "Sie sind billiger als normale Dächer.", "Sie sind leichter."], "answer": 0, "why": "Zweiter Absatz." },
+      { "t": "tf", "q": "Begrünte Dächer sind günstiger als normale Dächer.", "answer": 1, "why": "'die Kosten sind höher'." },
+      { "t": "mcq", "q": "Welches Problem nennt der Referent?", "options": ["Nicht jedes Gebäude hält das zusätzliche Gewicht aus.", "Insekten werden gestört.", "Das Regenwasser läuft schlechter ab."], "answer": 0, "why": "Letzter Absatz." }
+    ]
+  },
+  {
+    "id": "goethe-hoeren-c1-erwachsene", "level": "C1", "title": "Hören C1 · Vortrag: Sprachenlernen im Erwachsenenalter", "minutes": 10,
+    "script": [
+      { "speaker": "Referentin", "text": "Es hält sich hartnäckig die Vorstellung, Erwachsene könnten Fremdsprachen nur schwer lernen. Die Forschung zeichnet ein differenzierteres Bild. Tatsächlich erwerben Kinder die Aussprache meist müheloser, doch Erwachsene verfügen über Vorteile, die oft übersehen werden: Sie können Grammatikregeln bewusst anwenden, ihre Lernstrategien reflektieren und auf umfangreiches Weltwissen zurückgreifen." },
+      { "speaker": "Referentin", "text": "Entscheidend ist weniger das Alter als die Intensität und Regelmäßigkeit des Kontakts mit der Sprache. Studien zeigen, dass dreimal wöchentlich zwanzig Minuten gezieltes Üben mehr bringt als ein einzelner Marathonkurs am Wochenende." },
+      { "speaker": "Referentin", "text": "Hinzu kommt die Motivation: Wer die Sprache für einen konkreten Zweck benötigt, etwa für den Beruf oder eine Beziehung, bleibt in der Regel dabei. Skeptisch sollte man dagegen bei Versprechen schneller Lernerfolge sein; solide Sprachkenntnisse entstehen nicht über Nacht." }
+    ],
+    "questions": [
+      { "t": "mcq", "q": "Was fällt Kindern laut Vortrag meist leichter?", "options": ["Das Lernen von Grammatikregeln", "Der Erwerb der Aussprache", "Das Auswendiglernen von Vokabeln"], "answer": 1, "why": "'erwerben Kinder die Aussprache meist müheloser'." },
+      { "t": "mcq", "q": "Welche Vorteile haben Erwachsene?", "options": ["Sie haben mehr Zeit.", "Sie können Regeln bewusst anwenden, Strategien reflektieren und Weltwissen nutzen.", "Sie brauchen keine Motivation."], "answer": 1, "why": "Erster Absatz, zweiter Teil." },
+      { "t": "mcq", "q": "Was ist laut Vortrag entscheidend für den Lernerfolg?", "options": ["Das Alter der Lernenden", "Intensität und Regelmäßigkeit des Kontakts", "Die Dauer eines einzelnen Kurses"], "answer": 1, "why": "'weniger das Alter als die Intensität und Regelmäßigkeit'." },
+      { "t": "tf", "q": "Ein einzelner Marathonkurs am Wochenende ist wirksamer als regelmäßiges kurzes Üben.", "answer": 1, "why": "Studien zeigen das Gegenteil." },
+      { "t": "mcq", "q": "Warum bleiben Lernende mit konkretem Zweck meist dabei?", "options": ["Wegen der Motivation", "Wegen des Preises", "Wegen des Drucks von außen"], "answer": 0, "why": "'Hinzu kommt die Motivation'." }
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ielts-sp1-work-study", "part": 1, "title": "Part 1 · Work or study",
+    "steps": [
+      { "kind": "q", "text": "Do you work or are you a student?", "seconds": 25 },
+      { "kind": "q", "text": "What do you like most about your work or studies?", "seconds": 30 },
+      { "kind": "q", "text": "Is there anything you would like to change about it?", "seconds": 30 },
+      { "kind": "q", "text": "What do you plan to do in the future?", "seconds": 30 }
+    ]
+  },
+  {
+    "id": "ielts-sp1-hometown", "part": 1, "title": "Part 1 · Hometown",
+    "steps": [
+      { "kind": "q", "text": "Where are you from?", "seconds": 25 },
+      { "kind": "q", "text": "What do you like about your hometown?", "seconds": 30 },
+      { "kind": "q", "text": "Has your hometown changed much since you were a child?", "seconds": 30 },
+      { "kind": "q", "text": "Would you recommend it to tourists? Why or why not?", "seconds": 30 }
+    ]
+  },
+  {
+    "id": "ielts-sp1-technology", "part": 1, "title": "Part 1 · Technology",
+    "steps": [
+      { "kind": "q", "text": "How often do you use a computer or a smartphone?", "seconds": 25 },
+      { "kind": "q", "text": "What do you mainly use your phone for?", "seconds": 30 },
+      { "kind": "q", "text": "Do you think people depend too much on technology?", "seconds": 30 },
+      { "kind": "q", "text": "What technology would you like to learn more about?", "seconds": 30 }
+    ]
+  },
+  {
+    "id": "ielts-sp2-teacher", "part": 2, "title": "Part 2 + 3 · A teacher",
+    "steps": [
+      { "kind": "cue", "text": "Describe a teacher who influenced you.", "points": ["who this person was", "what subject they taught", "what made them special", "and explain how they influenced you"], "prep": 60, "seconds": 120 },
+      { "kind": "q", "text": "What qualities make a good teacher?", "seconds": 40 },
+      { "kind": "q", "text": "Will teachers be replaced by technology in the future?", "seconds": 45 },
+      { "kind": "q", "text": "How has the relationship between teachers and students changed over time?", "seconds": 45 }
+    ]
+  },
+  {
+    "id": "ielts-sp2-place", "part": 2, "title": "Part 2 + 3 · A memorable journey",
+    "steps": [
+      { "kind": "cue", "text": "Describe a memorable journey you have made.", "points": ["where you went", "who you went with", "what happened on the way", "and explain why it was memorable"], "prep": 60, "seconds": 120 },
+      { "kind": "q", "text": "Why do some people prefer to travel alone?", "seconds": 40 },
+      { "kind": "q", "text": "What are the effects of tourism on local communities?", "seconds": 45 },
+      { "kind": "q", "text": "Do you think people will travel more or less in the future?", "seconds": 45 }
+    ]
+  },
+  {
+    "id": "ielts-sp2-skill", "part": 2, "title": "Part 2 + 3 · A skill you learned",
+    "steps": [
+      { "kind": "cue", "text": "Describe a skill you learned that you are proud of.", "points": ["what the skill is", "how you learned it", "what was difficult about it", "and explain why you are proud of it"], "prep": 60, "seconds": 120 },
+      { "kind": "q", "text": "Which skills are most important for young people today?", "seconds": 40 },
+      { "kind": "q", "text": "Is it better to learn skills at school or on the job?", "seconds": 45 },
+      { "kind": "q", "text": "How might the skills employers want change in the future?", "seconds": 45 }
+    ]
+  },
+  {
+    "id": "ielts-sp2-environment", "part": 2, "title": "Part 2 + 3 · An environmental problem",
+    "steps": [
+      { "kind": "cue", "text": "Describe an environmental problem in your country.", "points": ["what the problem is", "what causes it", "how it affects people", "and explain what could be done about it"], "prep": 60, "seconds": 120 },
+      { "kind": "q", "text": "Who is more responsible for protecting the environment: individuals or governments?", "seconds": 45 },
+      { "kind": "q", "text": "Why do some people ignore environmental problems?", "seconds": 45 },
+      { "kind": "q", "text": "Do you think future generations will live in a cleaner world?", "seconds": 45 }
+    ]
+  }
+]
