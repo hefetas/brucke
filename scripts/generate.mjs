@@ -3,7 +3,9 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 
 const KEY = process.env.GEMINI_API_KEY;
-const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+// Model adı değişebilir: GEMINI_MODEL verilmezse sırayla denenir (404/400 gelirse bir sonrakine geçer).
+const MODELS = process.env.GEMINI_MODEL ? [process.env.GEMINI_MODEL] : ['gemini-3.6-flash', 'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite'];
+let mi = 0;
 const BASE = process.env.GEMINI_BASE || 'https://generativelanguage.googleapis.com';
 const OUT = process.env.DAILY_FILE || 'daily.json';
 const HTML = process.env.SITE_FILE || 'index.html';
@@ -32,13 +34,17 @@ const deLevel = (() => { const n = known.de.size; return n < 200 ? 'A1-A2' : n <
 const enLevel = 'B2-C1';
 
 async function ask(prompt) {
-  for (let attempt = 1; attempt <= 3; attempt++) {
+  for (let attempt = 1; attempt <= 6; attempt++) {
     try {
-      const r = await fetch(`${BASE}/v1beta/models/${encodeURIComponent(MODEL)}:generateContent`, {
+      const r = await fetch(`${BASE}/v1beta/models/${encodeURIComponent(MODELS[mi])}:generateContent`, {
         method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': KEY },
         body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.8 } }),
       });
-      if (!r.ok) throw new Error('HTTP ' + r.status);
+      if (!r.ok) {
+        const body = (await r.text()).replace(/\s+/g, ' ').slice(0, 200);
+        if ((r.status === 404 || r.status === 400) && mi < MODELS.length - 1) { console.error(`${MODELS[mi]} -> HTTP ${r.status}, sonraki model deneniyor`); mi++; continue; }
+        throw new Error(`HTTP ${r.status} (${MODELS[mi]}) ${body}`);
+      }
       const j = await r.json();
       const t = (((j.candidates || [])[0] || {}).content || {}).parts || [];
       return JSON.parse(t.map(x => x.text || '').join(''));
@@ -107,7 +113,7 @@ Rules: exactly 8 useful words at this level (nouns in singular with the correct 
 }
 
 const a = await makeEnglish(), b = await makeGerman();
-console.log(`English +${a}, Deutsch +${b}, topic: ${topic}`);
+console.log(`English +${a}, Deutsch +${b}, topic: ${topic}, model: ${MODELS[mi]}`);
 if (a + b === 0) { console.error('Hiçbir şey eklenemedi.'); process.exit(1); }
 for (const m of ['en', 'de']) { data[m].readings = data[m].readings.slice(-60); data[m].dict = data[m].dict.slice(-120); data[m].words = data[m].words.slice(-3000); }
 data.updated = today;

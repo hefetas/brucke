@@ -780,10 +780,10 @@ function initStandalone(){
     const msgs = typeof input === 'string' ? [{role:'user', content:input}] : input;
     const body = { contents: msgs.map(m => ({role: m.role === 'assistant' ? 'model' : 'user', parts:[{text:m.content}]})) };
     if (json) body.generationConfig = {responseMimeType:'application/json'};
-    const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/' + encodeURIComponent(c.model || 'gemini-2.5-flash') + ':generateContent', {
+    const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/' + encodeURIComponent(c.model || 'gemini-3.6-flash') + ':generateContent', {
       method:'POST', headers:{'Content-Type':'application/json', 'x-goog-api-key': c.key}, body: JSON.stringify(body)});
     if (r.status === 429) throw {code:'rate_limited'};
-    if (r.status === 400 || r.status === 403) throw {code:'bad_key'};
+    if (r.status === 400 || r.status === 403 || r.status === 404) throw {code:'bad_key'};
     if (!r.ok) throw {code:'net'};
     const j = await r.json();
     const t = (((j.candidates || [])[0] || {}).content || {}).parts;
@@ -1895,11 +1895,11 @@ function viewProgress(){
   if (standalone){
     const c = aiCfg();
     const key = h('input', {class:'inp', type:'password', id:'aikey', placeholder:'Gemini API anahtarı', value:c.key || '', autocomplete:'off', 'aria-label':'Gemini API key'});
-    const model = h('input', {class:'inp', type:'text', id:'aimodel', value:c.model || 'gemini-2.5-flash', 'aria-label':'Model'});
+    const model = h('input', {class:'inp', type:'text', id:'aimodel', value:c.model || 'gemini-3.6-flash', 'aria-label':'Model'});
     el.append(h('div', {class:'sec'}, h('h2', null, 'Yapay zekâ (isteğe bağlı, ücretsiz)'),
       h('p', {class:'hint'}, 'Yazma geri bildirimi ve sohbet partneri için. Google AI Studio\'dan (aistudio.google.com) ücretsiz bir anahtar alıp buraya yapıştır. Anahtar yalnızca bu tarayıcıda saklanır, istekler doğrudan Google\'a gider. Ücretsiz kotanın kullanım koşullarını kendin kontrol et; model adı değişirse buradan güncelle.'),
       h('div', {class:'stack'}, key, model, h('div', {class:'row'},
-        h('button', {class:'btn primary', type:'button', onclick:() => { setAiCfg({key:key.value.trim(), model:model.value.trim() || 'gemini-2.5-flash'}); toast('Kaydedildi'); }}, 'Kaydet'),
+        h('button', {class:'btn primary', type:'button', onclick:() => { setAiCfg({key:key.value.trim(), model:model.value.trim() || 'gemini-3.6-flash'}); toast('Kaydedildi'); }}, 'Kaydet'),
         h('button', {class:'btn', type:'button', onclick:() => { setAiCfg({}); key.value = ''; toast('Anahtar silindi'); }}, 'Anahtarı sil')))));
   }
   return el;

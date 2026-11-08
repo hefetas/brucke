@@ -9,5 +9,5 @@ bir okuma metni ve iki dikte cümlesi üretir (İngilizce ve Almanca için ayrı
 Site açılırken `daily.json`'u okuyup içeriğe katar. Okuma metinlerinde "AI" etiketi görünür; içerik yapay zekâ ürettiği için hata olabilir.
 
 Kurulum: Settings → Secrets and variables → Actions → New repository secret → `GEMINI_API_KEY`.
-İsteğe bağlı: aynı yerde Variables sekmesinden `GEMINI_MODEL` (varsayılan `gemini-2.5-flash`).
+İsteğe bağlı: aynı yerde Variables sekmesinden `GEMINI_MODEL` (varsayılan: sırayla `gemini-3.6-flash`, `gemini-3.5-flash-lite`, `gemini-3.1-flash-lite` denenir).
 Elle denemek için: Actions → "Günlük içerik" → Run workflow.
