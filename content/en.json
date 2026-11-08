@@ -474,6 +474,103 @@
      "explain_tr": "“I still wonder sometimes…” = ara sıra emin değil."
     }
    ]
+  },
+  {
+   "slug": "en-podcast-attention",
+   "title": "The Attention Economy",
+   "kind": "podcast",
+   "cefr_level": "C1",
+   "topics": [
+    "teknoloji",
+    "günlük hayat"
+   ],
+   "duration_sec": 45,
+   "transcript": [
+    {
+     "speaker": "Host",
+     "text": "Most of us now check our phones dozens of times a day, rarely stopping to ask why. The apps we use are engineered to hold our attention for as long as possible, because our attention is what advertisers are buying. Critics argue that this constant stimulation erodes our capacity for deep concentration. Defenders, however, point out that technology has also made information more accessible than ever before. Perhaps the real issue is not the devices themselves, but our reluctance to set boundaries around them. Unless we decide consciously how to spend our attention, someone else will decide for us."
+    }
+   ],
+   "glossary": [
+    {
+     "lemma": "engineer",
+     "pos": "verb",
+     "meaning_tr": "tasarlamak, kurgulamak",
+     "example": "The system was engineered for speed.",
+     "example_tr": "Sistem hız için tasarlandı.",
+     "forms": [
+      "engineered"
+     ]
+    },
+    {
+     "lemma": "erode",
+     "pos": "verb",
+     "meaning_tr": "aşındırmak, zayıflatmak",
+     "example": "Stress can erode confidence.",
+     "example_tr": "Stres özgüveni zayıflatabilir.",
+     "forms": [
+      "erodes",
+      "eroded"
+     ]
+    },
+    {
+     "lemma": "capacity",
+     "pos": "noun",
+     "meaning_tr": "kapasite, yetenek",
+     "example": "She has a great capacity for work.",
+     "example_tr": "Çalışma kapasitesi yüksek."
+    },
+    {
+     "lemma": "reluctance",
+     "pos": "noun",
+     "meaning_tr": "isteksizlik",
+     "example": "He agreed with some reluctance.",
+     "example_tr": "Biraz isteksizce kabul etti."
+    },
+    {
+     "lemma": "boundary",
+     "pos": "noun",
+     "meaning_tr": "sınır",
+     "example": "Set clear boundaries at work.",
+     "example_tr": "İşte net sınırlar koy.",
+     "forms": [
+      "boundaries"
+     ]
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Why are apps designed to hold our attention?",
+     "options": [
+      "Because users demand it",
+      "Because advertisers pay for attention",
+      "Because it improves memory",
+      "Because phones are cheap"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What do critics say about constant stimulation?",
+     "options": [
+      "It makes information harder to find",
+      "It weakens our ability to concentrate deeply",
+      "It improves productivity",
+      "It saves time"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What does the speaker suggest is the real issue?",
+     "options": [
+      "The cost of devices",
+      "Our unwillingness to set limits",
+      "A lack of useful apps",
+      "Poor internet connections"
+     ],
+     "answer": 1,
+     "explain_tr": "“our reluctance to set boundaries” = sınır koyma isteksizliği."
+    }
+   ]
   }
  ],
  "reading": [
@@ -838,6 +935,91 @@
      "explain_tr": "Sabah egzersizi metinde geçmiyor."
     }
    ]
+  },
+  {
+   "slug": "en-slow-learning",
+   "title": "The Case for Slow Learning",
+   "kind": "article",
+   "cefr_level": "C1",
+   "topics": [
+    "kültür"
+   ],
+   "body": "In an age that prizes speed, the idea of learning slowly can seem almost perverse. Language apps promise fluency in weeks, and productivity gurus insist that every spare minute should be optimised. Yet cognitive scientists have repeatedly shown that durable knowledge is rarely acquired in a hurry. Memories laid down through spaced, effortful practice persist far longer than those crammed the night before an examination.\n\nThis does not mean that progress should be leisurely for its own sake. Rather, it suggests that struggle is not a sign of failure but a condition of genuine learning. Learners who tolerate confusion, revisit difficult material and allow time between sessions tend to retain more, even if they feel less confident in the short term.\n\nThe implication is uncomfortable but liberating: there are no shortcuts, yet there is no need to panic either. Steady, deliberate practice, sustained over months, will outperform any frantic burst of effort.",
+   "glossary": [
+    {
+     "lemma": "prize",
+     "pos": "verb",
+     "meaning_tr": "çok değer vermek",
+     "example": "She prizes honesty above all.",
+     "example_tr": "Dürüstlüğe her şeyden çok değer verir.",
+     "forms": [
+      "prizes"
+     ]
+    },
+    {
+     "lemma": "perverse",
+     "pos": "adj",
+     "meaning_tr": "ters, mantıksız",
+     "example": "It seems perverse to refuse help.",
+     "example_tr": "Yardımı reddetmek mantıksız görünüyor."
+    },
+    {
+     "lemma": "cram",
+     "pos": "verb",
+     "meaning_tr": "ezberlemek (son anda), tıkıştırmak",
+     "example": "He crammed all night.",
+     "example_tr": "Bütün gece ezberledi.",
+     "forms": [
+      "crammed"
+     ]
+    },
+    {
+     "lemma": "tolerate",
+     "pos": "verb",
+     "meaning_tr": "tahammül etmek, hoş görmek",
+     "example": "I can’t tolerate noise.",
+     "example_tr": "Gürültüye tahammül edemem."
+    },
+    {
+     "lemma": "liberating",
+     "pos": "adj",
+     "meaning_tr": "özgürleştirici",
+     "example": "Quitting was liberating.",
+     "example_tr": "Bırakmak özgürleştiriciydi."
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "What is the author’s main argument?",
+     "options": [
+      "Speed is the key to learning",
+      "Durable learning requires spaced, effortful practice",
+      "Language apps are useless",
+      "Examinations should be abolished"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "According to the text, what is struggle?",
+     "options": [
+      "A sign of failure",
+      "A condition of genuine learning",
+      "A waste of time",
+      "Only a problem for beginners"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What does the author find “uncomfortable but liberating”?",
+     "options": [
+      "That learning can be fast",
+      "That there are no shortcuts, but no need to panic",
+      "That apps are expensive",
+      "That memory is unreliable"
+     ],
+     "answer": 1
+    }
+   ]
   }
  ],
  "speaking": [
@@ -925,6 +1107,40 @@
    "max_seconds": 60,
    "topics": [
     "seyahat",
+    "günlük hayat"
+   ]
+  },
+  {
+   "slug": "en-opinion-tourism",
+   "cefr_level": "B2",
+   "kind": "answer",
+   "title_tr": "Turizm: fayda mı zarar mı?",
+   "prompt_tr": "Turizmin popüler şehirlere faydalı mı yoksa zararlı mı olduğunu gerekçeleriyle anlat.",
+   "model_text": "In my opinion, tourism brings both advantages and drawbacks. On the one hand, it creates jobs and supports local businesses. On the other hand, it can push up rents and make everyday life difficult for residents. All things considered, I believe cities should limit visitor numbers in the busiest areas.",
+   "target_phrases": [
+    "in my opinion",
+    "on the one hand",
+    "all things considered"
+   ],
+   "max_seconds": 60,
+   "topics": [
+    "seyahat"
+   ]
+  },
+  {
+   "slug": "en-meeting-disagree",
+   "cefr_level": "C1",
+   "kind": "roleplay",
+   "title_tr": "Toplantıda saygılı itiraz",
+   "prompt_tr": "Bir toplantıda meslektaşının önerisine saygılı ama net biçimde itiraz et ve bir alternatif sun.",
+   "model_text": "I see where you’re coming from, but I’m not entirely convinced that this is the best approach. The timeline seems unrealistic, and we would be taking a considerable risk. Might I suggest a phased rollout instead? That way, we could test the idea on a small scale before committing fully.",
+   "target_phrases": [
+    "I see where you’re coming from",
+    "I’m not entirely convinced",
+    "Might I suggest"
+   ],
+   "max_seconds": 70,
+   "topics": [
     "günlük hayat"
    ]
   }
@@ -1021,6 +1237,24 @@
    "sample_answer": "In my view, employees should be able to work from home at least two days a week. For instance, people who live far from the office can save hours of travel and use that time more productively. Nevertheless, I believe that regular face-to-face meetings remain important, because they build trust and make collaboration easier. A flexible balance therefore seems the most sensible solution.",
    "topics": [
     "iş",
+    "teknoloji"
+   ]
+  },
+  {
+   "slug": "en-essay-social-media",
+   "cefr_level": "C1",
+   "kind": "short_paragraph",
+   "title_tr": "Sosyal medya ve demokrasi",
+   "prompt_tr": "Sosyal medyanın demokratik tartışmayı güçlendirdiği mi yoksa zayıflattığı mı konusunda dengeli bir paragraf yaz.",
+   "target_phrases": [
+    "to a certain extent",
+    "by contrast",
+    "it could be argued that"
+   ],
+   "min_words": 80,
+   "max_words": 180,
+   "sample_answer": "It could be argued that social media has both strengthened and weakened democratic debate. To a certain extent, it has given ordinary citizens a platform that was once reserved for journalists and politicians, allowing marginalised voices to be heard. By contrast, algorithms tend to reward outrage rather than nuance, which encourages polarisation and the spread of misinformation. Furthermore, people increasingly consume news that confirms what they already believe, so genuine disagreement becomes rare. The solution, therefore, is probably not to abandon these platforms but to demand greater transparency from the companies that run them and better media literacy from their users.",
+   "topics": [
     "teknoloji"
    ]
   }
@@ -2498,6 +2732,327 @@
      ],
      "answer": 1,
      "explain_tr": "if-cümlesinde “would have” kullanılmaz."
+    }
+   ]
+  },
+  {
+   "slug": "en-inversion",
+   "title_tr": "Devrik yapı (Never have I…, Rarely does…)",
+   "title_target": "Inversion after negative adverbials",
+   "cefr_level": "C1",
+   "order_index": 20,
+   "summary_tr": "Olumsuz veya kısıtlayıcı bir zarf cümlenin başına geldiğinde yardımcı fiil özneden önce gelir (soru düzeni gibi). Vurgu ve resmî üslup içindir.\n• Never / Rarely / Seldom / Hardly / Scarcely / Not only / Under no circumstances / Only when / No sooner …\n• Never have I seen such a view. · Rarely does she complain.\n• Hardly had we sat down when the phone rang. (had + özne + V3 … when)\n• No sooner had he left than it started to rain. (…than)\n• Not only did he forget the tickets, but he also lost his passport.\n• Yardımcı fiil yoksa do/does/did eklenir.",
+   "examples": [
+    {
+     "text": "Never have I seen such a beautiful view.",
+     "tr": "Hiç böylesine güzel bir manzara görmedim.",
+     "highlight": "Never have I seen"
+    },
+    {
+     "text": "Rarely does she complain about work.",
+     "tr": "İşinden nadiren şikâyet eder.",
+     "highlight": "Rarely does she complain"
+    },
+    {
+     "text": "Not only did he forget the tickets, but he also lost his passport.",
+     "tr": "Biletleri unutmakla kalmadı, pasaportunu da kaybetti.",
+     "highlight": "Not only did he forget"
+    },
+    {
+     "text": "Hardly had we sat down when the phone rang.",
+     "tr": "Daha oturmuştuk ki telefon çaldı.",
+     "highlight": "Hardly had we sat down"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Never ___ such a delicious meal.",
+     "options": [
+      "I have eaten",
+      "have I eaten",
+      "I ate",
+      "did I eaten"
+     ],
+     "answer": 1,
+     "explain_tr": "Never başa gelince: Never + have + özne + V3."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Rarely ___ late for meetings.",
+     "options": [
+      "he is",
+      "is he",
+      "does he",
+      "he does"
+     ],
+     "answer": 1,
+     "explain_tr": "“be” fiilinde fiil özneden önce gelir: Rarely is he late."
+    },
+    {
+     "type": "fill",
+     "prompt": "Not only ___ she speak French, but she also speaks Italian. (do/does/did)",
+     "answer": "does",
+     "explain_tr": "Düz cümle present simple: Not only does she speak…"
+    },
+    {
+     "type": "fill",
+     "prompt": "Hardly ___ we arrived when it started to rain. (had/did)",
+     "answer": "had",
+     "explain_tr": "Hardly had + özne + V3 … when"
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "Under no circumstances you should open this door.",
+      "Under no circumstances should you open this door.",
+      "Under no circumstances do you should open this door.",
+      "Under no circumstances should open you this door."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-mixed-conditionals-wish",
+   "title_tr": "Karma koşul, wish ve if only",
+   "title_target": "Mixed conditionals; wish and if only",
+   "cefr_level": "C1",
+   "order_index": 21,
+   "summary_tr": "• Karma koşul (geçmiş → şimdi): If I had taken that job, I would be living in Berlin now.\n• Karma koşul (şimdi → geçmiş): If she weren’t so shy, she would have asked for help.\n• wish + past simple → şimdiki durumdan pişmanlık: I wish I had more time. (I wish I were taller.)\n• wish + past perfect → geçmişten pişmanlık: I wish I had studied medicine.\n• wish + would → başkasının alışkanlığından rahatsızlık: I wish you would stop interrupting.\n• If only, wish ile aynı çalışır ama daha güçlüdür: If only he would listen!",
+   "examples": [
+    {
+     "text": "If I had taken that job, I would be living in Berlin now.",
+     "tr": "O işi kabul etseydim şimdi Berlin’de yaşıyor olurdum.",
+     "highlight": "I would be living"
+    },
+    {
+     "text": "If she weren’t so shy, she would have asked for help.",
+     "tr": "Bu kadar utangaç olmasaydı yardım isterdi.",
+     "highlight": "she would have asked"
+    },
+    {
+     "text": "I wish I had studied medicine.",
+     "tr": "Keşke tıp okusaydım.",
+     "highlight": "I wish I had studied"
+    },
+    {
+     "text": "If only he would listen to me!",
+     "tr": "Keşke beni dinleseydi!",
+     "highlight": "If only he would listen"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "If I ___ harder at school, I would have a better job now.",
+     "options": [
+      "studied",
+      "had studied",
+      "would study",
+      "have studied"
+     ],
+     "answer": 1,
+     "explain_tr": "Geçmişteki sebep → şimdiki sonuç: had studied … would have."
+    },
+    {
+     "type": "mcq",
+     "prompt": "I wish I ___ speak Japanese. (I can’t.)",
+     "options": [
+      "can",
+      "could",
+      "would",
+      "had"
+     ],
+     "answer": 1,
+     "explain_tr": "Şimdiki durum için wish + past: could."
+    },
+    {
+     "type": "fill",
+     "prompt": "If only I ___ more money! (have)",
+     "answer": "had",
+     "explain_tr": "Şimdiki istek: If only + past simple."
+    },
+    {
+     "type": "mcq",
+     "prompt": "I wish you ___ so loudly. It annoys me.",
+     "options": [
+      "don’t talk",
+      "wouldn’t talk",
+      "didn’t talked",
+      "won’t talk"
+     ],
+     "answer": 1,
+     "explain_tr": "Başkasının alışkanlığından rahatsızlık: wish + would."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "I wish I would have gone to the party.",
+      "I wish I had gone to the party.",
+      "I wish I went to the party yesterday.",
+      "I wish I have gone to the party."
+     ],
+     "answer": 1,
+     "explain_tr": "Geçmiş pişmanlık: wish + past perfect."
+    }
+   ]
+  },
+  {
+   "slug": "en-cleft-sentences",
+   "title_tr": "Vurgu cümleleri (It was … who, What I need is …)",
+   "title_target": "Cleft sentences",
+   "cefr_level": "C1",
+   "order_index": 22,
+   "summary_tr": "Bir öğeyi öne çıkarmak için cümle ikiye bölünür.\n• It-cleft: It + be + vurgulanan öğe + who/that … → It was Maria who solved the problem. It is consistency that matters most.\n• Kişiler için who veya that, diğerleri için that: It was in Paris that they met.\n• Wh-cleft: What + özne + fiil + be + vurgulanan öğe → What I need is a long holiday. What annoys me is the noise.\n• All / The only thing: All she wanted was some peace and quiet.\n• Vurgulu ve yazılı üslupta sık kullanılır.",
+   "examples": [
+    {
+     "text": "It was Maria who solved the problem.",
+     "tr": "Sorunu çözen Maria’ydı.",
+     "highlight": "It was Maria who"
+    },
+    {
+     "text": "It is consistency that matters most.",
+     "tr": "En çok önemli olan tutarlılıktır.",
+     "highlight": "It is consistency that"
+    },
+    {
+     "text": "What I need is a long holiday.",
+     "tr": "İhtiyacım olan şey uzun bir tatil.",
+     "highlight": "What I need is"
+    },
+    {
+     "text": "All she wanted was some peace and quiet.",
+     "tr": "Tek istediği biraz huzurdu.",
+     "highlight": "All she wanted was"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "It was my brother ___ broke the window.",
+     "options": [
+      "who",
+      "what",
+      "whom",
+      "whose"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "mcq",
+     "prompt": "___ annoys me most is the noise.",
+     "options": [
+      "It",
+      "What",
+      "That",
+      "Which"
+     ],
+     "answer": 1,
+     "explain_tr": "Wh-cleft: What annoys me most is …"
+    },
+    {
+     "type": "fill",
+     "prompt": "What I really need ___ a good night’s sleep. (is/are)",
+     "answer": "is",
+     "explain_tr": "What … is + vurgulanan öğe."
+    },
+    {
+     "type": "fill",
+     "prompt": "It was the manager ___ called me yesterday. (who/what)",
+     "answer": "who",
+     "explain_tr": "Kişi vurgusu: It was … who."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "It is the price what matters.",
+      "It is the price that matters.",
+      "What the price matters.",
+      "It is the price who matters."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-participle-clauses",
+   "title_tr": "Ortaç cümlecikleri (Having finished…, Written in 1925…)",
+   "title_target": "Participle clauses",
+   "cefr_level": "C1",
+   "order_index": 23,
+   "summary_tr": "Özneleri aynı olan iki eylemi kısaltmak için kullanılır; yazılı üslupta sıktır.\n• -ing (eş zamanlı, etken): Walking home, I met an old friend.\n• Having + V3 (önce biten eylem): Having finished the report, she went home.\n• V3 (edilgen): Written in 1925, the novel is still popular.\n• Olumsuz: Not knowing the answer, he stayed silent.\n• Ortacın örtük öznesi ana cümlenin öznesidir: Walking home, the rain started ✗ (yağmur yürümüyor).",
+   "examples": [
+    {
+     "text": "Walking home, I bumped into an old friend.",
+     "tr": "Eve yürürken eski bir arkadaşa rastladım.",
+     "highlight": "Walking home"
+    },
+    {
+     "text": "Having finished the report, she went home.",
+     "tr": "Raporu bitirince eve gitti.",
+     "highlight": "Having finished the report"
+    },
+    {
+     "text": "Written in 1925, the novel is still popular.",
+     "tr": "1925’te yazılmış roman hâlâ popüler.",
+     "highlight": "Written in 1925"
+    },
+    {
+     "text": "Not knowing the answer, he stayed silent.",
+     "tr": "Cevabı bilmediği için sessiz kaldı.",
+     "highlight": "Not knowing the answer"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "___ the door, she noticed a letter on the floor.",
+     "options": [
+      "Open",
+      "Opening",
+      "Opened",
+      "To opened"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "mcq",
+     "prompt": "___ by his teacher, Tom felt confident.",
+     "options": [
+      "Encouraging",
+      "Encouraged",
+      "Having encourage",
+      "Encourage"
+     ],
+     "answer": 1,
+     "explain_tr": "Edilgen anlam: Encouraged by …"
+    },
+    {
+     "type": "fill",
+     "prompt": "___ already eaten, they declined dessert. (have – -ing biçimi)",
+     "answer": "Having",
+     "explain_tr": "Önce biten eylem: Having + V3."
+    },
+    {
+     "type": "fill",
+     "prompt": "The house, ___ in 1890, is now a museum. (build)",
+     "answer": "built",
+     "explain_tr": "Edilgen ortaç: built."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "Having seen the film twice, I didn’t want to go again.",
+      "Seen the film twice, I didn’t want to go again.",
+      "Having see the film twice, I didn’t want to go again.",
+      "Seeing the film twice already, I didn’t wanted to go again."
+     ],
+     "answer": 0
     }
    ]
   }

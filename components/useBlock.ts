@@ -66,6 +66,10 @@ export function useFinish(app: ReadyApp, db: Db, lc: string | null) {
     },
     [app, db, lc],
   );
-  const back = useCallback(() => router.push(lc ? '/lesson/today' : '/dashboard'), [router, lc]);
+  // ?j=1: adım yol haritasından açıldıysa bitince oraya dön.
+  const back = useCallback(() => {
+    const fromJourney = new URLSearchParams(window.location.search).get('j') === '1';
+    router.push(fromJourney ? '/journey' : lc ? '/lesson/today' : '/dashboard');
+  }, [router, lc]);
   return { finish, earned, saving, back };
 }

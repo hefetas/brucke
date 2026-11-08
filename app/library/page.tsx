@@ -56,7 +56,7 @@ function Library({ app, db }: { app: ReadyApp; db: Db }) {
       </div>
       <div className="row">
         <button className="chip" aria-pressed={level === 'all'} onClick={() => setLevel('all')}>Tüm seviyeler</button>
-        {CEFR_LEVELS.slice(0, 4).map((l) => (
+        {CEFR_LEVELS.slice(0, 5).map((l) => (
           <button key={l} className="chip" aria-pressed={level === l} onClick={() => setLevel(l)}>{l}</button>
         ))}
       </div>

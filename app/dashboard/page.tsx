@@ -6,6 +6,8 @@ import { Gate, type ReadyApp } from '@/components/Gate';
 import { addDays, countDue, levelsOf, localDate, type Db } from '@/lib/db';
 import { currentStreak, loadProgressBySkill } from '@/lib/lesson';
 import { weakGrammarOf } from '@/lib/planner';
+import { loadJourney } from '@/lib/journey-data';
+import { KIND_ICON, stepHref } from '@/lib/journey';
 import { CEFR_LEVELS, SKILLS, SKILL_LABEL_TR, cefrIndex, evaluateLevel, overallLevel, weakSkills, xpLevel } from '@/lib/levels';
 import type { LessonRow } from '@/lib/types';
 
@@ -23,6 +25,7 @@ interface Data {
   suggestions: string[];
   words: number;
   weakTopics: { slug: string; title: string; score: number }[];
+  journey: { range: string; percent: number; title: string; href: string } | null;
 }
 
 function Dashboard({ app, db }: { app: ReadyApp; db: Db }) {
@@ -57,6 +60,18 @@ function Dashboard({ app, db }: { app: ReadyApp; db: Db }) {
         const titleOf = new Map(((titles ?? []) as { slug: string; title_tr: string }[]).map((t) => [t.slug, t.title_tr] as [string, string]));
         weakTopicRows = weakList.filter((w) => titleOf.has(w.slug)).map((w) => ({ slug: w.slug, title: titleOf.get(w.slug) as string, score: Math.round(w.score) }));
       }
+      const journey = await loadJourney(db, app.userId, lang).catch(() => null);
+      let journeyCard: Data['journey'] = null;
+      if (journey) {
+        const nx = journey.state.next;
+        const range = `${journey.path.start_level} → ${journey.path.target_level}`;
+        journeyCard =
+          nx.type === 'step'
+            ? { range, percent: journey.state.percent, title: `${KIND_ICON[nx.step.kind]} ${nx.step.title}`, href: stepHref(nx.step) }
+            : nx.type === 'review'
+              ? { range, percent: journey.state.percent, title: `🔁 ${nx.due} kart tekrar bekliyor`, href: '/review' }
+              : { range, percent: journey.state.percent, title: nx.type === 'finished' ? '🎉 Yolculuğu tamamladın' : 'Sıradaki seviye hazırlanıyor', href: '/journey' };
+      }
       setD({
         due,
         streak,
@@ -70,6 +85,7 @@ function Dashboard({ app, db }: { app: ReadyApp; db: Db }) {
         suggestions,
         words: words.count ?? 0,
         weakTopics: weakTopicRows,
+        journey: journeyCard,
       });
     })().catch((e) => setError(e instanceof Error ? e.message : 'Panel yüklenemedi'));
   }, [app, db, lang]);
@@ -96,6 +112,29 @@ function Dashboard({ app, db }: { app: ReadyApp; db: Db }) {
         </div>
       )}
       {d.suggestions.map((s) => <p key={s} className="notice good">{s}. <Link href="/progress">İlerleme sayfasında onayla</Link></p>)}
+
+      <div className="card">
+        {d.journey ? (
+          <div className="row between">
+            <div>
+              <h2>Yol haritası · {d.journey.range} · %{d.journey.percent}</h2>
+              <p className="muted" style={{ margin: 0 }}>Sıradaki adım: {d.journey.title}</p>
+            </div>
+            <div className="row">
+              <Link className="btn primary" href={d.journey.href}>Devam et</Link>
+              <Link className="btn" href="/journey">Harita</Link>
+            </div>
+          </div>
+        ) : (
+          <div className="row between">
+            <div>
+              <h2>Yol haritası</h2>
+              <p className="muted" style={{ margin: 0 }}>Seviye aralığını seç (ör. B1 → C1); sistem sıradaki adımı her seferinde söylesin.</p>
+            </div>
+            <Link className="btn primary" href="/journey">Başla</Link>
+          </div>
+        )}
+      </div>
 
       <div className="card">
         <div className="row between">

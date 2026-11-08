@@ -499,6 +499,101 @@
      "explain_tr": "“manchmal noch frage” = ara sıra hâlâ soruyor."
     }
    ]
+  },
+  {
+   "slug": "de-podcast-homeoffice",
+   "title": "Arbeiten von zu Hause",
+   "kind": "podcast",
+   "cefr_level": "C1",
+   "topics": [
+    "iş",
+    "günlük hayat"
+   ],
+   "duration_sec": 45,
+   "transcript": [
+    {
+     "speaker": "Moderator",
+     "text": "Seit einigen Jahren arbeiten immer mehr Menschen zumindest teilweise von zu Hause aus. Befürworter betonen die gewonnene Flexibilität und den Wegfall langer Arbeitswege. Kritiker hingegen warnen davor, dass die Grenze zwischen Beruf und Privatleben zunehmend verschwimmt. Wer ständig erreichbar ist, findet kaum noch Erholung. Entscheidend ist daher, klare Regeln zu vereinbaren, sodass sowohl die Produktivität als auch die Gesundheit der Beschäftigten geschützt bleibt."
+    }
+   ],
+   "glossary": [
+    {
+     "lemma": "der Befürworter",
+     "pos": "noun",
+     "meaning_tr": "destekleyen kişi",
+     "example": "Die Befürworter des Plans sind in der Mehrheit.",
+     "example_tr": "Planı destekleyenler çoğunlukta.",
+     "forms": [
+      "Befürworter"
+     ]
+    },
+    {
+     "lemma": "der Wegfall",
+     "pos": "noun",
+     "meaning_tr": "ortadan kalkma",
+     "example": "Der Wegfall der Gebühr freut alle.",
+     "example_tr": "Ücretin kalkması herkesi sevindirir."
+    },
+    {
+     "lemma": "verschwimmen",
+     "pos": "verb",
+     "meaning_tr": "bulanıklaşmak, belirsizleşmek",
+     "example": "Die Grenzen verschwimmen.",
+     "example_tr": "Sınırlar belirsizleşiyor.",
+     "forms": [
+      "verschwimmt"
+     ]
+    },
+    {
+     "lemma": "die Erholung",
+     "pos": "noun",
+     "meaning_tr": "dinlenme",
+     "example": "Ich brauche etwas Erholung.",
+     "example_tr": "Biraz dinlenmeye ihtiyacım var."
+    },
+    {
+     "lemma": "der Beschäftigte",
+     "pos": "noun",
+     "meaning_tr": "çalışan",
+     "example": "Die Beschäftigten bekommen mehr Urlaub.",
+     "example_tr": "Çalışanlar daha fazla izin alıyor.",
+     "forms": [
+      "Beschäftigten"
+     ]
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Was betonen die Befürworter?",
+     "options": [
+      "Mehr Flexibilität und weniger Pendeln",
+      "Höhere Gehälter",
+      "Mehr Besprechungen",
+      "Weniger Freizeit"
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": "Wovor warnen die Kritiker?",
+     "options": [
+      "Vor zu vielen Urlaubstagen",
+      "Vor der Vermischung von Beruf und Privatleben",
+      "Vor schlechter Internetverbindung",
+      "Vor hohen Mieten"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "Was ist laut dem Sprecher entscheidend?",
+     "options": [
+      "Klare Regeln zu vereinbaren",
+      "Das Büro zu schließen",
+      "Mehr Technik zu kaufen",
+      "Weniger zu arbeiten"
+     ],
+     "answer": 0
+    }
+   ]
   }
  ],
  "reading": [
@@ -902,6 +997,95 @@
      "explain_tr": "Morgen sporu metinde geçmiyor."
     }
    ]
+  },
+  {
+   "slug": "de-konzentration",
+   "title": "Die Kunst der Konzentration",
+   "kind": "article",
+   "cefr_level": "C1",
+   "topics": [
+    "iş",
+    "kültür"
+   ],
+   "body": "In einer Welt, in der Benachrichtigungen im Sekundentakt eintreffen, gilt Konzentration als knappe Ressource. Psychologen weisen darauf hin, dass jede Unterbrechung nicht nur Zeit kostet, sondern auch das Gedächtnis belastet: Wer aus einer Aufgabe gerissen wird, braucht oft mehrere Minuten, um den Faden wieder aufzunehmen.\n\nManche Unternehmen reagieren darauf mit festen Ruhezeiten, in denen weder E-Mails noch Anrufe zugelassen sind. Erste Erfahrungen deuten darauf hin, dass die Beschäftigten dadurch nicht nur produktiver, sondern auch zufriedener arbeiten. Dennoch bleibt die Umsetzung schwierig, solange ständige Erreichbarkeit als Zeichen von Engagement missverstanden wird.\n\nDie Verantwortung liegt daher nicht allein beim Einzelnen. Erst wenn Organisationen eine Kultur der Aufmerksamkeit pflegen, kann sich nachhaltig etwas verändern.",
+   "glossary": [
+    {
+     "lemma": "die Benachrichtigung",
+     "pos": "noun",
+     "meaning_tr": "bildirim",
+     "example": "Ich habe eine neue Benachrichtigung.",
+     "example_tr": "Yeni bir bildirimim var.",
+     "forms": [
+      "Benachrichtigungen"
+     ]
+    },
+    {
+     "lemma": "die Unterbrechung",
+     "pos": "noun",
+     "meaning_tr": "kesinti",
+     "example": "Die Unterbrechung hat mich gestört.",
+     "example_tr": "Kesinti beni rahatsız etti."
+    },
+    {
+     "lemma": "belasten",
+     "pos": "verb",
+     "meaning_tr": "yüklemek, zorlamak",
+     "example": "Der Lärm belastet mich.",
+     "example_tr": "Gürültü beni zorluyor.",
+     "forms": [
+      "belastet"
+     ]
+    },
+    {
+     "lemma": "missverstehen",
+     "pos": "verb",
+     "meaning_tr": "yanlış anlamak",
+     "example": "Ich wollte nicht missverstanden werden.",
+     "example_tr": "Yanlış anlaşılmak istemedim.",
+     "forms": [
+      "missverstanden"
+     ]
+    },
+    {
+     "lemma": "nachhaltig",
+     "pos": "adj",
+     "meaning_tr": "kalıcı, sürdürülebilir",
+     "example": "Wir suchen eine nachhaltige Lösung.",
+     "example_tr": "Kalıcı bir çözüm arıyoruz."
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Was gilt laut Text als knappe Ressource?",
+     "options": [
+      "Zeit im Büro",
+      "Konzentration",
+      "Geld",
+      "Strom"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "Wie reagieren manche Unternehmen?",
+     "options": [
+      "Mit festen Ruhezeiten ohne E-Mails und Anrufe",
+      "Mit längeren Arbeitszeiten",
+      "Mit weniger Personal",
+      "Mit mehr Besprechungen"
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": "Was erschwert die Umsetzung laut Text?",
+     "options": [
+      "Fehlende Computer",
+      "Dass ständige Erreichbarkeit als Engagement gilt",
+      "Zu hohe Gehälter",
+      "Zu wenig Urlaub"
+     ],
+     "answer": 1
+    }
+   ]
   }
  ],
  "speaking": [
@@ -990,6 +1174,40 @@
    "topics": [
     "seyahat",
     "günlük hayat"
+   ]
+  },
+  {
+   "slug": "de-meinung-stadt-land",
+   "cefr_level": "B2",
+   "kind": "answer",
+   "title_tr": "Stadt oder Land?",
+   "prompt_tr": "Şehirde mi yoksa kırda mı yaşamak daha iyi? Fikrini gerekçelerle anlat.",
+   "model_text": "Meiner Meinung nach lebt es sich in der Stadt besser, denn dort gibt es mehr Arbeitsplätze und ein größeres kulturelles Angebot. Allerdings sind die Mieten hoch, und es ist oft laut. Auf dem Land hingegen ist es ruhiger, aber man ist stärker auf ein Auto angewiesen.",
+   "target_phrases": [
+    "meiner Meinung nach",
+    "allerdings",
+    "auf dem Land hingegen"
+   ],
+   "max_seconds": 60,
+   "topics": [
+    "günlük hayat"
+   ]
+  },
+  {
+   "slug": "de-meeting-widersprechen",
+   "cefr_level": "C1",
+   "kind": "roleplay",
+   "title_tr": "Im Meeting höflich widersprechen",
+   "prompt_tr": "Bir toplantıda iş arkadaşının önerisine saygılı ama net biçimde itiraz et ve alternatif öner.",
+   "model_text": "Ich verstehe Ihren Standpunkt, bin allerdings nicht ganz überzeugt, dass dieser Ansatz der richtige ist. Der Zeitplan erscheint mir unrealistisch, und wir gingen ein erhebliches Risiko ein. Dürfte ich vorschlagen, das Projekt zunächst in einem kleineren Rahmen zu testen?",
+   "target_phrases": [
+    "Ich verstehe Ihren Standpunkt",
+    "nicht ganz überzeugt",
+    "Dürfte ich vorschlagen"
+   ],
+   "max_seconds": 70,
+   "topics": [
+    "iş"
    ]
   }
  ],
@@ -1085,6 +1303,24 @@
    "sample_answer": "Meiner Meinung nach sollten Beschäftigte mindestens zwei Tage pro Woche von zu Hause arbeiten können. Menschen, die weit vom Büro entfernt wohnen, sparen zum Beispiel Stunden an Fahrzeit und können diese Zeit produktiver nutzen. Dennoch halte ich regelmäßige persönliche Treffen für wichtig, weil sie Vertrauen schaffen und die Zusammenarbeit erleichtern. Ein flexibles Gleichgewicht erscheint mir daher als die sinnvollste Lösung.",
    "topics": [
     "iş",
+    "teknoloji"
+   ]
+  },
+  {
+   "slug": "de-essay-soziale-medien",
+   "cefr_level": "C1",
+   "kind": "short_paragraph",
+   "title_tr": "Soziale Medien und Demokratie",
+   "prompt_tr": "Sosyal medya demokrasi için fırsat mı tehdit mi? Dengeli bir paragraf yaz.",
+   "target_phrases": [
+    "einerseits",
+    "andererseits",
+    "nicht zuletzt"
+   ],
+   "min_words": 70,
+   "max_words": 170,
+   "sample_answer": "Soziale Medien sind für die Demokratie zugleich Chance und Risiko. Einerseits ermöglichen sie es Bürgerinnen und Bürgern, sich unmittelbar zu informieren und an öffentlichen Debatten teilzunehmen, ohne auf traditionelle Medien angewiesen zu sein. Andererseits belohnen Algorithmen häufig Empörung statt Sachlichkeit, wodurch Falschinformationen sich rasch verbreiten. Nicht zuletzt neigen Nutzer dazu, vor allem Meinungen zu lesen, die ihre eigene bestätigen. Daher sollten Plattformen mehr Transparenz zeigen, und die Nutzer sollten ihre Medienkompetenz stärken.",
+   "topics": [
     "teknoloji"
    ]
   }
@@ -2414,11 +2650,89 @@
    ]
   },
   {
+   "slug": "de-zweiteilige-konnektoren",
+   "title_tr": "İkili bağlaçlar (je … desto, nicht nur … sondern auch)",
+   "title_target": "Zweiteilige Konnektoren",
+   "cefr_level": "B2",
+   "order_index": 18,
+   "summary_tr": "Birlikte kullanılan bağlaç çiftleri:\n• je … desto/umso + karşılaştırma: Je mehr du übst, desto besser wirst du.\n• nicht nur … sondern auch: Sie spricht nicht nur Englisch, sondern auch Spanisch.\n• sowohl … als auch: Er ist sowohl intelligent als auch fleißig.\n• weder … noch (ikisi de değil): Ich möchte weder Tee noch Kaffee.\n• entweder … oder: Wir fahren entweder nach Wien oder nach Prag.\n• “je” cümlesinde fiil sonda, “desto” cümlesinde fiil 2. sıradadır.",
+   "examples": [
+    {
+     "text": "Je mehr du übst, desto besser wirst du.",
+     "tr": "Ne kadar çok çalışırsan o kadar iyi olursun.",
+     "highlight": "Je mehr du übst, desto besser"
+    },
+    {
+     "text": "Sie spricht nicht nur Englisch, sondern auch Spanisch.",
+     "tr": "Yalnızca İngilizce değil, İspanyolca da konuşuyor.",
+     "highlight": "nicht nur Englisch, sondern auch Spanisch"
+    },
+    {
+     "text": "Ich möchte weder Tee noch Kaffee.",
+     "tr": "Ne çay ne de kahve istiyorum.",
+     "highlight": "weder Tee noch Kaffee"
+    },
+    {
+     "text": "Wir fahren entweder nach Wien oder nach Prag.",
+     "tr": "Ya Viyana’ya ya da Prag’a gidiyoruz.",
+     "highlight": "entweder nach Wien oder nach Prag"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "___ mehr ich lerne, desto besser verstehe ich.",
+     "options": [
+      "Je",
+      "Wenn",
+      "Umso",
+      "Weil"
+     ],
+     "answer": 0,
+     "explain_tr": "je + karşılaştırma … desto + karşılaştırma."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Er ist sowohl intelligent ___ fleißig.",
+     "options": [
+      "oder",
+      "als auch",
+      "noch",
+      "sondern"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "fill",
+     "prompt": "Sie hat weder Zeit ___ Lust. (noch/oder)",
+     "answer": "noch",
+     "explain_tr": "weder … noch"
+    },
+    {
+     "type": "fill",
+     "prompt": "Nicht nur der Chef, ___ auch die Kollegen waren begeistert. (sondern/aber)",
+     "answer": "sondern",
+     "explain_tr": "nicht nur … sondern auch"
+    },
+    {
+     "type": "mcq",
+     "prompt": "Welcher Satz ist richtig?",
+     "options": [
+      "Entweder bleibe ich hier oder ich gehe nach Hause.",
+      "Entweder bleibe ich hier noch ich gehe nach Hause.",
+      "Weder bleibe ich hier oder ich gehe nach Hause.",
+      "Entweder bleibe ich hier sondern ich gehe nach Hause."
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
    "slug": "de-indirekte-rede",
    "title_tr": "Dolaylı anlatım (Konjunktiv I)",
    "title_target": "Indirekte Rede",
    "cefr_level": "B2",
-   "order_index": 18,
+   "order_index": 19,
    "summary_tr": "Başkasının sözünü, özellikle haber ve yazıda, tarafsız aktarmak için Konjunktiv I kullanılır.\n• Oluşum: mastar kökü + -e, -est, -e, -en, -et, -en → er komme, sie habe, er fahre.\n• sein: er sei, sie seien (ich sei, du seiest).\n• Konjunktiv I biçimi Indikativ ile aynıysa Konjunktiv II kullanılır: sie haben → sie hätten; sie kommen → sie kämen/würden kommen.\nEr sagt: „Ich bin müde.“ → Er sagt, er sei müde.\nSie sagte: „Ich habe keine Zeit.“ → Sie sagte, sie habe keine Zeit.",
    "examples": [
     {
@@ -2496,7 +2810,7 @@
    "title_tr": "Genitiv (tamlayan hâli) ve Genitiv edatları",
    "title_target": "Genitiv und Präpositionen mit Genitiv",
    "cefr_level": "B2",
-   "order_index": 19,
+   "order_index": 20,
    "summary_tr": "Genitiv aitlik bildirir: das Auto meines Vaters (babamın arabası).\n• Artikel: der → des, die → der, das → des, çoğul die → der.\n• Maskulin ve nötr isimler -s veya -es alır: des Mannes, des Kindes, des Hauses.\n• Genitiv isteyen edatlar: wegen, trotz, während, statt/anstatt, innerhalb, außerhalb.\nWegen des Wetters bleiben wir zu Hause.\nTrotz der Kälte gehen wir spazieren.\nKonuşmada çoğu zaman Dativ de kullanılır (wegen dem Wetter), yazıda Genitiv doğrudur.",
    "examples": [
     {
@@ -2574,7 +2888,7 @@
    "title_tr": "Konjunktiv II der Vergangenheit (Wenn ich … gehabt hätte)",
    "title_target": "Konjunktiv II der Vergangenheit",
    "cefr_level": "B2",
-   "order_index": 20,
+   "order_index": 21,
    "summary_tr": "Geçmişte gerçekleşmeyen durumlar, pişmanlıklar ve “-seydi, -ırdı” için: hätte / wäre + Partizip II.\n• haben fiilleri: hätte + Partizip II → Ich hätte gelernt.\n• sein ve hareket fiilleri: wäre + Partizip II → Ich wäre gekommen.\n• Koşul: Wenn ich das gewusst hätte, wäre ich gekommen.\n• Wenn’siz koşul: Hätte ich das gewusst, wäre ich gekommen.\n• Modallerle: Ich hätte kommen können.",
    "examples": [
     {
@@ -2643,6 +2957,243 @@
       "Wenn ich das gewusst hätte, würde ich gekommen."
      ],
      "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "de-nominalisierung",
+   "title_tr": "Nominalisierung (Nominalstil)",
+   "title_target": "Nominalisierung: Verben und Nebensätze als Nomen",
+   "cefr_level": "C1",
+   "order_index": 22,
+   "summary_tr": "Resmî, yazılı ve akademik Almancada fiiller ve yan cümleler isimlere dönüştürülür.\n• Fiil → isim: untersuchen → die Untersuchung · entscheiden → die Entscheidung · fahren → die Fahrt · lesen → das Lesen (mastar isim).\n• Sıfat → isim: schwierig → die Schwierigkeit · frei → die Freiheit.\n• Yan cümle → edat + isim (Genitiv): Weil es stark regnet … → Wegen des starken Regens … · Obwohl es kalt war … → Trotz der Kälte … · Nachdem er angekommen war … → Nach seiner Ankunft …\n• Nominalstil kısa ve ağırdır; konuşmada yan cümle (Verbalstil) tercih edilir.",
+   "examples": [
+    {
+     "text": "Wegen des starken Regens fällt das Fest aus.",
+     "tr": "Şiddetli yağmur nedeniyle şenlik iptal oluyor.",
+     "highlight": "Wegen des starken Regens"
+    },
+    {
+     "text": "Nach der Untersuchung wurde ein Medikament verschrieben.",
+     "tr": "Muayeneden sonra bir ilaç yazıldı.",
+     "highlight": "Nach der Untersuchung"
+    },
+    {
+     "text": "Das Lesen von Fachtexten erfordert Konzentration.",
+     "tr": "Uzmanlık metinlerini okumak dikkat gerektirir.",
+     "highlight": "Das Lesen"
+    },
+    {
+     "text": "Trotz der hohen Kosten entschied sich die Firma für das Projekt.",
+     "tr": "Yüksek maliyete rağmen şirket projeyi seçti.",
+     "highlight": "Trotz der hohen Kosten"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Weil er krank war, blieb er zu Hause. = ___ blieb er zu Hause.",
+     "options": [
+      "Wegen seiner Krankheit",
+      "Trotz seiner Krankheit",
+      "Statt seiner Krankheit",
+      "Ohne seine Krankheit"
+     ],
+     "answer": 0,
+     "explain_tr": "weil → wegen + Genitiv."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Das Verb „entscheiden“ wird zum Nomen: die ___.",
+     "options": [
+      "Entscheidung",
+      "Entscheidnis",
+      "Entscheidheit",
+      "Entscheidt"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "fill",
+     "prompt": "Obwohl es kalt war, gingen wir spazieren. = ___ der Kälte gingen wir spazieren. (Trotz/Wegen)",
+     "answer": "Trotz",
+     "explain_tr": "obwohl → trotz + Genitiv."
+    },
+    {
+     "type": "fill",
+     "prompt": "Das Verb „untersuchen“ → die ___. (-ung)",
+     "answer": "Untersuchung",
+     "explain_tr": "-ung ile fiilden isim türetilir."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Welcher Satz ist nominalisiert?",
+     "options": [
+      "Nachdem er angekommen war, rief er an.",
+      "Nach seiner Ankunft rief er an.",
+      "Als er ankam, rief er an.",
+      "Er rief an, weil er ankam."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "de-partizipialattribute",
+   "title_tr": "Partizipialattribute (der spielende Junge, das gelöste Problem)",
+   "title_target": "Partizip I und II als Attribut",
+   "cefr_level": "C1",
+   "order_index": 23,
+   "summary_tr": "Partizipler sıfat gibi isimden önce gelir ve sıfat eki alır.\n• Partizip I (mastar + d) → etken, eş zamanlı: der spielende Junge = der Junge, der spielt.\n• Partizip II → edilgen/tamamlanmış: das gelöste Problem = das Problem, das gelöst wurde.\n• Genişletilmiş: Ek bilgiler artikel ile partizip arasına girer: der im Garten spielende Junge · die von der Regierung beschlossenen Maßnahmen.\n• Sonuç yazı dilinde yoğun ve kısadır; sıfat ekleri normal sıfat gibi eklenir (-e, -en, -er, -es).",
+   "examples": [
+    {
+     "text": "Der im Garten spielende Junge ist mein Neffe.",
+     "tr": "Bahçede oynayan çocuk benim yeğenim.",
+     "highlight": "im Garten spielende"
+    },
+    {
+     "text": "Das gelöste Problem war nicht schwierig.",
+     "tr": "Çözülen sorun zor değildi.",
+     "highlight": "gelöste"
+    },
+    {
+     "text": "Die von der Regierung beschlossenen Maßnahmen treten morgen in Kraft.",
+     "tr": "Hükümetin aldığı önlemler yarın yürürlüğe giriyor.",
+     "highlight": "von der Regierung beschlossenen"
+    },
+    {
+     "text": "Wir lesen einen interessanten, kürzlich erschienenen Artikel.",
+     "tr": "Yakın zamanda yayımlanmış ilginç bir makale okuyoruz.",
+     "highlight": "kürzlich erschienenen"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Der Junge, der im Garten spielt = der im Garten ___ Junge",
+     "options": [
+      "spielende",
+      "gespielte",
+      "spielte",
+      "spielenden"
+     ],
+     "answer": 0,
+     "explain_tr": "Etken ve eş zamanlı: Partizip I + sıfat eki."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Das Problem, das gelöst wurde = das ___ Problem",
+     "options": [
+      "lösende",
+      "gelöste",
+      "gelöst",
+      "lösenden"
+     ],
+     "answer": 1,
+     "explain_tr": "Edilgen: Partizip II + sıfat eki."
+    },
+    {
+     "type": "fill",
+     "prompt": "Die Frau, die dort wartet = die dort ___ Frau (warten – Partizip I, ekli)",
+     "answer": "wartende",
+     "explain_tr": "warten + d + e = wartende"
+    },
+    {
+     "type": "fill",
+     "prompt": "Das Auto, das gestohlen wurde = das ___ Auto (stehlen – Partizip II, ekli)",
+     "answer": "gestohlene",
+     "explain_tr": "gestohlen + e"
+    },
+    {
+     "type": "mcq",
+     "prompt": "Welche Form ist richtig?",
+     "options": [
+      "das von mir gelesene Buch",
+      "das von mir lesende Buch",
+      "das von mir gelesen Buch",
+      "das von mir liest Buch"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "slug": "de-indem-sodass",
+   "title_tr": "indem, sodass, sofern, es sei denn (ileri bağlaçlar)",
+   "title_target": "Konnektoren: indem, sodass, sofern, es sei denn",
+   "cefr_level": "C1",
+   "order_index": 24,
+   "summary_tr": "Fiil hepsinde yan cümlenin sonundadır.\n• indem → araç/yol (“-erek”): Du kannst dein Deutsch verbessern, indem du viel liest.\n• sodass / so dass → sonuç: Es regnete stark, sodass das Spiel abgesagt wurde.\n• sofern / falls → koşul: Sofern keine Probleme auftreten, beginnen wir am Montag.\n• es sei denn (, dass) → istisna: Ich komme, es sei denn, ich muss arbeiten.\n• Ayrılabilen fiiller yan cümlede birleşik yazılır: …, indem sie wenig ausging.",
+   "examples": [
+    {
+     "text": "Du kannst dein Deutsch verbessern, indem du viel liest.",
+     "tr": "Çok okuyarak Almancanı geliştirebilirsin.",
+     "highlight": "indem du viel liest"
+    },
+    {
+     "text": "Es regnete stark, sodass das Spiel abgesagt wurde.",
+     "tr": "Çok yağmur yağdı, bu yüzden maç iptal edildi.",
+     "highlight": "sodass das Spiel abgesagt wurde"
+    },
+    {
+     "text": "Ich komme, es sei denn, ich muss arbeiten.",
+     "tr": "Gelirim, çalışmam gerekmedikçe.",
+     "highlight": "es sei denn, ich muss arbeiten"
+    },
+    {
+     "text": "Sofern keine Probleme auftreten, beginnen wir am Montag.",
+     "tr": "Sorun çıkmazsa Pazartesi başlıyoruz.",
+     "highlight": "Sofern keine Probleme auftreten"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Man lernt schwimmen, ___ man regelmäßig übt.",
+     "options": [
+      "indem",
+      "sodass",
+      "obwohl",
+      "damit"
+     ],
+     "answer": 0,
+     "explain_tr": "Yol/araç: indem."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Er hat laut gesprochen, ___ alle ihn hören konnten.",
+     "options": [
+      "indem",
+      "sodass",
+      "falls",
+      "obwohl"
+     ],
+     "answer": 1,
+     "explain_tr": "Sonuç: sodass."
+    },
+    {
+     "type": "fill",
+     "prompt": "Wir bleiben zu Hause, es ___ denn, das Wetter wird besser. (sei/ist)",
+     "answer": "sei",
+     "explain_tr": "Sabit kalıp: es sei denn."
+    },
+    {
+     "type": "fill",
+     "prompt": "___ keine Fragen mehr bestehen, beenden wir die Sitzung. (Sofern/Obwohl)",
+     "answer": "Sofern",
+     "explain_tr": "Koşul: sofern."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Welcher Satz ist richtig?",
+     "options": [
+      "Sie sparte Geld, indem sie wenig ausging.",
+      "Sie sparte Geld, indem sie ging wenig aus.",
+      "Sie sparte Geld, indem ging sie wenig aus.",
+      "Sie sparte Geld, indem wenig sie ausging."
+     ],
+     "answer": 0,
+     "explain_tr": "Yan cümlede çekimli fiil sonda."
     }
    ]
   }

@@ -7,6 +7,7 @@ import { setActiveLanguage } from '@/lib/db';
 
 const LINKS = [
   { href: '/dashboard', label: 'Panel' },
+  { href: '/journey', label: 'Yol haritası' },
   { href: '/lesson/today', label: 'Bugünkü ders' },
   { href: '/review', label: 'Tekrar' },
   { href: '/library', label: 'Kütüphane' },
