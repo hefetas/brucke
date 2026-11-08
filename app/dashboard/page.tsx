@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Gate, type ReadyApp } from '@/components/Gate';
 import { addDays, countDue, levelsOf, localDate, type Db } from '@/lib/db';
 import { currentStreak, loadProgressBySkill } from '@/lib/lesson';
+import { weakGrammarOf } from '@/lib/planner';
 import { CEFR_LEVELS, SKILLS, SKILL_LABEL_TR, cefrIndex, evaluateLevel, overallLevel, weakSkills, xpLevel } from '@/lib/levels';
 import type { LessonRow } from '@/lib/types';
 
@@ -21,6 +22,7 @@ interface Data {
   weak: string[];
   suggestions: string[];
   words: number;
+  weakTopics: { slug: string; title: string; score: number }[];
 }
 
 function Dashboard({ app, db }: { app: ReadyApp; db: Db }) {
@@ -48,6 +50,13 @@ function Dashboard({ app, db }: { app: ReadyApp; db: Db }) {
         if (dec.levelUp) suggestions.push(`${SKILL_LABEL_TR[s]}: bir üst seviyeye geçmeye hazırsın`);
         else if (dec.suggestDrop) suggestions.push(`${SKILL_LABEL_TR[s]}: son sonuçların düşük, bir alt seviye daha rahat olabilir`);
       }
+      const weakList = weakGrammarOf(progress.rows).slice(0, 2);
+      let weakTopicRows: Data['weakTopics'] = [];
+      if (weakList.length) {
+        const { data: titles } = await db.from('grammar_topics').select('slug, title_tr').eq('language_code', lang).in('slug', weakList.map((w) => w.slug));
+        const titleOf = new Map(((titles ?? []) as { slug: string; title_tr: string }[]).map((t) => [t.slug, t.title_tr] as [string, string]));
+        weakTopicRows = weakList.filter((w) => titleOf.has(w.slug)).map((w) => ({ slug: w.slug, title: titleOf.get(w.slug) as string, score: Math.round(w.score) }));
+      }
       setD({
         due,
         streak,
@@ -60,6 +69,7 @@ function Dashboard({ app, db }: { app: ReadyApp; db: Db }) {
         weak: weakSkills(progress.bySkill).map((s) => SKILL_LABEL_TR[s]),
         suggestions,
         words: words.count ?? 0,
+        weakTopics: weakTopicRows,
       });
     })().catch((e) => setError(e instanceof Error ? e.message : 'Panel yüklenemedi'));
   }, [app, db, lang]);
@@ -100,6 +110,19 @@ function Dashboard({ app, db }: { app: ReadyApp; db: Db }) {
           </Link>
         </div>
       </div>
+
+      {d.weakTopics.length > 0 && (
+        <div className="card">
+          <h3>Zorlandığın konu</h3>
+          <p className="muted" style={{ margin: '0 0 8px' }}>Son alıştırmada düşük puan aldığın konular. Ders planında da öne alınır.</p>
+          {d.weakTopics.map((t) => (
+            <div className="row between" key={t.slug} style={{ marginBottom: 6 }}>
+              <span>{t.title} <span className="muted">· %{t.score}</span></span>
+              <Link className="btn small" href={`/grammar/${t.slug}?lc=${lang}`}>Tekrar çalış</Link>
+            </div>
+          ))}
+        </div>
+      )}
 
       <div className="grid three">
         <div className="card">

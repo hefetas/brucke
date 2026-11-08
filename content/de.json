@@ -1166,11 +1166,326 @@
    ]
   },
   {
+   "slug": "de-praesens",
+   "title_tr": "Präsens (şimdiki / geniş zaman çekimi)",
+   "title_target": "Präsens: regelmäßige und unregelmäßige Verben",
+   "cefr_level": "A1",
+   "order_index": 2,
+   "summary_tr": "Düzenli fiillerde kökün sonuna kişi eki gelir (machen → mach-):\nich mache · du machst · er/sie/es macht · wir machen · ihr macht · sie/Sie machen\n• Kök -t / -d ile bitiyorsa araya e girer: du arbeitest, er arbeitet.\n• Bazı fiiller du ve er/sie/es ile kök ünlüsünü değiştirir: fahren → du fährst, er fährt; sprechen → du sprichst, er spricht; lesen → du liest, er liest; essen → du isst, er isst.\n• “sein” ve “haben” ayrı öğrenilir: ich bin, du bist / ich habe, du hast.\n• Almancada “şimdi” ve “genelde” için aynı biçim kullanılır: Ich lerne Deutsch.",
+   "examples": [
+    {
+     "text": "Ich wohne in Ankara.",
+     "tr": "Ankara’da oturuyorum.",
+     "highlight": "wohne"
+    },
+    {
+     "text": "Du arbeitest viel.",
+     "tr": "Çok çalışıyorsun.",
+     "highlight": "arbeitest"
+    },
+    {
+     "text": "Er fährt mit dem Bus.",
+     "tr": "O otobüsle gidiyor.",
+     "highlight": "fährt"
+    },
+    {
+     "text": "Sie spricht gut Deutsch.",
+     "tr": "O iyi Almanca konuşuyor.",
+     "highlight": "spricht"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Wir ___ heute Pizza.",
+     "options": [
+      "esse",
+      "isst",
+      "essen",
+      "esst"
+     ],
+     "answer": 2,
+     "explain_tr": "wir ile fiil mastar biçiminde kalır: essen."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Er ___ jeden Tag die Zeitung.",
+     "options": [
+      "lest",
+      "liest",
+      "lesen",
+      "lese"
+     ],
+     "answer": 1,
+     "explain_tr": "lesen → er liest (e → ie)."
+    },
+    {
+     "type": "fill",
+     "prompt": "Du ___ gern Kaffee. (trinken)",
+     "answer": "trinkst",
+     "explain_tr": "du ile -st eki: trinkst."
+    },
+    {
+     "type": "fill",
+     "prompt": "Sie (o, tekil) ___ gut Englisch. (sprechen)",
+     "answer": "spricht",
+     "explain_tr": "sprechen → er/sie spricht (e → i)."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Ihr ___ sehr nett.",
+     "options": [
+      "bist",
+      "sind",
+      "seid",
+      "ist"
+     ],
+     "answer": 2,
+     "explain_tr": "ihr ile sein: seid."
+    }
+   ]
+  },
+  {
+   "slug": "de-wortstellung",
+   "title_tr": "Cümlede fiil yeri (fiil 2. sırada)",
+   "title_target": "Wortstellung: Verb an Position 2",
+   "cefr_level": "A1",
+   "order_index": 3,
+   "summary_tr": "• Düz cümlede çekimli fiil HER ZAMAN 2. sıradadır: Ich gehe heute ins Kino.\n• Cümleye zaman/yer ifadesiyle başlarsanız özne fiilden sonra gelir: Heute gehe ich ins Kino. (Heute ich gehe ✗)\n• W-soruları: soru sözcüğü + fiil + özne → Wohin gehst du?\n• Evet/hayır soruları: fiil başta → Gehst du ins Kino?\n• Emir: fiil başta → Komm bitte her!\n• Zaman – Neden – Biçim – Yer sırası (TeKaMoLo) kabaca: Ich fahre morgen mit dem Zug nach Berlin.",
+   "examples": [
+    {
+     "text": "Ich gehe heute ins Kino.",
+     "tr": "Bugün sinemaya gidiyorum.",
+     "highlight": "gehe"
+    },
+    {
+     "text": "Heute gehe ich ins Kino.",
+     "tr": "Bugün sinemaya gidiyorum.",
+     "highlight": "gehe ich"
+    },
+    {
+     "text": "Wohin gehst du?",
+     "tr": "Nereye gidiyorsun?",
+     "highlight": "Wohin gehst du"
+    },
+    {
+     "text": "Kommst du morgen?",
+     "tr": "Yarın geliyor musun?",
+     "highlight": "Kommst du"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Morgen ___ ich nach Hamburg.",
+     "options": [
+      "fahre",
+      "ich fahre",
+      "fahren",
+      "gefahren"
+     ],
+     "answer": 0,
+     "explain_tr": "Cümle “Morgen” ile başladığında fiil 2. sırada kalır, özne sonra gelir."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Welcher Satz ist richtig?",
+     "options": [
+      "Am Montag ich arbeite.",
+      "Am Montag arbeite ich.",
+      "Am Montag ich arbeiten.",
+      "Ich am Montag arbeite."
+     ],
+     "answer": 1
+    },
+    {
+     "type": "fill",
+     "prompt": "___ du Kaffee? (trinken – evet/hayır sorusu)",
+     "answer": "Trinkst",
+     "explain_tr": "Evet/hayır sorusunda fiil başa gelir."
+    },
+    {
+     "type": "fill",
+     "prompt": "Wo ___ du? (wohnen)",
+     "answer": "wohnst",
+     "explain_tr": "W-sorusu: soru sözcüğü + fiil + özne."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Welcher Satz ist richtig?",
+     "options": [
+      "Heute Abend wir sehen einen Film.",
+      "Heute Abend sehen wir einen Film.",
+      "Wir heute Abend sehen einen Film.",
+      "Sehen heute Abend wir einen Film."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "de-nicht-kein",
+   "title_tr": "“nicht” ve “kein” (olumsuzluk)",
+   "title_target": "Verneinung: nicht und kein",
+   "cefr_level": "A1",
+   "order_index": 4,
+   "summary_tr": "• kein → isimleri olumsuzlar; belirsiz artikel ya da artikelsiz isimlerin yerine geçer. Ich habe ein Auto. → Ich habe kein Auto.\n  kein, ein gibi çekimlenir: kein (m/n Nom.), keine (f, çoğul), keinen (m Akk.): Ich habe keinen Hund. Ich habe keine Zeit.\n• nicht → fiili, sıfatı, zarfı ve belirli artikelli isimleri olumsuzlar: Ich arbeite nicht. Das ist nicht gut. Ich kenne den Mann nicht.\n• nicht genellikle cümlenin sonuna yakın durur; sıfat/zarfın önüne gelir.",
+   "examples": [
+    {
+     "text": "Ich habe keine Zeit.",
+     "tr": "Zamanım yok.",
+     "highlight": "keine Zeit"
+    },
+    {
+     "text": "Er hat keinen Bruder.",
+     "tr": "Erkek kardeşi yok.",
+     "highlight": "keinen Bruder"
+    },
+    {
+     "text": "Ich komme heute nicht.",
+     "tr": "Bugün gelmiyorum.",
+     "highlight": "nicht"
+    },
+    {
+     "text": "Das Wetter ist nicht schön.",
+     "tr": "Hava güzel değil.",
+     "highlight": "nicht schön"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Ich habe ___ Hunger.",
+     "options": [
+      "nicht",
+      "kein",
+      "keine",
+      "keinen"
+     ],
+     "answer": 3,
+     "explain_tr": "der Hunger (m, Akk.) → keinen Hunger."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Das ist ___ gut.",
+     "options": [
+      "kein",
+      "keine",
+      "nicht",
+      "keinen"
+     ],
+     "answer": 2,
+     "explain_tr": "Sıfat olumsuzlanırken nicht kullanılır."
+    },
+    {
+     "type": "fill",
+     "prompt": "Wir haben ___ Auto. (kein/keine)",
+     "answer": "kein",
+     "explain_tr": "das Auto (n) → kein Auto."
+    },
+    {
+     "type": "fill",
+     "prompt": "Ich habe ___ Geschwister. (kein/keine)",
+     "answer": "keine",
+     "explain_tr": "Çoğul isim → keine."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Welcher Satz ist richtig?",
+     "options": [
+      "Ich spreche kein Deutsch gut.",
+      "Ich spreche nicht gut Deutsch.",
+      "Ich nicht spreche Deutsch.",
+      "Ich spreche Deutsch kein."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "de-modalverben",
+   "title_tr": "Modalverben (können, müssen, wollen …)",
+   "title_target": "Modalverben",
+   "cefr_level": "A2",
+   "order_index": 5,
+   "summary_tr": "können (-ebilmek) · müssen (zorunda olmak) · wollen (istemek) · dürfen (izinli olmak) · sollen (-meli, söylendi) · möchten (-mek istemek, kibar)\n• Tekil kişilerde (ich/er) kök değişir ve ek yoktur: ich kann, du kannst, er kann · ich muss · ich will · ich darf · ich soll · ich möchte.\n• Ana fiil mastar olarak CÜMLENİN SONUNA gider: Ich kann gut schwimmen. Er muss heute arbeiten.\n• Olumsuz: Ich darf nicht rauchen. (yasak)  Ich muss nicht kommen. (zorunda değilim)",
+   "examples": [
+    {
+     "text": "Ich kann gut schwimmen.",
+     "tr": "İyi yüzebiliyorum.",
+     "highlight": "kann"
+    },
+    {
+     "text": "Du musst heute lernen.",
+     "tr": "Bugün çalışmak zorundasın.",
+     "highlight": "musst"
+    },
+    {
+     "text": "Wir wollen nach Italien fahren.",
+     "tr": "İtalya’ya gitmek istiyoruz.",
+     "highlight": "wollen"
+    },
+    {
+     "text": "Hier darf man nicht rauchen.",
+     "tr": "Burada sigara içmek yasak.",
+     "highlight": "darf man nicht rauchen"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Ich ___ heute nicht kommen. Ich bin krank.",
+     "options": [
+      "kann",
+      "kannst",
+      "können",
+      "konnte"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "mcq",
+     "prompt": "Er ___ jeden Tag früh aufstehen.",
+     "options": [
+      "müssen",
+      "musst",
+      "muss",
+      "müsst"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "fill",
+     "prompt": "Du ___ hier nicht parken. (dürfen)",
+     "answer": "darfst",
+     "explain_tr": "du darfst."
+    },
+    {
+     "type": "fill",
+     "prompt": "Wir ___ heute Abend ins Kino gehen. (wollen)",
+     "answer": "wollen",
+     "explain_tr": "wir wollen."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Welcher Satz ist richtig?",
+     "options": [
+      "Ich kann Deutsch sprechen.",
+      "Ich kann sprechen Deutsch.",
+      "Ich Deutsch kann sprechen.",
+      "Ich kann spreche Deutsch."
+     ],
+     "answer": 0,
+     "explain_tr": "Ana fiil mastar olarak cümle sonuna gider."
+    }
+   ]
+  },
+  {
    "slug": "de-perfekt",
    "title_tr": "Perfekt (konuşma dilinde geçmiş)",
    "title_target": "Das Perfekt",
    "cefr_level": "A2",
-   "order_index": 2,
+   "order_index": 6,
    "summary_tr": "Konuşmada geçmişi anlatmak için çoğunlukla Perfekt kullanılır:\nhaben/sein (şimdiki zamanda) + Partizip II (cümle sonunda)\n\n• Çoğu fiil “haben” alır: Ich habe Pizza gegessen.\n• Hareket ve durum değişikliği bildiren fiiller “sein” alır: Wir sind nach Berlin gefahren. Er ist früh aufgestanden.\n• Düzenli: ge-…-t (machen → gemacht); düzensiz: ge-…-en (gehen → gegangen, essen → gegessen).\n• Ayrılabilen fiillerde ge- ortaya girer: aufstehen → aufgestanden.",
    "examples": [
     {
@@ -1242,11 +1557,480 @@
    ]
   },
   {
+   "slug": "de-trennbare-verben",
+   "title_tr": "Ayrılabilen fiiller (aufstehen, anrufen …)",
+   "title_target": "Trennbare Verben",
+   "cefr_level": "A2",
+   "order_index": 7,
+   "summary_tr": "Bazı fiillerin önünde ayrılabilen bir ön ek vardır: auf|stehen, an|rufen, ein|kaufen, mit|kommen, an|fangen.\n• Düz cümlede fiil 2. sıraya gider, ön ek CÜMLENİN SONUNDA kalır: Ich stehe um sieben Uhr auf.\n• Modal fiille mastar birlikte kalır: Ich muss früh aufstehen.\n• Perfekt’te ge- ön ekle fiil arasına girer: aufgestanden, eingekauft, angerufen.\n• Ön ek vurgu alır: ÁUFstehen.",
+   "examples": [
+    {
+     "text": "Ich stehe um sieben Uhr auf.",
+     "tr": "Saat yedide kalkıyorum.",
+     "highlight": "stehe"
+    },
+    {
+     "text": "Kommst du mit?",
+     "tr": "Sen de geliyor musun?",
+     "highlight": "Kommst"
+    },
+    {
+     "text": "Ruf mich bitte an!",
+     "tr": "Lütfen beni ara!",
+     "highlight": "Ruf"
+    },
+    {
+     "text": "Wir kaufen im Supermarkt ein.",
+     "tr": "Süpermarkette alışveriş yapıyoruz.",
+     "highlight": "kaufen"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Welcher Satz ist richtig?",
+     "options": [
+      "Ich aufstehe um 7 Uhr.",
+      "Ich stehe um 7 Uhr auf.",
+      "Um 7 Uhr ich stehe auf.",
+      "Ich stehe auf um 7 Uhr auf."
+     ],
+     "answer": 1
+    },
+    {
+     "type": "mcq",
+     "prompt": "Er ___ seine Eltern jeden Sonntag ___.",
+     "options": [
+      "ruft … an",
+      "anruft … –",
+      "ruft … um",
+      "ruft … ein"
+     ],
+     "answer": 0,
+     "explain_tr": "Fiil 2. sırada, ön ek sonda: Er ruft … an."
+    },
+    {
+     "type": "fill",
+     "prompt": "Ich ___ dich morgen an. (anrufen)",
+     "answer": "rufe",
+     "explain_tr": "Fiil 2. sırada, “an” cümle sonunda."
+    },
+    {
+     "type": "fill",
+     "prompt": "Der Film ___ um 20 Uhr an. (anfangen: er …)",
+     "answer": "fängt",
+     "explain_tr": "anfangen → er fängt an."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Ich muss morgen früh ___.",
+     "options": [
+      "aufstehen",
+      "stehe auf",
+      "auf stehen",
+      "aufgestehen"
+     ],
+     "answer": 0,
+     "explain_tr": "Modal fiille mastar birlikte yazılır."
+    }
+   ]
+  },
+  {
+   "slug": "de-dativ",
+   "title_tr": "Dativ (-e hâli, “-e/-a”)",
+   "title_target": "Dativ: Artikel, Pronomen und Präpositionen",
+   "cefr_level": "A2",
+   "order_index": 8,
+   "summary_tr": "Dativ dolaylı tümleç (“kime?”) içindir: Ich gebe dem Mann das Buch.\n• Artikel: der → dem, die → der, das → dem, çoğul die → den (+ isme -n: den Kindern).\n• Zamirler: mir, dir, ihm (er), ihr (sie), ihm (es), uns, euch, ihnen.\n• Her zaman Dativ isteyen edatlar: mit, nach, bei, seit, von, zu, aus (gegenüber): mit dem Bus, bei meiner Tante.\n• Dativ isteyen fiiller: helfen, gehören, gefallen, danken: Das Buch gehört mir. Wie gefällt dir die Stadt?",
+   "examples": [
+    {
+     "text": "Ich gebe dem Kind einen Apfel.",
+     "tr": "Çocuğa bir elma veriyorum.",
+     "highlight": "dem Kind"
+    },
+    {
+     "text": "Wir fahren mit dem Bus.",
+     "tr": "Otobüsle gidiyoruz.",
+     "highlight": "mit dem Bus"
+    },
+    {
+     "text": "Das Buch gehört mir.",
+     "tr": "Kitap bana ait.",
+     "highlight": "mir"
+    },
+    {
+     "text": "Ich wohne bei meiner Tante.",
+     "tr": "Teyzemin yanında oturuyorum.",
+     "highlight": "bei meiner Tante"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Ich fahre mit ___ Zug.",
+     "options": [
+      "der",
+      "dem",
+      "den",
+      "das"
+     ],
+     "answer": 1,
+     "explain_tr": "“mit” her zaman Dativ ister; der Zug → dem Zug."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Sie hilft ___ Kind.",
+     "options": [
+      "das",
+      "dem",
+      "den",
+      "der"
+     ],
+     "answer": 1,
+     "explain_tr": "helfen + Dativ."
+    },
+    {
+     "type": "fill",
+     "prompt": "Das Auto gehört ___. (ich)",
+     "answer": "mir",
+     "explain_tr": "gehören + Dativ: mir."
+    },
+    {
+     "type": "fill",
+     "prompt": "Wie geht es ___? (du)",
+     "answer": "dir",
+     "explain_tr": "Dativ zamiri: dir."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Wir kommen aus ___ Türkei.",
+     "options": [
+      "die",
+      "der",
+      "dem",
+      "den"
+     ],
+     "answer": 1,
+     "explain_tr": "aus + Dativ; die Türkei → der Türkei."
+    }
+   ]
+  },
+  {
+   "slug": "de-wechselpraepositionen",
+   "title_tr": "Wechselpräpositionen (Wo? / Wohin?)",
+   "title_target": "Wechselpräpositionen: Akkusativ oder Dativ",
+   "cefr_level": "A2",
+   "order_index": 9,
+   "summary_tr": "an, auf, hinter, in, neben, über, unter, vor, zwischen: iki hâl alabilir.\n• Wo? (nerede?, durum) → Dativ: Das Buch liegt auf dem Tisch. Ich bin in der Küche.\n• Wohin? (nereye?, hareket) → Akkusativ: Ich lege das Buch auf den Tisch. Ich gehe in die Küche.\n• Konum fiilleri (stehen, liegen, sitzen, hängen) → Dativ; hareket fiilleri (stellen, legen, setzen, gehen) → Akkusativ.\n• Kısaltmalar: in dem → im, an dem → am, in das → ins.",
+   "examples": [
+    {
+     "text": "Die Katze sitzt auf dem Sofa.",
+     "tr": "Kedi kanepede oturuyor.",
+     "highlight": "auf dem Sofa"
+    },
+    {
+     "text": "Ich lege das Buch auf den Tisch.",
+     "tr": "Kitabı masanın üstüne koyuyorum.",
+     "highlight": "auf den Tisch"
+    },
+    {
+     "text": "Wir sind im Park.",
+     "tr": "Parktayız.",
+     "highlight": "im Park"
+    },
+    {
+     "text": "Er geht in die Schule.",
+     "tr": "Okula gidiyor.",
+     "highlight": "in die Schule"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Ich gehe in ___ Küche.",
+     "options": [
+      "die",
+      "der",
+      "dem",
+      "den"
+     ],
+     "answer": 0,
+     "explain_tr": "Wohin? → Akkusativ: die Küche."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Der Hund liegt unter ___ Tisch.",
+     "options": [
+      "den",
+      "dem",
+      "der",
+      "das"
+     ],
+     "answer": 1,
+     "explain_tr": "Wo? → Dativ: dem Tisch."
+    },
+    {
+     "type": "fill",
+     "prompt": "Wohin stellst du die Flasche? Auf ___ Tisch. (den/dem)",
+     "answer": "den",
+     "explain_tr": "Wohin? → Akkusativ: den Tisch."
+    },
+    {
+     "type": "fill",
+     "prompt": "Wo ist die Katze? Auf ___ Sofa. (das/dem)",
+     "answer": "dem",
+     "explain_tr": "Wo? → Dativ: dem Sofa."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Das Bild hängt an ___ Wand.",
+     "options": [
+      "die",
+      "der",
+      "dem",
+      "den"
+     ],
+     "answer": 1,
+     "explain_tr": "Wo? → Dativ; die Wand → der Wand."
+    }
+   ]
+  },
+  {
+   "slug": "de-praeteritum",
+   "title_tr": "Präteritum: sein, haben, Modalverben",
+   "title_target": "Präteritum von sein, haben und Modalverben",
+   "cefr_level": "A2",
+   "order_index": 10,
+   "summary_tr": "Konuşmada geçmiş için çoğunlukla Perfekt kullanılır; ama sein, haben ve modal fiillerde Präteritum tercih edilir.\n• sein: ich war, du warst, er war, wir waren, ihr wart, sie waren\n• haben: ich hatte, du hattest, er hatte, wir hatten …\n• Modaller (umlaut düşer, -te eki): können → konnte, müssen → musste, wollen → wollte, dürfen → durfte, sollen → sollte.\nGestern war ich krank. Ich hatte Fieber. Ich konnte nicht arbeiten.",
+   "examples": [
+    {
+     "text": "Gestern war ich im Kino.",
+     "tr": "Dün sinemadaydım.",
+     "highlight": "war"
+    },
+    {
+     "text": "Wir hatten keine Zeit.",
+     "tr": "Zamanımız yoktu.",
+     "highlight": "hatten"
+    },
+    {
+     "text": "Er konnte nicht kommen.",
+     "tr": "Gelemedi.",
+     "highlight": "konnte"
+    },
+    {
+     "text": "Als Kind wollte ich Pilot werden.",
+     "tr": "Çocukken pilot olmak istiyordum.",
+     "highlight": "wollte"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Letzten Sommer ___ wir in Wien.",
+     "options": [
+      "waren",
+      "sind",
+      "war",
+      "wart"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "mcq",
+     "prompt": "Als Kind ___ ich nicht schwimmen.",
+     "options": [
+      "kann",
+      "könnte",
+      "konnte",
+      "gekonnt"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "fill",
+     "prompt": "Gestern ___ ich sehr müde. (sein)",
+     "answer": "war",
+     "explain_tr": "ich war."
+    },
+    {
+     "type": "fill",
+     "prompt": "Sie ___ keine Zeit. (haben – Präteritum)",
+     "answer": "hatte",
+     "explain_tr": "sie hatte."
+    },
+    {
+     "type": "fill",
+     "prompt": "Er ___ gestern arbeiten. (müssen – Präteritum)",
+     "answer": "musste",
+     "explain_tr": "müssen → musste (umlaut düşer)."
+    }
+   ]
+  },
+  {
+   "slug": "de-adjektivendungen",
+   "title_tr": "Sıfat ekleri (der gute Mann, ein gutes Kind)",
+   "title_target": "Adjektivendungen",
+   "cefr_level": "A2",
+   "order_index": 11,
+   "summary_tr": "İsmin önündeki sıfata ek gelir; ek artikele ve hâle göre değişir.\n• Belirli artikelden sonra (der/die/das): Nom.: -e (der gute Mann, die gute Frau, das gute Kind). Akk.: m → -en (den guten Mann), f/n → -e. Dativ ve çoğul: -en (mit dem guten Mann, die guten Kinder).\n• Belirsiz artikelden sonra (ein/eine): Nom. m → -er (ein guter Mann), n → -es (ein gutes Kind), f → -e (eine gute Frau). Akk. m → -en (einen guten Mann). Dativ: -en (mit einem guten Freund).\n• Yüklemde (ist) sıfat çekimlenmez: Der Mann ist gut.",
+   "examples": [
+    {
+     "text": "Der kleine Hund schläft.",
+     "tr": "Küçük köpek uyuyor.",
+     "highlight": "kleine"
+    },
+    {
+     "text": "Ich kaufe den roten Mantel.",
+     "tr": "Kırmızı montu alıyorum.",
+     "highlight": "roten"
+    },
+    {
+     "text": "Das ist ein neues Auto.",
+     "tr": "Bu yeni bir araba.",
+     "highlight": "neues"
+    },
+    {
+     "text": "Wir wohnen in einem großen Haus.",
+     "tr": "Büyük bir evde oturuyoruz.",
+     "highlight": "großen"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Das ist eine ___ Idee.",
+     "options": [
+      "gute",
+      "guter",
+      "gutes",
+      "guten"
+     ],
+     "answer": 0,
+     "explain_tr": "eine Idee (f, Nom.) → eine gute Idee."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Ich sehe den ___ Mann.",
+     "options": [
+      "alte",
+      "alter",
+      "alten",
+      "altes"
+     ],
+     "answer": 2,
+     "explain_tr": "Akk. m: den alten Mann."
+    },
+    {
+     "type": "fill",
+     "prompt": "Das ist ein ___ Buch. (interessant)",
+     "answer": "interessantes",
+     "explain_tr": "ein Buch (n, Nom.) → -es."
+    },
+    {
+     "type": "fill",
+     "prompt": "Sie trägt ein ___ Kleid. (blau)",
+     "answer": "blaues",
+     "explain_tr": "ein Kleid (n, Akk.) → -es."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Mit dem ___ Kind spiele ich gern.",
+     "options": [
+      "kleine",
+      "kleiner",
+      "kleinen",
+      "kleines"
+     ],
+     "answer": 2,
+     "explain_tr": "Dativ → -en."
+    }
+   ]
+  },
+  {
+   "slug": "de-wenn-als",
+   "title_tr": "“wenn” ve “als” (zaman cümleleri)",
+   "title_target": "Temporale Nebensätze: wenn und als",
+   "cefr_level": "B1",
+   "order_index": 12,
+   "summary_tr": "İkisi de “-dığında / -ince” demektir, fakat farklı kullanılır.\n• als → geçmişte TEK SEFER olan olay veya uzun bir dönem: Als ich ein Kind war, wohnte ich in Ankara. Als ich nach Hause kam, war niemand da.\n• wenn → şimdiki zaman/gelecek ve geçmişte TEKRARLANAN olaylar: Wenn es regnet, bleibe ich zu Hause. Immer wenn ich Zeit hatte, ging ich spazieren.\n• wenn aynı zamanda koşul bildirir (“eğer”): Wenn du willst, helfe ich dir.\n• İkisinde de çekimli fiil yan cümlenin SONUNA gider.",
+   "examples": [
+    {
+     "text": "Als ich ein Kind war, spielte ich viel draußen.",
+     "tr": "Çocukken çok dışarıda oynardım.",
+     "highlight": "Als ich ein Kind war"
+    },
+    {
+     "text": "Wenn es regnet, bleibe ich zu Hause.",
+     "tr": "Yağmur yağarsa evde kalırım.",
+     "highlight": "Wenn es regnet"
+    },
+    {
+     "text": "Immer wenn ich Zeit hatte, ging ich spazieren.",
+     "tr": "Ne zaman vaktim olsa yürüyüşe çıkardım.",
+     "highlight": "wenn ich Zeit hatte"
+    },
+    {
+     "text": "Als wir ankamen, war es schon dunkel.",
+     "tr": "Vardığımızda hava zaten kararmıştı.",
+     "highlight": "Als wir ankamen"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "___ ich gestern nach Hause kam, war niemand da.",
+     "options": [
+      "Wenn",
+      "Als",
+      "Wann",
+      "Falls"
+     ],
+     "answer": 1,
+     "explain_tr": "Geçmişte tek sefer → als."
+    },
+    {
+     "type": "mcq",
+     "prompt": "___ du Hilfe brauchst, ruf mich an.",
+     "options": [
+      "Als",
+      "Wenn",
+      "Wann",
+      "Weil"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "fill",
+     "prompt": "___ ich zehn Jahre alt war, zog ich nach Berlin. (wenn/als)",
+     "answer": "als",
+     "explain_tr": "Geçmişte tek bir dönem/olay → als."
+    },
+    {
+     "type": "fill",
+     "prompt": "Immer ___ ich Kopfschmerzen habe, trinke ich Tee. (wenn/als)",
+     "answer": "wenn",
+     "explain_tr": "Tekrarlanan olay → wenn."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Welcher Satz ist richtig?",
+     "options": [
+      "Wenn ich müde bin, gehe ich früh ins Bett.",
+      "Wenn ich bin müde, gehe ich früh ins Bett.",
+      "Wenn ich müde bin, ich gehe früh ins Bett.",
+      "Als ich müde bin, gehe ich früh ins Bett."
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
    "slug": "de-weil-dass",
    "title_tr": "“weil” ve “dass” cümleleri",
    "title_target": "Nebensätze mit weil und dass",
    "cefr_level": "B1",
-   "order_index": 3,
+   "order_index": 13,
    "summary_tr": "“weil” (çünkü) ve “dass” (ki / -diğini) yan cümle başlatır. Yan cümlede çekimli fiil EN SONA gider.\n\nIch bleibe zu Hause, weil ich krank bin.\nEr sagt, dass er müde ist.\n\nPerfekt’te çekimli yardımcı fiil en sondadır: …, weil er schlecht geschlafen hat.\nModal fiilli cümlede: …, weil ich in Berlin arbeiten möchte.\n\nYan cümle önce gelirse ana cümlede fiil hemen başa geçer: Weil ich krank bin, bleibe ich zu Hause.",
    "examples": [
     {
@@ -1313,6 +2097,552 @@
      "type": "fill",
      "prompt": "Ich weiß, dass du heute viel Arbeit ___. (haben)",
      "answer": "hast"
+    }
+   ]
+  },
+  {
+   "slug": "de-relativsaetze",
+   "title_tr": "Relativsätze (der Mann, der …)",
+   "title_target": "Relativsätze",
+   "cefr_level": "B1",
+   "order_index": 14,
+   "summary_tr": "Bir ismi tanımlayan yan cümledir (“…olan”). Fiil sonda, cümlecik virgüllerle ayrılır.\n• Cinsiyet ve sayı: bağlandığı isme göre; hâl: relativ cümledeki göreve göre.\n• Nom.: der / die / das / die · Akk.: den / die / das / die · Dativ: dem / der / dem / denen\nDer Mann, der dort steht, ist mein Lehrer.\nDas ist der Film, den ich gestern gesehen habe.\nDie Kinder, denen ich helfe, sind nett.",
+   "examples": [
+    {
+     "text": "Der Mann, der dort steht, ist mein Lehrer.",
+     "tr": "Orada duran adam benim öğretmenim.",
+     "highlight": "der dort steht"
+    },
+    {
+     "text": "Das Buch, das ich lese, ist spannend.",
+     "tr": "Okuduğum kitap heyecan verici.",
+     "highlight": "das ich lese"
+    },
+    {
+     "text": "Das ist der Film, den ich gesehen habe.",
+     "tr": "Bu, izlediğim film.",
+     "highlight": "den ich gesehen habe"
+    },
+    {
+     "text": "Die Kinder, denen ich helfe, sind nett.",
+     "tr": "Yardım ettiğim çocuklar tatlı.",
+     "highlight": "denen ich helfe"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Das ist die Frau, ___ im Büro arbeitet.",
+     "options": [
+      "der",
+      "die",
+      "den",
+      "das"
+     ],
+     "answer": 1,
+     "explain_tr": "Özne olarak Nominativ: die."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Das ist der Mann, ___ ich gestern gesehen habe.",
+     "options": [
+      "der",
+      "dem",
+      "den",
+      "dessen"
+     ],
+     "answer": 2,
+     "explain_tr": "Nesne (Akkusativ), maskulin: den."
+    },
+    {
+     "type": "fill",
+     "prompt": "Das Auto, ___ dort steht, gehört mir. (der/die/das)",
+     "answer": "das",
+     "explain_tr": "das Auto → das."
+    },
+    {
+     "type": "fill",
+     "prompt": "Wo ist das Buch, ___ ich gestern gekauft habe? (der/die/das)",
+     "answer": "das",
+     "explain_tr": "Nesne, nötr: das."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Die Kinder, ___ ich helfe, sind nett.",
+     "options": [
+      "die",
+      "den",
+      "denen",
+      "der"
+     ],
+     "answer": 2,
+     "explain_tr": "helfen + Dativ, çoğul: denen."
+    }
+   ]
+  },
+  {
+   "slug": "de-reflexive-verben",
+   "title_tr": "Dönüşlü fiiller (sich freuen, sich waschen …)",
+   "title_target": "Reflexive Verben",
+   "cefr_level": "B1",
+   "order_index": 15,
+   "summary_tr": "Eylem öznenin kendisine döner: sich freuen, sich treffen, sich setzen, sich interessieren (für), sich erinnern (an).\n• Akkusativ: ich freue mich · du freust dich · er/sie/es freut sich · wir freuen uns · ihr freut euch · sie freuen sich\n• Dativ (başka bir tümleç varsa): Ich wasche mir die Hände. Ich kaufe mir ein Auto. (mir, dir, sich, uns, euch, sich)\n• Bazı fiiller sabit edatla kullanılır: sich freuen auf (+Akk.), sich interessieren für (+Akk.), sich ärgern über (+Akk.).",
+   "examples": [
+    {
+     "text": "Ich freue mich auf den Urlaub.",
+     "tr": "Tatili dört gözle bekliyorum.",
+     "highlight": "freue mich"
+    },
+    {
+     "text": "Wir treffen uns um acht Uhr.",
+     "tr": "Saat sekizde buluşuyoruz.",
+     "highlight": "treffen uns"
+    },
+    {
+     "text": "Er interessiert sich für Musik.",
+     "tr": "Müzikle ilgileniyor.",
+     "highlight": "interessiert sich"
+    },
+    {
+     "text": "Ich wasche mir die Hände.",
+     "tr": "Ellerimi yıkıyorum.",
+     "highlight": "wasche mir"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Sie setzt ___ auf den Stuhl.",
+     "options": [
+      "mich",
+      "dich",
+      "sich",
+      "uns"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "mcq",
+     "prompt": "Ich wasche ___ die Hände.",
+     "options": [
+      "mich",
+      "mir",
+      "sich",
+      "uns"
+     ],
+     "answer": 1,
+     "explain_tr": "Başka bir tümleç (die Hände) olduğunda Dativ: mir."
+    },
+    {
+     "type": "fill",
+     "prompt": "Wir treffen ___ morgen. (wir)",
+     "answer": "uns",
+     "explain_tr": "wir → uns."
+    },
+    {
+     "type": "fill",
+     "prompt": "Er freut ___ auf das Wochenende.",
+     "answer": "sich",
+     "explain_tr": "er → sich."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Du interessierst ___ für Fußball.",
+     "options": [
+      "mich",
+      "dich",
+      "sich",
+      "dir"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "de-passiv",
+   "title_tr": "Edilgen çatı (Passiv: wird gemacht)",
+   "title_target": "Passiv: werden + Partizip II",
+   "cefr_level": "B1",
+   "order_index": 16,
+   "summary_tr": "Eylemi yapanın önemli olmadığı durumlarda kullanılır: werden + Partizip II (cümle sonunda).\n• Präsens: Das Haus wird gebaut. Die Hausaufgaben werden gemacht.\n• Präteritum: Das Haus wurde 1990 gebaut.\n• Yapan belirtilirse von + Dativ: Das Buch wird von dem Lehrer gelesen.\n• Modal fiille: Das Problem muss gelöst werden.\nAktif → Pasif: Man repariert das Auto. → Das Auto wird repariert.",
+   "examples": [
+    {
+     "text": "Das Auto wird repariert.",
+     "tr": "Araba tamir ediliyor.",
+     "highlight": "wird repariert"
+    },
+    {
+     "text": "Hier werden Brötchen gebacken.",
+     "tr": "Burada çörek pişirilir.",
+     "highlight": "werden Brötchen gebacken"
+    },
+    {
+     "text": "Das Haus wurde 1990 gebaut.",
+     "tr": "Ev 1990’da yapıldı.",
+     "highlight": "wurde 1990 gebaut"
+    },
+    {
+     "text": "Das Buch wird von vielen Menschen gelesen.",
+     "tr": "Kitap birçok insan tarafından okunuyor.",
+     "highlight": "wird von vielen Menschen gelesen"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Der Kuchen ___ von meiner Mutter gebacken.",
+     "options": [
+      "wird",
+      "werden",
+      "wurden",
+      "ist"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "mcq",
+     "prompt": "Die Hausaufgaben ___ jeden Tag gemacht.",
+     "options": [
+      "wird",
+      "werden",
+      "wurde",
+      "sind"
+     ],
+     "answer": 1,
+     "explain_tr": "Çoğul özne: werden."
+    },
+    {
+     "type": "fill",
+     "prompt": "Das Haus ___ im Jahr 1900 gebaut. (werden – Präteritum)",
+     "answer": "wurde",
+     "explain_tr": "werden → wurde."
+    },
+    {
+     "type": "fill",
+     "prompt": "Die Tür wird von dem Mann ___. (öffnen – Partizip II)",
+     "answer": "geöffnet",
+     "explain_tr": "öffnen → geöffnet."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Welcher Satz ist Passiv?",
+     "options": [
+      "Ich repariere das Auto.",
+      "Das Auto wird repariert.",
+      "Das Auto repariert mich.",
+      "Ich habe das Auto repariert."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "de-konjunktiv2",
+   "title_tr": "Konjunktiv II (dilek, rica, gerçek dışı)",
+   "title_target": "Konjunktiv II der Gegenwart",
+   "cefr_level": "B1",
+   "order_index": 17,
+   "summary_tr": "Gerçek olmayan durumlar, dilekler ve kibar ricalar için:\n• würde + mastar: Ich würde gern nach Italien fahren.\n• Sık kullanılan fiillerde özel biçimler: sein → wäre, haben → hätte, können → könnte, müssen → müsste, wissen → wüsste.\n• Gerçek dışı koşul: Wenn ich reich wäre, würde ich ein Haus kaufen. Wenn ich Zeit hätte, käme ich.\n• Kibar rica: Könnten Sie mir helfen? Hätten Sie einen Moment Zeit?\n• Tavsiye: An deiner Stelle würde ich zum Arzt gehen.",
+   "examples": [
+    {
+     "text": "Wenn ich reich wäre, würde ich reisen.",
+     "tr": "Zengin olsam seyahat ederdim.",
+     "highlight": "wäre"
+    },
+    {
+     "text": "Wenn ich Zeit hätte, würde ich öfter kommen.",
+     "tr": "Zamanım olsa daha sık gelirdim.",
+     "highlight": "hätte"
+    },
+    {
+     "text": "Könnten Sie mir bitte helfen?",
+     "tr": "Bana yardım edebilir misiniz lütfen?",
+     "highlight": "Könnten"
+    },
+    {
+     "text": "An deiner Stelle würde ich nicht warten.",
+     "tr": "Senin yerinde olsam beklemezdim.",
+     "highlight": "würde ich nicht warten"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Wenn ich reich ___, würde ich ein Haus kaufen.",
+     "options": [
+      "bin",
+      "wäre",
+      "war",
+      "würde sein"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "mcq",
+     "prompt": "An deiner Stelle ___ ich zum Arzt gehen.",
+     "options": [
+      "werde",
+      "würde",
+      "wurde",
+      "wäre"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "fill",
+     "prompt": "Wenn ich mehr Zeit ___, würde ich öfter kommen. (haben – Konjunktiv II)",
+     "answer": "hätte",
+     "explain_tr": "haben → hätte."
+    },
+    {
+     "type": "fill",
+     "prompt": "___ Sie mir bitte helfen? (können – Konjunktiv II)",
+     "answer": "Könnten",
+     "explain_tr": "Kibar rica: Könnten Sie…?"
+    },
+    {
+     "type": "mcq",
+     "prompt": "Ich ___ gern ein Eis essen.",
+     "options": [
+      "würde",
+      "wurde",
+      "werde",
+      "würden"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "slug": "de-indirekte-rede",
+   "title_tr": "Dolaylı anlatım (Konjunktiv I)",
+   "title_target": "Indirekte Rede",
+   "cefr_level": "B2",
+   "order_index": 18,
+   "summary_tr": "Başkasının sözünü, özellikle haber ve yazıda, tarafsız aktarmak için Konjunktiv I kullanılır.\n• Oluşum: mastar kökü + -e, -est, -e, -en, -et, -en → er komme, sie habe, er fahre.\n• sein: er sei, sie seien (ich sei, du seiest).\n• Konjunktiv I biçimi Indikativ ile aynıysa Konjunktiv II kullanılır: sie haben → sie hätten; sie kommen → sie kämen/würden kommen.\nEr sagt: „Ich bin müde.“ → Er sagt, er sei müde.\nSie sagte: „Ich habe keine Zeit.“ → Sie sagte, sie habe keine Zeit.",
+   "examples": [
+    {
+     "text": "Er sagt, er sei müde.",
+     "tr": "Yorgun olduğunu söylüyor.",
+     "highlight": "sei"
+    },
+    {
+     "text": "Sie sagte, sie habe keine Zeit.",
+     "tr": "Zamanı olmadığını söyledi.",
+     "highlight": "habe"
+    },
+    {
+     "text": "Der Politiker sagte, er fahre morgen nach Paris.",
+     "tr": "Siyasetçi yarın Paris’e gideceğini söyledi.",
+     "highlight": "fahre"
+    },
+    {
+     "text": "Sie sagten, sie hätten keine Zeit.",
+     "tr": "Zamanları olmadığını söylediler.",
+     "highlight": "hätten"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Er sagt, er ___ krank. (Konjunktiv I)",
+     "options": [
+      "ist",
+      "sei",
+      "war",
+      "sein"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "mcq",
+     "prompt": "Sie sagten, sie ___ keine Zeit. (haben; K I = Indikativ)",
+     "options": [
+      "haben",
+      "hätten",
+      "habe",
+      "hatten"
+     ],
+     "answer": 1,
+     "explain_tr": "sie haben = Indikativ ile aynı, bu yüzden Konjunktiv II: hätten."
+    },
+    {
+     "type": "fill",
+     "prompt": "Sie sagt, sie ___ Hunger. (haben, Konjunktiv I)",
+     "answer": "habe",
+     "explain_tr": "sie habe."
+    },
+    {
+     "type": "fill",
+     "prompt": "Er sagte, er ___ morgen nach Berlin. (fahren, Konjunktiv I)",
+     "answer": "fahre",
+     "explain_tr": "er fahre."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Er sagte, er ___ gestern im Kino gewesen. (Konjunktiv I)",
+     "options": [
+      "ist",
+      "sei",
+      "war",
+      "sein"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "de-genitiv",
+   "title_tr": "Genitiv (tamlayan hâli) ve Genitiv edatları",
+   "title_target": "Genitiv und Präpositionen mit Genitiv",
+   "cefr_level": "B2",
+   "order_index": 19,
+   "summary_tr": "Genitiv aitlik bildirir: das Auto meines Vaters (babamın arabası).\n• Artikel: der → des, die → der, das → des, çoğul die → der.\n• Maskulin ve nötr isimler -s veya -es alır: des Mannes, des Kindes, des Hauses.\n• Genitiv isteyen edatlar: wegen, trotz, während, statt/anstatt, innerhalb, außerhalb.\nWegen des Wetters bleiben wir zu Hause.\nTrotz der Kälte gehen wir spazieren.\nKonuşmada çoğu zaman Dativ de kullanılır (wegen dem Wetter), yazıda Genitiv doğrudur.",
+   "examples": [
+    {
+     "text": "Das ist das Auto meines Vaters.",
+     "tr": "Bu babamın arabası.",
+     "highlight": "meines Vaters"
+    },
+    {
+     "text": "Wegen des Wetters bleiben wir zu Hause.",
+     "tr": "Hava yüzünden evde kalıyoruz.",
+     "highlight": "Wegen des Wetters"
+    },
+    {
+     "text": "Trotz der Kälte gehen wir spazieren.",
+     "tr": "Soğuğa rağmen yürüyüşe çıkıyoruz.",
+     "highlight": "Trotz der Kälte"
+    },
+    {
+     "text": "Während des Sommers ist es heiß.",
+     "tr": "Yaz boyunca hava sıcak.",
+     "highlight": "Während des Sommers"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Das ist das Fahrrad ___ Lehrers.",
+     "options": [
+      "der",
+      "des",
+      "dem",
+      "den"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "mcq",
+     "prompt": "Trotz ___ Krankheit arbeitet sie.",
+     "options": [
+      "die",
+      "der",
+      "des",
+      "dem"
+     ],
+     "answer": 1,
+     "explain_tr": "die Krankheit (f) → der Krankheit."
+    },
+    {
+     "type": "fill",
+     "prompt": "Wegen ___ Regens bleiben wir zu Hause. (der/des)",
+     "answer": "des",
+     "explain_tr": "der Regen (m) → des Regens."
+    },
+    {
+     "type": "fill",
+     "prompt": "Während ___ Urlaubs habe ich viel gelesen. (der/des)",
+     "answer": "des",
+     "explain_tr": "der Urlaub (m) → des Urlaubs."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Die Tasche ___ Frau liegt hier.",
+     "options": [
+      "des",
+      "der",
+      "dem",
+      "den"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "de-konjunktiv2-vergangenheit",
+   "title_tr": "Konjunktiv II der Vergangenheit (Wenn ich … gehabt hätte)",
+   "title_target": "Konjunktiv II der Vergangenheit",
+   "cefr_level": "B2",
+   "order_index": 20,
+   "summary_tr": "Geçmişte gerçekleşmeyen durumlar, pişmanlıklar ve “-seydi, -ırdı” için: hätte / wäre + Partizip II.\n• haben fiilleri: hätte + Partizip II → Ich hätte gelernt.\n• sein ve hareket fiilleri: wäre + Partizip II → Ich wäre gekommen.\n• Koşul: Wenn ich das gewusst hätte, wäre ich gekommen.\n• Wenn’siz koşul: Hätte ich das gewusst, wäre ich gekommen.\n• Modallerle: Ich hätte kommen können.",
+   "examples": [
+    {
+     "text": "Wenn ich das gewusst hätte, wäre ich gekommen.",
+     "tr": "Bunu bilseydim gelirdim.",
+     "highlight": "gewusst hätte"
+    },
+    {
+     "text": "Ich wäre gern mitgekommen.",
+     "tr": "Memnuniyetle gelirdim.",
+     "highlight": "wäre"
+    },
+    {
+     "text": "Wenn sie mehr gelernt hätte, hätte sie die Prüfung bestanden.",
+     "tr": "Daha çok çalışsaydı sınavı geçerdi.",
+     "highlight": "hätte sie die Prüfung bestanden"
+    },
+    {
+     "text": "Hätte ich mehr Zeit gehabt, wäre ich geblieben.",
+     "tr": "Daha çok zamanım olsaydı kalırdım.",
+     "highlight": "Hätte ich mehr Zeit gehabt"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Wenn ich Zeit gehabt ___, wäre ich gekommen.",
+     "options": [
+      "hätte",
+      "wäre",
+      "hatte",
+      "würde"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "mcq",
+     "prompt": "Wenn wir das gewusst ___, hätten wir euch angerufen.",
+     "options": [
+      "hatten",
+      "hätten",
+      "haben",
+      "wären"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "fill",
+     "prompt": "Ich ___ gern mitgekommen, aber ich war krank. (sein – Konjunktiv II)",
+     "answer": "wäre",
+     "explain_tr": "kommen hareket fiili → wäre gekommen."
+    },
+    {
+     "type": "fill",
+     "prompt": "Wenn sie mehr gelernt hätte, ___ sie die Prüfung bestanden. (haben – Konjunktiv II)",
+     "answer": "hätte",
+     "explain_tr": "Ana cümle: hätte sie … bestanden."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Welcher Satz ist richtig?",
+     "options": [
+      "Wenn ich das wüsste, wäre ich gekommen.",
+      "Wenn ich das gewusst hätte, wäre ich gekommen.",
+      "Wenn ich das gewusst habe, wäre ich gekommen.",
+      "Wenn ich das gewusst hätte, würde ich gekommen."
+     ],
+     "answer": 1
     }
    ]
   }

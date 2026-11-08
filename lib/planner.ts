@@ -126,24 +126,75 @@ export interface Pickable {
   topics: string[];
 }
 
+export interface TopicAttempt {
+  slug: string;
+  score: number;
+  occurredAt: string;
+}
+
+export interface WeakTopic {
+  slug: string;
+  /** Son denemenin puanı (0-100) */
+  score: number;
+  attempts: number;
+}
+
+/** Son denemesi bu puanın altında kalan konu "zorlanılan" sayılır. */
+export const WEAK_TOPIC_SCORE = 70;
+
 /**
- * Önce yapılmamış olanlar, sonra seviyeye (tam eşleşme, sonra bir alt/üst), sonra ilgi alanına göre.
- * Hiç uygun içerik yoksa en eski yapılan tekrar önerilir.
+ * Konu bazında son denemeye bakar; son deneme eşiğin altındaysa konu zayıftır.
+ * Bir konuyu sonradan iyi çözmek onu listeden çıkarır. En düşük puan başta gelir.
+ */
+export function weakTopics(attempts: TopicAttempt[], opts: { threshold?: number; limit?: number } = {}): WeakTopic[] {
+  const threshold = opts.threshold ?? WEAK_TOPIC_SCORE;
+  const bySlug = new Map<string, TopicAttempt[]>();
+  for (const a of attempts) {
+    if (!bySlug.has(a.slug)) bySlug.set(a.slug, []);
+    bySlug.get(a.slug)!.push(a);
+  }
+  const out: (WeakTopic & { at: string })[] = [];
+  for (const [slug, list] of bySlug) {
+    const latest = [...list].sort((x, y) => y.occurredAt.localeCompare(x.occurredAt))[0];
+    if (latest.score < threshold) out.push({ slug, score: latest.score, attempts: list.length, at: latest.occurredAt });
+  }
+  out.sort((a, b) => a.score - b.score || a.at.localeCompare(b.at) || a.slug.localeCompare(b.slug));
+  return out.slice(0, opts.limit ?? 3).map(({ slug, score, attempts: n }) => ({ slug, score, attempts: n }));
+}
+
+/**
+ * Sıra: 1) zorlanılan konular (en zayıf önce), 2) yapılmamış olanlar, seviyeye yakınlık ve ilgi alanıyla,
+ * 3) hepsi yapılmışsa seviyeye yakın olanlar arasında en eski yapılan.
+ * doneSlugs en yeniden eskiye sıralı verilmelidir.
  */
 export function pickContent<T extends Pickable>(
   items: T[],
-  opts: { level: Cefr; interests: string[]; doneSlugs: string[] },
+  opts: { level: Cefr; interests: string[]; doneSlugs: string[]; weakSlugs?: string[] },
   levelIndex: (l: Cefr) => number,
 ): T | undefined {
   if (items.length === 0) return undefined;
-  const done = new Set(opts.doneSlugs);
+  const done = new Map(opts.doneSlugs.map((s, i) => [s, i] as const));
+  const weak = new Map((opts.weakSlugs ?? []).map((s, i) => [s, i] as const));
   const interests = new Set(opts.interests.map((s) => s.toLowerCase()));
   const target = levelIndex(opts.level);
   const score = (it: T) => {
+    if (weak.has(it.slug)) return -1000 + (weak.get(it.slug) as number);
     const levelPenalty = Math.abs(levelIndex(it.cefrLevel) - target) * 10;
     const interestBonus = it.topics.some((t) => interests.has(t.toLowerCase())) ? -4 : 0;
-    const donePenalty = done.has(it.slug) ? 100 : 0;
+    // Yakın zamanda yapılan, eskiden yapılandan daha geride kalır (0,01 puan/sıra; seviye farkı yine baskın).
+    const donePenalty = done.has(it.slug) ? 100 + (opts.doneSlugs.length - (done.get(it.slug) as number)) * 0.01 : 0;
     return levelPenalty + interestBonus + donePenalty;
   };
   return [...items].sort((a, b) => score(a) - score(b) || a.slug.localeCompare(b.slug))[0];
+}
+
+/** user_progress satırlarından zorlanılan dilbilgisi konuları (en zayıf önce). */
+export function weakGrammarOf(
+  rows: { content_type: string | null; content_slug: string | null; score: number; occurred_at: string }[],
+) {
+  return weakTopics(
+    rows
+      .filter((r) => r.content_type === 'grammar' && r.content_slug)
+      .map((r) => ({ slug: r.content_slug as string, score: Number(r.score), occurredAt: r.occurred_at })),
+  );
 }

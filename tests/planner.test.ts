@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildPlan, planSeconds, dayFocus, pickContent, PLAN_MINUTES } from '../lib/planner.ts';
+import { buildPlan, planSeconds, dayFocus, pickContent, weakTopics, weakGrammarOf, PLAN_MINUTES } from '../lib/planner.ts';
 import { cefrIndex } from '../lib/levels.ts';
 
 test('her süre şablonu tam dakikaya eşittir (her gün)', () => {
@@ -58,6 +58,39 @@ test('pickContent: yapılmamış, seviyeye yakın ve ilgi alanına uyan içeriğ
     pickContent(items, opts, cefrIndex)?.slug;
   assert.equal(pick({ level: 'A2', interests: ['teknoloji'], doneSlugs: [] }), 'c');
   assert.equal(pick({ level: 'A2', interests: [], doneSlugs: ['b'] }), 'c');
-  assert.equal(pick({ level: 'A2', interests: [], doneSlugs: ['a', 'b', 'c', 'd'] }), 'b');
+  // Hepsi yapılmışsa seviyeye yakın olanlar arasından en eski yapılan (doneSlugs en yeniden eskiye): c, b'den eski.
+  assert.equal(pick({ level: 'A2', interests: [], doneSlugs: ['a', 'b', 'c', 'd'] }), 'c');
   assert.equal(pickContent([], { level: 'A1', interests: [], doneSlugs: [] }, cefrIndex), undefined);
+});
+
+test('weakTopics: son deneme eşiğin altındaysa zayıf, sonradan iyi çözülürse listeden çıkar', () => {
+  const at = (slug: string, score: number, day: number) => ({ slug, score, occurredAt: `2026-01-${String(day).padStart(2, '0')}T10:00:00Z` });
+  const attempts = [at('x', 40, 1), at('x', 90, 5), at('y', 55, 2), at('z', 30, 3), at('w', 69, 4), at('v', 70, 4)];
+  assert.deepEqual(weakTopics(attempts).map((t) => t.slug), ['z', 'y', 'w']);
+  assert.equal(weakTopics(attempts, { limit: 1 }).length, 1);
+  assert.equal(weakTopics(attempts).find((t) => t.slug === 'y')?.score, 55);
+  assert.deepEqual(weakTopics([]), []);
+});
+
+test('weakGrammarOf: yalnızca dilbilgisi satırlarını sayar', () => {
+  const rows = [
+    { content_type: 'grammar', content_slug: 'g1', score: 20, occurred_at: '2026-01-01T00:00:00Z' },
+    { content_type: 'reading', content_slug: 'r1', score: 10, occurred_at: '2026-01-01T00:00:00Z' },
+    { content_type: null, content_slug: null, score: 5, occurred_at: '2026-01-01T00:00:00Z' },
+  ];
+  assert.deepEqual(weakGrammarOf(rows).map((t) => t.slug), ['g1']);
+});
+
+test('pickContent: zorlanılan konu, yapılmamış ve seviyeye uygun olandan önce gelir; en zayıf önce', () => {
+  const items = [
+    { slug: 'new-a1', cefrLevel: 'A1' as const, topics: [] },
+    { slug: 'weak-1', cefrLevel: 'B1' as const, topics: [] },
+    { slug: 'weak-2', cefrLevel: 'A2' as const, topics: [] },
+  ];
+  const base = { level: 'A1' as const, interests: [], doneSlugs: ['weak-1', 'weak-2'] };
+  assert.equal(pickContent(items, base, cefrIndex)?.slug, 'new-a1');
+  assert.equal(pickContent(items, { ...base, weakSlugs: ['weak-1', 'weak-2'] }, cefrIndex)?.slug, 'weak-1');
+  assert.equal(pickContent(items, { ...base, weakSlugs: ['weak-2', 'weak-1'] }, cefrIndex)?.slug, 'weak-2');
+  // Zayıf konu kullanılmışsa (adaylarda yoksa) normal sıralama sürer
+  assert.equal(pickContent(items.filter((i) => i.slug !== 'weak-1'), { ...base, weakSlugs: ['weak-1'] }, cefrIndex)?.slug, 'new-a1');
 });

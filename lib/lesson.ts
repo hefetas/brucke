@@ -2,7 +2,7 @@
 
 import { addDays, countDue, levelsOf, localDate, weekdayOf, type AppState, type Db } from './db.ts';
 import { cefrIndex, weakSkills, type Cefr, type ProgressEntry, type Skill } from './levels.ts';
-import { buildPlan, pickContent, type BlockType, type PlanMinutes } from './planner.ts';
+import { buildPlan, pickContent, weakGrammarOf, type BlockType, type PlanMinutes } from './planner.ts';
 import type { LessonContentRow, LessonRow } from './types.ts';
 
 export interface TodayLesson {
@@ -93,6 +93,9 @@ export async function ensureTodayLesson(db: Db, app: AppState): Promise<TodayLes
     dueCount,
   });
 
+  // Zorlanılan dilbilgisi konuları (son denemesi düşük) günlük planda öne alınır.
+  const weakGrammar = weakGrammarOf(progress.rows).map((w) => w.slug);
+
   const catalogs: Partial<Record<BlockType, Pick[]>> = {};
   const used = new Set<string>();
   const rows: Omit<LessonContentRow, 'id' | 'lesson_id' | 'actual_seconds' | 'status' | 'result'>[] = [];
@@ -106,7 +109,11 @@ export async function ensureTodayLesson(db: Db, app: AppState): Promise<TodayLes
     const skill = SKILL_OF[b.type] as Skill;
     const doneSlugs = [...progress.done].filter((k) => k.startsWith(`${b.type}:`)).map((k) => k.slice(b.type.length + 1));
     const candidates = (catalogs[b.type] ?? []).filter((c) => !used.has(`${b.type}:${c.slug}`));
-    const chosen = pickContent(candidates, { level: levels[skill], interests: app.profile.interests, doneSlugs }, cefrIndex);
+    const chosen = pickContent(
+      candidates,
+      { level: levels[skill], interests: app.profile.interests, doneSlugs, weakSlugs: b.type === 'grammar' ? weakGrammar : [] },
+      cefrIndex,
+    );
     if (!chosen) {
       spare += b.seconds;
       continue;

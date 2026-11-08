@@ -1104,11 +1104,248 @@
    ]
   },
   {
+   "slug": "en-articles",
+   "title_tr": "“a / an / the” (artikeller)",
+   "title_target": "Articles: a, an, the",
+   "cefr_level": "A1",
+   "order_index": 2,
+   "summary_tr": "İngilizce’de isimlerin önünde artikel kullanılır.\n• a / an → belirsiz, tek bir şey (“bir”). Sesli harfle başlayan sözcüklerde “an”: an apple, an hour. Diğerlerinde “a”: a book.\n• the → belirli, hem konuşan hem dinleyen hangisinden söz edildiğini biliyor: the sun, the book on the table.\n• İlk kez söz edince a/an, tekrar söz edince the: I have a dog. The dog is big.\n• Çoğul ve sayılamayan isimlerde genel anlatımda artikel kullanılmaz: I like music.",
+   "examples": [
+    {
+     "text": "I have a cat and an umbrella.",
+     "tr": "Bir kedim ve bir şemsiyem var.",
+     "highlight": "a cat and an umbrella"
+    },
+    {
+     "text": "The cat is under the table.",
+     "tr": "Kedi masanın altında.",
+     "highlight": "The cat"
+    },
+    {
+     "text": "She is an engineer.",
+     "tr": "O bir mühendis.",
+     "highlight": "an engineer"
+    },
+    {
+     "text": "I like coffee.",
+     "tr": "Kahveyi severim.",
+     "highlight": "coffee"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "She eats ___ apple every day.",
+     "options": [
+      "a",
+      "an",
+      "the",
+      "one"
+     ],
+     "answer": 1,
+     "explain_tr": "“apple” sesli harfle başladığı için “an” gelir."
+    },
+    {
+     "type": "mcq",
+     "prompt": "I saw a film yesterday. ___ film was great.",
+     "options": [
+      "A",
+      "An",
+      "The",
+      "Some"
+     ],
+     "answer": 2,
+     "explain_tr": "Film daha önce söz edildiği için belirli: the."
+    },
+    {
+     "type": "fill",
+     "prompt": "He is ___ honest man. (a/an)",
+     "answer": "an",
+     "explain_tr": "“honest” sesli harfle (h okunmaz) başlar; an honest man."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "I need an umbrella.",
+      "I need a umbrella.",
+      "I need the umbrellas a.",
+      "I need umbrella."
+     ],
+     "answer": 0
+    },
+    {
+     "type": "fill",
+     "prompt": "Open ___ window, please. (a/an/the)",
+     "answer": "the",
+     "explain_tr": "Hangi pencere olduğu belli olduğunda “the” kullanılır."
+    }
+   ]
+  },
+  {
+   "slug": "en-present-simple",
+   "title_tr": "Geniş zaman (do / does)",
+   "title_target": "Present simple",
+   "cefr_level": "A1",
+   "order_index": 3,
+   "summary_tr": "Alışkanlıklar, düzenli işler ve genel gerçekler için geniş zaman kullanılır.\n• Olumlu: I/you/we/they + fiil; he/she/it + fiil+s → She works.\n• Olumsuz: don’t / doesn’t + fiilin yalın hâli → He doesn’t work. (works değil!)\n• Soru: Do / Does + özne + yalın fiil → Does she work here?\n• Sık kullanılan zarflar: always, usually, often, sometimes, never; fiilden önce, “be”den sonra gelir.",
+   "examples": [
+    {
+     "text": "I drink tea every morning.",
+     "tr": "Her sabah çay içerim.",
+     "highlight": "drink"
+    },
+    {
+     "text": "She works in a bank.",
+     "tr": "O bir bankada çalışıyor.",
+     "highlight": "works"
+    },
+    {
+     "text": "He doesn’t like fish.",
+     "tr": "Balığı sevmez.",
+     "highlight": "doesn’t like"
+    },
+    {
+     "text": "Do you speak English?",
+     "tr": "İngilizce konuşuyor musun?",
+     "highlight": "Do you speak"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "My brother ___ football on Sundays.",
+     "options": [
+      "play",
+      "plays",
+      "playing",
+      "is play"
+     ],
+     "answer": 1,
+     "explain_tr": "he/she/it ile fiile -s eklenir."
+    },
+    {
+     "type": "mcq",
+     "prompt": "She ___ coffee. She prefers tea.",
+     "options": [
+      "don’t drink",
+      "doesn’t drinks",
+      "doesn’t drink",
+      "isn’t drink"
+     ],
+     "answer": 2,
+     "explain_tr": "doesn’t’ten sonra fiil yalın kalır."
+    },
+    {
+     "type": "fill",
+     "prompt": "___ they live in London? (Do/Does)",
+     "answer": "Do",
+     "explain_tr": "they ile Do kullanılır."
+    },
+    {
+     "type": "fill",
+     "prompt": "He ___ up at six. (get)",
+     "answer": "gets",
+     "explain_tr": "he ile -s: gets."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "Does he works here?",
+      "Does he work here?",
+      "Do he work here?",
+      "He does work here?"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-there-is-are",
+   "title_tr": "“There is / There are”",
+   "title_target": "There is / There are",
+   "cefr_level": "A1",
+   "order_index": 4,
+   "summary_tr": "Bir şeyin var olduğunu söylemek için kullanılır (“…var”).\n• There is + tekil veya sayılamayan: There is a park near here. There is some milk.\n• There are + çoğul: There are two chairs.\n• Olumsuz: There isn’t / There aren’t (any …).\n• Soru: Is there …? / Are there …? Kısa cevap: Yes, there is. / No, there aren’t.\n• Soruda ve olumsuzda “any” kullanılır: Are there any shops?",
+   "examples": [
+    {
+     "text": "There is a bank next to the school.",
+     "tr": "Okulun yanında bir banka var.",
+     "highlight": "There is"
+    },
+    {
+     "text": "There are three books on the desk.",
+     "tr": "Masanın üstünde üç kitap var.",
+     "highlight": "There are"
+    },
+    {
+     "text": "There isn’t any milk.",
+     "tr": "Hiç süt yok.",
+     "highlight": "There isn’t any"
+    },
+    {
+     "text": "Is there a bus stop near here?",
+     "tr": "Buraya yakın otobüs durağı var mı?",
+     "highlight": "Is there"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "___ a cinema in my town.",
+     "options": [
+      "There are",
+      "There is",
+      "It are",
+      "Is there"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "mcq",
+     "prompt": "___ two cats in the garden.",
+     "options": [
+      "There is",
+      "There are",
+      "There be",
+      "Is there"
+     ],
+     "answer": 1,
+     "explain_tr": "Çoğul isimle “There are”."
+    },
+    {
+     "type": "fill",
+     "prompt": "Are there ___ eggs? (some/any)",
+     "answer": "any",
+     "explain_tr": "Soru ve olumsuzda any kullanılır."
+    },
+    {
+     "type": "fill",
+     "prompt": "___ there a toilet here? (Is/Are)",
+     "answer": "Is",
+     "explain_tr": "Tekil isim: Is there…?"
+    },
+    {
+     "type": "mcq",
+     "prompt": "There ___ any water in the bottle.",
+     "options": [
+      "aren’t",
+      "isn’t",
+      "not is",
+      "don’t"
+     ],
+     "answer": 1,
+     "explain_tr": "water sayılamayandır → isn’t."
+    }
+   ]
+  },
+  {
    "slug": "en-past-simple",
    "title_tr": "Geçmiş zaman (Past simple)",
    "title_target": "Past simple",
    "cefr_level": "A2",
-   "order_index": 2,
+   "order_index": 5,
    "summary_tr": "Geçmişte bitmiş eylemler için kullanılır.\n• Düzenli fiiller: fiil + -ed (walk → walked)\n• Düzensiz fiiller ezberlenir (go → went, have → had, see → saw)\n• Olumsuz: did not (didn't) + fiilin yalın hali: I didn't go.\n• Soru: Did + özne + yalın fiil? Did you go?\n\nZaman ifadeleri: yesterday, last week, two days ago, in 2019.",
    "examples": [
     {
@@ -1175,11 +1412,719 @@
    ]
   },
   {
+   "slug": "en-present-continuous",
+   "title_tr": "Şimdiki zaman (am/is/are + -ing)",
+   "title_target": "Present continuous",
+   "cefr_level": "A2",
+   "order_index": 6,
+   "summary_tr": "Şu anda olan veya bu günlerde süren eylemler için: am/is/are + fiil+ing.\n• I am working. / She is reading. / They are playing.\n• Olumsuz: I’m not, he isn’t, we aren’t + fiil-ing.\n• Soru: Are you listening?\n• Yakın planlı gelecek için de kullanılır: I’m meeting Ali tomorrow.\n• Durum fiilleri (know, like, want, understand) genelde -ing almaz: I know him. (I’m knowing değil)\n• Yazım: make → making, run → running.",
+   "examples": [
+    {
+     "text": "I am studying English now.",
+     "tr": "Şu an İngilizce çalışıyorum.",
+     "highlight": "am studying"
+    },
+    {
+     "text": "She is cooking dinner.",
+     "tr": "O akşam yemeği pişiriyor.",
+     "highlight": "is cooking"
+    },
+    {
+     "text": "They aren’t watching TV.",
+     "tr": "Onlar televizyon izlemiyor.",
+     "highlight": "aren’t watching"
+    },
+    {
+     "text": "We are meeting Anna on Friday.",
+     "tr": "Cuma günü Anna ile buluşuyoruz.",
+     "highlight": "are meeting"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Look! It ___ .",
+     "options": [
+      "rains",
+      "is raining",
+      "rain",
+      "raining"
+     ],
+     "answer": 1,
+     "explain_tr": "Şu an olan olay: is raining."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Why ___ you laughing?",
+     "options": [
+      "is",
+      "are",
+      "do",
+      "am"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "fill",
+     "prompt": "He ___ not sleeping at the moment. (is/are)",
+     "answer": "is",
+     "explain_tr": "he ile is."
+    },
+    {
+     "type": "fill",
+     "prompt": "They are ___ football now. (play)",
+     "answer": "playing",
+     "explain_tr": "am/is/are + fiil-ing."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "I am knowing the answer.",
+      "I know the answer.",
+      "I am know the answer.",
+      "I knowing the answer."
+     ],
+     "answer": 1,
+     "explain_tr": "know bir durum fiilidir; -ing almaz."
+    }
+   ]
+  },
+  {
+   "slug": "en-comparatives",
+   "title_tr": "Karşılaştırma ve üstünlük (-er / more / the most)",
+   "title_target": "Comparatives and superlatives",
+   "cefr_level": "A2",
+   "order_index": 7,
+   "summary_tr": "• Kısa sıfatlara -er eklenir: tall → taller than. Üstünlük için the + -est: the tallest.\n• Uzun sıfatlarda more / the most: more expensive than, the most expensive.\n• -y ile biten: easy → easier → the easiest. Tek heceli, sessiz-sesli-sessiz: big → bigger → the biggest.\n• Düzensizler: good → better → the best; bad → worse → the worst; far → farther → the farthest.\n• Eşitlik: as … as → She is as tall as me.",
+   "examples": [
+    {
+     "text": "My bag is heavier than yours.",
+     "tr": "Benim çantam seninkinden daha ağır.",
+     "highlight": "heavier than"
+    },
+    {
+     "text": "This is the most interesting book.",
+     "tr": "Bu en ilginç kitap.",
+     "highlight": "the most interesting"
+    },
+    {
+     "text": "Today is better than yesterday.",
+     "tr": "Bugün dünden daha iyi.",
+     "highlight": "better than"
+    },
+    {
+     "text": "He is as tall as his father.",
+     "tr": "Babası kadar uzun.",
+     "highlight": "as tall as"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "A train is ___ a bus.",
+     "options": [
+      "fast than",
+      "faster than",
+      "more fast than",
+      "fastest than"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "mcq",
+     "prompt": "This is ___ restaurant in town.",
+     "options": [
+      "the better",
+      "the best",
+      "the most good",
+      "best"
+     ],
+     "answer": 1,
+     "explain_tr": "good → better → the best."
+    },
+    {
+     "type": "fill",
+     "prompt": "London is ___ expensive than Ankara. (more/most)",
+     "answer": "more",
+     "explain_tr": "Uzun sıfat: more … than."
+    },
+    {
+     "type": "fill",
+     "prompt": "She is the ___ girl in the class. (tall)",
+     "answer": "tallest",
+     "explain_tr": "Kısa sıfat üstünlük: the -est."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "It is more cheaper.",
+      "It is cheaper.",
+      "It is the cheaper than.",
+      "It is cheapest than."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-prepositions-time-place",
+   "title_tr": "in / on / at (zaman ve yer)",
+   "title_target": "Prepositions of time and place: in, on, at",
+   "cefr_level": "A2",
+   "order_index": 8,
+   "summary_tr": "Zaman:\n• at → saat ve belirli anlar: at 8 o’clock, at night, at the weekend\n• on → günler ve tarihler: on Monday, on 5 May, on my birthday\n• in → ay, mevsim, yıl, günün bölümleri: in July, in summer, in 2024, in the morning\nYer:\n• at → nokta: at the bus stop, at home, at work\n• on → yüzey: on the table, on the wall\n• in → kapalı alan, şehir, ülke: in the room, in Istanbul, in Turkey",
+   "examples": [
+    {
+     "text": "The class starts at 9 o’clock.",
+     "tr": "Ders saat 9’da başlıyor.",
+     "highlight": "at 9 o’clock"
+    },
+    {
+     "text": "My birthday is on 12 June.",
+     "tr": "Doğum günüm 12 Haziran’da.",
+     "highlight": "on 12 June"
+    },
+    {
+     "text": "We go skiing in winter.",
+     "tr": "Kışın kayak yapmaya gidiyoruz.",
+     "highlight": "in winter"
+    },
+    {
+     "text": "The keys are on the table.",
+     "tr": "Anahtarlar masanın üstünde.",
+     "highlight": "on the table"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "I always get up ___ 7 o’clock.",
+     "options": [
+      "in",
+      "on",
+      "at",
+      "to"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "mcq",
+     "prompt": "We have a meeting ___ Tuesday.",
+     "options": [
+      "in",
+      "at",
+      "on",
+      "by"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "fill",
+     "prompt": "She was born ___ 1998. (in/on/at)",
+     "answer": "in",
+     "explain_tr": "Yıllarla in kullanılır."
+    },
+    {
+     "type": "fill",
+     "prompt": "I’m waiting ___ the bus stop. (in/on/at)",
+     "answer": "at",
+     "explain_tr": "Belirli bir nokta için at."
+    },
+    {
+     "type": "mcq",
+     "prompt": "They live ___ Germany.",
+     "options": [
+      "at",
+      "on",
+      "in",
+      "to"
+     ],
+     "answer": 2,
+     "explain_tr": "Ülkelerle in kullanılır."
+    }
+   ]
+  },
+  {
+   "slug": "en-countable-much-many",
+   "title_tr": "Sayılabilir / sayılamayan isimler (much, many, a lot of)",
+   "title_target": "Countable and uncountable nouns",
+   "cefr_level": "A2",
+   "order_index": 9,
+   "summary_tr": "• Sayılabilir isimler birer birer sayılır: one apple, two apples. Çoğulları vardır.\n• Sayılamayan isimler sayılmaz: water, milk, money, information, advice. Çoğulu yoktur ve tekil fiil alır: The information is useful.\n• many + sayılabilir çoğul: How many books? / much + sayılamayan: How much water?\n• a lot of / lots of her ikisiyle olumlu cümlede kullanılır.\n• a few + sayılabilir (birkaç), a little + sayılamayan (biraz).",
+   "examples": [
+    {
+     "text": "How many students are there?",
+     "tr": "Kaç öğrenci var?",
+     "highlight": "How many"
+    },
+    {
+     "text": "We don’t have much time.",
+     "tr": "Fazla zamanımız yok.",
+     "highlight": "much time"
+    },
+    {
+     "text": "I need a little sugar.",
+     "tr": "Biraz şekere ihtiyacım var.",
+     "highlight": "a little sugar"
+    },
+    {
+     "text": "She has a lot of friends.",
+     "tr": "Çok arkadaşı var.",
+     "highlight": "a lot of"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "How ___ money do you need?",
+     "options": [
+      "many",
+      "much",
+      "few",
+      "a few"
+     ],
+     "answer": 1,
+     "explain_tr": "money sayılamaz → much."
+    },
+    {
+     "type": "mcq",
+     "prompt": "There are only ___ chairs in the room.",
+     "options": [
+      "a little",
+      "much",
+      "a few",
+      "a lot"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "fill",
+     "prompt": "I don’t have ___ friends here. (much/many)",
+     "answer": "many",
+     "explain_tr": "friends sayılabilir çoğul → many."
+    },
+    {
+     "type": "fill",
+     "prompt": "Can I have ___ water, please? (a few/a little)",
+     "answer": "a little",
+     "explain_tr": "water sayılamaz → a little."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "The informations are useful.",
+      "The information is useful.",
+      "The information are useful.",
+      "An information is useful."
+     ],
+     "answer": 1,
+     "explain_tr": "information sayılamaz; çoğulu yoktur."
+    }
+   ]
+  },
+  {
+   "slug": "en-future-will-going-to",
+   "title_tr": "Gelecek: will ve going to",
+   "title_target": "Future: will and going to",
+   "cefr_level": "A2",
+   "order_index": 10,
+   "summary_tr": "• going to → önceden verilmiş karar/plan veya şu anki kanıta dayalı tahmin: I’m going to study medicine. Look at the clouds, it’s going to rain.\n• will → konuşma anında verilen karar, söz, teklif, tahmin: I’ll help you. I think it will be sunny.\n• will + yalın fiil; olumsuz: won’t. Soru: Will you come?\n• Sözle verilen vaatlerde ve “I think / probably” sonrasında will kullanılır.",
+   "examples": [
+    {
+     "text": "I’m going to visit my aunt this weekend.",
+     "tr": "Bu hafta sonu teyzemi ziyaret edeceğim.",
+     "highlight": "I’m going to visit"
+    },
+    {
+     "text": "The phone is ringing. I’ll answer it.",
+     "tr": "Telefon çalıyor. Ben açarım.",
+     "highlight": "I’ll answer"
+    },
+    {
+     "text": "She will probably be late.",
+     "tr": "Muhtemelen geç kalacak.",
+     "highlight": "will probably be"
+    },
+    {
+     "text": "We won’t forget your birthday.",
+     "tr": "Doğum gününü unutmayacağız.",
+     "highlight": "won’t forget"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "“We have no milk.” – “OK, I ___ buy some.”",
+     "options": [
+      "am going to",
+      "will",
+      "buy",
+      "am buying to"
+     ],
+     "answer": 1,
+     "explain_tr": "Anlık karar → will."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Look at that car! It ___ crash.",
+     "options": [
+      "will",
+      "is going to",
+      "goes to",
+      "is going"
+     ],
+     "answer": 1,
+     "explain_tr": "Gözle görülen kanıt → going to."
+    },
+    {
+     "type": "fill",
+     "prompt": "I think it ___ rain tomorrow. (will/won’t – olumlu)",
+     "answer": "will"
+    },
+    {
+     "type": "fill",
+     "prompt": "He ___ going to start a new job in May. (is/are)",
+     "answer": "is",
+     "explain_tr": "he ile is going to."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "She will to call you.",
+      "She will call you.",
+      "She wills call you.",
+      "She will calls you."
+     ],
+     "answer": 1,
+     "explain_tr": "will + yalın fiil."
+    }
+   ]
+  },
+  {
+   "slug": "en-present-perfect",
+   "title_tr": "Present perfect (have / has + V3)",
+   "title_target": "Present perfect",
+   "cefr_level": "B1",
+   "order_index": 11,
+   "summary_tr": "Geçmişte başlayıp bugünle bağlantısı olan olaylar için: have/has + V3 (past participle).\n• Deneyim: I have been to Italy. (Ne zaman olduğu söylenmez.)\n• Sonucu şimdi görülen olay: I have lost my keys.\n• Süren durum: She has lived here for five years / since 2019.\n• for + süre, since + başlangıç noktası. ever, never, already, yet, just sık kullanılır.\n• Belirli geçmiş zaman (yesterday, in 2010, last week) varsa past simple gerekir: I went there last week.",
+   "examples": [
+    {
+     "text": "I have visited Berlin twice.",
+     "tr": "Berlin’i iki kez ziyaret ettim.",
+     "highlight": "have visited"
+    },
+    {
+     "text": "She has lived here since 2020.",
+     "tr": "2020’den beri burada yaşıyor.",
+     "highlight": "has lived"
+    },
+    {
+     "text": "Have you ever eaten sushi?",
+     "tr": "Hiç suşi yedin mi?",
+     "highlight": "Have you ever eaten"
+    },
+    {
+     "text": "They haven’t finished yet.",
+     "tr": "Daha bitirmediler.",
+     "highlight": "haven’t finished"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "I ___ my homework already.",
+     "options": [
+      "did",
+      "have done",
+      "has done",
+      "am doing"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "mcq",
+     "prompt": "He has worked here ___ 2018.",
+     "options": [
+      "for",
+      "since",
+      "from",
+      "during"
+     ],
+     "answer": 1,
+     "explain_tr": "Başlangıç noktası → since."
+    },
+    {
+     "type": "fill",
+     "prompt": "We have lived here ___ ten years. (for/since)",
+     "answer": "for",
+     "explain_tr": "Süre → for."
+    },
+    {
+     "type": "fill",
+     "prompt": "She ___ never been to Spain. (have/has)",
+     "answer": "has",
+     "explain_tr": "she ile has."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "I have seen him yesterday.",
+      "I saw him yesterday.",
+      "I have saw him yesterday.",
+      "I seen him yesterday."
+     ],
+     "answer": 1,
+     "explain_tr": "yesterday ile past simple kullanılır."
+    }
+   ]
+  },
+  {
+   "slug": "en-modals-obligation",
+   "title_tr": "Zorunluluk ve tavsiye (must, have to, should)",
+   "title_target": "Modal verbs: must, have to, should",
+   "cefr_level": "B1",
+   "order_index": 12,
+   "summary_tr": "• must → konuşanın kendi hissettiği güçlü zorunluluk; have to → dış kurallardan gelen zorunluluk: I have to wear a uniform at work.\n• mustn’t → yasak (yapma!): You mustn’t smoke here. \n• don’t have to → zorunlu değil (gerek yok): You don’t have to come.\n• should / shouldn’t → tavsiye: You should see a doctor.\n• Modallerden sonra fiil yalın gelir ve -s almaz: She must go. Soru/olumsuz için do kullanılmaz (should, must); have to için do/does gerekir.",
+   "examples": [
+    {
+     "text": "You must wear a seat belt.",
+     "tr": "Emniyet kemeri takmak zorundasın.",
+     "highlight": "must wear"
+    },
+    {
+     "text": "I have to get up early tomorrow.",
+     "tr": "Yarın erken kalkmak zorundayım.",
+     "highlight": "have to get up"
+    },
+    {
+     "text": "You don’t have to pay.",
+     "tr": "Ödemek zorunda değilsin.",
+     "highlight": "don’t have to pay"
+    },
+    {
+     "text": "You should drink more water.",
+     "tr": "Daha çok su içmelisin.",
+     "highlight": "should drink"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Students ___ use phones in the exam. It is forbidden.",
+     "options": [
+      "don’t have to",
+      "mustn’t",
+      "shouldn’t to",
+      "haven’t"
+     ],
+     "answer": 1,
+     "explain_tr": "Yasak anlamı: mustn’t."
+    },
+    {
+     "type": "mcq",
+     "prompt": "It’s Sunday. I ___ go to work.",
+     "options": [
+      "must",
+      "don’t have to",
+      "mustn’t",
+      "should to"
+     ],
+     "answer": 1,
+     "explain_tr": "Zorunlu değil → don’t have to."
+    },
+    {
+     "type": "fill",
+     "prompt": "She ___ to wear glasses. (has/have)",
+     "answer": "has",
+     "explain_tr": "she ile has to."
+    },
+    {
+     "type": "fill",
+     "prompt": "You look tired. You ___ go to bed early. (should/must to)",
+     "answer": "should",
+     "explain_tr": "Tavsiye → should."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "He musts go.",
+      "He must goes.",
+      "He must go.",
+      "He must to go."
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "slug": "en-passive-simple",
+   "title_tr": "Edilgen çatı (is done / was done)",
+   "title_target": "Passive voice (simple)",
+   "cefr_level": "B1",
+   "order_index": 13,
+   "summary_tr": "Eylemi yapan kişi önemsiz ya da bilinmiyorsa edilgen kullanılır: be + V3.\n• Present: The room is cleaned every day.\n• Past: The window was broken last night.\n• Will: The report will be finished tomorrow.\n• Yapanı belirtmek için by: The book was written by Orwell.\n• Soru: Was the window broken? Olumsuz: It wasn’t found.\n• Aktif → Pasif: Someone stole my bike. → My bike was stolen.",
+   "examples": [
+    {
+     "text": "English is spoken all over the world.",
+     "tr": "İngilizce dünyanın her yerinde konuşulur.",
+     "highlight": "is spoken"
+    },
+    {
+     "text": "The museum was built in 1900.",
+     "tr": "Müze 1900’de yapıldı.",
+     "highlight": "was built"
+    },
+    {
+     "text": "The letters will be sent tomorrow.",
+     "tr": "Mektuplar yarın gönderilecek.",
+     "highlight": "will be sent"
+    },
+    {
+     "text": "This song was written by my brother.",
+     "tr": "Bu şarkıyı kardeşim yazdı.",
+     "highlight": "was written by"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "The cake ___ by my mother.",
+     "options": [
+      "made",
+      "was made",
+      "was make",
+      "is making"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "mcq",
+     "prompt": "Cars ___ in this factory.",
+     "options": [
+      "is produced",
+      "are produced",
+      "produce",
+      "are produce"
+     ],
+     "answer": 1,
+     "explain_tr": "Çoğul özne: are produced."
+    },
+    {
+     "type": "fill",
+     "prompt": "The thief ___ caught yesterday. (was/were)",
+     "answer": "was",
+     "explain_tr": "Tekil özne: was caught."
+    },
+    {
+     "type": "fill",
+     "prompt": "The bridge was ___ in 2010. (build)",
+     "answer": "built",
+     "explain_tr": "build → built (V3)."
+    },
+    {
+     "type": "mcq",
+     "prompt": "“Someone stole my wallet.” → ",
+     "options": [
+      "My wallet stole.",
+      "My wallet was stolen.",
+      "My wallet is stole.",
+      "My wallet was stealing."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-relative-clauses",
+   "title_tr": "Ek cümlecikler (who, which, that, where)",
+   "title_target": "Relative clauses",
+   "cefr_level": "B1",
+   "order_index": 14,
+   "summary_tr": "İsmi tanımlayan cümleciklerdir (“…olan”).\n• who → kişiler: The man who lives next door is a doctor.\n• which → nesneler: The book which I bought is great.\n• that → hem kişi hem nesne için (günlük konuşmada sık): The film that we saw was funny.\n• where → yer: This is the café where we met.\n• Nesne konumundaki who/which/that atılabilir: The book (that) I bought…\n• Özne konumunda atılamaz: The man who called you is here.",
+   "examples": [
+    {
+     "text": "The woman who works here is my aunt.",
+     "tr": "Burada çalışan kadın teyzem.",
+     "highlight": "who works here"
+    },
+    {
+     "text": "This is the phone which I lost.",
+     "tr": "Bu, kaybettiğim telefon.",
+     "highlight": "which I lost"
+    },
+    {
+     "text": "That is the school where I studied.",
+     "tr": "Orası okuduğum okul.",
+     "highlight": "where I studied"
+    },
+    {
+     "text": "The film that we watched was boring.",
+     "tr": "İzlediğimiz film sıkıcıydı.",
+     "highlight": "that we watched"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "The girl ___ is sitting there is my sister.",
+     "options": [
+      "which",
+      "who",
+      "where",
+      "whose is"
+     ],
+     "answer": 1,
+     "explain_tr": "Kişi için who."
+    },
+    {
+     "type": "mcq",
+     "prompt": "This is the town ___ I grew up.",
+     "options": [
+      "who",
+      "which",
+      "where",
+      "what"
+     ],
+     "answer": 2,
+     "explain_tr": "Yer için where."
+    },
+    {
+     "type": "fill",
+     "prompt": "The car ___ I bought is red. (who/which)",
+     "answer": "which",
+     "explain_tr": "Nesne için which (veya that)."
+    },
+    {
+     "type": "fill",
+     "prompt": "The man ___ called you is my boss. (who/where)",
+     "answer": "who",
+     "explain_tr": "Kişi → who."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "The book who I read is good.",
+      "The book which I read it is good.",
+      "The book that I read is good.",
+      "The book where I read is good."
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
    "slug": "en-first-conditional",
    "title_tr": "Birinci koşul cümleleri",
    "title_target": "First conditional",
    "cefr_level": "B1",
-   "order_index": 3,
+   "order_index": 15,
    "summary_tr": "Gelecekte gerçekleşmesi mümkün durumlar için:\nIf + present simple, will + yalın fiil\n\nIf it rains, we will stay at home.\n\nDikkat: “if” bölümünde will kullanılmaz. Sıralama değişebilir: We will stay at home if it rains (virgül gerekmez).",
    "examples": [
     {
@@ -1243,6 +2188,316 @@
       "If he comes, I would be happy."
      ],
      "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-second-conditional",
+   "title_tr": "İkinci tür koşul (If I were …, I would …)",
+   "title_target": "Second conditional",
+   "cefr_level": "B1",
+   "order_index": 16,
+   "summary_tr": "Gerçek dışı veya olası olmayan şimdiki/gelecek durumlar için:\n• If + past simple, would + yalın fiil → If I had more money, I would travel the world.\n• “be” fiilinde tüm özneler için “were” kullanılabilir: If I were you, I would call him.\n• would yerine could / might da kullanılabilir.\n• Gerçekleşmesi olası durumlar için first conditional: If it rains, I will stay home.",
+   "examples": [
+    {
+     "text": "If I won the lottery, I would buy a house.",
+     "tr": "Piyangoyu kazansam bir ev alırdım.",
+     "highlight": "If I won"
+    },
+    {
+     "text": "If I were you, I would accept the job.",
+     "tr": "Senin yerinde olsam işi kabul ederdim.",
+     "highlight": "If I were you"
+    },
+    {
+     "text": "She would help us if she had time.",
+     "tr": "Zamanı olsa bize yardım ederdi.",
+     "highlight": "would help"
+    },
+    {
+     "text": "What would you do if you lost your passport?",
+     "tr": "Pasaportunu kaybetsen ne yapardın?",
+     "highlight": "would you do"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "If I ___ rich, I would help everyone.",
+     "options": [
+      "am",
+      "was being",
+      "were",
+      "will be"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "mcq",
+     "prompt": "If she studied more, she ___ the exam.",
+     "options": [
+      "will pass",
+      "would pass",
+      "passes",
+      "would passed"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "fill",
+     "prompt": "If I ___ you, I would talk to her. (be)",
+     "answer": "were",
+     "explain_tr": "Tavsiyede were kullanılır."
+    },
+    {
+     "type": "fill",
+     "prompt": "He would travel more if he ___ time. (have)",
+     "answer": "had",
+     "explain_tr": "if + past simple: had."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "If I would know, I would tell you.",
+      "If I knew, I would tell you.",
+      "If I know, I would tell you.",
+      "If I knew, I will tell you."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-reported-speech",
+   "title_tr": "Dolaylı anlatım (He said that …)",
+   "title_target": "Reported speech",
+   "cefr_level": "B2",
+   "order_index": 17,
+   "summary_tr": "Başkasının sözünü aktarırken fiil genellikle bir adım geriye gider (backshift):\n• am/is/are → was/were; present simple → past simple; present continuous → past continuous\n• present perfect / past simple → past perfect; will → would; can → could\n• Zamir ve zaman ifadeleri değişir: today → that day, tomorrow → the next day, now → then, here → there.\n• said / told: He said that… ; He told me that… (told + kişi).\n• Sorular: dolaylıda düz cümle sırası kullanılır: She asked where I lived. Evet/hayır sorularında if/whether: He asked if I was ready.",
+   "examples": [
+    {
+     "text": "She said that she was tired.",
+     "tr": "“Yorgunum” dedi.",
+     "highlight": "she was tired"
+    },
+    {
+     "text": "He told me that he would call me.",
+     "tr": "Beni arayacağını söyledi.",
+     "highlight": "would call"
+    },
+    {
+     "text": "They said they had finished.",
+     "tr": "Bitirdiklerini söylediler.",
+     "highlight": "had finished"
+    },
+    {
+     "text": "He asked me where I lived.",
+     "tr": "Nerede yaşadığımı sordu.",
+     "highlight": "where I lived"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "“I am hungry,” he said. → He said that he ___ hungry.",
+     "options": [
+      "is",
+      "was",
+      "were",
+      "has been"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "mcq",
+     "prompt": "“I will help you,” she said. → She said she ___ help me.",
+     "options": [
+      "will",
+      "would",
+      "did",
+      "can"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "fill",
+     "prompt": "“I live in Rome,” he said. → He said that he ___ in Rome. (live)",
+     "answer": "lived",
+     "explain_tr": "Present simple → past simple."
+    },
+    {
+     "type": "fill",
+     "prompt": "“Where do you work?” → She asked me where I ___. (work)",
+     "answer": "worked",
+     "explain_tr": "Dolaylı soruda düz cümle sırası ve past simple."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "He told that he was ill.",
+      "He told me that he was ill.",
+      "He said me that he was ill.",
+      "He told to me he was ill."
+     ],
+     "answer": 1,
+     "explain_tr": "told + kişi; said ile kişi doğrudan gelmez."
+    }
+   ]
+  },
+  {
+   "slug": "en-past-perfect",
+   "title_tr": "Past perfect (had + V3)",
+   "title_target": "Past perfect",
+   "cefr_level": "B2",
+   "order_index": 18,
+   "summary_tr": "Geçmişteki bir olaydan daha önce olmuş başka bir olayı anlatır: had + V3.\n• When I arrived, the film had already started. (Önce film başladı, sonra ben geldim.)\n• Genellikle past simple ile birlikte: after, before, when, by the time, already, just.\n• Olumsuz: hadn’t + V3. Soru: Had you finished…?\n• Reported speech’te present perfect ve past simple’ın geri adımı: “I have seen it.” → He said he had seen it.",
+   "examples": [
+    {
+     "text": "When we arrived, the train had left.",
+     "tr": "Vardığımızda tren gitmişti.",
+     "highlight": "had left"
+    },
+    {
+     "text": "She was tired because she hadn’t slept.",
+     "tr": "Uyumadığı için yorgundu.",
+     "highlight": "hadn’t slept"
+    },
+    {
+     "text": "I had never seen snow before I moved to Canada.",
+     "tr": "Kanada’ya taşınmadan önce hiç kar görmemiştim.",
+     "highlight": "had never seen"
+    },
+    {
+     "text": "After he had eaten, he went to bed.",
+     "tr": "Yemek yedikten sonra yattı.",
+     "highlight": "had eaten"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "By the time I got home, my family ___ dinner.",
+     "options": [
+      "has eaten",
+      "had eaten",
+      "ate",
+      "was eaten"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "mcq",
+     "prompt": "I was late because I ___ my keys.",
+     "options": [
+      "lost",
+      "had lost",
+      "have lost",
+      "was losing"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "fill",
+     "prompt": "She ___ already left when I called. (had/has)",
+     "answer": "had",
+     "explain_tr": "Önce olan olay: had left."
+    },
+    {
+     "type": "fill",
+     "prompt": "They ___ never met before the party. (had/have)",
+     "answer": "had",
+     "explain_tr": "Geçmişteki bir anın öncesi: had never met."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "When he came, we have finished.",
+      "When he came, we had finished.",
+      "When he came, we finish.",
+      "When he came, we had finish."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-third-conditional",
+   "title_tr": "Üçüncü tür koşul (If I had …, I would have …)",
+   "title_target": "Third conditional",
+   "cefr_level": "B2",
+   "order_index": 19,
+   "summary_tr": "Geçmişte gerçekleşmemiş durumlar ve hayali sonuçları için (pişmanlık, “…olsaydı … olurdu”):\n• If + past perfect, would have + V3 → If I had studied, I would have passed.\n• would yerine could have / might have da kullanılabilir.\n• Olumsuz: If I hadn’t missed the bus, I wouldn’t have been late.\n• Koşul ve sonuç yer değiştirebilir: I would have called you if I had known.",
+   "examples": [
+    {
+     "text": "If I had known, I would have helped you.",
+     "tr": "Bilseydim sana yardım ederdim.",
+     "highlight": "If I had known"
+    },
+    {
+     "text": "If she hadn’t been late, she would have caught the train.",
+     "tr": "Geç kalmasaydı trene yetişirdi.",
+     "highlight": "hadn’t been late"
+    },
+    {
+     "text": "We would have won if we had played better.",
+     "tr": "Daha iyi oynasaydık kazanırdık.",
+     "highlight": "would have won"
+    },
+    {
+     "text": "What would you have done if you had missed your flight?",
+     "tr": "Uçağını kaçırsaydın ne yapardın?",
+     "highlight": "would you have done"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "If I ___ earlier, I would have caught the bus.",
+     "options": [
+      "left",
+      "had left",
+      "would leave",
+      "have left"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "mcq",
+     "prompt": "If he had studied, he ___ the exam.",
+     "options": [
+      "would pass",
+      "would have passed",
+      "passed",
+      "had passed"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "fill",
+     "prompt": "If we ___ the map, we would not have got lost. (have – had formu)",
+     "answer": "had had",
+     "explain_tr": "Past perfect of have: had had."
+    },
+    {
+     "type": "fill",
+     "prompt": "She would have come if she ___ about the party. (know)",
+     "answer": "had known",
+     "explain_tr": "if + past perfect."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "If I would have known, I would have told you.",
+      "If I had known, I would have told you.",
+      "If I knew, I would have told you.",
+      "If I had known, I will tell you."
+     ],
+     "answer": 1,
+     "explain_tr": "if-cümlesinde “would have” kullanılmaz."
     }
    ]
   }
