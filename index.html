@@ -876,9 +876,41 @@ function diffWords(ref, hyp){
 
 /* ---------- decks & spaced repetition ---------- */
 const DECK_EN = parseEN(), DECK_DE = parseDE();
+const EXTRA = {en:[], de:[]};   // words generated daily (daily.json)
 function deck(mode){
   mode = mode || S.mode;
-  return (mode === 'en' ? DECK_EN : DECK_DE).concat(S.custom[mode] || []);
+  return (mode === 'en' ? DECK_EN : DECK_DE).concat(EXTRA[mode], S.custom[mode] || []);
+}
+/* daily.json: written every morning by the GitHub workflow; merged here, never trusted blindly */
+const okStr = (x, n) => typeof x === 'string' && x.trim() && x.length <= (n || 300) && !/[|\n]/.test(x);
+async function loadDaily(){
+  try {
+    const r = await fetch('daily.json?d=' + ymd(), {cache:'no-store'}); if (!r.ok) return;
+    const j = await r.json(); let added = 0;
+    for (const m of ['en', 'de']){
+      const g = j && j[m]; if (!g) continue;
+      const have = new Set(DECK_EN.concat(DECK_DE, EXTRA.en, EXTRA.de).map(c => c.id));
+      for (const w of (Array.isArray(g.words) ? g.words : [])){
+        if (!w || !okStr(w.word, 60) || !okStr(w.tr) || !okStr(w.ex, 400)) continue;
+        let c;
+        if (m === 'en'){ if (!okStr(w.pos, 30) || !okStr(w.def, 300)) continue; c = {id:'en:' + w.word, lang:'en', word:w.word, answer:w.word, pos:w.pos, def:w.def, tr:w.tr, ex:w.ex, ai:true}; }
+        else {
+          const art = ['der', 'die', 'das'].includes(w.art) ? w.art : '';
+          c = {id:'de:' + (art ? art + ' ' : '') + w.word, lang:'de', art, word:w.word, answer:(art ? art + ' ' : '') + w.word, pos: art ? 'isim' : (w.forms ? 'fiil' : 'diğer'), forms: typeof w.forms === 'string' ? w.forms : '', tr:w.tr, ex:w.ex, ai:true};
+        }
+        if (have.has(c.id)) continue; have.add(c.id); EXTRA[m].push(c); added++;
+      }
+      for (const t of (Array.isArray(g.readings) ? g.readings : [])){
+        if (!t || !okStr(t.id, 60) || !okStr(t.title, 120) || !Array.isArray(t.paras) || !t.paras.length || !Array.isArray(t.qs)) continue;
+        if (READINGS[m].some(x => x.id === t.id)) continue;
+        const qs = t.qs.filter(q => Array.isArray(q) && typeof q[0] === 'string' && Array.isArray(q[1]) && q[1].length >= 2 && Number.isInteger(q[2]) && q[2] >= 0 && q[2] < q[1].length && typeof q[3] === 'string');
+        if (!qs.length) continue;
+        READINGS[m].push({id:t.id, level:String(t.level || ''), title:t.title, minutes:Math.max(1, Math.min(15, +t.minutes || 3)), paras:t.paras.map(String), qs, ai:true}); added++;
+      }
+      for (const d of (Array.isArray(g.dict) ? g.dict : [])) if (typeof d === 'string' && d.length < 300 && !DICT[m].includes(d)){ DICT[m].push(d); added++; }
+    }
+    if (added) renderView();
+  } catch(e){}
 }
 const IVL = [0, 1, 3, 7, 16, 35, 80, 160];
 function newAvail(){
@@ -1291,7 +1323,7 @@ function viewRead(){
   for (const t of READINGS[S.mode]){
     const best = S.reading[t.id], wpm = S.wpm[t.id];
     list.append(h('button', {class:'ritem', type:'button', onclick:() => { ui.text = {t, sel:null, start:0, logged:false}; renderView(); }},
-      h('span', {class:'chip accent'}, t.level),
+      h('span', {class:'chip accent'}, t.level), t.ai ? h('span', {class:'chip', title:'Yapay zekâ üretimi'}, 'AI') : null,
       h('div', {style:'flex:1;min-width:0'}, h('h3', null, t.title), h('span', {class:'hint'}, '~' + t.minutes + ' min · ' + t.paras.map(plainText).join(' ').split(/\s+/).length + ' ' + T('words', 'Wörter'))),
       h('span', {class:'mono muted'}, (best ? best.best + '/' + best.total : '–') + (wpm ? ' · ' + wpm + ' wpm' : ''))));
   }
@@ -1310,7 +1342,8 @@ function textView(st){
   const t = st.t, el = h('div');
   const plain = t.paras.map(plainText).join('\n\n'), words = plain.split(/\s+/).length;
   el.append(h('button', {class:'btn small', type:'button', onclick:() => { ui.text = null; renderView(); }}, '← ' + T('All texts', 'Alle Texte')));
-  el.append(h('div', {class:'page-head', style:'margin-top:14px'}, h('div', null, h('span', {class:'chip accent'}, t.level)), h('h1', null, t.title)));
+  el.append(h('div', {class:'page-head', style:'margin-top:14px'}, h('div', null, h('span', {class:'chip accent'}, t.level), t.ai ? h('span', {class:'chip', style:'margin-left:6px'}, 'AI') : null), h('h1', null, t.title)));
+  if (t.ai) el.append(hint('Bu metin yapay zekâ ile üretildi; ara sıra hata olabilir. Şüphelendiğin yeri bir sözlükten doğrula.'));
 
   const glbar = h('div', {class:'glbar hide', id:'glbar', role:'status'});
   function showGloss(g){
@@ -1858,6 +1891,7 @@ function viewProgress(){
     h('button', {class:'btn', type:'button', onclick:() => imp.click()}, 'Yedekten yükle'), imp, resetBtn), jsonBox,
     h('p', {class:'hint'}, dbRef ? (syncOn ? 'Hesabınla otomatik eşitleme açık: ilerlemen diğer cihazlarında da görünür.' : 'Eşitleme bağlanıyor…') : 'İlerleme bu tarayıcıda saklanır. Cihaz değiştirirsen yedeği indirip yükle.'));
   el.append(h('div', {class:'sec'}, h('h2', null, 'Yedek ve eşitleme'), bk));
+  if (standalone) el.append(h('p', {class:'hint'}, 'Günlük içerik (kelime, okuma metni, dikte) her sabah yapay zekâ ile üretilir; arada hata olabilir. Okuma metinlerinde "AI" etiketi görürsün.'));
   if (standalone){
     const c = aiCfg();
     const key = h('input', {class:'inp', type:'password', id:'aikey', placeholder:'Gemini API anahtarı', value:c.key || '', autocomplete:'off', 'aria-label':'Gemini API key'});
@@ -1875,7 +1909,7 @@ VIEWS.speak = viewSpeak; VIEWS.write = viewWrite; VIEWS.exams = viewExams; VIEWS
 
 /* ---------- start ---------- */
 shell();
-initCaps();
+initCaps().then(() => { if (standalone) loadDaily(); });
 })();
 </script>
 </body></html>
