@@ -213,6 +213,9 @@ code{font-family:var(--font-mono);font-size:.88em;background:var(--surface-2);pa
 .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px}
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;z-index:40;font-weight:600;max-width:90vw}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.gate{min-height:100vh;display:grid;place-items:center;padding-block:32px}
+.gate-card{width:100%;max-width:440px}
 </style>
 <div id="app"></div>
 <script>
@@ -1478,6 +1481,151 @@ function shadowPane(){
   return h('div', null, hint('Gölgeleme: sesi duyar duymaz aynı ritim ve tonlamayla tekrar et. Telefonuna kendini kaydedip karşılaştırabilirsin.'), h('div', {style:'height:12px'}), wrap);
 }
 VIEWS.grammar = viewGrammar; VIEWS.read = viewRead; VIEWS.listen = viewListen;
+/* ---------- access gate (normal website only): Google sign-in via Supabase, the owner approves ---------- */
+/* Note: the page itself is public (GitHub Pages). This gate controls who may use the app and sync progress;
+   it does not hide the page's source. Row-level rules in the database are what actually protect the data. */
+const SB_URL = 'https://plaoulgdbgtpqhemfqix.supabase.co';
+const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBsYW91bGdkYmd0cHFoZW1mcWl4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM5OTQxMTgsImV4cCI6MjEwOTU3MDExOH0.M8qGu503nnnHGEvIwJN1a2tBcfXVDAvvVVxviB2vVF8';   // public (anon) key by design
+const SB_LIB = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js';
+const GATE_CACHE = 'brucke.gate';
+let sb = null, me = null, role = 'none';
+
+function loadLib(){
+  return new Promise((res, rej) => {
+    if (window.supabase && window.supabase.createClient) return res();
+    const s = document.createElement('script'); s.src = SB_LIB; s.onload = res; s.onerror = () => rej(new Error('lib')); document.head.appendChild(s);
+  });
+}
+function gateScreen(...kids){
+  applyTheme();
+  app.replaceChildren(h('div', {class:'gate'}, h('div', {class:'gate-card panel stack'},
+    h('div', {class:'brand', style:'font-size:1.3rem'}, h('span', {html:BRIDGE, style:'display:inline-flex'}), 'Brücke'), ...kids)));
+}
+function gateError(msg){
+  gateScreen(h('p', {class:'verdict no', role:'alert'}, msg), h('div', {class:'row'}, h('button', {class:'btn primary', type:'button', onclick:() => boot()}, 'Tekrar dene')));
+}
+async function signOut(){
+  try { if (sb) await sb.auth.signOut(); } catch(e){}
+  try { localStorage.removeItem(GATE_CACHE); } catch(e){}
+  location.reload();
+}
+function loginScreen(){
+  gateScreen(
+    h('p', null, 'Bu site kişisel bir dil çalışma alanıdır. Devam etmek için Google ile giriş yap.'),
+    h('div', null, h('button', {class:'btn primary', type:'button', onclick:async () => {
+      try {
+        const r = await sb.auth.signInWithOAuth({provider:'google', options:{redirectTo: location.origin + location.pathname}});
+        if (r && r.error) toast('Giriş başlatılamadı');
+      } catch(e){ toast('Giriş başlatılamadı'); }
+    }}, 'Google ile giriş yap')),
+    h('p', {class:'hint'}, 'Giriş yaptıktan sonra izin gerekir. İznin yoksa sahibine bir erişim isteği gönderebilirsin.'));
+}
+function requestScreen(st, email){
+  const who = h('p', {class:'hint'}, 'Giriş yapılan hesap: ' + email);
+  const out = h('button', {class:'btn', type:'button', onclick:signOut}, 'Çıkış yap');
+  if (st === 'pending') return gateScreen(who, h('p', null, 'Erişim isteğin sahibine ulaştı. Onaylanınca bu sayfayı yenileyebilirsin.'),
+    h('div', {class:'row'}, h('button', {class:'btn primary', type:'button', onclick:() => check()}, 'Tekrar kontrol et'), out));
+  if (st === 'denied') return gateScreen(who, h('p', {class:'verdict no'}, 'Erişim isteğin kabul edilmedi.'), h('div', {class:'row'}, out));
+  const name = h('input', {class:'inp', type:'text', maxLength:80, placeholder:'Adın (isteğe bağlı)', 'aria-label':'Adın'});
+  const btn = h('button', {class:'btn primary', type:'button'}, 'Erişim iste');
+  btn.addEventListener('click', async () => {
+    btn.disabled = true;
+    try {
+      const r = await sb.from('dil_requests').insert({email, name:name.value.trim().slice(0, 80) || null});
+      if (r.error && r.error.code !== '23505') throw r.error;
+      toast('İstek gönderildi'); check();
+    } catch(e){ btn.disabled = false; toast('İstek gönderilemedi, tekrar dene'); }
+  });
+  gateScreen(who, h('p', null, 'Bu hesabın henüz izni yok. İstersen sahibine erişim isteği gönder.'), name, h('div', {class:'row'}, btn, out));
+}
+async function check(){
+  let session = null;
+  try { const r = await sb.auth.getSession(); session = r.data && r.data.session; } catch(e){}
+  if (!session) return loginScreen();
+  me = session.user;
+  const email = String(me.email || '').toLowerCase();
+  let st = null;
+  try { const r = await sb.rpc('dil_status'); if (r.error) throw r.error; st = r.data; }
+  catch(e){
+    let c = null; try { c = JSON.parse(localStorage.getItem(GATE_CACHE) || 'null'); } catch(_){}
+    if (c && c.email === email && (c.role === 'owner' || c.role === 'allowed')) st = c.role;     // offline: reuse the last approval
+    else return gateError('Sunucuya ulaşılamadı. Bağlantını kontrol edip tekrar dene.');
+  }
+  if (st === 'owner' || st === 'allowed'){
+    role = st; try { localStorage.setItem(GATE_CACHE, JSON.stringify({email, role})); } catch(e){}
+    return unlock();
+  }
+  requestScreen(st, email);
+}
+async function unlock(){
+  dbRef = {
+    get: async () => {
+      const r = await sb.from('dil_progress').select('data,updated').eq('user_id', me.id).maybeSingle();
+      if (r.error) throw r.error;
+      return {exists: !!r.data, data: () => ({json: JSON.stringify(r.data.data), updated: r.data.updated})};
+    },
+    set: async o => {
+      const r = await sb.from('dil_progress').upsert({user_id: me.id, data: JSON.parse(o.json), updated: o.updated, updated_at: new Date().toISOString()});
+      if (r.error) throw r.error;
+    }
+  };
+  shell();
+  loadDaily();
+  await pullRemote(); queueSync();
+  if (role === 'owner'){
+    try {
+      const r = await sb.from('dil_requests').select('email', {count:'exact', head:true}).eq('status', 'pending');
+      if (r.count) toast(r.count + ' bekleyen erişim isteği var (İlerleme sayfası)');
+    } catch(e){}
+  }
+}
+/* account box on the Progress page; owner also manages requests here */
+function accountPanel(){
+  const box = h('div', {class:'stack'});
+  box.append(h('div', {class:'row'}, h('span', {class:'muted'}, String(me && me.email || '')), role === 'owner' ? h('span', {class:'chip accent'}, 'sahip') : null,
+    h('button', {class:'btn small', type:'button', onclick:signOut}, 'Çıkış yap')));
+  if (role === 'owner'){
+    const list = h('div', {class:'stack'});
+    const emailIn = h('input', {class:'inp', type:'email', placeholder:'e-posta ekle (Google hesabı)', 'aria-label':'E-posta'});
+    const load = async () => {
+      list.replaceChildren(h('p', {class:'muted'}, 'Yükleniyor…'));
+      try {
+        const [rq, al] = await Promise.all([sb.from('dil_requests').select('*').order('created_at'), sb.from('dil_allowed').select('email,added_at').order('added_at')]);
+        if (rq.error || al.error) throw (rq.error || al.error);
+        const pend = rq.data.filter(x => x.status === 'pending');
+        const act = (fn) => async () => { try { await fn(); } catch(e){ toast('İşlem yapılamadı'); } load(); };
+        list.replaceChildren(
+          h('h3', null, 'Bekleyen istekler (' + pend.length + ')'),
+          pend.length ? pend.map(x => h('div', {class:'row between item'}, h('span', null, x.email + (x.name ? ' · ' + x.name : '')),
+            h('span', {class:'row'},
+              h('button', {class:'btn small primary', type:'button', onclick:act(async () => {
+                const a = await sb.from('dil_allowed').insert({email:x.email}); if (a.error && a.error.code !== '23505') throw a.error;
+                const u = await sb.from('dil_requests').update({status:'approved'}).eq('email', x.email); if (u.error) throw u.error; })}, 'Onayla'),
+              h('button', {class:'btn small', type:'button', onclick:act(async () => {
+                const u = await sb.from('dil_requests').update({status:'denied'}).eq('email', x.email); if (u.error) throw u.error; })}, 'Reddet'))))
+            : h('p', {class:'hint'}, 'Şu an bekleyen istek yok.'),
+          h('h3', null, 'İzinli hesaplar (' + al.data.length + ')'),
+          al.data.length ? al.data.map(x => h('div', {class:'row between item'}, h('span', null, x.email),
+            h('button', {class:'btn small', type:'button', onclick:act(async () => {
+              const d = await sb.from('dil_allowed').delete().eq('email', x.email); if (d.error) throw d.error;
+              await sb.from('dil_requests').delete().eq('email', x.email); })}, 'Kaldır'))) : h('p', {class:'hint'}, 'Henüz kimseye izin verilmedi (sen sahip olarak her zaman girebilirsin).'),
+          h('div', {class:'row'}, emailIn, h('button', {class:'btn small', type:'button', onclick:act(async () => {
+            const v = emailIn.value.trim().toLowerCase(); if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){ toast('Geçerli bir e-posta yaz'); return; }
+            const a = await sb.from('dil_allowed').insert({email:v}); if (a.error && a.error.code !== '23505') throw a.error; emailIn.value = ''; })}, 'İzin ver')));
+      } catch(e){ list.replaceChildren(h('p', {class:'verdict no'}, 'Liste alınamadı.')); }
+    };
+    box.append(list); load();
+  }
+  return box;
+}
+async function boot(){
+  if (window.claude && window.claude.use){ shell(); initCaps(); return; }      // inside Claude: no gate
+  await initCaps();                                                              // standalone: file download + optional Gemini key
+  gateScreen(h('p', {class:'muted'}, 'Yükleniyor…'));
+  try { await loadLib(); } catch(e){ return gateError('Giriş bileşeni yüklenemedi. İnternet bağlantını kontrol et.'); }
+  if (!sb) sb = window.supabase.createClient(SB_URL, SB_KEY, {auth:{flowType:'pkce', persistSession:true, autoRefreshToken:true, detectSessionInUrl:true}});
+  await check();
+}
 
 /* ---------- SPEAKING ---------- */
 function beep(){
@@ -1891,6 +2039,7 @@ function viewProgress(){
     h('button', {class:'btn', type:'button', onclick:() => imp.click()}, 'Yedekten yükle'), imp, resetBtn), jsonBox,
     h('p', {class:'hint'}, dbRef ? (syncOn ? 'Hesabınla otomatik eşitleme açık: ilerlemen diğer cihazlarında da görünür.' : 'Eşitleme bağlanıyor…') : 'İlerleme bu tarayıcıda saklanır. Cihaz değiştirirsen yedeği indirip yükle.'));
   el.append(h('div', {class:'sec'}, h('h2', null, 'Yedek ve eşitleme'), bk));
+  if (sb && me) el.append(h('div', {class:'sec'}, h('h2', null, 'Hesap'), accountPanel()));
   if (standalone) el.append(h('p', {class:'hint'}, 'Günlük içerik (kelime, okuma metni, dikte) her sabah yapay zekâ ile üretilir; arada hata olabilir. Okuma metinlerinde "AI" etiketi görürsün.'));
   if (standalone){
     const c = aiCfg();
@@ -1908,8 +2057,7 @@ function viewProgress(){
 VIEWS.speak = viewSpeak; VIEWS.write = viewWrite; VIEWS.exams = viewExams; VIEWS.method = viewMethod; VIEWS.progress = viewProgress;
 
 /* ---------- start ---------- */
-shell();
-initCaps().then(() => { if (standalone) loadDaily(); });
+boot();
 })();
 </script>
 </body></html>
