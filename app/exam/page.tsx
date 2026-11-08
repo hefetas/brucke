@@ -10,7 +10,7 @@ import {
   type ExamSection, type GoetheLevel,
 } from '@/lib/exam';
 import { getExamContent, itemRefs } from '@/lib/exam-content';
-import { loadAttempts, loadSettings, saveSettings, type ExamSettings } from '@/lib/exam-data';
+import { loadAttempts, loadSettings, resetAttempts, saveSettings, type ExamSettings } from '@/lib/exam-data';
 import type { AttemptLite } from '@/lib/exam';
 
 export default function ExamPage() {
@@ -27,6 +27,7 @@ function ExamHub({ app, db }: { app: ReadyApp; db: Db }) {
   const [error, setError] = useState<string | null>(null);
   const [vocabDone, setVocabDone] = useState(0);
   const [vocabBusy, setVocabBusy] = useState(false);
+  const [confirmReset, setConfirmReset] = useState(false);
   const vocabKey = `exam-vocab-${app.userId}`;
 
   const reload = useCallback(async () => {
@@ -91,6 +92,19 @@ function ExamHub({ app, db }: { app: ReadyApp; db: Db }) {
       await reload();
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Kaydedilemedi');
+    }
+  }
+
+  async function doReset() {
+    try {
+      await resetAttempts(db, app.userId, lang);
+      try {
+        Object.keys(localStorage).filter((k) => k.startsWith(`exam-draft-${app.userId}-`)).forEach((k) => localStorage.removeItem(k));
+      } catch { /* yoksay */ }
+      setConfirmReset(false);
+      await reload();
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Sıfırlanamadı');
     }
   }
 
@@ -250,6 +264,26 @@ function ExamHub({ app, db }: { app: ReadyApp; db: Db }) {
               <span className="muted">{exam === 'ielts' && a.band !== null ? `band ${a.band}` : `%${Math.round(a.score_pct)}`}</span>
             </div>
           ))}
+        </div>
+      )}
+
+      {attempts.length > 0 && (
+        <div className="card">
+          <h3 style={{ marginTop: 0 }}>İlerlemeyi sıfırla</h3>
+          {!confirmReset ? (
+            <div className="row between">
+              <p className="muted" style={{ margin: 0 }}>Tüm {meta.name} denemelerini ({attempts.length}) silip baştan başlayabilirsin. Hedefin ve tarihin kalır.</p>
+              <button className="btn danger" onClick={() => setConfirmReset(true)}>Sıfırla</button>
+            </div>
+          ) : (
+            <div className="stack">
+              <p className="notice bad" style={{ margin: 0 }}>{attempts.length} deneme ve yazı taslakların kalıcı olarak silinecek. Bu geri alınamaz. Kelime kartların ve diğer ilerlemen etkilenmez.</p>
+              <div className="row">
+                <button className="btn danger" onClick={() => void doReset()}>Evet, hepsini sil</button>
+                <button className="btn" onClick={() => setConfirmReset(false)}>Vazgeç</button>
+              </div>
+            </div>
+          )}
         </div>
       )}
 

@@ -70,3 +70,9 @@ export async function saveAttempt(db: Db, userId: string, lang: string, a: NewAt
   });
   if (error) throw error;
 }
+
+/** Bu dildeki tüm sınav denemelerini siler (hedef ve tarih korunur). */
+export async function resetAttempts(db: Db, userId: string, lang: string): Promise<void> {
+  const { error } = await db.from('exam_attempts').delete().eq('user_id', userId).eq('language_code', lang);
+  if (error) throw error;
+}
