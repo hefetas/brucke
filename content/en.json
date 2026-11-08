@@ -1,0 +1,1522 @@
+{
+ "listening": [
+  {
+   "slug": "en-cafe-order",
+   "title": "At the Café",
+   "kind": "dialogue",
+   "cefr_level": "A1",
+   "topics": [
+    "yemek",
+    "günlük hayat"
+   ],
+   "duration_sec": 45,
+   "transcript": [
+    {
+     "speaker": "Waiter",
+     "text": "Good morning! What would you like?",
+     "tr": "Günaydın! Ne arzu edersiniz?"
+    },
+    {
+     "speaker": "Customer",
+     "text": "Hello. A coffee with milk, please.",
+     "tr": "Merhaba. Sütlü bir kahve lütfen."
+    },
+    {
+     "speaker": "Waiter",
+     "text": "Anything to eat?",
+     "tr": "Yiyecek bir şey?"
+    },
+    {
+     "speaker": "Customer",
+     "text": "Yes, a cheese sandwich. How much is it?",
+     "tr": "Evet, bir peynirli sandviç. Ne kadar?"
+    },
+    {
+     "speaker": "Waiter",
+     "text": "That is six pounds fifty.",
+     "tr": "Altı buçuk sterlin."
+    },
+    {
+     "speaker": "Customer",
+     "text": "Here you are. Thank you.",
+     "tr": "Buyurun. Teşekkürler."
+    },
+    {
+     "speaker": "Waiter",
+     "text": "Thank you. Enjoy your meal!",
+     "tr": "Teşekkürler. Afiyet olsun!"
+    }
+   ],
+   "glossary": [
+    {
+     "lemma": "coffee",
+     "pos": "noun",
+     "meaning_tr": "kahve",
+     "example": "I drink coffee every morning.",
+     "example_tr": "Her sabah kahve içerim."
+    },
+    {
+     "lemma": "sandwich",
+     "pos": "noun",
+     "meaning_tr": "sandviç",
+     "example": "She eats a sandwich for lunch.",
+     "example_tr": "Öğle yemeğinde sandviç yer."
+    },
+    {
+     "lemma": "cheese",
+     "pos": "noun",
+     "meaning_tr": "peynir",
+     "example": "I like cheese on my pasta.",
+     "example_tr": "Makarnamda peyniri severim."
+    },
+    {
+     "lemma": "enjoy",
+     "pos": "verb",
+     "meaning_tr": "keyfini çıkarmak, hoşlanmak",
+     "example": "We enjoy the music.",
+     "example_tr": "Müzikten keyif alırız.",
+     "forms": [
+      "enjoyed",
+      "enjoys"
+     ]
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "What does the customer order to drink?",
+     "options": [
+      "Tea",
+      "Coffee with milk",
+      "Orange juice",
+      "Water"
+     ],
+     "answer": 1,
+     "explain_tr": "Müşteri “a coffee with milk” diyor."
+    },
+    {
+     "prompt": "What does the customer eat?",
+     "options": [
+      "A cheese sandwich",
+      "A salad",
+      "Cake",
+      "Soup"
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": "How much does it cost?",
+     "options": [
+      "£5.60",
+      "£6.50",
+      "£7.50",
+      "£6.00"
+     ],
+     "answer": 1,
+     "explain_tr": "“Six pounds fifty” = 6,50 sterlin."
+    }
+   ]
+  },
+  {
+   "slug": "en-missed-train",
+   "title": "The Missed Train",
+   "kind": "dialogue",
+   "cefr_level": "A2",
+   "topics": [
+    "seyahat"
+   ],
+   "duration_sec": 60,
+   "transcript": [
+    {
+     "speaker": "Traveller",
+     "text": "Excuse me, has the train to Bristol left yet?",
+     "tr": "Affedersiniz, Bristol treni kalktı mı?"
+    },
+    {
+     "speaker": "Clerk",
+     "text": "Yes, I'm afraid it left five minutes ago.",
+     "tr": "Evet, maalesef beş dakika önce kalktı."
+    },
+    {
+     "speaker": "Traveller",
+     "text": "Oh no! When is the next one?",
+     "tr": "Eyvah! Bir sonraki ne zaman?"
+    },
+    {
+     "speaker": "Clerk",
+     "text": "At quarter past three. It's a slow train, so it takes two hours.",
+     "tr": "Üçü çeyrek geçe. Yavaş bir tren, iki saat sürüyor."
+    },
+    {
+     "speaker": "Traveller",
+     "text": "Is there a faster one?",
+     "tr": "Daha hızlısı var mı?"
+    },
+    {
+     "speaker": "Clerk",
+     "text": "The express leaves at four o'clock and takes only ninety minutes.",
+     "tr": "Ekspres saat dörtte kalkıyor ve sadece doksan dakika sürüyor."
+    },
+    {
+     "speaker": "Traveller",
+     "text": "Then I'll take the express. Which platform is it?",
+     "tr": "O zaman ekspresi alırım. Hangi peron?"
+    },
+    {
+     "speaker": "Clerk",
+     "text": "Platform six, on the left.",
+     "tr": "Altıncı peron, solda."
+    }
+   ],
+   "glossary": [
+    {
+     "lemma": "platform",
+     "pos": "noun",
+     "meaning_tr": "peron",
+     "example": "The train leaves from platform four.",
+     "example_tr": "Tren dördüncü perondan kalkar."
+    },
+    {
+     "lemma": "express",
+     "pos": "noun",
+     "meaning_tr": "ekspres tren",
+     "example": "The express does not stop in small towns.",
+     "example_tr": "Ekspres küçük kasabalarda durmaz."
+    },
+    {
+     "lemma": "leave",
+     "pos": "verb",
+     "meaning_tr": "ayrılmak, kalkmak",
+     "example": "The bus leaves at noon.",
+     "example_tr": "Otobüs öğlen kalkar.",
+     "forms": [
+      "left",
+      "leaves",
+      "leaving"
+     ]
+    },
+    {
+     "lemma": "fast",
+     "pos": "adj",
+     "meaning_tr": "hızlı",
+     "example": "This is a fast computer.",
+     "example_tr": "Bu hızlı bir bilgisayar.",
+     "forms": [
+      "faster"
+     ]
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "When did the first train leave?",
+     "options": [
+      "Ten minutes ago",
+      "Five minutes ago",
+      "An hour ago",
+      "At three o'clock"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "How long does the express take?",
+     "options": [
+      "Two hours",
+      "Sixty minutes",
+      "Ninety minutes",
+      "Three hours"
+     ],
+     "answer": 2
+    },
+    {
+     "prompt": "Which platform does the express use?",
+     "options": [
+      "Platform two",
+      "Platform four",
+      "Platform six",
+      "Platform nine"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "slug": "en-remote-work-talk",
+   "title": "Working from Home",
+   "kind": "podcast",
+   "cefr_level": "B1",
+   "topics": [
+    "iş",
+    "teknoloji"
+   ],
+   "duration_sec": 75,
+   "transcript": [
+    {
+     "speaker": "Host",
+     "text": "Today we're talking about remote work. Emma, you've worked from home for three years now. How is it going?"
+    },
+    {
+     "speaker": "Emma",
+     "text": "Honestly, it has its ups and downs. I save two hours on commuting every day, which is wonderful."
+    },
+    {
+     "speaker": "Emma",
+     "text": "But I miss chatting with colleagues, and sometimes I forget to take breaks."
+    },
+    {
+     "speaker": "Host",
+     "text": "How do you deal with that?"
+    },
+    {
+     "speaker": "Emma",
+     "text": "I set an alarm every hour and go for a short walk. I also meet a friend from work for lunch once a week."
+    },
+    {
+     "speaker": "Host",
+     "text": "That sounds like a good routine. Would you recommend remote work to everyone?"
+    },
+    {
+     "speaker": "Emma",
+     "text": "Not to everyone. You need self-discipline, and you need a quiet place to work."
+    }
+   ],
+   "glossary": [
+    {
+     "lemma": "commute",
+     "pos": "noun",
+     "meaning_tr": "işe gidiş-geliş yolculuğu",
+     "example": "My commute takes forty minutes.",
+     "example_tr": "İşe gidiş yolculuğum kırk dakika sürer.",
+     "forms": [
+      "commuting"
+     ]
+    },
+    {
+     "lemma": "colleague",
+     "pos": "noun",
+     "meaning_tr": "iş arkadaşı",
+     "example": "I had lunch with a colleague.",
+     "example_tr": "Bir iş arkadaşımla öğle yemeği yedim.",
+     "forms": [
+      "colleagues"
+     ]
+    },
+    {
+     "lemma": "break",
+     "pos": "noun",
+     "meaning_tr": "mola",
+     "example": "Let's take a ten-minute break.",
+     "example_tr": "On dakika mola verelim.",
+     "forms": [
+      "breaks"
+     ]
+    },
+    {
+     "lemma": "self-discipline",
+     "pos": "noun",
+     "meaning_tr": "öz disiplin",
+     "example": "Studying alone needs self-discipline.",
+     "example_tr": "Tek başına çalışmak öz disiplin ister."
+    },
+    {
+     "lemma": "recommend",
+     "pos": "verb",
+     "meaning_tr": "tavsiye etmek",
+     "example": "I recommend this book.",
+     "example_tr": "Bu kitabı tavsiye ederim.",
+     "forms": [
+      "recommended",
+      "recommends"
+     ]
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "How long has Emma worked from home?",
+     "options": [
+      "One year",
+      "Two years",
+      "Three years",
+      "Five years"
+     ],
+     "answer": 2
+    },
+    {
+     "prompt": "What does Emma like most about it?",
+     "options": [
+      "Saving time on commuting",
+      "Earning more money",
+      "Talking to customers",
+      "Working at night"
+     ],
+     "answer": 0,
+     "explain_tr": "“I save two hours on commuting every day.”"
+    },
+    {
+     "prompt": "How does she make sure she takes breaks?",
+     "options": [
+      "She asks her boss",
+      "She sets an hourly alarm",
+      "She works in a café",
+      "She stops at noon"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What does she say is necessary for remote work?",
+     "options": [
+      "A big salary",
+      "A fast car",
+      "Self-discipline and a quiet place",
+      "A lot of colleagues"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "slug": "en-hard-decision",
+   "title": "A Difficult Decision",
+   "kind": "story",
+   "cefr_level": "B2",
+   "topics": [
+    "günlük hayat",
+    "iş"
+   ],
+   "duration_sec": 55,
+   "transcript": [
+    {
+     "speaker": "Narrator",
+     "text": "When I was offered the job in Edinburgh, I hesitated for weeks. The salary was considerably higher, and the role was exactly what I had hoped for. On the other hand, it meant leaving my family and friends behind. In the end, my sister convinced me that I would regret it more if I never tried. So I accepted, although I still wonder sometimes whether I made the right choice."
+    }
+   ],
+   "glossary": [
+    {
+     "lemma": "hesitate",
+     "pos": "verb",
+     "meaning_tr": "tereddüt etmek",
+     "example": "Don't hesitate to ask questions.",
+     "example_tr": "Soru sormaktan çekinme.",
+     "forms": [
+      "hesitated",
+      "hesitates"
+     ]
+    },
+    {
+     "lemma": "considerably",
+     "pos": "adv",
+     "meaning_tr": "hatırı sayılır ölçüde",
+     "example": "The prices rose considerably.",
+     "example_tr": "Fiyatlar hatırı sayılır ölçüde arttı."
+    },
+    {
+     "lemma": "convince",
+     "pos": "verb",
+     "meaning_tr": "ikna etmek",
+     "example": "She convinced me to join the team.",
+     "example_tr": "Beni takıma katılmaya ikna etti.",
+     "forms": [
+      "convinced",
+      "convinces"
+     ]
+    },
+    {
+     "lemma": "regret",
+     "pos": "verb",
+     "meaning_tr": "pişman olmak",
+     "example": "I regret not calling you.",
+     "example_tr": "Seni aramadığıma pişmanım.",
+     "forms": [
+      "regretted",
+      "regrets"
+     ]
+    },
+    {
+     "lemma": "accept",
+     "pos": "verb",
+     "meaning_tr": "kabul etmek",
+     "example": "He accepted the invitation.",
+     "example_tr": "Daveti kabul etti.",
+     "forms": [
+      "accepted",
+      "accepts"
+     ]
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Why did the speaker hesitate?",
+     "options": [
+      "The salary was too low",
+      "The job was boring",
+      "Accepting meant leaving family and friends",
+      "The city was too expensive"
+     ],
+     "answer": 2
+    },
+    {
+     "prompt": "Who convinced the speaker?",
+     "options": [
+      "A friend",
+      "A boss",
+      "The speaker's sister",
+      "The speaker's parents"
+     ],
+     "answer": 2
+    },
+    {
+     "prompt": "How does the speaker feel now?",
+     "options": [
+      "Completely certain",
+      "Occasionally unsure",
+      "Very angry",
+      "Bored"
+     ],
+     "answer": 1,
+     "explain_tr": "“I still wonder sometimes…” = ara sıra emin değil."
+    }
+   ]
+  }
+ ],
+ "reading": [
+  {
+   "slug": "en-daily-routine",
+   "title": "My Daily Routine",
+   "kind": "article",
+   "cefr_level": "A1",
+   "topics": [
+    "günlük hayat"
+   ],
+   "body": "My name is Lena. I get up at seven o'clock. I have breakfast with my family. We eat bread and eggs, and I drink tea.\n\nI go to work by bus. I start work at nine. At twelve, I eat lunch with my friends. I finish work at five.\n\nIn the evening, I cook dinner. After dinner, I read a book or watch TV. I go to bed at eleven.",
+   "glossary": [
+    {
+     "lemma": "breakfast",
+     "pos": "noun",
+     "meaning_tr": "kahvaltı",
+     "example": "Breakfast is at seven.",
+     "example_tr": "Kahvaltı yedide."
+    },
+    {
+     "lemma": "lunch",
+     "pos": "noun",
+     "meaning_tr": "öğle yemeği",
+     "example": "We have lunch at noon.",
+     "example_tr": "Öğlen yemek yeriz."
+    },
+    {
+     "lemma": "dinner",
+     "pos": "noun",
+     "meaning_tr": "akşam yemeği",
+     "example": "I cook dinner at six.",
+     "example_tr": "Altıda akşam yemeği pişiririm."
+    },
+    {
+     "lemma": "finish",
+     "pos": "verb",
+     "meaning_tr": "bitirmek",
+     "example": "I finish work at five.",
+     "example_tr": "İşi beşte bitiririm.",
+     "forms": [
+      "finishes",
+      "finished"
+     ]
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "What does Lena drink at breakfast?",
+     "options": [
+      "Coffee",
+      "Tea",
+      "Milk",
+      "Juice"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "How does she go to work?",
+     "options": [
+      "By bus",
+      "By car",
+      "On foot",
+      "By bike"
+     ],
+     "answer": 0
+    },
+    {
+     "prompt": "When does she go to bed?",
+     "options": [
+      "At nine",
+      "At ten",
+      "At eleven",
+      "At twelve"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "slug": "en-edinburgh-weekend",
+   "title": "A Weekend in Edinburgh",
+   "kind": "article",
+   "cefr_level": "A2",
+   "topics": [
+    "seyahat",
+    "kültür"
+   ],
+   "body": "Last month, my friend Tom and I spent a weekend in Edinburgh. We took an early train from London on Friday morning, and it took about four and a half hours.\n\nOn Saturday, we visited the castle, which stands on a hill in the middle of the city. The view was fantastic, but it was very windy! In the afternoon, we walked along the Royal Mile and bought some small presents for our families.\n\nOn Sunday, it rained, so we went to a museum and had lunch in a traditional pub. I tried haggis for the first time. It was better than I expected. We came home tired, but we both want to go back soon.",
+   "glossary": [
+    {
+     "lemma": "castle",
+     "pos": "noun",
+     "meaning_tr": "kale",
+     "example": "The castle is very old.",
+     "example_tr": "Kale çok eski."
+    },
+    {
+     "lemma": "view",
+     "pos": "noun",
+     "meaning_tr": "manzara",
+     "example": "The view from the hill is great.",
+     "example_tr": "Tepeden manzara harika."
+    },
+    {
+     "lemma": "windy",
+     "pos": "adj",
+     "meaning_tr": "rüzgârlı",
+     "example": "It is windy today.",
+     "example_tr": "Bugün hava rüzgârlı."
+    },
+    {
+     "lemma": "present",
+     "pos": "noun",
+     "meaning_tr": "hediye",
+     "example": "I bought a present for my sister.",
+     "example_tr": "Kız kardeşime hediye aldım.",
+     "forms": [
+      "presents"
+     ]
+    },
+    {
+     "lemma": "expect",
+     "pos": "verb",
+     "meaning_tr": "beklemek, tahmin etmek",
+     "example": "I didn't expect so many people.",
+     "example_tr": "Bu kadar çok insan beklemiyordum.",
+     "forms": [
+      "expected",
+      "expects"
+     ]
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "How did they travel to Edinburgh?",
+     "options": [
+      "By plane",
+      "By car",
+      "By train",
+      "By bus"
+     ],
+     "answer": 2
+    },
+    {
+     "prompt": "What was the weather like on Saturday?",
+     "options": [
+      "Rainy",
+      "Very windy",
+      "Snowy",
+      "Hot"
+     ],
+     "answer": 1,
+     "explain_tr": "“It was very windy!”"
+    },
+    {
+     "prompt": "Why did they go to a museum on Sunday?",
+     "options": [
+      "It was free",
+      "It was raining",
+      "They were bored",
+      "A friend worked there"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What does the writer think about haggis?",
+     "options": [
+      "It was terrible",
+      "It was better than expected",
+      "It was too expensive",
+      "They didn't try it"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-remote-work-rise",
+   "title": "The Rise of Remote Work",
+   "kind": "news",
+   "cefr_level": "B1",
+   "topics": [
+    "iş",
+    "teknoloji"
+   ],
+   "body": "Over the past few years, working from home has changed from a rare privilege into an ordinary option for millions of employees. Companies have discovered that many tasks can be done just as well outside the office, and workers appreciate the time and money they save on travelling.\n\nHowever, remote work is not without problems. Some employees report feeling isolated, because they rarely meet colleagues in person. Others find it difficult to separate work from private life, especially when their desk is in the living room.\n\nAs a result, many companies are now trying a hybrid model, in which staff work from home on some days and come to the office on others. Supporters say this combines the advantages of both worlds, although critics point out that it requires careful planning to work well.",
+   "glossary": [
+    {
+     "lemma": "privilege",
+     "pos": "noun",
+     "meaning_tr": "ayrıcalık",
+     "example": "Education is a privilege for some.",
+     "example_tr": "Eğitim bazıları için bir ayrıcalıktır."
+    },
+    {
+     "lemma": "appreciate",
+     "pos": "verb",
+     "meaning_tr": "takdir etmek, değer vermek",
+     "example": "I appreciate your help.",
+     "example_tr": "Yardımını takdir ediyorum.",
+     "forms": [
+      "appreciated",
+      "appreciates"
+     ]
+    },
+    {
+     "lemma": "isolated",
+     "pos": "adj",
+     "meaning_tr": "yalnızlaşmış, izole",
+     "example": "He felt isolated in the new city.",
+     "example_tr": "Yeni şehirde kendini yalnız hissetti."
+    },
+    {
+     "lemma": "hybrid",
+     "pos": "adj",
+     "meaning_tr": "karma, hibrit",
+     "example": "A hybrid car uses two kinds of energy.",
+     "example_tr": "Hibrit araba iki tür enerji kullanır."
+    },
+    {
+     "lemma": "advantage",
+     "pos": "noun",
+     "meaning_tr": "avantaj",
+     "example": "Speaking two languages is an advantage.",
+     "example_tr": "İki dil bilmek bir avantajdır.",
+     "forms": [
+      "advantages"
+     ]
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Why do workers appreciate working from home?",
+     "options": [
+      "They earn more",
+      "They save time and money on travel",
+      "They have shorter days",
+      "They get free equipment"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "Which problem is mentioned?",
+     "options": [
+      "Slow internet",
+      "Feeling isolated",
+      "Lack of computers",
+      "High rent"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "What is a hybrid model?",
+     "options": [
+      "Working only in the office",
+      "Working only at home",
+      "Working at home on some days and in the office on others",
+      "Working at night"
+     ],
+     "answer": 2
+    },
+    {
+     "prompt": "What do critics say about the hybrid model?",
+     "options": [
+      "It is too cheap",
+      "It needs careful planning",
+      "It never works",
+      "It is illegal"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-why-sleep-matters",
+   "title": "Why Sleep Matters",
+   "kind": "article",
+   "cefr_level": "B2",
+   "topics": [
+    "sağlık"
+   ],
+   "body": "It is tempting to regard sleep as wasted time, particularly when deadlines are looming. Yet decades of research suggest that adequate sleep is anything but a luxury. During the night, the brain consolidates memories, clears away waste products and restores the emotional balance that makes difficult days bearable.\n\nThe consequences of chronic sleep deprivation are well documented. People who regularly sleep fewer than six hours are more likely to suffer from heart disease, to gain weight and to have difficulty concentrating. Perhaps more surprisingly, even a single poor night can impair judgement to a degree comparable with mild intoxication.\n\nExperts therefore recommend keeping regular hours, avoiding screens before bed and limiting caffeine in the afternoon. Such measures sound unremarkable, but, when followed consistently, they can make a considerable difference to both health and productivity.",
+   "glossary": [
+    {
+     "lemma": "tempting",
+     "pos": "adj",
+     "meaning_tr": "cazip, caydırıcı",
+     "example": "The offer is tempting.",
+     "example_tr": "Teklif cazip.",
+     "forms": [
+      "tempted"
+     ]
+    },
+    {
+     "lemma": "adequate",
+     "pos": "adj",
+     "meaning_tr": "yeterli",
+     "example": "We have adequate food for everyone.",
+     "example_tr": "Herkes için yeterli yiyeceğimiz var."
+    },
+    {
+     "lemma": "consolidate",
+     "pos": "verb",
+     "meaning_tr": "pekiştirmek",
+     "example": "Sleep helps consolidate memories.",
+     "example_tr": "Uyku anıları pekiştirmeye yardımcı olur.",
+     "forms": [
+      "consolidates",
+      "consolidated"
+     ]
+    },
+    {
+     "lemma": "chronic",
+     "pos": "adj",
+     "meaning_tr": "kronik",
+     "example": "She suffers from chronic back pain.",
+     "example_tr": "Kronik sırt ağrısı çekiyor."
+    },
+    {
+     "lemma": "impair",
+     "pos": "verb",
+     "meaning_tr": "bozmak, zayıflatmak",
+     "example": "Noise can impair concentration.",
+     "example_tr": "Gürültü konsantrasyonu bozabilir.",
+     "forms": [
+      "impairs",
+      "impaired"
+     ]
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "What does the first paragraph say sleep does for the brain?",
+     "options": [
+      "Makes it grow",
+      "Stores memories and restores emotional balance",
+      "Speeds up reaction times",
+      "Replaces eating"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "According to the text, what can a single bad night do?",
+     "options": [
+      "Cure heart disease",
+      "Impair judgement",
+      "Improve memory",
+      "Increase appetite only"
+     ],
+     "answer": 1
+    },
+    {
+     "prompt": "Which advice is NOT mentioned?",
+     "options": [
+      "Keep regular hours",
+      "Avoid screens before bed",
+      "Limit afternoon caffeine",
+      "Exercise every morning"
+     ],
+     "answer": 3,
+     "explain_tr": "Sabah egzersizi metinde geçmiyor."
+    }
+   ]
+  }
+ ],
+ "speaking": [
+  {
+   "slug": "en-introduce-yourself",
+   "cefr_level": "A1",
+   "kind": "repeat",
+   "title_tr": "Kendini tanıt",
+   "prompt_tr": "Örnek cümleleri dinle, sonra kendi bilgilerinle kendini tanıt.",
+   "model_text": "Hello, my name is Anna. I am twenty-five years old. I am from Germany. I live in Berlin. I like music and cooking.",
+   "target_phrases": [
+    "my name is",
+    "I am from",
+    "I like"
+   ],
+   "max_seconds": 30,
+   "topics": [
+    "günlük hayat"
+   ]
+  },
+  {
+   "slug": "en-my-morning",
+   "cefr_level": "A1",
+   "kind": "describe",
+   "title_tr": "Sabah rutinin",
+   "prompt_tr": "Sabahları neler yaptığını 4-5 cümleyle anlat.",
+   "model_text": "I get up at seven. I have breakfast and drink tea. Then I take a shower and get dressed. I leave home at eight.",
+   "target_phrases": [
+    "I get up",
+    "I have breakfast",
+    "I leave home"
+   ],
+   "max_seconds": 40,
+   "topics": [
+    "günlük hayat"
+   ]
+  },
+  {
+   "slug": "en-favourite-food",
+   "cefr_level": "A2",
+   "kind": "answer",
+   "title_tr": "Sevdiğin yemek",
+   "prompt_tr": "En sevdiğin yemek nedir? Neden seviyorsun, ne zaman yersin? 5-6 cümleyle anlat.",
+   "model_text": "My favourite food is pasta because it is quick to cook and I can make it in many different ways. I usually eat it for dinner with tomato sauce and a lot of cheese. When I was a child, my grandmother made it for me every Sunday.",
+   "target_phrases": [
+    "my favourite",
+    "because",
+    "I usually"
+   ],
+   "max_seconds": 50,
+   "topics": [
+    "yemek"
+   ]
+  },
+  {
+   "slug": "en-restaurant-problem",
+   "cefr_level": "B1",
+   "kind": "roleplay",
+   "title_tr": "Restoranda sorun",
+   "prompt_tr": "Siparişin yanlış geldi. Garsona nazikçe durumu anlat ve çözüm iste.",
+   "model_text": "Excuse me, I'm afraid there has been a mistake. I ordered the grilled chicken, but I was given fish. Could you please change it? I would also like to ask how long it will take, because we are in a bit of a hurry.",
+   "target_phrases": [
+    "I'm afraid",
+    "Could you please",
+    "I would like to"
+   ],
+   "max_seconds": 50,
+   "topics": [
+    "yemek",
+    "günlük hayat"
+   ]
+  },
+  {
+   "slug": "en-describe-hometown",
+   "cefr_level": "B1",
+   "kind": "describe",
+   "title_tr": "Memleketini anlat",
+   "prompt_tr": "Doğduğun ya da yaşadığın şehri anlat: neresi, neleri güzel, neleri zor?",
+   "model_text": "I live in a medium-sized city near the coast. What I like most about it is the relaxed atmosphere and the fresh seafood. On the other hand, the summers are extremely crowded because of tourists, and housing has become quite expensive. Overall, I would recommend it for a short holiday, but I'm not sure everyone would enjoy living there.",
+   "target_phrases": [
+    "what I like most",
+    "on the other hand",
+    "overall"
+   ],
+   "max_seconds": 60,
+   "topics": [
+    "seyahat",
+    "günlük hayat"
+   ]
+  }
+ ],
+ "writing": [
+  {
+   "slug": "en-about-me",
+   "cefr_level": "A1",
+   "kind": "sentence_completion",
+   "title_tr": "Kendin hakkında",
+   "prompt_tr": "Şu cümleleri kendine göre tamamla ve 5 cümle yaz: My name is… I am from… I live in… I like… I don't like…",
+   "target_phrases": [
+    "my name is",
+    "I am from",
+    "I like"
+   ],
+   "min_words": 15,
+   "max_words": 50,
+   "sample_answer": "My name is Ali. I am from Turkey. I live in Ankara. I like football and music. I don't like cold weather.",
+   "topics": [
+    "günlük hayat"
+   ]
+  },
+  {
+   "slug": "en-my-weekend",
+   "cefr_level": "A2",
+   "kind": "short_paragraph",
+   "title_tr": "Geçen hafta sonu",
+   "prompt_tr": "Geçen hafta sonu ne yaptığını 5-7 cümleyle anlat. Geçmiş zaman kullan.",
+   "target_phrases": [
+    "last weekend",
+    "I went",
+    "we had"
+   ],
+   "min_words": 30,
+   "max_words": 90,
+   "sample_answer": "Last weekend I visited my cousin in Izmir. We had breakfast near the sea and then we walked for two hours. In the evening we went to a small restaurant and ate fish. On Sunday I came home by bus. I was tired, but I had a great time.",
+   "topics": [
+    "günlük hayat",
+    "seyahat"
+   ]
+  },
+  {
+   "slug": "en-invite-friend",
+   "cefr_level": "B1",
+   "kind": "email",
+   "title_tr": "Arkadaşı davet et",
+   "prompt_tr": "İngiliz bir arkadaşına e-posta yaz: onu cumartesi akşamı yemeğe davet et, saati ve yeri söyle, gelip gelemeyeceğini sor.",
+   "target_phrases": [
+    "I was wondering if",
+    "would you like to",
+    "let me know"
+   ],
+   "min_words": 50,
+   "max_words": 120,
+   "sample_answer": "Hi Sam,\n\nI hope you are well. I was wondering if you are free on Saturday evening. I'm planning a small dinner at my place at seven o'clock, and I would love to see you. Would you like to come? I will cook a Turkish dish that I think you will like.\n\nLet me know if you can make it.\n\nBest wishes,\nAli",
+   "topics": [
+    "günlük hayat",
+    "yemek"
+   ]
+  },
+  {
+   "slug": "en-diary-tough-day",
+   "cefr_level": "B1",
+   "kind": "diary",
+   "title_tr": "Zor bir gün",
+   "prompt_tr": "Bugün seni zorlayan bir durumu ve onunla nasıl başa çıktığını günlüğüne yaz.",
+   "target_phrases": [
+    "at first",
+    "in the end",
+    "I realised"
+   ],
+   "min_words": 45,
+   "max_words": 140,
+   "sample_answer": "Today was a tough day at work. At first, everything went wrong: my computer crashed and I lost an hour of work. I felt frustrated, but I took a short walk to calm down. In the end, I managed to finish the report before the deadline. I realised that panicking does not help; a clear head does.",
+   "topics": [
+    "iş",
+    "günlük hayat"
+   ]
+  },
+  {
+   "slug": "en-opinion-remote",
+   "cefr_level": "B2",
+   "kind": "short_paragraph",
+   "title_tr": "Uzaktan çalışma: fikrin",
+   "prompt_tr": "“Herkes haftada en az iki gün evden çalışabilmeli.” görüşüne katılıp katılmadığını gerekçeleriyle yaz.",
+   "target_phrases": [
+    "in my view",
+    "for instance",
+    "nevertheless"
+   ],
+   "min_words": 50,
+   "max_words": 160,
+   "sample_answer": "In my view, employees should be able to work from home at least two days a week. For instance, people who live far from the office can save hours of travel and use that time more productively. Nevertheless, I believe that regular face-to-face meetings remain important, because they build trust and make collaboration easier. A flexible balance therefore seems the most sensible solution.",
+   "topics": [
+    "iş",
+    "teknoloji"
+   ]
+  }
+ ],
+ "grammar": [
+  {
+   "slug": "en-present-be",
+   "title_tr": "“to be” (am / is / are)",
+   "title_target": "Present simple of “to be”",
+   "cefr_level": "A1",
+   "order_index": 1,
+   "summary_tr": "“Olmak” fiili İngilizce’de özneye göre değişir:\n• I → am\n• he / she / it → is\n• we / you / they → are\n\nOlumsuz için fiilden sonra not eklenir: I am not, he is not (isn't), they are not (aren't). Soru için fiil özneden önce gelir: Are you ready?",
+   "examples": [
+    {
+     "text": "I am a teacher.",
+     "tr": "Ben öğretmenim.",
+     "highlight": "am"
+    },
+    {
+     "text": "She is from Italy.",
+     "tr": "O İtalya'lıdır.",
+     "highlight": "is"
+    },
+    {
+     "text": "They are not at home.",
+     "tr": "Onlar evde değil.",
+     "highlight": "are not"
+    },
+    {
+     "text": "Are you hungry?",
+     "tr": "Aç mısın?",
+     "highlight": "Are"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "He ___ my brother.",
+     "options": [
+      "am",
+      "is",
+      "are",
+      "be"
+     ],
+     "answer": 1,
+     "explain_tr": "he/she/it ile “is” kullanılır."
+    },
+    {
+     "type": "mcq",
+     "prompt": "We ___ in the kitchen.",
+     "options": [
+      "is",
+      "am",
+      "are",
+      "be"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "fill",
+     "prompt": "I ___ tired today. (am/is/are)",
+     "answer": "am"
+    },
+    {
+     "type": "fill",
+     "prompt": "___ they your friends? (Am/Is/Are)",
+     "answer": "are",
+     "explain_tr": "Soruda fiil başa gelir; they ile “are”."
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "She are happy.",
+      "She is happy.",
+      "She am happy.",
+      "She be happy."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "slug": "en-past-simple",
+   "title_tr": "Geçmiş zaman (Past simple)",
+   "title_target": "Past simple",
+   "cefr_level": "A2",
+   "order_index": 2,
+   "summary_tr": "Geçmişte bitmiş eylemler için kullanılır.\n• Düzenli fiiller: fiil + -ed (walk → walked)\n• Düzensiz fiiller ezberlenir (go → went, have → had, see → saw)\n• Olumsuz: did not (didn't) + fiilin yalın hali: I didn't go.\n• Soru: Did + özne + yalın fiil? Did you go?\n\nZaman ifadeleri: yesterday, last week, two days ago, in 2019.",
+   "examples": [
+    {
+     "text": "We walked to school.",
+     "tr": "Okula yürüdük.",
+     "highlight": "walked"
+    },
+    {
+     "text": "She went to Paris last year.",
+     "tr": "Geçen yıl Paris'e gitti.",
+     "highlight": "went"
+    },
+    {
+     "text": "I didn't see him.",
+     "tr": "Onu görmedim.",
+     "highlight": "didn't see"
+    },
+    {
+     "text": "Did you enjoy the film?",
+     "tr": "Filmden hoşlandın mı?",
+     "highlight": "Did you enjoy"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "Yesterday I ___ a new phone.",
+     "options": [
+      "buy",
+      "buyed",
+      "bought",
+      "buying"
+     ],
+     "answer": 2,
+     "explain_tr": "buy düzensizdir: buy → bought."
+    },
+    {
+     "type": "mcq",
+     "prompt": "She ___ to the party last night.",
+     "options": [
+      "didn't went",
+      "didn't go",
+      "not go",
+      "doesn't go"
+     ],
+     "answer": 1,
+     "explain_tr": "did not'tan sonra yalın fiil gelir."
+    },
+    {
+     "type": "fill",
+     "prompt": "We ___ (watch) a film last night.",
+     "answer": "watched"
+    },
+    {
+     "type": "fill",
+     "prompt": "They ___ (go) to Spain in 2022.",
+     "answer": "went"
+    },
+    {
+     "type": "fill",
+     "prompt": "___ you see the match yesterday? (Did/Do/Are)",
+     "answer": "did"
+    }
+   ]
+  },
+  {
+   "slug": "en-first-conditional",
+   "title_tr": "Birinci koşul cümleleri",
+   "title_target": "First conditional",
+   "cefr_level": "B1",
+   "order_index": 3,
+   "summary_tr": "Gelecekte gerçekleşmesi mümkün durumlar için:\nIf + present simple, will + yalın fiil\n\nIf it rains, we will stay at home.\n\nDikkat: “if” bölümünde will kullanılmaz. Sıralama değişebilir: We will stay at home if it rains (virgül gerekmez).",
+   "examples": [
+    {
+     "text": "If you study, you will pass the exam.",
+     "tr": "Çalışırsan sınavı geçersin.",
+     "highlight": "If you study, you will pass"
+    },
+    {
+     "text": "If it rains, we will stay at home.",
+     "tr": "Yağmur yağarsa evde kalırız.",
+     "highlight": "If it rains, we will stay"
+    },
+    {
+     "text": "She will be happy if you call her.",
+     "tr": "Onu ararsan mutlu olur.",
+     "highlight": "will be happy if you call"
+    }
+   ],
+   "practice_items": [
+    {
+     "type": "mcq",
+     "prompt": "If I ___ time tomorrow, I will call you.",
+     "options": [
+      "have",
+      "will have",
+      "had",
+      "would have"
+     ],
+     "answer": 0,
+     "explain_tr": "if bölümünde şimdiki zaman kullanılır."
+    },
+    {
+     "type": "mcq",
+     "prompt": "If she ___ late, we will start without her.",
+     "options": [
+      "will be",
+      "is",
+      "was",
+      "would be"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "fill",
+     "prompt": "If it snows, the school ___ (close). Use will.",
+     "answer": "will close",
+     "explain_tr": "“will + yalın fiil”."
+    },
+    {
+     "type": "fill",
+     "prompt": "We will go to the beach if the weather ___ (be) nice.",
+     "answer": "is"
+    },
+    {
+     "type": "mcq",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "If he will come, I will be happy.",
+      "If he comes, I will be happy.",
+      "If he came, I will be happy.",
+      "If he comes, I would be happy."
+     ],
+     "answer": 1
+    }
+   ]
+  }
+ ],
+ "vocabulary": [
+  {
+   "lemma": "water",
+   "pos": "noun",
+   "meaning_tr": "su",
+   "example": "Can I have some water?",
+   "example_tr": "Biraz su alabilir miyim?",
+   "cefr_level": "A1",
+   "frequency_rank": 1
+  },
+  {
+   "lemma": "friend",
+   "pos": "noun",
+   "meaning_tr": "arkadaş",
+   "example": "She is my best friend.",
+   "example_tr": "O benim en iyi arkadaşım.",
+   "cefr_level": "A1",
+   "frequency_rank": 2
+  },
+  {
+   "lemma": "family",
+   "pos": "noun",
+   "meaning_tr": "aile",
+   "example": "My family lives in Ankara.",
+   "example_tr": "Ailem Ankara'da yaşıyor.",
+   "cefr_level": "A1",
+   "frequency_rank": 3
+  },
+  {
+   "lemma": "work",
+   "pos": "verb",
+   "meaning_tr": "çalışmak",
+   "example": "I work in a bank.",
+   "example_tr": "Bir bankada çalışıyorum.",
+   "cefr_level": "A1",
+   "frequency_rank": 4
+  },
+  {
+   "lemma": "eat",
+   "pos": "verb",
+   "meaning_tr": "yemek yemek",
+   "example": "We eat dinner at seven.",
+   "example_tr": "Akşam yemeğini yedide yeriz.",
+   "cefr_level": "A1",
+   "frequency_rank": 5
+  },
+  {
+   "lemma": "big",
+   "pos": "adj",
+   "meaning_tr": "büyük",
+   "example": "They have a big house.",
+   "example_tr": "Büyük bir evleri var.",
+   "cefr_level": "A1",
+   "frequency_rank": 6
+  },
+  {
+   "lemma": "happy",
+   "pos": "adj",
+   "meaning_tr": "mutlu",
+   "example": "I am happy today.",
+   "example_tr": "Bugün mutluyum.",
+   "cefr_level": "A1",
+   "frequency_rank": 7
+  },
+  {
+   "lemma": "always",
+   "pos": "adv",
+   "meaning_tr": "her zaman",
+   "example": "He is always late.",
+   "example_tr": "O her zaman geç kalır.",
+   "cefr_level": "A1",
+   "frequency_rank": 8
+  },
+  {
+   "lemma": "expensive",
+   "pos": "adj",
+   "meaning_tr": "pahalı",
+   "example": "This bag is too expensive.",
+   "example_tr": "Bu çanta çok pahalı.",
+   "cefr_level": "A1",
+   "frequency_rank": 9
+  },
+  {
+   "lemma": "tomorrow",
+   "pos": "adv",
+   "meaning_tr": "yarın",
+   "example": "See you tomorrow!",
+   "example_tr": "Yarın görüşürüz!",
+   "cefr_level": "A1",
+   "frequency_rank": 10
+  },
+  {
+   "lemma": "travel",
+   "pos": "verb",
+   "meaning_tr": "seyahat etmek",
+   "example": "I love to travel.",
+   "example_tr": "Seyahat etmeyi severim.",
+   "cefr_level": "A2",
+   "frequency_rank": 11
+  },
+  {
+   "lemma": "borrow",
+   "pos": "verb",
+   "meaning_tr": "ödünç almak",
+   "example": "Can I borrow your pen?",
+   "example_tr": "Kalemini ödünç alabilir miyim?",
+   "cefr_level": "A2",
+   "frequency_rank": 12
+  },
+  {
+   "lemma": "lend",
+   "pos": "verb",
+   "meaning_tr": "ödünç vermek",
+   "example": "She lent me her book.",
+   "example_tr": "Bana kitabını ödünç verdi.",
+   "cefr_level": "A2",
+   "frequency_rank": 13
+  },
+  {
+   "lemma": "weather",
+   "pos": "noun",
+   "meaning_tr": "hava durumu",
+   "example": "The weather is nice today.",
+   "example_tr": "Bugün hava güzel.",
+   "cefr_level": "A2",
+   "frequency_rank": 14
+  },
+  {
+   "lemma": "cheap",
+   "pos": "adj",
+   "meaning_tr": "ucuz",
+   "example": "This restaurant is cheap.",
+   "example_tr": "Bu restoran ucuz.",
+   "cefr_level": "A2",
+   "frequency_rank": 15
+  },
+  {
+   "lemma": "decide",
+   "pos": "verb",
+   "meaning_tr": "karar vermek",
+   "example": "I can't decide what to wear.",
+   "example_tr": "Ne giyeceğime karar veremiyorum.",
+   "cefr_level": "A2",
+   "frequency_rank": 16
+  },
+  {
+   "lemma": "invite",
+   "pos": "verb",
+   "meaning_tr": "davet etmek",
+   "example": "They invited us to dinner.",
+   "example_tr": "Bizi yemeğe davet ettiler.",
+   "cefr_level": "A2",
+   "frequency_rank": 17
+  },
+  {
+   "lemma": "lonely",
+   "pos": "adj",
+   "meaning_tr": "yalnız (hisseden)",
+   "example": "He feels lonely in the city.",
+   "example_tr": "Şehirde kendini yalnız hissediyor.",
+   "cefr_level": "A2",
+   "frequency_rank": 18
+  },
+  {
+   "lemma": "meeting",
+   "pos": "noun",
+   "meaning_tr": "toplantı",
+   "example": "The meeting starts at ten.",
+   "example_tr": "Toplantı ona başlıyor.",
+   "cefr_level": "A2",
+   "frequency_rank": 19
+  },
+  {
+   "lemma": "ticket",
+   "pos": "noun",
+   "meaning_tr": "bilet",
+   "example": "I bought two tickets.",
+   "example_tr": "İki bilet aldım.",
+   "cefr_level": "A2",
+   "frequency_rank": 20
+  },
+  {
+   "lemma": "achieve",
+   "pos": "verb",
+   "meaning_tr": "başarmak, elde etmek",
+   "example": "She achieved her goal.",
+   "example_tr": "Hedefine ulaştı.",
+   "cefr_level": "B1",
+   "frequency_rank": 21
+  },
+  {
+   "lemma": "reliable",
+   "pos": "adj",
+   "meaning_tr": "güvenilir",
+   "example": "He is a reliable colleague.",
+   "example_tr": "O güvenilir bir iş arkadaşı.",
+   "cefr_level": "B1",
+   "frequency_rank": 22
+  },
+  {
+   "lemma": "improve",
+   "pos": "verb",
+   "meaning_tr": "geliştirmek, iyileşmek",
+   "example": "I want to improve my English.",
+   "example_tr": "İngilizcemi geliştirmek istiyorum.",
+   "cefr_level": "B1",
+   "frequency_rank": 23
+  },
+  {
+   "lemma": "experience",
+   "pos": "noun",
+   "meaning_tr": "deneyim",
+   "example": "She has a lot of experience.",
+   "example_tr": "Çok deneyimi var.",
+   "cefr_level": "B1",
+   "frequency_rank": 24
+  },
+  {
+   "lemma": "suggest",
+   "pos": "verb",
+   "meaning_tr": "önermek",
+   "example": "I suggest taking a taxi.",
+   "example_tr": "Taksiye binmeyi öneririm.",
+   "cefr_level": "B1",
+   "frequency_rank": 25
+  },
+  {
+   "lemma": "environment",
+   "pos": "noun",
+   "meaning_tr": "çevre",
+   "example": "We must protect the environment.",
+   "example_tr": "Çevreyi korumalıyız.",
+   "cefr_level": "B1",
+   "frequency_rank": 26
+  },
+  {
+   "lemma": "opportunity",
+   "pos": "noun",
+   "meaning_tr": "fırsat",
+   "example": "This is a great opportunity.",
+   "example_tr": "Bu harika bir fırsat.",
+   "cefr_level": "B1",
+   "frequency_rank": 27
+  },
+  {
+   "lemma": "manage",
+   "pos": "verb",
+   "meaning_tr": "başarmak, yönetmek",
+   "example": "I managed to finish on time.",
+   "example_tr": "Zamanında bitirmeyi başardım.",
+   "cefr_level": "B1",
+   "frequency_rank": 28
+  },
+  {
+   "lemma": "although",
+   "pos": "conj",
+   "meaning_tr": "-e rağmen",
+   "example": "Although it was cold, we went out.",
+   "example_tr": "Hava soğuk olmasına rağmen dışarı çıktık.",
+   "cefr_level": "B1",
+   "frequency_rank": 29
+  },
+  {
+   "lemma": "responsible",
+   "pos": "adj",
+   "meaning_tr": "sorumlu",
+   "example": "Who is responsible for this?",
+   "example_tr": "Bundan kim sorumlu?",
+   "cefr_level": "B1",
+   "frequency_rank": 30
+  }
+ ]
+}

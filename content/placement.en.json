@@ -1,0 +1,402 @@
+[
+ {
+  "skill": "vocab",
+  "level": "A1",
+  "prompt": "'apple' ne demek?",
+  "options": [
+   "elma",
+   "ekmek",
+   "süt",
+   "su"
+  ],
+  "answer": 0
+ },
+ {
+  "skill": "vocab",
+  "level": "A1",
+  "prompt": "'house' ne demek?",
+  "options": [
+   "araba",
+   "ev",
+   "kapı",
+   "okul"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "vocab",
+  "level": "A2",
+  "prompt": "'borrow' ne demek?",
+  "options": [
+   "satın almak",
+   "kaybetmek",
+   "ödünç almak",
+   "unutmak"
+  ],
+  "answer": 2
+ },
+ {
+  "skill": "vocab",
+  "level": "A2",
+  "prompt": "'crowded' ne demek?",
+  "options": [
+   "sessiz",
+   "kalabalık",
+   "temiz",
+   "pahalı"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "vocab",
+  "level": "B1",
+  "prompt": "'reliable' ne demek?",
+  "options": [
+   "tembel",
+   "sinirli",
+   "meşgul",
+   "güvenilir"
+  ],
+  "answer": 3
+ },
+ {
+  "skill": "vocab",
+  "level": "B1",
+  "prompt": "'achieve' ne demek?",
+  "options": [
+   "vazgeçmek",
+   "başarmak",
+   "ertelemek",
+   "şikâyet etmek"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "vocab",
+  "level": "B2",
+  "prompt": "'reluctant' ne demek?",
+  "options": [
+   "hevesli",
+   "kararlı",
+   "isteksiz",
+   "şaşkın"
+  ],
+  "answer": 2
+ },
+ {
+  "skill": "vocab",
+  "level": "B2",
+  "prompt": "'deteriorate' ne demek?",
+  "options": [
+   "iyileşmek",
+   "kötüleşmek",
+   "açıklamak",
+   "tekrarlamak"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "grammar",
+  "level": "A1",
+  "prompt": "Boşluğu doldur: She ___ a student.",
+  "options": [
+   "am",
+   "is",
+   "are",
+   "be"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "grammar",
+  "level": "A1",
+  "prompt": "Boşluğu doldur: They ___ from Spain.",
+  "options": [
+   "is",
+   "am",
+   "be",
+   "are"
+  ],
+  "answer": 3
+ },
+ {
+  "skill": "grammar",
+  "level": "A2",
+  "prompt": "Boşluğu doldur: Yesterday we ___ to the cinema.",
+  "options": [
+   "go",
+   "went",
+   "gone",
+   "going"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "grammar",
+  "level": "A2",
+  "prompt": "Boşluğu doldur: I have lived here ___ 2020.",
+  "options": [
+   "for",
+   "since",
+   "from",
+   "during"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "grammar",
+  "level": "B1",
+  "prompt": "Boşluğu doldur: If it rains tomorrow, we ___ at home.",
+  "options": [
+   "stay",
+   "would stay",
+   "will stay",
+   "stayed"
+  ],
+  "answer": 2
+ },
+ {
+  "skill": "grammar",
+  "level": "B1",
+  "prompt": "Boşluğu doldur: The report ___ by the manager yesterday.",
+  "options": [
+   "wrote",
+   "was written",
+   "is writing",
+   "has write"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "grammar",
+  "level": "B2",
+  "prompt": "Boşluğu doldur: If I had known about the delay, I ___ earlier.",
+  "options": [
+   "would leave",
+   "would have left",
+   "will leave",
+   "had left"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "grammar",
+  "level": "B2",
+  "prompt": "Boşluğu doldur: She suggested ___ the meeting until Monday.",
+  "options": [
+   "to postpone",
+   "postponing",
+   "postpone",
+   "postponed"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "reading",
+  "level": "A1",
+  "prompt": "What is the dog's name?",
+  "options": [
+   "Tom",
+   "Max",
+   "Sam",
+   "Ben"
+  ],
+  "answer": 1,
+  "passage": "Tom is ten years old. He has a dog. The dog's name is Max. Tom and Max play in the park every day."
+ },
+ {
+  "skill": "reading",
+  "level": "A1",
+  "prompt": "When does the shop close?",
+  "options": [
+   "at nine",
+   "at six",
+   "at noon",
+   "at five"
+  ],
+  "answer": 1,
+  "passage": "The shop opens at nine and closes at six."
+ },
+ {
+  "skill": "reading",
+  "level": "A2",
+  "prompt": "How did Anna feel when she went home?",
+  "options": [
+   "Angry",
+   "Bored",
+   "Tired but happy",
+   "Sad"
+  ],
+  "answer": 2,
+  "passage": "Last weekend, Anna visited her grandmother in the countryside. They baked bread together and walked by the river. Anna was tired but happy when she went home."
+ },
+ {
+  "skill": "reading",
+  "level": "A2",
+  "prompt": "What can passengers do?",
+  "options": [
+   "Take a free bus today",
+   "Get their money back or travel tomorrow",
+   "Wait at the station until the snow stops",
+   "Buy a new ticket at half price"
+  ],
+  "answer": 1,
+  "passage": "Because of the heavy snow, the train to Manchester was cancelled. Passengers can get a refund or travel tomorrow at no extra cost."
+ },
+ {
+  "skill": "reading",
+  "level": "B1",
+  "prompt": "What problem do some employees mention?",
+  "options": [
+   "They cannot find the internet",
+   "They find it hard to stop working",
+   "They miss their commute",
+   "They earn less money"
+  ],
+  "answer": 1,
+  "passage": "Many people think that working from home is always more relaxing. However, some employees say they find it harder to switch off after work, because their office is also their living room."
+ },
+ {
+  "skill": "reading",
+  "level": "B1",
+  "prompt": "Why are some tourists upset?",
+  "options": [
+   "Tickets are more expensive",
+   "The museum has closed",
+   "They would rather decide on the day",
+   "The queues are longer"
+  ],
+  "answer": 2,
+  "passage": "The museum has introduced a new ticket system. Visitors must now book a time slot online, which reduces queues but has upset some tourists who prefer to decide on the day."
+ },
+ {
+  "skill": "reading",
+  "level": "B2",
+  "prompt": "What do critics claim?",
+  "options": [
+   "The policy will not reduce emissions at all",
+   "Rural households will be hit harder",
+   "City residents will pay nothing",
+   "Cars will become cheaper"
+  ],
+  "answer": 1,
+  "passage": "Although the new policy was designed to cut emissions, critics argue that it will disproportionately affect rural households, which depend on cars far more than city residents do."
+ },
+ {
+  "skill": "reading",
+  "level": "B2",
+  "prompt": "What is the author's attitude to the study?",
+  "options": [
+   "Completely dismissive",
+   "Cautiously supportive",
+   "Entirely uncritical",
+   "Indifferent"
+  ],
+  "answer": 1,
+  "passage": "The author concedes that the study's sample was small, yet insists that its findings are consistent with earlier research."
+ },
+ {
+  "skill": "listening",
+  "level": "A1",
+  "prompt": "Where is Sara from?",
+  "options": [
+   "Canada",
+   "Cuba",
+   "China",
+   "Chile"
+  ],
+  "answer": 0,
+  "audio_text": "Hello, my name is Sara. I am from Canada. I like pizza."
+ },
+ {
+  "skill": "listening",
+  "level": "A1",
+  "prompt": "What time does the bus leave?",
+  "options": [
+   "six o'clock",
+   "seven o'clock",
+   "eight o'clock",
+   "nine o'clock"
+  ],
+  "answer": 2,
+  "audio_text": "The bus to the airport leaves at eight o'clock."
+ },
+ {
+  "skill": "listening",
+  "level": "A2",
+  "prompt": "Where is the library?",
+  "options": [
+   "Next to the bank",
+   "Next to the supermarket",
+   "Behind the school",
+   "Opposite the station"
+  ],
+  "answer": 1,
+  "audio_text": "Excuse me, could you tell me how to get to the library? Go straight on, then turn left at the bank. It's next to the supermarket."
+ },
+ {
+  "skill": "listening",
+  "level": "A2",
+  "prompt": "Why can't the speaker come on Saturday?",
+  "options": [
+   "He is ill",
+   "He has to work",
+   "He is on holiday",
+   "He forgot"
+  ],
+  "answer": 1,
+  "audio_text": "I'm sorry, I can't come to the party on Saturday because I have to work. Maybe we could meet on Sunday instead."
+ },
+ {
+  "skill": "listening",
+  "level": "B1",
+  "prompt": "What does Mark want the customer to do?",
+  "options": [
+   "Come to the garage immediately",
+   "Call back before noon",
+   "Pay online today",
+   "Bring the car tomorrow"
+  ],
+  "answer": 1,
+  "audio_text": "Hi, this is Mark from the garage. Your car is ready, but we found a problem with the brakes that wasn't on the original quote. It will cost an extra eighty pounds. Please call me back before noon if you'd like us to fix it."
+ },
+ {
+  "skill": "listening",
+  "level": "B1",
+  "prompt": "What will change this weekend?",
+  "options": [
+   "Trains will stop running",
+   "Trains will be less frequent",
+   "Trains will be free",
+   "Trains will go to a different city"
+  ],
+  "answer": 1,
+  "audio_text": "Due to maintenance work, trains between Leeds and York will run every hour instead of every half hour this weekend."
+ },
+ {
+  "skill": "listening",
+  "level": "B2",
+  "prompt": "When was the effect on creativity strongest?",
+  "options": [
+   "On a treadmill",
+   "When walks were outdoors",
+   "When walks were long",
+   "When people walked with colleagues"
+  ],
+  "answer": 1,
+  "audio_text": "Researchers have found that people who take short walks during the working day are not only healthier but also more creative. Interestingly, the effect was strongest when the walk took place outdoors."
+ },
+ {
+  "skill": "listening",
+  "level": "B2",
+  "prompt": "Why didn't the speaker call earlier?",
+  "options": [
+   "He forgot the number",
+   "His phone had no battery",
+   "He was in a meeting",
+   "He had no time"
+  ],
+  "answer": 1,
+  "audio_text": "I'd have called earlier, but my phone died, and I couldn't find a charger anywhere."
+ }
+]

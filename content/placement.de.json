@@ -1,0 +1,402 @@
+[
+ {
+  "skill": "vocab",
+  "level": "A1",
+  "prompt": "'der Apfel' ne demek?",
+  "options": [
+   "elma",
+   "ekmek",
+   "süt",
+   "su"
+  ],
+  "answer": 0
+ },
+ {
+  "skill": "vocab",
+  "level": "A1",
+  "prompt": "'das Haus' ne demek?",
+  "options": [
+   "araba",
+   "ev",
+   "kapı",
+   "okul"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "vocab",
+  "level": "A2",
+  "prompt": "'ausleihen' ne demek?",
+  "options": [
+   "satın almak",
+   "kaybetmek",
+   "ödünç almak",
+   "unutmak"
+  ],
+  "answer": 2
+ },
+ {
+  "skill": "vocab",
+  "level": "A2",
+  "prompt": "'überfüllt' ne demek?",
+  "options": [
+   "sessiz",
+   "kalabalık",
+   "temiz",
+   "pahalı"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "vocab",
+  "level": "B1",
+  "prompt": "'zuverlässig' ne demek?",
+  "options": [
+   "tembel",
+   "sinirli",
+   "meşgul",
+   "güvenilir"
+  ],
+  "answer": 3
+ },
+ {
+  "skill": "vocab",
+  "level": "B1",
+  "prompt": "'erreichen' (ein Ziel erreichen) ne demek?",
+  "options": [
+   "vazgeçmek",
+   "ertelemek",
+   "ulaşmak, başarmak",
+   "şikâyet etmek"
+  ],
+  "answer": 2
+ },
+ {
+  "skill": "vocab",
+  "level": "B2",
+  "prompt": "'widerwillig' ne demek?",
+  "options": [
+   "hevesli",
+   "kararlı",
+   "isteksiz",
+   "şaşkın"
+  ],
+  "answer": 2
+ },
+ {
+  "skill": "vocab",
+  "level": "B2",
+  "prompt": "'sich verschlechtern' ne demek?",
+  "options": [
+   "iyileşmek",
+   "kötüleşmek",
+   "açıklamak",
+   "tekrarlamak"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "grammar",
+  "level": "A1",
+  "prompt": "Boşluğu doldur: Ich ___ Student.",
+  "options": [
+   "bin",
+   "bist",
+   "ist",
+   "sind"
+  ],
+  "answer": 0
+ },
+ {
+  "skill": "grammar",
+  "level": "A1",
+  "prompt": "Boşluğu doldur: Wir ___ aus Spanien.",
+  "options": [
+   "ist",
+   "bin",
+   "sind",
+   "seid"
+  ],
+  "answer": 2
+ },
+ {
+  "skill": "grammar",
+  "level": "A2",
+  "prompt": "Boşluğu doldur: Gestern ___ wir ins Kino gegangen.",
+  "options": [
+   "sind",
+   "haben",
+   "waren",
+   "werden"
+  ],
+  "answer": 0
+ },
+ {
+  "skill": "grammar",
+  "level": "A2",
+  "prompt": "Boşluğu doldur: Ich wohne ___ 2020 hier.",
+  "options": [
+   "für",
+   "seit",
+   "von",
+   "während"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "grammar",
+  "level": "B1",
+  "prompt": "Boşluğu doldur: Wenn es morgen regnet, ___ wir zu Hause.",
+  "options": [
+   "bleiben",
+   "blieben",
+   "bliebe",
+   "geblieben"
+  ],
+  "answer": 0
+ },
+ {
+  "skill": "grammar",
+  "level": "B1",
+  "prompt": "Boşluğu doldur: Der Bericht ___ gestern vom Chef geschrieben.",
+  "options": [
+   "hat",
+   "wurde",
+   "ist",
+   "wird"
+  ],
+  "answer": 1
+ },
+ {
+  "skill": "grammar",
+  "level": "B2",
+  "prompt": "Boşluğu doldur: Wenn ich von der Verspätung gewusst ___, wäre ich früher losgefahren.",
+  "options": [
+   "hätte",
+   "wäre",
+   "würde",
+   "habe"
+  ],
+  "answer": 0
+ },
+ {
+  "skill": "grammar",
+  "level": "B2",
+  "prompt": "Boşluğu doldur: Sie schlug vor, das Treffen auf Montag ___.",
+  "options": [
+   "zu verschieben",
+   "verschieben",
+   "verschoben",
+   "verschiebt"
+  ],
+  "answer": 0
+ },
+ {
+  "skill": "reading",
+  "level": "A1",
+  "prompt": "Wie heißt der Hund?",
+  "options": [
+   "Tom",
+   "Max",
+   "Sam",
+   "Ben"
+  ],
+  "answer": 1,
+  "passage": "Tom ist zehn Jahre alt. Er hat einen Hund. Der Hund heißt Max. Tom und Max spielen jeden Tag im Park."
+ },
+ {
+  "skill": "reading",
+  "level": "A1",
+  "prompt": "Wann schließt das Geschäft?",
+  "options": [
+   "um neun Uhr",
+   "um achtzehn Uhr",
+   "um zwölf Uhr",
+   "um fünf Uhr"
+  ],
+  "answer": 1,
+  "passage": "Das Geschäft öffnet um neun Uhr und schließt um achtzehn Uhr."
+ },
+ {
+  "skill": "reading",
+  "level": "A2",
+  "prompt": "Wie fühlte sich Anna auf dem Heimweg?",
+  "options": [
+   "wütend",
+   "gelangweilt",
+   "müde, aber glücklich",
+   "traurig"
+  ],
+  "answer": 2,
+  "passage": "Letztes Wochenende hat Anna ihre Großmutter auf dem Land besucht. Sie haben zusammen Brot gebacken und sind am Fluss spazieren gegangen. Anna war müde, aber glücklich, als sie nach Hause fuhr."
+ },
+ {
+  "skill": "reading",
+  "level": "A2",
+  "prompt": "Was können Fahrgäste tun?",
+  "options": [
+   "Heute kostenlos mit dem Bus fahren",
+   "Ihr Geld zurückbekommen oder morgen fahren",
+   "Am Bahnhof warten, bis der Schnee aufhört",
+   "Eine neue Fahrkarte zum halben Preis kaufen"
+  ],
+  "answer": 1,
+  "passage": "Wegen des starken Schnees ist der Zug nach Hamburg ausgefallen. Fahrgäste können ihr Geld zurückbekommen oder morgen ohne Aufpreis fahren."
+ },
+ {
+  "skill": "reading",
+  "level": "B1",
+  "prompt": "Welches Problem nennen manche Angestellte?",
+  "options": [
+   "Sie finden kein Internet",
+   "Sie können schlecht abschalten",
+   "Sie vermissen den Arbeitsweg",
+   "Sie verdienen weniger"
+  ],
+  "answer": 1,
+  "passage": "Viele Menschen glauben, dass Arbeiten im Homeoffice immer entspannter ist. Einige Angestellte sagen jedoch, dass es ihnen schwerfällt, nach der Arbeit abzuschalten, weil ihr Büro zugleich das Wohnzimmer ist."
+ },
+ {
+  "skill": "reading",
+  "level": "B1",
+  "prompt": "Warum sind manche Touristen verärgert?",
+  "options": [
+   "Die Tickets sind teurer",
+   "Das Museum ist geschlossen",
+   "Sie möchten lieber spontan entscheiden",
+   "Die Warteschlangen sind länger"
+  ],
+  "answer": 2,
+  "passage": "Das Museum hat ein neues Ticketsystem eingeführt. Besucher müssen jetzt online ein Zeitfenster buchen. Das verkürzt die Warteschlangen, verärgert aber einige Touristen, die lieber spontan entscheiden."
+ },
+ {
+  "skill": "reading",
+  "level": "B2",
+  "prompt": "Was behaupten die Kritiker?",
+  "options": [
+   "Die Regelung senke die Emissionen überhaupt nicht",
+   "Ländliche Haushalte würden stärker belastet",
+   "Stadtbewohner müssten nichts zahlen",
+   "Autos würden billiger"
+  ],
+  "answer": 1,
+  "passage": "Obwohl die neue Regelung den Ausstoß von Emissionen senken soll, kritisieren Gegner, dass sie ländliche Haushalte überproportional belaste, da diese viel stärker auf das Auto angewiesen seien als Stadtbewohner."
+ },
+ {
+  "skill": "reading",
+  "level": "B2",
+  "prompt": "Wie steht der Autor zur Studie?",
+  "options": [
+   "völlig ablehnend",
+   "vorsichtig zustimmend",
+   "völlig unkritisch",
+   "gleichgültig"
+  ],
+  "answer": 1,
+  "passage": "Der Autor räumt ein, dass die Stichprobe der Studie klein war, besteht aber darauf, dass ihre Ergebnisse mit früheren Untersuchungen übereinstimmen."
+ },
+ {
+  "skill": "listening",
+  "level": "A1",
+  "prompt": "Woher kommt Sara?",
+  "options": [
+   "Kanada",
+   "Kuba",
+   "China",
+   "Chile"
+  ],
+  "answer": 0,
+  "audio_text": "Hallo, ich heiße Sara. Ich komme aus Kanada. Ich esse gern Pizza."
+ },
+ {
+  "skill": "listening",
+  "level": "A1",
+  "prompt": "Wann fährt der Bus ab?",
+  "options": [
+   "um sechs Uhr",
+   "um sieben Uhr",
+   "um acht Uhr",
+   "um neun Uhr"
+  ],
+  "answer": 2,
+  "audio_text": "Der Bus zum Flughafen fährt um acht Uhr ab."
+ },
+ {
+  "skill": "listening",
+  "level": "A2",
+  "prompt": "Wo ist die Bibliothek?",
+  "options": [
+   "neben der Bank",
+   "neben dem Supermarkt",
+   "hinter der Schule",
+   "gegenüber vom Bahnhof"
+  ],
+  "answer": 1,
+  "audio_text": "Entschuldigung, wie komme ich zur Bibliothek? Gehen Sie geradeaus und biegen Sie bei der Bank links ab. Sie ist neben dem Supermarkt."
+ },
+ {
+  "skill": "listening",
+  "level": "A2",
+  "prompt": "Warum kann der Sprecher am Samstag nicht kommen?",
+  "options": [
+   "Er ist krank",
+   "Er muss arbeiten",
+   "Er ist im Urlaub",
+   "Er hat es vergessen"
+  ],
+  "answer": 1,
+  "audio_text": "Es tut mir leid, ich kann am Samstag nicht zur Party kommen, weil ich arbeiten muss. Vielleicht können wir uns stattdessen am Sonntag treffen."
+ },
+ {
+  "skill": "listening",
+  "level": "B1",
+  "prompt": "Was soll der Kunde tun?",
+  "options": [
+   "sofort in die Werkstatt kommen",
+   "vor zwölf Uhr zurückrufen",
+   "heute online bezahlen",
+   "das Auto morgen bringen"
+  ],
+  "answer": 1,
+  "audio_text": "Hallo, hier ist Markus von der Werkstatt. Ihr Auto ist fertig, aber wir haben ein Problem mit den Bremsen gefunden, das nicht im ursprünglichen Angebot stand. Die Reparatur kostet achtzig Euro extra. Bitte rufen Sie mich vor zwölf Uhr zurück, wenn wir sie durchführen sollen."
+ },
+ {
+  "skill": "listening",
+  "level": "B1",
+  "prompt": "Was ändert sich am Wochenende?",
+  "options": [
+   "Die Züge fahren nicht",
+   "Die Züge fahren seltener",
+   "Die Züge sind kostenlos",
+   "Die Züge fahren in eine andere Stadt"
+  ],
+  "answer": 1,
+  "audio_text": "Wegen Bauarbeiten fahren die Züge zwischen Leipzig und Dresden an diesem Wochenende nur stündlich statt alle dreißig Minuten."
+ },
+ {
+  "skill": "listening",
+  "level": "B2",
+  "prompt": "Wann war der Effekt auf die Kreativität am stärksten?",
+  "options": [
+   "auf dem Laufband",
+   "bei Spaziergängen im Freien",
+   "bei langen Spaziergängen",
+   "beim Gehen mit Kollegen"
+  ],
+  "answer": 1,
+  "audio_text": "Forscher haben herausgefunden, dass Menschen, die während des Arbeitstags kurze Spaziergänge machen, nicht nur gesünder, sondern auch kreativer sind. Interessanterweise war der Effekt am stärksten, wenn der Spaziergang im Freien stattfand."
+ },
+ {
+  "skill": "listening",
+  "level": "B2",
+  "prompt": "Warum hat der Sprecher nicht früher angerufen?",
+  "options": [
+   "Er hat die Nummer vergessen",
+   "Sein Handy hatte keinen Akku",
+   "Er war in einer Besprechung",
+   "Er hatte keine Zeit"
+  ],
+  "answer": 1,
+  "audio_text": "Ich hätte früher angerufen, aber mein Handy war leer, und ich habe nirgendwo ein Ladegerät gefunden."
+ }
+]
